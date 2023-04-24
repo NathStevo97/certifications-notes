@@ -161,7 +161,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
 - Provides high-bandwidth, secure connections betwen local workloads and those running in AWS region.
   - Allows seasmless connection to the full range of in-region services through the same APIs and toolsets.
 
-![Untitled](Fundamental%20Cloud%20Concepts/Untitled.png)
+![Local Zone Example](./Fundamental%20Cloud%20Concepts/Local_Zone_Example.png)
 
 ### Wavelength Zones
 
@@ -235,7 +235,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
   - OpEx maintained at generally consistent levels.
   - Any time the capacity needs to be increased, CapEx goes up.
 
-![Untitled](Fundamental%20Cloud%20Concepts/Untitled%201.png)
+![CapEx vs OpEx](Fundamental%20Cloud%20Concepts/CapEx_OpEx.png)
 
 ### Handling Demand in the Cloud
 
@@ -244,13 +244,12 @@ The on-demand delivery of compute power, database storage, applications, and oth
 
 ### Financial Implications
 
-| Own Data Centre | Cloud Infrastructure |
-| --- | --- |
-| Large CapEx | No upfront investment |
-| Potential for under used capacity or unmet demand | Pay as you go for infrastructure (OpEx) |
-| Increasing capacity takes time and additional investment (CapEx) | Capacity scales to meet user demand and can be immediately provisioned |
-| Monthly costs will map to predicted infrastructure needs | Costs mirror usage levels - use more, pay more, use less, pay less etc. |
-|  |  |
+| Own Data Centre                                                  | Cloud Infrastructure                                                    |
+| ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Large CapEx                                                      | No upfront investment                                                   |
+| Potential for under used capacity or unmet demand                | Pay as you go for infrastructure (OpEx)                                 |
+| Increasing capacity takes time and additional investment (CapEx) | Capacity scales to meet user demand and can be immediately provisioned  |
+| Monthly costs will map to predicted infrastructure needs         | Costs mirror usage levels - use more, pay more, use less, pay less etc. |
 
 ## Organizing and Optimizing AWS Costs
 
@@ -409,7 +408,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
   - Production System Down
   - Business-Critical System Down
 
-![Untitled](Fundamental%20Cloud%20Concepts/Untitled%202.png)
+![Support Plan Comparison](Fundamental%20Cloud%20Concepts/Support_Plans.png)
 
 ## AWS Support Tools
 

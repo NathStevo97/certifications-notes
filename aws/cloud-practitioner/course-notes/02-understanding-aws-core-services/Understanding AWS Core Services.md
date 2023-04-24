@@ -7,17 +7,17 @@ Tags: Done
 ## Methods of Interacting with AWS
 
 - AWS Console - Browser-based web app for interacting with most or all of the services.
-    - Typically used for testing out AWS services.
+  - Typically used for testing out AWS services.
 - AWS CLI - Command line access for administering AWS resources
 - AWS SDK - Programmatic access - allows you to interact with AWS services via code.
-    - Supported by a multitude of programming languages e.g. NodeJS, JavaScript, Python, GO.
+  - Supported by a multitude of programming languages e.g. NodeJS, JavaScript, Python, GO.
 - Repeating tasks typically automated via the CLI and or SDK.
 - SDK allows automation of AWS tasks within custom applications.
 
 ## Using the AWS Console
 
 - User sign in available
-    - Root user == Admin - can do anything
+  - Root user == Admin - can do anything
 - User information shown e.g. account, organization, quotas, security.
 - Region and support selectors available.
 - Services dropdown shows most of available services along with search bar.
@@ -26,14 +26,14 @@ Tags: Done
 ## Using the AWS CLI
 
 - AWS Console → Security Credentials → Access Keys → Create New Access Keys
-    - Advised to create access keys for IAM users only, not root.
-    - Copy access key and secret access key (one-time viewing only!)
+  - Advised to create access keys for IAM users only, not root.
+  - Copy access key and secret access key (one-time viewing only!)
 - Installation:
-    - Install per platform requirements
-    - Verify with `aws --version`
-    - Add access keys: `aws configure --profile <profile name>`
-        - Add access key, secret access key, default region and output format
-    - Verify with sample command e.g. `aws s3 ls --profile <profile name>`
+  - Install per platform requirements
+  - Verify with `aws --version`
+  - Add access keys: `aws configure --profile <profile name>`
+    - Add access key, secret access key, default region and output format
+  - Verify with sample command e.g. `aws s3 ls --profile <profile name>`
 
 ## Scenarios
 
@@ -66,30 +66,30 @@ Tags: Done
 
 - A web service that provides resizable compute capacity in the cloud.
 - Use cases include:
-    - Web application hosting
-    - Batch processing of data
-    - Web services endpoint
-    - Desktop in the cloud
+  - Web application hosting
+  - Batch processing of data
+  - Web services endpoint
+  - Desktop in the cloud
 
 ### EC2 Instance Types
 
 - Determines the processor, memory and storage type
 - Cannot be changed without downtime
 - Provided in the following categories:
-    - General-purpose
-    - Compute, memory and storage optimized
-    - Accelerated computing (special / high performance)
+  - General-purpose
+  - Compute, memory and storage optimized
+  - Accelerated computing (special / high performance)
 - Pricing based on instance type and category.
 - Certain instance types have unique capabilities.
 
-![Untitled](Understanding%20AWS%20Core%20Services%202bdf8ac1c90341dea5e657995a8c07e8/Untitled.png)
+![Instance Resource Sizing](./Understanding%20AWS%20Core%20Services/Resource_Sizing.png)
 
 ### Root Device Type
 
 - 2 Primary Types:
-    - **Instance store** - Ephemeral storage physicall attached to the host the virtual server is running on.
-    - **Elastic Block Store (EBS)** - Persistent storage that exists seperately from the host the virtual server is running on.
-        - Generally more commonly used than instance store.
+  - **Instance store** - Ephemeral storage physicall attached to the host the virtual server is running on.
+  - **Elastic Block Store (EBS)** - Persistent storage that exists seperately from the host the virtual server is running on.
+    - Generally more commonly used than instance store.
 
 ### Amazon Machine Image (AMI)
 
@@ -102,42 +102,40 @@ Tags: Done
 ## EC2 Purchase Types
 
 - Options available:
-    - **On-demand**
-    - **Reserved**
-        - Provides discounts over on-demand when can commit to a specific period of time.
-        - Provides a capacity reservation for the specific instance type.
-        - Instance types:
-            - Standard - highest discount and works for steady workloads
-                - Cost Models:
-                    - All upfront (highest savings but biggest upfront investment)
-                    - Partial upfront with reduced monthly cost.
-                    - No upfront but still providing a reduced monthly cost compared to standard.
-            - Convertible - Allows conversion of some attributes, works for steady workloads
-            - Scheduled - Works for a particular time window you reserve, typically used for predictable workloads.
-    - **Savings Plan**
-        - Similar to reserved instances
-        - Supports compute with EC2, Fargate and Lambda
-        - Unlike reserved, it doesn’t reserve capacity
-        - Provides up to 72% savings
-        - 1-3 Year terms available.
-    - **Spot**
-        - Allows leveraging excess EC2 capacity
-        - Provides up to 90% discount over on demand pricing
-        - Market price for all instance types per availability zone - the spot price
-        - When requesting instances, if bid is higher than spot price - instance will launch
-        - If spot price grows to exceed bid, the instance terminates within 2 minutes.
-    - **Dedicated**
-        - Dedicated physical server in the datacentre.
-        - May be required for server software licensing or compliance requirements.
+  - **On-demand**
+  - **Reserved**
+    - Provides discounts over on-demand when can commit to a specific period of time.
+    - Provides a capacity reservation for the specific instance type.
+    - Instance types:
+      - Standard - highest discount and works for steady workloads
+        - Cost Models:
+          - All upfront (highest savings but biggest upfront investment)
+          - Partial upfront with reduced monthly cost.
+          - No upfront but still providing a reduced monthly cost compared to standard.
+      - Convertible - Allows conversion of some attributes, works for steady workloads
+      - Scheduled - Works for a particular time window you reserve, typically used for predictable workloads.
+  - **Savings Plan**
+    - Similar to reserved instances
+    - Supports compute with EC2, Fargate and Lambda
+    - Unlike reserved, it doesn’t reserve capacity
+    - Provides up to 72% savings
+    - 1-3 Year terms available.
+  - **Spot**
+    - Allows leveraging excess EC2 capacity
+    - Provides up to 90% discount over on demand pricing
+    - Market price for all instance types per availability zone - the spot price
+    - When requesting instances, if bid is higher than spot price - instance will launch
+    - If spot price grows to exceed bid, the instance terminates within 2 minutes.
+  - **Dedicated**
+    - Dedicated physical server in the datacentre.
+    - May be required for server software licensing or compliance requirements.
 - If instance is consistent and always needed - standard or convertible reserved.
 - If batch processing and the process can start and stop without any adverse impact - use spot instances.
 - If an inconsistent need for instances that cannot be stopped without affecting the job - on-demand.
 - For specific per-server licensing or compliance requirements - use dedicated hosts.
 - If using Lambda or Fargate alongside EC2 - choose a savings plan.
 
-![Untitled](Understanding%20AWS%20Core%20Services%202bdf8ac1c90341dea5e657995a8c07e8/Untitled%201.png)
-
-![Untitled](Understanding%20AWS%20Core%20Services%202bdf8ac1c90341dea5e657995a8c07e8/Untitled%202.png)
+![Instance Pricing Comparison](./Understanding%20AWS%20Core%20Services/Resource_Pricing.png)
 
 ## Launching an EC2 Instance
 
@@ -145,14 +143,14 @@ Tags: Done
 - Select AMI → Custom / Marketplace / Community / Free
 - Select Instance Type
 - Configure instance details e,g,:
-    - Network
-    - Subnet
-    - Placement group
-    - IAM assigning
-    - User data - commands to run when starting
+  - Network
+  - Subnet
+  - Placement group
+  - IAM assigning
+  - User data - commands to run when starting
 - Configure storage
 - Configure network security group
-    - For general purpose testing, allow only “my IP” to access e.g. for SSH
+  - For general purpose testing, allow only “my IP” to access e.g. for SSH
 - Summary & Launch
 - Note: a key pair should be selected or created as appropriate.
 - Once launch, find public dns and access via browser to validate.
@@ -166,14 +164,14 @@ Tags: Done
 - Only pay for other services leveraged.
 - Handles provisioning, load balancing, scaling and monitoring.
 
-### Supported Application Platforms:
+### Supported Application Platforms
 
 - Includes:
-    - Docker
-    - JAVA
-    - NodeJS
-    - Python
-    - GO
+  - Docker
+  - JAVA
+  - NodeJS
+  - Python
+  - GO
 
 ### Features
 
@@ -193,16 +191,16 @@ Tags: Done
 - Tutorials provided depending on the applications to be deployed, along with sample applications for deployment.
 - AWS Console → Elastic Beanstalk → Get Started
 - Provide details:
-    - Application Name
-    - Application Platform
-    - Application code → Sample application or upload code
+  - Application Name
+  - Application Platform
+  - Application code → Sample application or upload code
 - Verify successful deployment by using the URL provided.
 - Functions provided incluide:
-    - Health
-    - Logs
-    - Monitoring
-    - Alarms
-    - Events
+  - Health
+  - Logs
+  - Monitoring
+  - Alarms
+  - Events
 - To terminate, Actions → Terminate
 
 ## AWS Lambda Overview
@@ -215,10 +213,10 @@ Tags: Done
 - Enable event-driven workflows
 - Primary service for serverless architectures
 - Advantages include:
-    - Reduced maintenance requirements
-    - Enables tolerance without additional work
-    - Scales based ond emand
-    - Pricing based on usage only.
+  - Reduced maintenance requirements
+  - Enables tolerance without additional work
+  - Scales based ond emand
+  - Pricing based on usage only.
 
 ## Scenarios
 
@@ -228,7 +226,7 @@ Tags: Done
 - One workload to be leveraged for at least 5 years
 - Organization is looking for most cost-effective solution
 - Answer:
-    - All upfront reserved - 3 years
+  - All upfront reserved - 3 years
 
 ### Scenario 2
 
@@ -236,7 +234,7 @@ Tags: Done
 - Minimal experience managing EC2 Instances
 - Need to scale on demand
 - Answer:
-    - AWS Elastic Beanstalk
+  - AWS Elastic Beanstalk
 
 ### Scenario 3
 
@@ -244,7 +242,7 @@ Tags: Done
 - Workloads happen daily and can start or stop without issue
 - Workload to be leveraged for at least 1 year
 - Answer:
-    - Spot Instances as workload can be started/stopped without issue.
+  - Spot Instances as workload can be started/stopped without issue.
 
 ---
 
@@ -255,19 +253,19 @@ Tags: Done
 ### VPC
 
 - **VPC = Virtual Private Cloud**
-    - Isolated section of AWS Cloud where resources can be launched into a user-defined virtual network
-    - Enables virtual networks in AWS
-    - Supports IPv4 and IPv6
-    - Allows configuration of:
-        - IP address range
-        - subnet
-        - Route tables
-        - network gateways
-    - Supports private and public subnets
-    - Can utilize NAT for private subnets
-    - Enables connection to data center
-    - Can connect to other VPCs
-    - Supports private connections to many AWS services
+  - Isolated section of AWS Cloud where resources can be launched into a user-defined virtual network
+  - Enables virtual networks in AWS
+  - Supports IPv4 and IPv6
+  - Allows configuration of:
+    - IP address range
+    - subnet
+    - Route tables
+    - network gateways
+  - Supports private and public subnets
+  - Can utilize NAT for private subnets
+  - Enables connection to data center
+  - Can connect to other VPCs
+  - Supports private connections to many AWS services
 
 ### Direct Connect
 
@@ -280,43 +278,43 @@ Tags: Done
 - Highly available → Minimal downtime
 - Enables global resource routing
 - DNS:
-    - Translates readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols.
+  - Translates readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols.
 - DNS Changes are not instantaneous - may take around 2 hours.
 - **Example:**
-    - Consider an application hosted in us-east-1 and eu-west-1
-    - If the us-east-1 goes down, Route 53 could be configured to automatically route the requests made to that server to the other region.
+  - Consider an application hosted in us-east-1 and eu-west-1
+  - If the us-east-1 goes down, Route 53 could be configured to automatically route the requests made to that server to the other region.
 
 ## Elastic Load Balancing
 
 - Elasticity - The ability for infrastructure supporting an application to scale up and down based on demand.
 - Elastic load balancing:
-    - Distributes traffic across multiple targets
-    - Integrates with EC2, ECS and Lambda
-    - Supports one or more availability zones in a region.
-    - 3 Types of load balancer available:
-        - Application (ALB)
-        - Network (NLB)
-        - Classic (ELB)
+  - Distributes traffic across multiple targets
+  - Integrates with EC2, ECS and Lambda
+  - Supports one or more availability zones in a region.
+  - 3 Types of load balancer available:
+    - Application (ALB)
+    - Network (NLB)
+    - Classic (ELB)
 - Scaling on EC2:
-    - Vertical scaling - scaling up with a larger instance type and additional resources.
-        - Would require downtime for changes to be made
-    - Horizontal scaling - add additional instances to handle application demand.
+  - Vertical scaling - scaling up with a larger instance type and additional resources.
+    - Would require downtime for changes to be made
+  - Horizontal scaling - add additional instances to handle application demand.
 
 ## Amazon CloudFront and API Gateway
 
 - **CloudFront:**
-    - Content Delivery Network
-    - Enables users to get content from closest server to them
-    - Supports static and dynamic content
-    - Utilizes AWS Edge locations
-    - Includes advanced security features such as:
-        - AWS Shield for DDoS
+  - Content Delivery Network
+  - Enables users to get content from closest server to them
+  - Supports static and dynamic content
+  - Utilizes AWS Edge locations
+  - Includes advanced security features such as:
+    - AWS Shield for DDoS
 - Edge locations are scattered worldwide.
 - **API Gateway:**
-    - A fully managed API management service
-    - Directly integrates with many AWS sservices
-    - Allows monitoring and metrics on API calls
-    - Supports VPC and on-prem private applications
+  - A fully managed API management service
+  - Directly integrates with many AWS sservices
+  - Allows monitoring and metrics on API calls
+  - Supports VPC and on-prem private applications
 
 ## AWS Global Accelerator
 
@@ -324,19 +322,19 @@ Tags: Done
 - Utilizes IP addresses that route to edge locations
 - When request reaches edge locations, traffic is routed through AWS network
 - Routes requests to many resources including
-    - NLB
-    - ALB
-    - EC2 Instances
-    - Elastic IP Addresses
+  - NLB
+  - ALB
+  - EC2 Instances
+  - Elastic IP Addresses
 - Can lead to varying performance improvements:
-    - Distance between user and initial endpoint is minimized via edge location usage
-    - Traffic is optimized by using AWS networks instead of public internet
-    - Results in improvement of first-byte latency, etc
-    - Provides superior fault tolerance by not relying on DNS resolution.
+  - Distance between user and initial endpoint is minimized via edge location usage
+  - Traffic is optimized by using AWS networks instead of public internet
+  - Results in improvement of first-byte latency, etc
+  - Provides superior fault tolerance by not relying on DNS resolution.
 - Use Cases:
-    - Non-HTTP Protocol e.g. UDP, MQTT, VOIP
-    - Static IP required.
-    - Instant Failover required.
+  - Non-HTTP Protocol e.g. UDP, MQTT, VOIP
+  - Static IP required.
+  - Instant Failover required.
 
 ## Scenarios
 
@@ -405,57 +403,57 @@ Tags: Done
 
 - AWS Console → S3
 - Create Bucket
-    - Supply details:
-        - Name (must be unique across accounts)
-        - Region
-        - Versioning
-        - Tags
-        - Permissions
-            - Enable public access (if acting as a public website)
+  - Supply details:
+    - Name (must be unique across accounts)
+    - Region
+    - Versioning
+    - Tags
+    - Permissions
+      - Enable public access (if acting as a public website)
 - Select bucket and upload desired files e.g. “index.html and logo”
 - Set the. permissions for users as required.
 - Configure the file storage classes as required e.g. storage, intelligent-tiering.
-    - Encryption - Amazon S3 Master Key ensures encryption at-rest.
+  - Encryption - Amazon S3 Master Key ensures encryption at-rest.
 - When viewing the files, each should come with an object URL
 - Configure the permissions as required e.g. “everyone read access for the object”
 - Under properties → Static website hosting → “use this bucket to host a website”
-    - Select index file and error document where required.
-    - Redirect rules are optional.
+  - Select index file and error document where required.
+  - Redirect rules are optional.
 - Once enabled, URL endpoint provided - permissions must be set to allow access
 
 ## Glacier and Glacier Deep Architecture
 
 - S3 Glacier
-    - Designed for archiving of data in S3 as a separate storage class
-    - Offers configurable retrieval times - quick / less quick
-    - Files can be sent directly or through lifecycle rules in S3
-    - Classes:
-        - S3 Glacier
-            - Designed for archival data
-            - 90-Day minimum storage duration
-            - Minutes or hours retrieval time
-            - Retrieval fee per GB retrieved
-            - Over 5x less expensive than S3 Standard storage class
-        - S3 Glacier Deep Archive
-            - Archival data
-            - 180-day minimum storage duration
-            - Data retrieval in hours
-            - Pay a retrieval fee per GB
-            - Over 23x less expensive than S3 Standard storage class.
-    - Typically, the management console is used to quickly set up S3 glacier, the data can then be uploaded and retrieved programatically
+  - Designed for archiving of data in S3 as a separate storage class
+  - Offers configurable retrieval times - quick / less quick
+  - Files can be sent directly or through lifecycle rules in S3
+  - Classes:
+    - S3 Glacier
+      - Designed for archival data
+      - 90-Day minimum storage duration
+      - Minutes or hours retrieval time
+      - Retrieval fee per GB retrieved
+      - Over 5x less expensive than S3 Standard storage class
+    - S3 Glacier Deep Archive
+      - Archival data
+      - 180-day minimum storage duration
+      - Data retrieval in hours
+      - Pay a retrieval fee per GB
+      - Over 23x less expensive than S3 Standard storage class.
+  - Typically, the management console is used to quickly set up S3 glacier, the data can then be uploaded and retrieved programatically
 
 ## Elastic Block Store (EBS)
 
 - EBS = Persistent block storage for use in EC2 storage
-    - Can scale to support petabytes of data per workload
-    - Enables redundancy within an availability zone
-    - Allows users to take snapshots of its data
-    - Offers encryption of its volumes
-    - Provides multiple volume types including:
-        - General SSD - Cost-effective for general workloads
-        - Provisioned IOPS SSD - High performance for low latency applications
-        - Cold HDD - Less frequently accessed data
-        - Throughput optimized HDD - Frequently accessed data
+  - Can scale to support petabytes of data per workload
+  - Enables redundancy within an availability zone
+  - Allows users to take snapshots of its data
+  - Offers encryption of its volumes
+  - Provides multiple volume types including:
+    - General SSD - Cost-effective for general workloads
+    - Provisioned IOPS SSD - High performance for low latency applications
+    - Cold HDD - Less frequently accessed data
+    - Throughput optimized HDD - Frequently accessed data
 
 ## Elastic File System
 
@@ -465,31 +463,31 @@ Tags: Done
 - Scales up to petabyte scale
 - Stores data across multiple AZs
 - Storage classes:
-    - Standard
-    - Infrequent access
+  - Standard
+  - Infrequent access
 - Provides configurable lifecycle data rules
 - For windows workloads consider Amazon FSx
-    - Fully managed windows file system
-    - Includes native windows features like Windows NTFS, Active Directory Integration, and SMB Support
+  - Fully managed windows file system
+  - Includes native windows features like Windows NTFS, Active Directory Integration, and SMB Support
 
 ## Data Transfer with AWS Snowball
 
 - Service to phyically migrate petabyte scale data to AWS
 - AWS snowmobille - “” for exobyte scale data
 - Snowball:
-    - Designed for large scale data transfer
-    - Supports petabyte-scale transfer
-    - Physical device delivered by AWS
-    - Snowball can be connected to network to upload data
-    - Device then returned by local carrier
-    - AWS recives device and loads data into S3
+  - Designed for large scale data transfer
+  - Supports petabyte-scale transfer
+  - Physical device delivered by AWS
+  - Snowball can be connected to network to upload data
+  - Device then returned by local carrier
+  - AWS recives device and loads data into S3
 - Snowmobile
-    - Designed for large scale data transfer
-    - Supports exabyte-scale transfer
-    - Shipping container delivered to location
-    - AWS sets up connection to network
-    - Data loaded onto snowmobile
-    - AWS loads data into S3 when container received by AWS.
+  - Designed for large scale data transfer
+  - Supports exabyte-scale transfer
+  - Shipping container delivered to location
+  - AWS sets up connection to network
+  - Data loaded onto snowmobile
+  - AWS loads data into S3 when container received by AWS.
 
 ## Scenarios
 
@@ -500,14 +498,14 @@ Tags: Done
 - Assets very popular within the week of launch
 - Not popular a week after
 - What’s the most cost-effective solution whilst maintaining durability?
-    - S3 Lifecycle rules with S3 Standard IA storage class
+  - S3 Lifecycle rules with S3 Standard IA storage class
 
 ### Scenario 2
 
 - Social media company
 - 2Pb of user-generated content to be migrated
 - Is there a faster method than uploading over the internet?
-    - AWS Snowball
+  - AWS Snowball
 
 ### Scenario 3
 
@@ -515,7 +513,7 @@ Tags: Done
 - Looking for shared file system between 8 different Linux EC2 Instances
 - File system to support 1Pb of data
 - What approach?
-    - Utilise elastic file system (EFS) - needs to definitely be for linux workloads and maximum of Petabyte data.
+  - Utilise elastic file system (EFS) - needs to definitely be for linux workloads and maximum of Petabyte data.
 
 ---
 
@@ -533,14 +531,14 @@ Tags: Done
 - Launches into a VPC
 - Provides both general-purpose SSD and Provisioned IOPS SSD options for storage.
 - Database options include:
-    - MySQL
-    - PostgreSQL
-    - MariaDB
-    - Oracle Database
-    - SQL Server
-    - Amazon Aurora
-        - A MySQL and PostgreSQL-compatible relational database built for the cloud.
-        - Aims to optimize performance, simplicity and costs.
+  - MySQL
+  - PostgreSQL
+  - MariaDB
+  - Oracle Database
+  - SQL Server
+  - Amazon Aurora
+    - A MySQL and PostgreSQL-compatible relational database built for the cloud.
+    - Aims to optimize performance, simplicity and costs.
 
 ### Amazon Database Migration Service (DMS)
 
@@ -557,10 +555,10 @@ Tags: Done
 - Supports automated scaling based on configuration
 - Offers in-memory cache with the DynamoDB Accelerator - DAXX
 - Use cases:
-    - Scale without excessive maintenance
-    - Serverless applications
-    - Implementations where low latency is key
-    - Data models without blob storage
+  - Scale without excessive maintenance
+  - Serverless applications
+  - Implementations where low latency is key
+  - Data models without blob storage
 
 ## Amazon Elasticache and Redshift
 
@@ -571,8 +569,8 @@ Tags: Done
 - Low latency in response times
 - Enables scaling and replicas to meet application demand
 - Common use cases:
-    - Database layer caching
-    - Session storage
+  - Database layer caching
+  - Session storage
 
 ### Redshift
 
@@ -591,7 +589,7 @@ Tags: Done
 - Data warehouse getting transitioned up to AWS for analysis
 - Data warehouse needs to support up to 2PB
 - What approach?
-    - Utilise AWS Redshift
+  - Utilise AWS Redshift
 
 ### Scenario 2
 
@@ -604,7 +602,7 @@ Tags: Done
 - Store realtime analytics
 - Low latency and high scaling
 - Minimize maintenance needs:
-    - DynamoDB
+  - DynamoDB
 
 ---
 
@@ -620,8 +618,8 @@ Tags: Done
 - Integrates with multiple AWS services
 - Provides end-user notifications via any of SMS, email, etc.
 - Example use case: User Signup
-    - User signup is set up on a SNS Topic
-    - Lambda function, SQS Queue and email notifications could all be triggered based on the topic event.
+  - User signup is set up on a SNS Topic
+  - Lambda function, SQS Queue and email notifications could all be triggered based on the topic event.
 
 ### Amazon Simple Queue Service (SQS)
 
@@ -630,14 +628,14 @@ Tags: Done
 - Up to 256kb data payload
 - Messages storeable up to 14 days
 - 2 Queue Types:
-    - Standard
-    - First-in-first out (FIFO)
+  - Standard
+  - First-in-first out (FIFO)
 
 ### Sample Architecture
 
 - SNS and SQS could be leveraged in many ways together, in a similar manner to below:
 
-![Untitled](Understanding%20AWS%20Core%20Services%202bdf8ac1c90341dea5e657995a8c07e8/Untitled%203.png)
+![SNS Example](Understanding%20AWS%20Core%20Services/SNS_Example.png)
 
 - If the Analytics service fails - no problem! the data will remain in the queue and then get processed once the services are back up and running.
 - SQS Leads to fault tolerance.
@@ -650,7 +648,7 @@ Tags: Done
 - Charged per state transition along with other AWS services leveraged
 - Workflow defined using Amazon States Language (example below)
 
-![Untitled](Understanding%20AWS%20Core%20Services%202bdf8ac1c90341dea5e657995a8c07e8/Untitled%204.png)
+![Step Function Example](Understanding%20AWS%20Core%20Services/Step_Function_Examples.png)
 
 - Step functions can integrate with many AWS services including compute, database, and messaging services.
 
@@ -692,10 +690,10 @@ Tags: Done
 - Should be enabled by default for every AWS account as part of best practices.
 - Can be consolidated via AWS Organizations.
 - Use cases:
-    - Compliance requirements.
-    - Forensic analysis for incidents
-    - Operational analysis.
-    - Troubleshooting
+  - Compliance requirements.
+  - Forensic analysis for incidents
+  - Operational analysis.
+  - Troubleshooting
 
 ## AWS CloudWatch and AWS Config
 
@@ -751,13 +749,11 @@ Resources:
 - Chef and Puppet manage the lifecycle of configuration changes with servers
 - Works in a hybrid cloud architecture for both cloud and on-prem infrastructure.
 - Comprised of 3 mains ervices:
-    - AWS OpsWork for Chef Automate
-    - AWS OpsWork for Puppet Enterprise
-    - AWS OpsWork Stacks - Can define application in “layers” to then be managed by Chef/Puppet as appropriate.
+  - AWS OpsWork for Chef Automate
+  - AWS OpsWork for Puppet Enterprise
+  - AWS OpsWork Stacks - Can define application in “layers” to then be managed by Chef/Puppet as appropriate.
 
 ## AWS Organizations and Control Tower
-
- 
 
 ### AWS Organizations
 
@@ -780,7 +776,7 @@ Resources:
 - Discovered a security setting was disabled on a server
 - Wants events like this to be monitored
 - What service?
-    - AWS Config
+  - AWS Config
 
 ### Scenario 2
 
