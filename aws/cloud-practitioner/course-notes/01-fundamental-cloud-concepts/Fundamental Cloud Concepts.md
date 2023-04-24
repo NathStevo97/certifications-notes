@@ -161,7 +161,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
 - Provides high-bandwidth, secure connections betwen local workloads and those running in AWS region.
   - Allows seasmless connection to the full range of in-region services through the same APIs and toolsets.
 
-![Local Zone Example](./Fundamental%20Cloud%20Concepts/Local_Zone_Example.png)
+![Local Zone Example](./img/Local_Zone_Example.png)
 
 ### Wavelength Zones
 
@@ -235,7 +235,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
   - OpEx maintained at generally consistent levels.
   - Any time the capacity needs to be increased, CapEx goes up.
 
-![CapEx vs OpEx](Fundamental%20Cloud%20Concepts/CapEx_OpEx.png)
+![CapEx vs OpEx](img/CapEx_OpEx.png)
 
 ### Handling Demand in the Cloud
 
@@ -408,7 +408,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
   - Production System Down
   - Business-Critical System Down
 
-![Support Plan Comparison](Fundamental%20Cloud%20Concepts/Support_Plans.png)
+![Support Plan Comparison](img/Support_Plans.png)
 
 ## AWS Support Tools
 

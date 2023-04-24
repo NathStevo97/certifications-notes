@@ -115,7 +115,7 @@ Tags: Done
   - Defines both AWS services that the identity can access and what actions can be done on that service
   - Can be customer-managed or managed by AWS.
 
-![Untitled](./Introduction%20to%20Security%20and%20architecture%20on%20AWS%20/Example_S3_Policy.png)
+![Untitled](./img/Example_S3_Policy.png)
 
 - Best practices:
   - Set up multi-factor authentication → provides additional security

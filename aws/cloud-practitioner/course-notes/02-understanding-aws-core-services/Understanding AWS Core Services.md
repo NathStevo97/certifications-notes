@@ -82,7 +82,7 @@ Tags: Done
 - Pricing based on instance type and category.
 - Certain instance types have unique capabilities.
 
-![Instance Resource Sizing](./Understanding%20AWS%20Core%20Services/Resource_Sizing.png)
+![Instance Resource Sizing](./img/Resource_Sizing.png)
 
 ### Root Device Type
 
@@ -135,7 +135,7 @@ Tags: Done
 - For specific per-server licensing or compliance requirements - use dedicated hosts.
 - If using Lambda or Fargate alongside EC2 - choose a savings plan.
 
-![Instance Pricing Comparison](./Understanding%20AWS%20Core%20Services/Resource_Pricing.png)
+![Instance Pricing Comparison](./img/Resource_Pricing.png)
 
 ## Launching an EC2 Instance
 
@@ -635,7 +635,7 @@ Tags: Done
 
 - SNS and SQS could be leveraged in many ways together, in a similar manner to below:
 
-![SNS Example](Understanding%20AWS%20Core%20Services/SNS_Example.png)
+![SNS Example](img/SNS_Example.png)
 
 - If the Analytics service fails - no problem! the data will remain in the queue and then get processed once the services are back up and running.
 - SQS Leads to fault tolerance.
@@ -648,7 +648,7 @@ Tags: Done
 - Charged per state transition along with other AWS services leveraged
 - Workflow defined using Amazon States Language (example below)
 
-![Step Function Example](Understanding%20AWS%20Core%20Services/Step_Function_Examples.png)
+![Step Function Example](img/Step_Function_Examples.png)
 
 - Step functions can integrate with many AWS services including compute, database, and messaging services.
 
