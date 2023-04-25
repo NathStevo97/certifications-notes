@@ -1,4 +1,5 @@
 # 2.1 - Deploying a Chart to Kubernetes
+
 - Releases = Instance of a chart running in Kubernetes.
 - Add a repo via `helm repo add <repo name> <repo link>`
 - Search for the chart you want, using mysql as an example from the stable repo:
@@ -19,7 +20,7 @@
 - Chart install general command: `helm install <release name> <repo name>/<chart name>`
   - Append `--dry-run --debug` for a test run and verbose output.
 
--  Verify release via `helm list`
+- Verify release via `helm list`
 
 # 2.3 - Retrieving Information on Helm Releases
 
@@ -80,7 +81,7 @@
   - Charts folder - Contains other charts that the main chart is dependent upon
   - Templates folder - Contains the primary YAML files used to generate Kubernetes Manifests
 
-- Under templates folder, the mainifests used to create Kubernetes objects e.g. deployments, services, etc.
+- Under templates folder, the manifests used to create Kubernetes objects e.g. deployments, services, etc.
   - `_helpers.tpl` - Used for supporting functions to be referenced by YAML files in the template directories
   - Notes.txt - Contains help text for the charts.
 
