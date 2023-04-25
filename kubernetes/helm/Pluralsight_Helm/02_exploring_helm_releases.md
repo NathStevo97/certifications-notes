@@ -1,4 +1,6 @@
-# 2.1 - Deploying a Chart to Kubernetes
+# 2.0 - Exploring Helm Releases
+
+## 2.1 - Deploying a Chart to Kubernetes
 
 - Releases = Instance of a chart running in Kubernetes.
 - Add a repo via `helm repo add <repo name> <repo link>`
@@ -8,7 +10,7 @@
   `helm install <release name> <repo name>/<chart name>`
 - By default, if no version is provided, the latest version will be used.
 
-# 2.2 - Chart Deployment Demo
+## 2.2 - Chart Deployment Demo
 
 - To view chart information in the CLI, use `helm show`:
   `helm show chart stable/mysql`
@@ -22,14 +24,14 @@
 
 - Verify release via `helm list`
 
-# 2.3 - Retrieving Information on Helm Releases
+## 2.3 - Retrieving Information on Helm Releases
 
 - Once a release has been deployed, the state of the release can be inspected by `helm list`
 - By default, `helm list` will only check in the default namespace
 - For releases in other namespaces, use `--namespace <namespace>` or `--all-namespaces`
 - To view the status of the objects, use standard `kubectl` commands.
 
-# 2.4 - Helm Release Information Retrieval Demo
+## 2.4 - Helm Release Information Retrieval Demo
 
 - `helm list` to check the release
 - Check the status of a release `helm status <release name>`
@@ -47,7 +49,7 @@
 - Uninstall release but keep history: `helm uninstall <release name> --keep-history`
 - Re-running without the `--keep-history` flag will completely uninstall the chart.
 
-# 2.5 - Upgrading a Release
+## 2.5 - Upgrading a Release
 
 - To view all versions of a chart: `helm search repo <repo name>/<chart name> --version`
 - To install a specific version: `helm install <release name> <repo name>/<chart name> --version <version>`
@@ -56,7 +58,7 @@
   - New resources (where required) will then be created
 - Use `helm list` to review the release information and `helm history` to show the changes between revisions.
 
-# 2.6 - Release Upgrade Demo
+## 2.6 - Release Upgrade Demo
 
 - Search for the repo `helm search repo <repo name>/<chart name>`
 - Get all versions of the chart `helm search repo <repo name>/<chart name> --versions`
@@ -67,12 +69,12 @@
 - Verify upgrade with `helm list`
 - View the history of the release `helm history <release name>`
 
-# 2.7 - Rolling Back a Release
+## 2.7 - Rolling Back a Release
 
 - In the event of a rollback, use `helm rollback <release name> <revision number>`
 - Use `helm list` and `kubectl` commands to verify deployment again
 
-# 2.9 - Exploring a Chart
+## 2.9 - Exploring a Chart
 
 - To pull down a chart from a remote repository and view the files: `helm pull <repo>/<chart name> --untar`
 - Charts by default contain the following:

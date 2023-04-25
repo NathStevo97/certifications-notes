@@ -1,11 +1,14 @@
-# 3.1 - Repository Overview
+
+# 3.0 - Configuring Helm Repositories
+
+## 3.1 - Repository Overview
 
 - Chart repository = Any HTTP server that can serve YAML or TAR files. Needs to be able to respond to GET requests.
 - Contains an index.yaml file and packaged charts.
 - Helm charts are commonly stored in the Helm hub at <https://hub.helm.sh>
 - Helm charts can then be stored and managed within the UI.
 
-# 3.2 - Packaging a Helm Chart
+## 3.2 - Packaging a Helm Chart
 
 - To create a chart: `helm create <chart name>`
 - Initializes a chart folder with the default files and structure.
@@ -22,7 +25,7 @@
 - Verify deployment with `helm list` and `kubectl` commands as required.
 - Packaging the chart: `helm package <path to chart> --destination <path to local charts folder>`
 
-# 3.3 - Packaging a Helm Chart Demo
+## 3.3 - Packaging a Helm Chart Demo
 
 - Create a chart: `helm create <chart name>`
 - Check and make whatever edits are necessary to the chart folder in `./<chart name>` e.g. remove the default YAML folders.
@@ -36,7 +39,7 @@
 - To override a value defined in values.yaml, use `--set <value key>=<new value>`.
 - Package the chart: `helm package <path to chart> <output path>`
 
-# 3.4 - Creating a Local Helm Repository
+## 3.4 - Creating a Local Helm Repository
 
 - Chart museum - an open-source, cross-platform helm chart repository that supports multiple cloud backends and local usage
 - Chart museum itself can be ran as a helm chart.
@@ -58,12 +61,12 @@
 
 - Verify update with `helm search repo chartmuseum/<chart name>`
 
-# 3.6 - Creating a Remote Helm Repository
+## 3.6 - Creating a Remote Helm Repository
 
 - A Helm Repository can be any server that can serve YAML and TAR files, as well as responding to get requests.
 - Options available include Chart Museum, Github, JFrog Artifactory
 
-## 3.6.1 - Example: Github Repository
+### 3.6.1 - Example: Github Repository
 
 - Create a repository in Github via standard means and clone locally.
 - Copy in the packaged chart (the .tgz file created via helm package)
