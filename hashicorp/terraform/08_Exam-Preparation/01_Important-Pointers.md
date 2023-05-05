@@ -152,13 +152,6 @@ provisioner "remote-exec" {
   - **List** - Sequential list of values identified by their position, first value being position "0"
   - **Map** - A group of values identified by named labels/keys e.g. age=52
   - **Number** - Numerical values
-### Terraform Workspace
-
-- Workspaces are isolated environments for the same configuration to be applied.
-- Each workspace can have a different set of environment variables associated
-- This allows multiple state files for the same configuration, which can be beneficial for testing and production environments.
-- Additional workspace state files stored in `terraform.tfstate.d` folder
-- Default workspace state file stored in root directory.
 
 ### Terraform Modules
 
@@ -359,6 +352,7 @@ happens when terraform plan is ran?"
 - Allows quick access to a list of all attributes
 - Will output all possible values within the configuration where applicable.
 - Referencing modules:
+
 ```go
 resource "aws_instance" "example" {
     ami = "ami-abc123"
@@ -386,6 +380,7 @@ resource "aws_instance" "example" {
   - Local Identification name for the resource
   - Attributes e.g. `AMI`, `ACCESS_KEY`, etc.
   - Attribute values.
+
 ### Provider Configuration
 
 - A block for provider configuration isn't mandatory for all terraform configurations.
@@ -491,12 +486,16 @@ terraform {
 ```
 
 - The arguments are then supplied via the `terraform init` command i.e. <br>
-`terraform init -backend-config=<parameter 1>=<value 1> -backend-config=<parameter 2>=<value 2> ... `
+`terraform init -backend-config=<parameter 1>=<value 1> -backend-config=<parameter 2>=<value 2> ...`
 
 ### Terraform Taint
 
 - Manually marks a Terraform-managed resource as tainted, forcing it to be destroyed and recreated on the next execution of `apply`.
 - Once tainted, the next `plan` will show the resource tainted will be destroyed and recreated.
+
+- Can be used to taint resources within a module
+- Usage: `terraform taint [options] <resource type>.<resource id>`
+- For multiple submodules, apply: `module.foo.module.bar.<resource_type>.<resource_id>`
 
 ### Local Provisioner
 
@@ -546,7 +545,6 @@ resource "resource type" "local ID" {
   - **Continue:** Ignore the error and continue with the resource creation
   - **Fail:** Raise an error and stop the apply (default behaviour).
 
-
 ### Provisioner Types
 
 - Two types of provisioners:
@@ -555,6 +553,7 @@ resource "resource type" "local ID" {
     - If a creation-time provisioner fails, the resource is marked as tainted
   - **Destroy-Time**
     - Ran before the resource is destroyed.
+
 ### Input Variables
 
 - The value associated with a variable can be assigned via multiple methods
@@ -632,15 +631,6 @@ module "vpc" {
 
 - The value of the `ref` argument can be any reference that would be accepted by the `git checkout` command, including branch and tag names.
 
-### Terraform Workspace
-
-- Workspaces within Terraform can be managed by `terraform workspace`
-- Each workspace has its own state file directory
-- Commonly used for separating environments such as staging and production
-- To create a new workspace: `terraform workspace new <workspace name>`
-- To switch to a workspace: `terraform workspace select <workspace name>`
-  - If the workspace name does not already exist, it will be created as part of command execution.
-
 ### Dependency Types - Implicit
 
 - With implicity dependencies, terraform automatically finds references of the object and creates an implicit ordering requirement between the two resources.
@@ -665,12 +655,6 @@ module "vpc" {
 - Data sources allow data to be fetched or computed for use elswhere within the configuration.
 - Reads from a specific data source and exports the results under a particular value.
 - Common example is AWS AMIs as these vary from region to region.
-
-### Terraform Taint
-
-- Can be used to taint resources within a module
-- Usage: `terraform taint [options] <resource type>.<resource id>`
-- For multiple submodules, apply: `module.foo.module.bar.<resource_type>.<resource_id>`
 
 ### Terraform Plan Destroy
 
