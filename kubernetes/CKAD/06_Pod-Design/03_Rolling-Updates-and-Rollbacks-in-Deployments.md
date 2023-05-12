@@ -8,7 +8,7 @@
 - This functionality allows tracking of deployment changes
   - Allows rollback capability in the event of application failure.
 
-## Rollour Commands:
+## Rollour Commands
 
 - View rollout status: `kubectl rollout status <deployment name>`
 - View rollout history and versioning: `kubectl rollout history <deployment name>`
@@ -54,7 +54,7 @@
   - Using this method, the required replicaset and pods auto-created in the backend.
 - **Note:** It's highly recommended to use a definition file for deployments for file editing and versioning.
 
-## Command Summary:
+## Command Summary
 
 - Create: `kubectl create -f <filename>.yaml`
 - Get: `kubectl get deployments`

@@ -161,7 +161,7 @@ spec:
 ```
 
 - **Note:** For a single backend like above, no additional rules are required.
-- The ingress resource can be created via standard means i.e. `kubectl create -f .... `
+- The ingress resource can be created via standard means i.e. `kubectl create -f ....`
 
 - To view ingress resource: `kubectl get ingress`
 - To route traffic in a conditional form, use ingress rules e.g. routing based on DNS

@@ -32,6 +32,7 @@
 - By default, Kubernetes has an "All-Allow" rule, allowing communication between any pod in the cluster.
   - This isn't best practice, particularly if working with resources that store very sensitive information e.g. databases.
   - To restrict the traffic, one can implement a network policy.
+
 ---
 
 - A network policy is a Kubernetes object allowing only certain methods of network traffic to and from resources. An example follows:
