@@ -234,7 +234,7 @@ tasks:
   register: ec2_key_result
 
 - name: Save private key
-  copy: 
+  copy:
     content: "{{ ec2_key_result.key.private_key }}"
     dest: "./demo_key.pem"
     mode: 0600
@@ -248,7 +248,7 @@ tasks:
   - `group_id: "{{ my_vpc_sg.group_id }}"`
   - `vpc_subnet_id: "{{ public_subnet.subnet.id }}"`
 
-- Example Usage"
+- Example Usage:
 
 ```yaml
 - name: Provision the EC2 Instance
