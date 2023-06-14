@@ -1,6 +1,6 @@
 # 3.0 - Deploying into EC2
 
-## 3.1 - Provisioning the VPC
+##  3.1 - Provisioning the VPC
 
 - VPC = logically isolated virtual network across an AWS region containing the whatever resources you want.
   - Protects instances from network intrusion and allows control of network traffic to/from resources.
@@ -92,7 +92,7 @@ tasks:
 - Example Usage:
 
 ```yaml
-- name: Create the Internet Gateway
+- name: Create the Public Subnet
   ec2_vpc_subnet:
     aws_access_key: "{{ aws_access_key }}"
     aws_secret_key: "{{ aws_secret_key }}"
@@ -144,8 +144,7 @@ tasks:
     - `dest` - the networking being routed to, `0.0.0.0` is the default
     - `gateway_id` is the ID of the IGW for the route to be associated with the route.
 
-
-### Creating the Security gROUP
+###  Creating the Security gROUP
 
 - Example Usage:
 
@@ -171,7 +170,7 @@ tasks:
     sg_id: "{{ my_vpc_sg.group_id }}"
 ```
 
-## 3.2 - Provisioning EC2 Instances
+##  3.2 - Provisioning EC2 Instances
 
 - Steps to create the EC2 Instance:
   1. Specify the AMI desired
@@ -202,7 +201,7 @@ tasks:
       name: RHEL-8*HVM-*
   register: amis
 
-- sname: Show the AMIs
+- name: Show the AMIs
   debug:
     var: amis
 
