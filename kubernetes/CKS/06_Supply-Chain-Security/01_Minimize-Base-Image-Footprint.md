@@ -1,0 +1,1 @@
+# 6.1 - Minimize Base Image Footprint
