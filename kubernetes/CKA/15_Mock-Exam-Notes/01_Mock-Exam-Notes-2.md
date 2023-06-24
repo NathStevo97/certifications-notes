@@ -14,7 +14,7 @@
 - Run the command: `ETCDCTL_API=3 etcdctl --endpoints=<> --cacert=<> --cert=<> --key=<> snapshot
 save <filepath to backup>`
 
-## Use-PV Question:
+## Use-PV Question
 
 - Create a PersistentVolumeClaim
   - 10Mi

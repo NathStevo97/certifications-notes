@@ -61,7 +61,7 @@ item:
 
 - Denoted by *, meaning "any", can be used to retrieve all/any properties of a
 particular dictionary
--  Can swap * as a value when referencing an array position i.e. [*]
+- Can swap * as a value when referencing an array position i.e. [*]
 
 ## 14.1.4 - JSONPath: Advanced List Queries
 
