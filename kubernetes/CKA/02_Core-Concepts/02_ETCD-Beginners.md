@@ -17,4 +17,3 @@ key-value-pairs.
 - To store a key-value-pair: `./etcdctl set <key> <value>`
 - To retrieve a value: `./etcdctl get <key>`
 - For additional information: `./etcdctl`
-
