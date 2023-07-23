@@ -6,3 +6,5 @@
   - Configs
   - Secrets
   - Roles
+
+- Every piece of information
