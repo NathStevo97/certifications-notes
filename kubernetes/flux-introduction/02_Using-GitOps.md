@@ -2,11 +2,41 @@
 
 ## 2.1 - GitOps Principles
 
-## 2.2 - GitOps in the WIld
+- GitOps is a discipline governed by a set of principles that:
+  - Uses version-controlled, declarative configuration to describe a desired state
+  - Establishes the desired state in a target system through the use of software automation
+
+- **Key Principles:**
+  - **Declarative:** A system managed by GitOps must have its desired state expressed declaratively in a common syntax.
+    - Done by usage of a common syntax
+    - Supports human readability, code ingestible-ness, and recovery.
+  - **Versioned and Immutable:** The desired state is stored in a way that enforces immutability, versioning and retains a complete version history
+    - Helps avoid configuration drift, allow for rollbacks, and auditing of a changelog.
+  - **Pulled Automatically:** Software agents automatically pull the desired state declarations from source.
+    - Pull can be achieved by ways including: source polling, webhook triggers, and image reflections
+  - **Continuous Reconcilliation:** Software agents continuously observe actual system state and attempt to apply the desired state.
+    - Software agents supporting GitOps continuously observe the actual state to ensure the desired state is applied.
+
+## 2.2 - GitOps in the Wild
+
+- GitOps is not only for Kubernetes, but has grown significantly in this area.
+- Desired state storage does not have to be git-based, it could be helm charts or S3-compatible storage.
+- GitOps doesn't replace CI/CD pipelines, rather supports them.
+
+- **CI/CD vs GitOps:**
+![CI/CD vs GitOps Comparison](./img/cicd-vs-gitops.png)
+
+- **GitOps Workflow**
+![Sample Workflow with CI/CD and GitOps](./img/sample-workflow.png)
+
+- Sample tools:
+  - Jenkins X
+  - ArgoCD
+  - Flux
 
 ## 2.3 - Introducing Flux
 
-- Flux is implemented as a set of Kibernetes controllers that implement the GitOps principles as defined by the GitOps project
+- Flux is implemented as a set of Kubernetes controllers that implement the GitOps principles as defined by the GitOps project
 - It handles configurations provided by YAML, Kustomize Overlays, or Helm charts to achieve the desired state.
 - Offers optional support for monitoring repositories in single container registries for new application images
 - Can be used with other tools to support automated progressive deployments e.g. canary releases or blue/green deployments.
@@ -33,9 +63,9 @@
 
 - A fully-featured CLI utility for working with the GitOps toolkit and for managing GitOps workflows.
 - Supports:
-  - Provisioning - Enables flux to be bootstrapped to an existing cluster
-  - Management - Allows for ongoing management of a Flux deployment
-  - Querying - Provides a means for retrieving status information.
+  - **Provisioning** - Enables flux to be bootstrapped to an existing cluster
+  - **Management** - Allows for ongoing management of a Flux deployment
+  - **Querying** - Provides a means for retrieving status information.
 
 ## 2.4 - Installing Flux
 
@@ -59,4 +89,4 @@
 - Set via `export GITHUB_TOKEN="$(cat /path/to/file)"`
 - Run: `flux bootstrap github --repository <repository name> --owner <github username> --personal true --components-extra=image-reflector, image-automation-controller`
 
-- 
+-
