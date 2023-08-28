@@ -1,1 +1,32 @@
 # 6.1 - Minimize Base Image Footprint
+
+- **Base vs Parent Image**
+  - **Parent image** - any image used to build a custom image
+  - **Base image** - any image built from scratch
+- **Note:** Parent vs Base image may be used interchangeably, not a major issue
+- For these notes - base image = any image used to build a custom image
+- **Best Practices for image building:**
+  - Images shouldn't be built that contain multiple applications e.g. databases, applications
+    - Images should be modular i.e. 1 for a DB, etc. They should each solve their own problem and have their own independent set of dependencies
+    - Once deployed as containers, these images can be controlled individually for scaling
+  - **Persist State:**
+    - Data or state shouldn't be stored in containers as they are ephemeral in nature - one should be able to destroy and recreate a container without losing data
+    - Store on an external volume or via a caching service
+  - **Choosing a base image:**
+    - Should always consider base images that suit the technical need of the solution being developed
+    - Images can be viewed on Docker Hub
+    - Areas to note when searching for a base image:
+      - Is it from an official source?
+      - Is it up to date?
+  - **Slim/Minimal Images:**
+    - Minimizing the size of the image allows quicker pulling and building
+    - General steps that can be taken:
+      - Create slim/minimal images
+      - Find an official minimal image that exists
+      - Only install necessary packages e.g. remove shells/package managers/tools - anything which one can use to infiltrate a system
+      - Ensure images are suited to the environment that they are being used for e.g. for a development environment, include debug tools, for production, ensure as lean as possible
+      - Use multi-stage builds - ensures lean, production-ready images
+- **Distroless Docker Images**
+  - Contain only the application and docker runtime dependencies
+  - Provided by Google
+- Minimizing image footprint leads to smaller area of attack for vulnerabilities -> more secure image
