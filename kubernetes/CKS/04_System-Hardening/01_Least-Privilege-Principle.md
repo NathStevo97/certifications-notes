@@ -1,1 +1,21 @@
 # 4.1 - The Principle of Least Privilege
+
+- **Airport Analogy**
+  - Consider an airport passenger, what procedure must they go through?
+    - Baggage drop-off and ticket validation
+    - Travel document verification
+    - Security / Carry on check
+    - Move to a specific departure gate; users can access other areas during this time, but some restrictions still apply.
+  - This suggests that in security management for a system, there are multiple entities involved; each with their own permissions and privileges
+  - Considering the privileges of each of the entities:
+    - Traveller - Unrestricted access to public spaces in the airport after check-in and the designated gate
+    - Baggage - Has access to the travellers documents and the airlines information
+    - Security officers - can inspect the belongings of travellers in the area
+    - Store employees - public and restricted areas
+    - Boarding gate - access to the documents
+    - Cleaners and cargo workers - access to public and certain restricted areas
+    - Pilots / Flight crew - complete aircraft access and certain areas of the airport
+- They have access only to the plane(s) of their airlines
+- In this case, each entity has the least / minimum amount of privileges required to perform their role.
+- This principle is applicable to computer systems and K8s clusters.
+- Kubernetes cluster security, via the least privilege principle, can be enforced via multiple options including:
