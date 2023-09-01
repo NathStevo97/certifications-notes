@@ -1,2 +1,2 @@
-# 3.2 - Manual Scheduling
+# 3.2 - Labels and Selcectors
 

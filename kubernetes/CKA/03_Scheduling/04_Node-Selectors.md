@@ -1,1 +1,1 @@
-# 3.4 - Node Affinity
+# 3.4 - Node Selectors

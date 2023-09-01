@@ -1,1 +1,1 @@
-# 3.5 - Taints and Tolerations vs Node Affinity
+# 3.6 - Taints and Tolerations vs Node Affinity
