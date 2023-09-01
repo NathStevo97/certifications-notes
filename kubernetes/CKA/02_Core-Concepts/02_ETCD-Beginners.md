@@ -11,8 +11,7 @@ unique key and stored in a database.
 - This starts a service running on port 2379 by default.
 - Clients can then be attached to the etcd service to store and retrieve information.
   - A default
-client included is the etcd control client, a CLI client for etcd; used to store and retrieve
-key-value-pairs.
+client included is the etcd control client, a CLI client for etcd; used to store and retrieve key-value-pairs.
 
 - To store a key-value-pair: `./etcdctl set <key> <value>`
 - To retrieve a value: `./etcdctl get <key>`

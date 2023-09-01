@@ -1,4 +1,4 @@
-# 01 - Manual Scheduling
+# 3.1 - Manual Scheduling
 
 -	When a pod is made available for scheduling, the Scheduler looks at the PODs definition file for the value associated with the field NodeName
 -	By default, NodeName’s value isn’t set and is added automatically when scheduling

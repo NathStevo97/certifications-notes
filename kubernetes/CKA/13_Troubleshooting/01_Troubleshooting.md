@@ -11,9 +11,8 @@ the failure
     - `curl http://<service-IP>:node-port`
   - Check the service to see if it has discovered the endpoints for the web pod
     - `kubectl describe service <Service-name>`
-  - If the service didn’t find the endpoints for the pod, check the
-service-to-pod-discovery by comparing the selectors configured on the
-service and the pod respectively
+  - If the service didn't find the endpoints for the pod, check the
+service-to-pod-discovery by comparing the selectors configured on the service and the pod respectively
   - Check the pod to ensure in a running state: kubectl get pods
     - Check running, restarts, logs and events
   - Repeat for db service and pods

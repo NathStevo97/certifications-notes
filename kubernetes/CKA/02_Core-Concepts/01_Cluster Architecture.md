@@ -1,4 +1,4 @@
-# Cluster Architecture
+# 2.1 - Cluster Architecture
 
 Kubernetes exists to allow the hosting of containerized applications in an automated fashion, allowing communication between the different services associated, and facilitating the creation of however many instances you like.
 
