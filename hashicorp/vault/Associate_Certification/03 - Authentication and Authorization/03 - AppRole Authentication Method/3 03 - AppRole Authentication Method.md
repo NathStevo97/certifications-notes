@@ -16,7 +16,7 @@ You done?: 🌚🌚🌚🌚
     - Machine/App users
 - Once authenticated, a token is generated, which may have a policy associated.
 - For machine/app users, the most common one is AppRole.
-    - This allows multiple “roles” to be defined corresponding to different applications, each with different access levels e.g. one role for MySQL or a database application, another for a particular CI/CD application e.g. Jenkins.
+    - This allows multiple "roles" to be defined corresponding to different applications, each with different access levels e.g. one role for MySQL or a database application, another for a particular CI/CD application e.g. Jenkins.
 - When authenticating via the AppRole method, applications will need to take note of:
     - Role ID
     - Secret ID
@@ -32,7 +32,7 @@ You done?: 🌚🌚🌚🌚
 
 **To enable:**
 
-1. Enable AppRole authentication method under “access”
+1. Enable AppRole authentication method under "access"
 2. Under Policies, create a desired policy for the application e.g. allowing all non-destructive capabilities to the application
 3. Create the role: `vault write /auth/approle/role/<name> token_policies="<role-name>"`
 4. Test via `vault read auth/approle/role/<rolename>`
@@ -44,4 +44,4 @@ You done?: 🌚🌚🌚🌚
 ---
 
 - The AppRole auth method is specifically designed for use by machines and applications.
-- Role and Secret IDs can effectively be viewed as the application’s username and passwords
+- Role and Secret IDs can effectively be viewed as the application's username and passwords

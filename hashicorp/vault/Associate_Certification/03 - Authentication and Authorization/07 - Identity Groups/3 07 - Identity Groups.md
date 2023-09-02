@@ -19,7 +19,7 @@ You done?: 🌚🌚🌚🌚
 ## Demonstration
 
 - Assuming a entity has already been created (refer to section 3.06), create a new policy to be applied to the team e.g. allow read capabilities to all secrets under the secret/ path
-- From Access → Groups, select “Create Group”
+- From Access → Groups, select "Create Group"
     - Provide the group name
     - Select type (internal or external)
     - Select any policy(ies) to be associated with the group

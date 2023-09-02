@@ -16,7 +16,7 @@ Tags: Done
 ## Tanzu CLI and Installer Interface
 
 - Used to initialize a Tanzu Kubernetes Grid instance by creating a management clusters
-- After the management cluster’s created, the Tanzu CLI is used to create/scale/upgrade/delete Tanzu Kubernetes Clusters
+- After the management cluster's created, the Tanzu CLI is used to create/scale/upgrade/delete Tanzu Kubernetes Clusters
 - The installer interface is launched from the Tanzu CLI
     - A 9-step GUI wizard where you specify areas such as credentials, deployment locations, networking, etc.
 

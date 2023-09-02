@@ -31,7 +31,7 @@ You done?: 🌚🌚🌚🌚
     - Renew - renews the lease on a secret, extending its usage time before automatic revocation
     - Revoke - Force-invalidates a secret with immediate effect, preventing any further renewals.
 - Example commands:
-- `vault lease renew -increment=3600 <lease id>` - Requests an adjustment of a lease’s TTL to 1 hour
+- `vault lease renew -increment=3600 <lease id>` - Requests an adjustment of a lease's TTL to 1 hour
 - `vault lease revoke <lease id>` - Revokes a lease
 - `vault lease revoke -prefix aws/` - Revokes all secrets under the path aws
 
@@ -39,13 +39,13 @@ You done?: 🌚🌚🌚🌚
 
 - Handles cryptographic functions on data in-transit.
 - All plaintext data must be base64-encoded.
-- This is because Vault does not require that the plaintext is “text” it could be a binary file, such as a PDF or image.
+- This is because Vault does not require that the plaintext is "text" it could be a binary file, such as a PDF or image.
 - Encryption keys can be rotated at regular intervals to ensure that not all data is encrypted with one static encryption key.
 
 ## Key Version
 
 - Transit engine supports versioning of keys
-- Key versions earlier than a key’s specified `min_decryption_version` will be archived. Any later belong to the working set.
+- Key versions earlier than a key's specified `min_decryption_version` will be archived. Any later belong to the working set.
     - This facilitates enhanced performance and security.
 - By disallowing decryption of old versions, any found ciphertext associated with obsolete data cannot be decrypted. The only way that this could be achieved would be if `min_decryption_version` was manually lowered.
 
@@ -55,7 +55,7 @@ You done?: 🌚🌚🌚🌚
 
 - Used to govern access to Vault for users and roles (authorization)
 - When first initialized, the root and default policies are created by default.
-- Policies operate on a “deny by default” manner, so an empty policy grants no permissions
+- Policies operate on a "deny by default" manner, so an empty policy grants no permissions
 
 ## Default Policy
 
@@ -74,7 +74,7 @@ You done?: 🌚🌚🌚🌚
 # Token Accessor
 
 - The accessor is a value that acts as a reference to a token - used to perform limited actions such as:
-    - Lookup a token’s properties
+    - Lookup a token's properties
     - Lookup a tokens capabilities for a particular path
     - Renew and revoke the token
 
@@ -82,11 +82,11 @@ You done?: 🌚🌚🌚🌚
 
 - During token creation, a policy will be associated with the token.
 - If a new policy is attached to a user or role, it will not affect the existing tokens. New tokens must be created.
-- For any policies that are updated and attached to a token, the rules will be reflected accordingly as part of the token’s permission.
+- For any policies that are updated and attached to a token, the rules will be reflected accordingly as part of the token's permission.
 
 # Token Capabilities
 
-- To check a token’s capabilities for a particular path, use the following sample command:
+- To check a token's capabilities for a particular path, use the following sample command:
 `vault token capabilities secret`
 - Note: the same operation can be achieved using token accessor.
 
@@ -126,7 +126,7 @@ You done?: 🌚🌚🌚🌚
 
 # Vault Agent
 
-- The agent doesn’t persist anything to storage - all data is stored in memory
+- The agent doesn't persist anything to storage - all data is stored in memory
 - The agent looks to utilise two main functionalities:
     - **Auto-Auth:** Facilitates automatic authentication to Vault and management of token renewal processes
     - **Caching**: Allows client-side caching of responses containing newly-created tokens.
@@ -134,7 +134,7 @@ You done?: 🌚🌚🌚🌚
 
 # Response Wrapping Token
 
-- When response wrapping is requested, Vault creates a temporary single-use token (Wrapping Token) and the response is inserted into the token’s cubbyhole with a short TTL
+- When response wrapping is requested, Vault creates a temporary single-use token (Wrapping Token) and the response is inserted into the token's cubbyhole with a short TTL
 - If the wrapping token is compromised, the application will not be able to access the secret, and security actions can be taken accordingly.
 
 ---
@@ -160,7 +160,7 @@ You done?: 🌚🌚🌚🌚
 
 - Each client is internally termed as an entity - entities can have multiple aliases.
 - Policies defined at entity-level will be associated with all aliases associated with the entities.
-    - E.g. users under the  “dev team” entity
+    - E.g. users under the  "dev team" entity
 
 # Identity Groups
 
@@ -208,7 +208,7 @@ You done?: 🌚🌚🌚🌚
 
 # Orphan Tokens
 
-- Orphan tokens aren’t the children of their parents - they therefore do not expire when their “parent” does.
+- Orphan tokens aren't the children of their parents - they therefore do not expire when their "parent" does.
 - They are the root of their own token tree
 - Orphan tokens still expire when their own max TTL is reached.
 
@@ -226,7 +226,7 @@ You done?: 🌚🌚🌚🌚
 
 # Basic Environment Variables
 
-- VAULT_ADDR defines the Vault server’s address and port e.g. [https://127.0.0.1:8200](https://127.0.0.1:8200)
+- VAULT_ADDR defines the Vault server's address and port e.g. [https://127.0.0.1:8200](https://127.0.0.1:8200)
 
 # GUI Related Questions
 
@@ -262,7 +262,7 @@ You done?: 🌚🌚🌚🌚
 
 # Vault Namespace
 
-- Namespaces are isolated environments that act as “vaults within Vault”
+- Namespaces are isolated environments that act as "vaults within Vault"
 - Each namespace has separate login paths and supports creating and managing data isolated to their namespace
 - Each namespace can have its own:
     - Policies
@@ -342,8 +342,8 @@ You done?: 🌚🌚🌚🌚
 
 # Security Best Practices - Root Tokens
 
-- It’s best practice to not persist root tokens
-- Root tokens should be generated using vault’s `operator generate-root` command only when absolutely necessary
+- It's best practice to not persist root tokens
+- Root tokens should be generated using vault's `operator generate-root` command only when absolutely necessary
 - For day-to-day operations, the root token should be deleted after configuring other auth methods or configuration settings etc
 
 # Enabling Versioning in KV - Version 1
@@ -486,13 +486,13 @@ path "transit/keys/demo-key" {
 
 # Key Rotation in Vault
 
-- It’s ill-advised to encrypt all data with one encryption key
+- It's ill-advised to encrypt all data with one encryption key
 - Transit engine allows encryption key rotation.
-- Vault maintains the versioned “keyring” and the operator can configure the minimum allowed version for decryption tasks
+- Vault maintains the versioned "keyring" and the operator can configure the minimum allowed version for decryption tasks
 
 # Periodic Tokens
 
-- Never expire so long as they’re renewed
+- Never expire so long as they're renewed
 - Aside from root tokens, these are the only way for unlimited lifetime tokens to exist in Vault
 - Created via `vault token create -period=<time> -policy=<policy>`
 
@@ -505,7 +505,7 @@ path "transit/keys/demo-key" {
 
 # Guide in Vault GUI
 
-- Note that Vault’s GUI provides guidance for various operations e.g. restart, secrets, authentication, etc.
+- Note that Vault's GUI provides guidance for various operations e.g. restart, secrets, authentication, etc.
 - It will provide links to the related documentation involved e.g. auth method documentation.
 
 # Vault Policy Format

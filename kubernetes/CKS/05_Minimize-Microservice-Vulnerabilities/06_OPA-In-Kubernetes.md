@@ -2,7 +2,7 @@
 
 - Kubernetes currently has RBAC for various functions except:
   - Only permit images from certain registries
-  - Forbid “runAs Root User”
+  - Forbid "runAs Root User"
   - Only allow certain capabilities
   - Enforce pod labelling
 - Admission Controllers go some way to covering these failures, with many
@@ -32,7 +32,7 @@ can use the kube-mgmt service
     - Load policies into OPA via Kubernetes
 - If creating an OPA policy, can create a ConfigMap with the
 following label: openpolicyagent.org/policy: rego
-And define the policy logic under the configMap’s data field.
+And define the policy logic under the configMap's data field.
 - How is OPA deployed on Kubernetes?
   - Deployed with kube-mgmt as a deployment
   - Roles and rolebindings deployed

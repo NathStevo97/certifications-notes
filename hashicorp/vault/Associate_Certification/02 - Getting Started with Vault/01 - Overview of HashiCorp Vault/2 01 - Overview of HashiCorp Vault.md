@@ -32,4 +32,4 @@ vault read database/creds/readonly
 ```
 
 - Other functionalities include encryption.
-- In general, once installed, Vault can remove the manual aspect of many secret management tasks, allowing engineers and admins to spend more time on the work they’re required for.
+- In general, once installed, Vault can remove the manual aspect of many secret management tasks, allowing engineers and admins to spend more time on the work they're required for.

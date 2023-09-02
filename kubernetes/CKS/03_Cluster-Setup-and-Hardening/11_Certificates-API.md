@@ -8,10 +8,10 @@ certificates must be re-generated
 environment, create as many users they want and set their permissions
 - Based on the previous point, it goes without saying these files need to be protected
   - Place the files on a fully secure server
-  - The server that securely hosts these files becomes the “CA Server”
+  - The server that securely hosts these files becomes the "CA Server"
   - Any time you want to sign a certificate, it is the CA server that must be logged
 onto/communicated with
-- For smaller clusters, it’s common for the CA server to actually be the master node
+- For smaller clusters, it's common for the CA server to actually be the master node
   - The same applies for a kubeadm cluster, which creates a CA pair of files and
 stores that on the master node
 - As clusters grow in users, it becomes important to automate the signing of
@@ -29,7 +29,7 @@ resultant certificate can then be extracted and shared with the user
 - Steps:
   - User generates key: openssl genrsa -out <keyname>.key 2048
   - User generates certificate signing request and sends to administrator:
-openssl req -new -key <key>.name -subk “/CN=name” -out name.csr
+openssl req -new -key <key>.name -subk "/CN=name" -out name.csr
   - Admin receives request and creates the API object using a manifest file,
 where the spec file includes the following:
     - Groups - To set the permissions for the user
@@ -46,10 +46,10 @@ kubectl certificate approve <name>
 appending -o yaml to the kubectl get command i.e.
 kubectl get csr <user> -o yaml
 - Note: The certificate will still be in base64 code, so run: echo
-“CODED CERTIFICATE” | base64 --decode
+"CODED CERTIFICATE" | base64 --decode
 - Note: The controller manager is responsible for all operations associated with
 approval and management of CSR
-- The controller manager’s YAML file has options where you can specify the key and
+- The controller manager's YAML file has options where you can specify the key and
 certificate to be used when signing certificate
   - --cluster-signing-key-file
 

@@ -18,7 +18,7 @@ You done?: 🔥🔥🔥🌚
     - Provision storage to all VMs
     - Setup Network Configuration for all VMs in environment 2
 - All Playbooks are written in YAML
-    - They contain “plays” - a set of activities (tasks) to be run on hosts
+    - They contain "plays" - a set of activities (tasks) to be run on hosts
     - Task - any action to be executed on the host e.g. run a script, install a package.
 - Example Playbook:
 
@@ -28,7 +28,7 @@ You done?: 🔥🔥🔥🌚
   tasks:
   - name: Execute command "date"
     command: date
-  
+
   - name: Execute script on server
     script: test_script.sh
 
@@ -52,11 +52,11 @@ You done?: 🔥🔥🔥🌚
     - Tasks are lists / arrays → ordered collection, meaning the order MATTERS
 - The actions ran by tasks are modules e.g. command, script, yum, service
     - Further information provided in the ansible docs OR
-    
+
     ```yaml
     ansible-doc -l
     ```
-    
+
 
 ---
 

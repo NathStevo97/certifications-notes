@@ -24,7 +24,7 @@ Tags: Done
 
 - When deploying management clusters on vSphere 7, there are two options:
     - vSphere (Tanzu Enabled)
-        - Deploying a management cluster isn’t supported
+        - Deploying a management cluster isn't supported
         - The supervisor cluster performs the role of the management cluster
         - The Tanzu CLI connects to the **Supervisor cluster**
             - Carries out the roles associated with the management cluster
@@ -60,7 +60,7 @@ Tags: Done
 
 ![Untitled](2%206%20-%20Creating%20Management%20Clusters%208c073206e0314500937887bc703b61dd/Untitled%203.png)
 
-1. Assuming vSphere’s selected, provide vCenter FQDN, username and password
+1. Assuming vSphere's selected, provide vCenter FQDN, username and password
     1. Auto-determines version of vSphere
     2. For vSphere 7 and above - additional dialog will be added questioning if Tanzu is already enabled on the cluster → Determines whether TKG Management cluster can be deployed or not.
     3. Specify the SSH public key associated with the datacenter
@@ -132,7 +132,7 @@ Tags: Done
 - Cluster API for vSphere controllers and CRDs listed in the following YAML file are deployed on the management cluster when running vSphere 6.7:
 `.tanzu/tkg/providers/infrastructure-vsphere/v0.7.7/infrastructure-components.yaml`
 - For vSphere 7 - no configuration is required as the supervisor cluster is preconfigured with Cluster API for vSphere controllers and CRDs
-- AWS and Azure’s provider deployment YAMLs are stored under the `.tanzu/tkg/providers/` folder if chosen as well
+- AWS and Azure's provider deployment YAMLs are stored under the `.tanzu/tkg/providers/` folder if chosen as well
 
 # Management Cluster Deployment Workflow
 

@@ -29,7 +29,7 @@ Tags: Done
 
 - The component `kube-vip` provides HA load-balancing for the Kubernetes control-plane
 - By default, if included, it runs on every control plane.
-- In classic HA fashion, one of the nodes will be elected the “leader” and advertises the virtual IP address using Address Resolution protocol
+- In classic HA fashion, one of the nodes will be elected the "leader" and advertises the virtual IP address using Address Resolution protocol
 - If the node fails or becomes unhealthy, a leader election happens - a new leader will be elected from the available controlplane nodes and the winner will advertise the virtual IP address via ARP.
 
 # Authentication Core Addons

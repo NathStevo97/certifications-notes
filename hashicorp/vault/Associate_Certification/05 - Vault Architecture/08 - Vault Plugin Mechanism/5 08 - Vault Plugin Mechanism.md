@@ -12,7 +12,7 @@ You done?: 🌚🌚🌚🌚
 
 - Plugins are the building blocks of Vault. All auth and secret backends are considered plugins.
 - This allows Vault to extensible to suit user needs.
-- This doesn’t just apply to pre-existing plugins, custom plugins can also be developed.
+- This doesn't just apply to pre-existing plugins, custom plugins can also be developed.
 - In general, to integrate a 3rd-party plugin, the following steps need to be done:
     - Create the plugin
     - Compile the plugin

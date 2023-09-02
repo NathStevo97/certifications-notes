@@ -8,7 +8,7 @@ Status: Done
     - System management
     - Running commands
     - Managing files
-- Each module is a set of python script(s) to perform a particular action - this leads to the potential problem of “what if there is no ready-made solution?”
+- Each module is a set of python script(s) to perform a particular action - this leads to the potential problem of "what if there is no ready-made solution?"
 
 # 12.2 - Example: Custom Debug
 
@@ -21,7 +21,7 @@ Status: Done
     - Initiated by providing an argument_spec, a spec outlining how arguments should be provided to the module in a playbook, specifying parameters such as:
         - Type
         - Required (Boolean)
-    - module.params[’argname’] then passes the arguments into the code for usage
+    - module.params['argname'] then passes the arguments into the code for usage
     - Any other actions with the code can then follow.
 
 ---
@@ -39,7 +39,7 @@ Status: Done
 ![Untitled](img/Untitled%202.png)
 
 - All built-in modules are located by default at `/usr/lib/python/dist-packages/ansible/modules`
-- If to be used by a role, add the module under “library” folder in a project
+- If to be used by a role, add the module under "library" folder in a project
 - For cross-projects, place anywhere and call it via the env `ANSIBLE_LIBRARY`
 
 ---

@@ -25,4 +25,4 @@ You done?: 🌚🌚🌚🌚
     - Algorithm may be any of `sha2-224`, `sha2-256`, and so on.
 - Additional details are available in the documentation, along with sample curl requests.
     - [Documentation](https://www.vaultproject.io/api-docs/system/tools).
-- Common exam questions are “what does X Call aim to achieve?”
+- Common exam questions are "what does X Call aim to achieve?"

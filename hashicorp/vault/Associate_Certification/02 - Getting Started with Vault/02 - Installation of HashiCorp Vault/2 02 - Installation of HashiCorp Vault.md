@@ -27,7 +27,7 @@ choco install vault
 vault
 ```
 
-- Ensure Vault’s location is added to the PATH env variable.
+- Ensure Vault's location is added to the PATH env variable.
 
 ---
 

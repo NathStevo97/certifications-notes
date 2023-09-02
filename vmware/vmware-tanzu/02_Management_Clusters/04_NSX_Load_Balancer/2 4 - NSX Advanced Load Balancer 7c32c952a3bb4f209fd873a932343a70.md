@@ -10,7 +10,7 @@ Tags: Done
 # Load Balancing Kubernetes Services
 
 - TKG supports optional integration with NSX advanced load balancer
-- NSX Advanced Load Balancer doesn’t require any licenses to be used with TKG
+- NSX Advanced Load Balancer doesn't require any licenses to be used with TKG
 - The integration allows NSX Advanced Load Balancer to provide layer-4 load balancing services when a load balancer service type is created on a TK workload cluster.
 - NSX Advanced Load Balancer does not perform load balancing for the Kubernetes API on control plane nodes - this is handled by kube-vip.
 
@@ -22,7 +22,7 @@ Tags: Done
 
 ## Architecture
 
-- When applications running on a workload cluster are exposed using a load balancer service type, traffic inbound to the apps is routed to the Service Engines, from which they’re routed to a NodePort IP address on the workload cluster.
+- When applications running on a workload cluster are exposed using a load balancer service type, traffic inbound to the apps is routed to the Service Engines, from which they're routed to a NodePort IP address on the workload cluster.
 
 ![Untitled](2%204%20-%20NSX%20Advanced%20Load%20Balancer%207c32c952a3bb4f209fd873a932343a70/Untitled%201.png)
 

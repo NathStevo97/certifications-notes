@@ -20,7 +20,7 @@ Rationale: You pay for what you use
 
 C - On-demand instance
 
-Rational - better for timeframe, reserved would be for “few years”
+Rational - better for timeframe, reserved would be for "few years"
 
 *Got wrong initially
 

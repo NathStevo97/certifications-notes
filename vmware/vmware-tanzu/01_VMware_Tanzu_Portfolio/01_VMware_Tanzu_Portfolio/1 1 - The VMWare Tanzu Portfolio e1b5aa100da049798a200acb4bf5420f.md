@@ -4,7 +4,7 @@ Tags: Done
 
 # Introduction and Background
 
-- Kubernetes is a key technology in VMWare’s Tanzu Portfolio
+- Kubernetes is a key technology in VMWare's Tanzu Portfolio
 - Tanzu Kubernetes grid is the common implementation of Kubernetes across supported cloud platforms e.g. Azure, AWS, vSphere.
 
 # Objectives
@@ -19,9 +19,9 @@ Tags: Done
     - Run
     - Manage
 - Each of these operations is handled or  facilitated by a particular Tanzu-based service.
-    
+
     ![Untitled](1%201%20-%20The%20VMWare%20Tanzu%20Portfolio%20e1b5aa100da049798a200acb4bf5420f/Untitled.png)
-    
+
     - Typically, the services under RUN and Manage are handled by SRE, those in Build are primarily handled by Developers
 
 # Kubernetes Lifecycle Management

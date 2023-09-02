@@ -28,7 +28,7 @@ You done?: 🌚🌚🌚🌚
 ## Working
 
 - When the response wrapping is requested, Vault creates a temporary single-use token (wrapping token)
-    - The wrapping token is inserted into the token’s cubbyhole with a short TTL
+    - The wrapping token is inserted into the token's cubbyhole with a short TTL
 - Only the expecting client who has the wrapping token can unwrap this secret.
 - If the wrapping token is compromised and the attacker unwraps the secret, the application will not be able to unwrap again
     - This can be used in conjunction with monitoring tools to implore admins to revoke the appropriate tokens.

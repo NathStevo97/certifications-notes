@@ -2,7 +2,7 @@
 
 Tags: Done
 
-1. What’s the parameter that needs to be set to enable autoscaling?
+1. What's the parameter that needs to be set to enable autoscaling?
     1. `ENABLE_AUTOSCALER`
 2. What component provides high-availability?
     1. `kube-vip`

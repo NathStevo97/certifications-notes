@@ -12,7 +12,7 @@ You done?: 🌚🌚🌚🌚
 
 ## Introduction
 
-- By default, any users created / assigned to authentication methods doesn’t have any/many capabilities. Permissions come as a result of authorization in Vault, which is determined by Vault policies.
+- By default, any users created / assigned to authentication methods doesn't have any/many capabilities. Permissions come as a result of authorization in Vault, which is determined by Vault policies.
 - Examples of policies include:
     - Read from secret/
     - Read and write from secret/
@@ -67,20 +67,20 @@ vault login -method=userpass username=admin password=password
 vault login -method=<method path> <parameters>
 ```
 
-- When authenticated, this user should have “default” as the policy. To verify, run `vault secrets list` - this should provide an error as it goes against the default policy.
+- When authenticated, this user should have "default" as the policy. To verify, run `vault secrets list` - this should provide an error as it goes against the default policy.
     - Typically the error will be of the form `URL <REQUEST TYPE> <vault address>/version/path`
-- To fix this, one can create a new policy. Navigate to policies and select “Create ACL Policy” from the menu - you will be presented with an editor to write an ACL policy.
-    
-    ![“Create New ACL Policy” Menu](./3%2002%20-%20Overview%20of%20Vault%20Policies/2022-07-13_20h54_16.png)
-    
-    “Create New ACL Policy” Menu
-    
-- Write the policy as desired, in this case, we just want to allow “read” operations on a particular path
+- To fix this, one can create a new policy. Navigate to policies and select "Create ACL Policy" from the menu - you will be presented with an editor to write an ACL policy.
+
+    !["Create New ACL Policy" Menu](./3%2002%20-%20Overview%20of%20Vault%20Policies/2022-07-13_20h54_16.png)
+
+    "Create New ACL Policy" Menu
+
+- Write the policy as desired, in this case, we just want to allow "read" operations on a particular path
 
 ![Untitled](./3%2002%20-%20Overview%20of%20Vault%20Policies/Untitled%201.png)
 
-- The policy must then be assigned the policy(ies). To do so, navigate to the user under “access” and select “edit user”.
-    - Under “Generated Token’s Policies”, add the name of the policy(ies) you which to attach, then click save.
+- The policy must then be assigned the policy(ies). To do so, navigate to the user under "access" and select "edit user".
+    - Under "Generated Token's Policies", add the name of the policy(ies) you which to attach, then click save.
 
 <aside>
 💡 Once the policy is assigned to the user, it will NOT automatically work. You must re-authenticate via the vault login command to generate a new token for the user.
@@ -96,7 +96,7 @@ vault login -method=<method path> <parameters>
 </aside>
 
 - In some cases, there may be an unexpected change to the path e.g. `secret/data/secret1`  to fix this, the path in the policy could be changed to `secret/*` - using the * as a wildcard operator.
-    - This poses a security risk - as multiple secrets may be under the path `secret/` that users shouldn’t have access to.
+    - This poses a security risk - as multiple secrets may be under the path `secret/` that users shouldn't have access to.
     - To fix, either explicitly define the secret path provided i.e. `full path to secret`  OR add an additional policy to deny access to the other secret(s), an example follows:
 
 ```go
@@ -176,7 +176,7 @@ vault login -method=userpass username="demo-user" password="demo-password"
 
 - The `metadata/` endpoint returns a list of key names at the specified location.
 - Any input for this must be a folder
-- The values aren’t accessible via this command.
+- The values aren't accessible via this command.
 
 | Path | KV Version 2 |
 | --- | --- |
@@ -203,8 +203,8 @@ capabilities =["list"]
 
 | Path | KV Version 2 |
 | --- | --- |
-| /secret/firstsecret | path “secret/metadata/firstsecret” {
-   capabilities = [”read”]
+| /secret/firstsecret | path "secret/metadata/firstsecret" {
+   capabilities = ["read"]
 } |
 
 ## Summary

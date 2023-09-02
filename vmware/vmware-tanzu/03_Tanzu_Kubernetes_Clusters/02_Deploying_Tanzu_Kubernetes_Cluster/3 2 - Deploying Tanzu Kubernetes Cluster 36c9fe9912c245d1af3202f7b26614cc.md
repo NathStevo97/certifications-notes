@@ -50,7 +50,7 @@ The following  flags can be added to the `tanzu cluster create` command:
 
 - The Tanzu CLI `management-cluster` and `cluster` commands will take any configuration parameters specified in the file pointed at by the `-f` or `--file` flags
 - These parameters can be overridden by defining them as environment variables before using the CLI command e.g.
-`export <var≥”new value”`
+`export <var≥"new value"`
 
 # Deploying Clusters that Run a Specific Kubernetes Version
 

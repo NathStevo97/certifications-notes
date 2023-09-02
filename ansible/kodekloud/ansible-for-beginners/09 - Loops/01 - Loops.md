@@ -15,7 +15,7 @@ You done?: 🌚🌚🌚🌚
 
 ![Loop Example](images/loop-example.png)
 
-- Note: **‘{{ item }}’** is used to call the loop iteration variable
+- Note: **‘{{ item }}'** is used to call the loop iteration variable
 - What happens if you have multiple sets of variables e.g. user name and user id
     - Use a list of dictionaries in the loop
 

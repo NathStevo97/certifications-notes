@@ -15,8 +15,8 @@ You done?: 🌚🌚🌚🌚
 - This can lead to issues:
     - If there are multiple Vault clusters in an organization, unsealing them can be a tiresome process heavily dependent upon the availability of users with the keys.
     - Unsealing makes the process of automating a Vault install difficult.
-        - Automation tools can easily install, configure and start Vault, but unsealing it via Shamir’s technique is heavily manual.
-- To resolve these issues, Vault’s Auto-Unseal mechanism can be utilised.
+        - Automation tools can easily install, configure and start Vault, but unsealing it via Shamir's technique is heavily manual.
+- To resolve these issues, Vault's Auto-Unseal mechanism can be utilised.
 
 ## Auto-Unseal Overview
 

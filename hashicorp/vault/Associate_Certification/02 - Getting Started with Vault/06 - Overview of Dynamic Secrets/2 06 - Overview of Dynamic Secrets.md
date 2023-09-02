@@ -18,7 +18,7 @@ You done?: 🌚🌚🌚🌚
 
 ### Example - AWS Secret Engine
 
-- Assuming a user has created a role via the AWS secret engine - if a developer navigates to the role under the AWS secret engine and selects “generate” - a set of dynamic AWS credentials are created for the user and is added to “your” AWS account under IAM.
+- Assuming a user has created a role via the AWS secret engine - if a developer navigates to the role under the AWS secret engine and selects "generate" - a set of dynamic AWS credentials are created for the user and is added to "your" AWS account under IAM.
 
 ![Untitled](./2%2006%20-%20Overview%20of%20Dynamic%20Secrets/Untitled.png)
 

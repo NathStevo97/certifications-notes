@@ -15,7 +15,7 @@ Tags: Done
 # Granting Access to Cluster Resources
 
 - To allow authorization of an authenticated user, RoleBindings or CLusterRoleBindings need to be utilised.
-- These are standard Kubernetes resources that allow permissions from a “role” or “clusterrole” to be bound to a user account.
+- These are standard Kubernetes resources that allow permissions from a "role" or "clusterrole" to be bound to a user account.
 - Example:
 
 ![Untitled](3%204%20-%20Managing%20Tanzu%20Kubernetes%20Clusters%20c776382bb74e4942bd263b1c6ffd07e5/Untitled.png)
@@ -34,7 +34,7 @@ Tags: Done
 - As management clusters run in the `tkg-system` namespace, the `--namespace` flag must be specified when scaling a management cluster.
 - Example:
 `tanzu cluster scale <mgmt cluster name> --controlplane-machine-count <value> --worker-machine-count <value> --namespace <namespace>`
-- Scaling management clusters isn’t typically needed - management workloads don’t consume much resources.
+- Scaling management clusters isn't typically needed - management workloads don't consume much resources.
 
 # Cluster Autoscaler
 

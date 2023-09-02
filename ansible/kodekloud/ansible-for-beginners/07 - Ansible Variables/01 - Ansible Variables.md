@@ -17,13 +17,13 @@ You done?: 🌚🌚🌚🌚
 
 ![Unvariablised Playbook](images/playbook-no-vars.png)
 
-- Alternatively, they can be included in a separate variables file and referenced by “incudes” functions, more on that in a later section:
+- Alternatively, they can be included in a separate variables file and referenced by "incudes" functions, more on that in a later section:
 
 ![Variable Example](images/var-example.png)
 
 ## Using Variables
 
-- To use variables, enter the variable name in ‘{{}}’ i.e.
+- To use variables, enter the variable name in ‘{{}}' i.e.
 
 ![Playbook-Vars Example](images/playbook-vars-example.png)
 

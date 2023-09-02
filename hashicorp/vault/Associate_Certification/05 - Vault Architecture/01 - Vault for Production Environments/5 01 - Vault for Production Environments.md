@@ -34,7 +34,7 @@ listener "tcp" {
 ```
 
 - Once setup, the Vault can be started using the config file: `vault server -config /path/to file`
-- As we’re using a new backend, once the Vault server is started, it must be initialized.
+- As we're using a new backend, once the Vault server is started, it must be initialized.
     - In this step, encryption keys are generated, as well as unseal keys and the initial root token.
     - To do so: `vault operator init`
     - This will output the Unseal keys and Root Tokens.
@@ -50,18 +50,18 @@ listener "tcp" {
     1. Storage (required)
     2. Listener (required)
     3. Telemetry (optional)
-    
+
     ```go
     storage "file" {
       path = "/path/to/vault/data" # path will be created if it doesn't exist!
     }
-    
+
     listener "tcp" {
       address      = "0.0.0.0:8200"
       tls_disable  = 1 # shouldn't be disabled when running in production
     }
     ```
-    
+
 2. Starting the server: `vault server -config /path/to/config.hcl`
 3. Initialize the Vault:
     1. Ensure `VAULT_ADDR` environment variable is set
@@ -81,7 +81,7 @@ listener "tcp" {
 
 ## Verifying Storage Persistence
 
-- As production mode persists storage, if Vault is shut down, the data isn’t deleted.
+- As production mode persists storage, if Vault is shut down, the data isn't deleted.
 - Upon restart of Vault, the process outlined previously must be followed to unseal the vault and verify data persistence.
 
 <aside>

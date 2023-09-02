@@ -13,7 +13,7 @@ You done?: 🌚🌚🌚🌚
 - Many applications require proper encryption/decryption functionalities
 - Building the custom logic to handle this can add excessive workloads to application developers, particularly if they lack expertise in this area.
 - Vault has a functionality to support this in its **transit secrets engine -** which handles cryptographic functions on data-in-transit.
-- Vault doesn’t store the data sent to the secrets engine, so it can also be viewed as encryption as a service.
+- Vault doesn't store the data sent to the secrets engine, so it can also be viewed as encryption as a service.
 - Therefore, instead of developing and managing cryptographic-related operations, application developers can get Vault to cover this.
 
 ![Untitled](./2%2010%20-%20Transit%20Secret%20Engine/Untitled.png)
@@ -42,7 +42,7 @@ You done?: 🌚🌚🌚🌚
 
 - When data is encrypted, the encryption key to encrypt plaintext is referred to as a data key.
 - This data key needs to be protected so that the encrypted data cannot be decrypted easily by an unauthorized party.
-- When the data is large, naturally we wouldn’t want to send it over traditional network means for encryption/decryption operations as this would increase latency.
+- When the data is large, naturally we wouldn't want to send it over traditional network means for encryption/decryption operations as this would increase latency.
 - The transit engine allows generation of a data key that ca be used locally for encryption and decryption operations.
 
 ![Untitled](./2%2010%20-%20Transit%20Secret%20Engine//Untitled%203.png)
@@ -61,11 +61,11 @@ You done?: 🌚🌚🌚🌚
 
 ## Key Rotation
 
-- It’s not recommended to encrypt all data with the same encryption keys for obvious reasons.
+- It's not recommended to encrypt all data with the same encryption keys for obvious reasons.
 - Transit Engine allows a rotation of the encryption key.
 - Vault maintains the versioned keyring and the vault operator can decide the minimum version allowed for decryption operations e.g. only the latest could be allowed.
 - When creating an encryption key, the format will always be `vault:v<number>:<ciphertext>` - the number following the v denotes the version.
-- To rotate the encryption key - simply select “rotate encryption key” - for future encryption options you will then be allowed to select which version you wish to encrypt the data with.
+- To rotate the encryption key - simply select "rotate encryption key" - for future encryption options you will then be allowed to select which version you wish to encrypt the data with.
 
 ## Minimum Decrypt Version
 

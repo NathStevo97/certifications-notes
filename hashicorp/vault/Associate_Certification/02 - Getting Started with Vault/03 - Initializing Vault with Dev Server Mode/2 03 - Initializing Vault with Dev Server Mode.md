@@ -16,7 +16,7 @@ You done?: 🔥🔥🔥🔥
         - Very insecure
         - All data is stored in-memory ⇒ Any data stored will be lost upon restart
     - Prod
-- Vault can be started as a server in “dev” mode via the following command:
+- Vault can be started as a server in "dev" mode via the following command:
 
 ```bash
 vault server -dev

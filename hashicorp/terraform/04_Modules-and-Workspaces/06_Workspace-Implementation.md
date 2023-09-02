@@ -4,7 +4,7 @@
 - Rather than having separate variables files, which would be hard to track and maintain, one can use a standalone variables file in a similar manner to the following:
 
 ```go
-variable “instance_type” {
+variable "instance_type" {
     type = "map"
     default = {
         workspace1 = value1

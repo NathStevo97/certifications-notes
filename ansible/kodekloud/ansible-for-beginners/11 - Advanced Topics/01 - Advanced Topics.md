@@ -14,7 +14,7 @@ You done?: 🌚🌚🌚🌚
 - This does not mean that Windows cannot be targets of Ansible
 - Ansible can still connect to a Windows host by WinRM
 - To allow this, the follwing requirements must be met on the control machine:
-    - pywinrm module installed - pip instlal “pywinrm≥0.2.2”
+    - pywinrm module installed - pip instlal "pywinrm≥0.2.2"
     - Setup WinRM - example scripts available online e.g. ConfigureRemotingForAnsible.ps1
     - Use / Configure other methods of authentication e.g. Basic / Certificate / Kerberos
 - Additional information available in the Windows Support section of the Ansible documentation.
@@ -33,7 +33,7 @@ You done?: 🌚🌚🌚🌚
 - Have previously seen only [Localhost](http://Localhost) as the target host for playbooks
 - Alternative options are available:
     - Host1, Host2, Host3
-    - Group1, Host1 (where host1 isn’t part of group1)
+    - Group1, Host1 (where host1 isn't part of group1)
     - Host*
     - *company.com
 - Additional options are available via the Ansible documentation.
@@ -42,7 +42,7 @@ You done?: 🌚🌚🌚🌚
 
 ## Dynamic Inventory
 
-- It’s not always necessary to define information in inventory files
+- It's not always necessary to define information in inventory files
 - If the project was to be integrated to a new environment, the inventory file would have to change completely.
 - To overcome this, one can make an inventory Dynamic
     - Instead of specifying the inventory.txt, you would specify a script called inventory.py

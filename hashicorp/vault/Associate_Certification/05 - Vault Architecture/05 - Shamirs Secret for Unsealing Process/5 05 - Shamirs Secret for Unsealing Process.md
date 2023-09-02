@@ -14,7 +14,7 @@ You done?: 🌚🌚🌚🌚
 - Any data stored is within the encrypted state.
 - When vault is initialized, it generates an encryption key to protect all data stored within.
     - This key is then protected by a master key
-- Vault then uses Shamir’s secret sharing algorithm to split the master key into 5 separate shares, where any 3 of which can be used to reconstruct the master key.
+- Vault then uses Shamir's secret sharing algorithm to split the master key into 5 separate shares, where any 3 of which can be used to reconstruct the master key.
     - This is why 3 keys must be used to unseal the vault.
 
 ## Notes:
@@ -25,7 +25,7 @@ You done?: 🌚🌚🌚🌚
 
 ## Seal Stanza
 
-- In the Vault server config file, the particular seal type can be configured if usage of Shamir’s technique is not desired.
+- In the Vault server config file, the particular seal type can be configured if usage of Shamir's technique is not desired.
 
 ```go
 seal [name] {
@@ -33,6 +33,6 @@ seal [name] {
 }
 ```
 
-- This is optional configuration -  by default Shamir’s algorithm will be used if not configured.
+- This is optional configuration -  by default Shamir's algorithm will be used if not configured.
     - Most people tend to use this by default.
 - Alternatives could include HSM or Cloud Key Management Solutions e.g. AWS KMS.

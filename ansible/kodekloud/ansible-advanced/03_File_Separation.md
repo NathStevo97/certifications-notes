@@ -30,7 +30,7 @@ ansible_host: <host IP Address>
 
 ## 3.1.2 - Include
 
-- If you ever have a set of tasks that can be re-used, it’s often beneficial to split these sets of actions into tasks.
+- If you ever have a set of tasks that can be re-used, it's often beneficial to split these sets of actions into tasks.
 - In the case of the simple-webapp example, you could have:
     - Tasks to install the Database
     - Tasks to set up the web server

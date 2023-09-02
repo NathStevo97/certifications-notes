@@ -52,7 +52,7 @@ Example playbook to execute the date command and run the cat command on a desire
 
 ---
 
- 
+
 
 ### Service
 
@@ -61,17 +61,17 @@ Example playbook to execute the date command and run the cat command on a desire
 
 ![Service Example](images/service-example.png)
 
-- **Question:** Why write the state as “started” and not “start”?
-    - Not instructing ansible to start the service, we are asking ansible to ensure that it is started i.e. if it’s not started - start it
+- **Question:** Why write the state as "started" and not "start"?
+    - Not instructing ansible to start the service, we are asking ansible to ensure that it is started i.e. if it's not started - start it
     - This leads to the idempotency of ansible modules:
         - Idempotency - An operation is idempotent if the result of performing it once is exactly the same as the result of performing it repeatedly without any intervening actions
-    - In general, Ansible’s idea is to be able to run a playbook, when running it again, everything should return “as expected”, if not, Ansible will make it so.
+    - In general, Ansible's idea is to be able to run a playbook, when running it again, everything should return "as expected", if not, Ansible will make it so.
 
 ---
 
 ### Lineinfile
 
-- Searches for a line in a file and replaces it or adds it if it doesn’t exist
+- Searches for a line in a file and replaces it or adds it if it doesn't exist
 - Example playbook:
 
 ![LineInFile Example](images/lineinfile-example.png)
@@ -80,4 +80,4 @@ Example playbook to execute the date command and run the cat command on a desire
 
 ![LineInFile Script Example](images/lineinfile-script-example.png)
 
-- However, this would repeatedly add the same entry to /etc/resolv.conf rather than replace it or not add it if found. By contrast the idempotency of Ansible means that if this task is ran as part of a playbook, the entry is added once and only once if it’s not found.
+- However, this would repeatedly add the same entry to /etc/resolv.conf rather than replace it or not add it if found. By contrast the idempotency of Ansible means that if this task is ran as part of a playbook, the entry is added once and only once if it's not found.

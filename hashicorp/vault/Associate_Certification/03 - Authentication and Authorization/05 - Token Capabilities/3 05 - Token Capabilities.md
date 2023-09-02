@@ -15,8 +15,8 @@ You done?: 🌚🌚🌚🌚
     - `vault token capabilities sys`
     - `vault token capabilities <path>`
 - When using this, if you you do not explicitly specify a token, Vault will assume the token of the user making the request is the token to be checked.
-- If a token is provided as an argument, the “/sys/capabilities” endpoint and permission is used.
-- If no token is provided, the “/sys/capabilities-self” endpoint and permission is used with the locally authenticated token
+- If a token is provided as an argument, the "/sys/capabilities" endpoint and permission is used.
+- If no token is provided, the "/sys/capabilities-self" endpoint and permission is used with the locally authenticated token
 - To provide the token as an argument, simply add the token prior to the <path>
 
 ---

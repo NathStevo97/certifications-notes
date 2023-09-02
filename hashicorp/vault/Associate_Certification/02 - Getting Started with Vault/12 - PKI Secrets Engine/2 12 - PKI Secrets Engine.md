@@ -39,7 +39,7 @@ openssl x509 -req -in ca.csr -signkey ca.key -CAcreateserial -out ca.crt -days 1
 
 - The PKI Secrets Engine Provided by HashiCorp Vault aims to simplify this process by generating dynamic X509 certificates.
     - This removes the need for manual generation of certificates as outlined in the steps above - Vault acts as the CA.
-- PKI Secrets Engines can be implemented easily enough via the Vault UI. Once done, selecting “issue certificate” and the common name will allow generation of the certificate.
+- PKI Secrets Engines can be implemented easily enough via the Vault UI. Once done, selecting "issue certificate" and the common name will allow generation of the certificate.
 
 ## Benefits of PKI In Vault
 

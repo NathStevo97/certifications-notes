@@ -6,7 +6,7 @@ Tags: Done
 
 ## Security and Architecture overview
 
-- All AWS users must remain in line with AWS’s Acceptable Use Policy - determines acceptable / unacceptable usage.
+- All AWS users must remain in line with AWS's Acceptable Use Policy - determines acceptable / unacceptable usage.
 - Unacceptable usage includes:
   - Sending unsolicited mass emails
   - Hosting or distributing harmful content
@@ -87,8 +87,8 @@ Tags: Done
 ### Scenario 2
 
 - Personal information stored in their system
-- What’s the responsibility for security
-- What’s their responsibility? Review the Shared responsibility model - Shared with AWS - the company is responsible for the security and compliance of anything they do on AWS with services and resources.
+- What's the responsibility for security
+- What's their responsibility? Review the Shared responsibility model - Shared with AWS - the company is responsible for the security and compliance of anything they do on AWS with services and resources.
 
 ### Scenario 3
 
@@ -573,8 +573,8 @@ Tags: Done
   - Review architectural principles for fault tolerance and HA
   - Analyze scalability approaches
 - Think about the intent of each question
-- What’s required for the answer? MCQ, MAQ?
+- What's required for the answer? MCQ, MAQ?
 - Can always come back to questions if required.
-- Guess if don’t know - better than nothing
+- Guess if don't know - better than nothing
 
 ## Important Next Steps

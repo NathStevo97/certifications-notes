@@ -16,7 +16,7 @@ You done?: 🌚🌚🌚🌚
 ## TTL Dependency
 
 - TTLs are dependent on a combination of multiple factors, such as:
-    - The system’s max TTL - 32 days
+    - The system's max TTL - 32 days
         - This can be configured in Vaults configuration file.
     - The max TTL set on a mount using mount tuning
     - A value suggested by the auth method issuing the token.

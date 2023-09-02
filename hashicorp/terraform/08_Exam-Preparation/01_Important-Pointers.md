@@ -27,7 +27,7 @@ terraform.tfstate
 </details>
 
 <details>
-<summary>When referencing a file, for terraform 0.11, it would follow a format similar to ${file(“path/to/file”)}, how does this translate to terraform v0.12?</summary>
+<summary>When referencing a file, for terraform 0.11, it would follow a format similar to ${file("path/to/file")}, how does this translate to terraform v0.12?</summary>
 <br>
 file("path/to/file")
 </details>

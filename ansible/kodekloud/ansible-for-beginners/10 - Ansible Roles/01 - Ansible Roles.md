@@ -24,7 +24,7 @@ You done?: 🌚🌚🌚🌚
 ![Playbook-Example](images/playbook-example.png)
 
 - If the tasks can be done on a Playbook, why are roles required?
-- Whilst it’s true that you could use a playbook that you can share with others, there may be changes required for each user.
+- Whilst it's true that you could use a playbook that you can share with others, there may be changes required for each user.
 - Instead, one can package this playbook as a role, which can then be called in a playbook for easier reusability
 
 ![Role Example](images/role-example.png)
@@ -55,7 +55,7 @@ ansible-galaxy init <role-name>
     - One option would be to create a designated directory for the roles
     - Ansible by default will look in /etc/ansible/roles
 - Roles can then be shared via GitHub in Ansible Galaxy
-- Ansible-galaxy’s UI or CLI have search functionality to help look for “suitable” roles for users.
+- Ansible-galaxy's UI or CLI have search functionality to help look for "suitable" roles for users.
 - To install a role:
 
 ```bash

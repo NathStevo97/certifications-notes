@@ -11,7 +11,7 @@ specific to the particular provider e.g. for AWS:
   - Aws_instance - Virtual Machine/Instance
   - Aws_alp - Application load balancer
   - Iam_user - Identification Application Managment User
-- The above resources couldn’t be provisioned by e.g. Azure with this syntax, would have to use the provided syntax for Azure
+- The above resources couldn't be provisioned by e.g. Azure with this syntax, would have to use the provided syntax for Azure
 - Consider the following example:
 
 ```go

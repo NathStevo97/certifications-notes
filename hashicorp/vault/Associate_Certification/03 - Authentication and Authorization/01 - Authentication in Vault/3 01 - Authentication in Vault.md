@@ -10,8 +10,8 @@ You done?: 🌚🌚🌚🌚
 
 # Notes
 
-- Authentication is the process of recognizing a user’s identity. It’s typically based on various approaches e.g. username/passwords or tokens.
-- In Vault it’s no different - you have multiple ways to authenticate, including:
+- Authentication is the process of recognizing a user's identity. It's typically based on various approaches e.g. username/passwords or tokens.
+- In Vault it's no different - you have multiple ways to authenticate, including:
     - Token
     - Username
     - JWT
@@ -21,7 +21,7 @@ You done?: 🌚🌚🌚🌚
 ![Untitled](./3%2001%20-%20Authentication%20in%20Vault//Untitled.png)
 
 - Based on the above screenshot, one can see that only token-based authentication is allowed for this Vault instance.
-- Selecting “Enable an Authentication method” - you are presented with a multitude of other options, including JWT and TLS Certificates as discussed, but as well as:
+- Selecting "Enable an Authentication method" - you are presented with a multitude of other options, including JWT and TLS Certificates as discussed, but as well as:
     - AWS
     - Azure
     - GitHub
@@ -37,5 +37,5 @@ vault login -method=userpass username=admin password=password
 vault login -method=<method path> <parameters>
 ```
 
-- Once authenticated, you will be presented with details regarding the user’s access credentials e.g. token, token duration, policies assigned, etc.
+- Once authenticated, you will be presented with details regarding the user's access credentials e.g. token, token duration, policies assigned, etc.
 - Note: any tokens displayed will be stored in the `token helper` - this will prevent the need to re-provide the token.

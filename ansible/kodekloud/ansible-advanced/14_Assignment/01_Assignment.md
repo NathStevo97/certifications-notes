@@ -12,7 +12,7 @@ Status: Done
 - Send out a notification email upon playbook completion, with login details for the server access
 
 - Servers can be on any suitable cloud provider or vmware
-- Adhere to distributed deployment model - we don’t do monolithic
+- Adhere to distributed deployment model - we don't do monolithic
 - Use any suitable load balancer e.g. AWS Elastic Load Balancing, Nginx, HAProxy
 
 ![Untitled](img/Untitled.png)

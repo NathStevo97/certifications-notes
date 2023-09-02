@@ -14,8 +14,8 @@ You done?: 🌚🌚🌚🌚
 
 ![Separate Playbooks](images/two-scenarios.png)
 
-- Rather than have two separate playbooks for this same task, it’s more advisable to bring the task into one playbook and use a conditional to perform the appropriate module.
-- Conditionals are typically used via “when” statements e.g.:
+- Rather than have two separate playbooks for this same task, it's more advisable to bring the task into one playbook and use a conditional to perform the appropriate module.
+- Conditionals are typically used via "when" statements e.g.:
 
 ![Conditional Example](images/conditional-example.png)
 

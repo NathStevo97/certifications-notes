@@ -35,9 +35,9 @@ applications are container-based
 - The Kubernetes dashboard must be running on a port somewhere, run `sudo
 iptables -L -t nat | grep kubernetes-dashboard`
   - Shows dashboard running on 30080
-  - Dashboard can be accessed and viewed easily if there’s no authentication
+  - Dashboard can be accessed and viewed easily if there's no authentication
 and security controls setup
   - The dashboard provides information about pretty much everything within your Kubernetes cluster relating to storage, workloads, etc
-  - Using this, information can be identified for the database container such as the authentication parameters, in this case they’re listed as environment variables
+  - Using this, information can be identified for the database container such as the authentication parameters, in this case they're listed as environment variables
   - From here the database container can be accessed and manipulated to the hacker's desire
 - ALL OF THIS can be resolved via implementation of Kubernetes security measures discussed within this course.

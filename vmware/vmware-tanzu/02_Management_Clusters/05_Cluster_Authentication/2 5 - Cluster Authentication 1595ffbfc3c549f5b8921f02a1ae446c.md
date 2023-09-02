@@ -11,7 +11,7 @@ Tags: Done
 
 # External Authentication
 
-- Users aren’t directly managed or authenticated by Kubernetes
+- Users aren't directly managed or authenticated by Kubernetes
 - An external identity service must be used to generate trusted tokens or certificates for users to communicate with the Kubernetes API server
 - Kubernetes supports OIDC tokens as a way to identify users accessing the cluster.
 
@@ -27,7 +27,7 @@ Tags: Done
 
 # KubeConfig File Setup - Pinniped
 
-- When Pinniped authentication is enabled, the `tanzu cluster kubeconfig get` command returns a kubeconfig file that’s configured to run the Tanzu pinniped-auth plugin
+- When Pinniped authentication is enabled, the `tanzu cluster kubeconfig get` command returns a kubeconfig file that's configured to run the Tanzu pinniped-auth plugin
 - The plugin initiates the Pinniped authentication workflow
     - Users will be redirected to the Pinniped supervisor endpoint on the management cluster
 
@@ -38,7 +38,7 @@ Tags: Done
 ![Untitled](2%205%20-%20Cluster%20Authentication%201595ffbfc3c549f5b8921f02a1ae446c/Untitled%201.png)
 
 1. Kubectl calls the Tanzu CLI
-2. Tanzu CLI realises that the user requesting doesn’t have a token for authentication; opens a web browser to the Pinniped supervisor - redirecting to the Dex Login Page
+2. Tanzu CLI realises that the user requesting doesn't have a token for authentication; opens a web browser to the Pinniped supervisor - redirecting to the Dex Login Page
 3. The user provides their LDAP credentials and Dex authenticates with the LDAP server → Redirecting to Pinniped Supervisor
 
 ![Untitled](2%205%20-%20Cluster%20Authentication%201595ffbfc3c549f5b8921f02a1ae446c/Untitled%202.png)

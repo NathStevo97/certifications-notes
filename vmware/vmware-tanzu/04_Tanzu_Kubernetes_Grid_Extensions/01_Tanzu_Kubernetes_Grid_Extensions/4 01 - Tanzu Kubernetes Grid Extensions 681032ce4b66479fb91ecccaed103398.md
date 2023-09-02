@@ -32,7 +32,7 @@ Tags: Done
 
 - VMware builds all container images used by Tanzu Kubernetes Grid and TKG extensions
 - All container images are hosted on projects.registry.vmware.com
-    - An instance of the Harbor image registry that’s managed by VMware
+    - An instance of the Harbor image registry that's managed by VMware
 - For internet-restricted environments, container images can be copied to an accessible image registry
     - The extension manifest must then be updated to include the specific image registry
 
@@ -55,7 +55,7 @@ Tags: Done
 - Extensions are configured by creating a Kubernetes secret containing related configuration data
 - The configuration file for each extension is defined in a file of format `<extension>-data-values.yaml` - this is used to create a Kubernetes secret named `<extension>-data-values`
 - When kapp-controller deploys an extension, it reads the secret configuration to apply it to the extension
-- Changes to the secret resource will automatically be picked up by the kapp-controller once the secret’s data is updated.
+- Changes to the secret resource will automatically be picked up by the kapp-controller once the secret's data is updated.
 
 # Cert-Manager
 
@@ -64,7 +64,7 @@ Tags: Done
     - Add certificates and certificate issuers as resource types in Kubernetes clusters
     - Simplifies the process of obtaining/renewing/using certificates
     - Allows generation of certificates internally and connection to external services (e.g. Lets Encrypt) to request certifcates
-- It’s not considered a TKG extension outright, however it is included in the extensions bundle as Contour, Grafana, Prometheus and Harbor all depend on its functionality to work.
+- It's not considered a TKG extension outright, however it is included in the extensions bundle as Contour, Grafana, Prometheus and Harbor all depend on its functionality to work.
 
 # Deleting Extensions
 

@@ -33,12 +33,12 @@ You done?: 🔥🔥🔥🔥
 
 - Credential request is sent to Vault
 - Vault immediately generates the credentials for the user
-- This is hugely beneficial as it doesn’t depend on database admins generating the credentials.
+- This is hugely beneficial as it doesn't depend on database admins generating the credentials.
 - Additionally, Vault will monitor the timeframe of these credentials - if the Time-To-Live (TTL) for the credentials passes, Vault will automatically revoke these credentials - the user will then need to generate new credentials.
 
 ---
 
- 
+
 
 ## Course Disclaimers:
 

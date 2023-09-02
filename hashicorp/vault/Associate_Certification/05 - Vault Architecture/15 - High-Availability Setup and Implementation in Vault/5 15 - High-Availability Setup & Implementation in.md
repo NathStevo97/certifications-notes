@@ -12,7 +12,7 @@ You done?: 🌚🌚🌚🌚
 
 - In general, running a single instance of anything is risky. Vault is no exception.
 - Vault supports a multi-server mode for High-Availability. This further protects organisations against outages by running multiple servers.
-    - The data will be replicated across each based on the “leader”.
+    - The data will be replicated across each based on the "leader".
 
 <aside>
 💡 High-Availability IS STORAGE BACKEND DEPENDENT - Integrated Storage is also available to support this.
@@ -34,7 +34,7 @@ cluster_addr = "http://127.0.0.1:8201"
 
 - Start three separate instances of Vault with the above config: `vault server -config=/path/to/config.hcl`
 - List the raft peers: `vault operator raft list-peers`
-    - One will be noted as “leader” under state
+    - One will be noted as "leader" under state
 - Run a test command in the leader node to store data:
 `vault kv put secret/dbcreds admin=password`
 - On one of the follower nodes, test access to the secrets: `vault kv get secret/dbcreds`
@@ -73,6 +73,6 @@ cluster_addr = "http://127.0.0.1:8201"
 ## Important Pointers:
 
 - To be highly available, one of the Vault server nodes grabs a lock within the data store.
-- The successful server node becomes the “active” node - all others become standby nodes.
+- The successful server node becomes the "active" node - all others become standby nodes.
 - At this point, if the standby nodes receive a request, they will either forward the request or redirect the client depending on the configuration.
 - Nodes can be stepped down from active duty by using the `vault operator step-down <address>` command.

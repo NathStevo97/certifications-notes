@@ -23,7 +23,7 @@ Status: Done
   - rolename 2
 ```
 
-- Doing so will include everything defined under the role folder, removing the need for “includes” statements.
+- Doing so will include everything defined under the role folder, removing the need for "includes" statements.
 - This keeps the playbook simple, and allows the role to be reused elsewhere.
 - Roles can then be shared to ansible-galaxy for use.
 - Create a role with `ansible-galaxy init <rolename>`  or create the folder structure manually

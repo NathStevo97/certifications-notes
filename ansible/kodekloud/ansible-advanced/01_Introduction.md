@@ -74,7 +74,7 @@ ansible <target hostname> -m ping -i inventory.txt
 
 - Ensure running a machine (VM or typical host) with Ansible and Docker installed.
 - One can then deploy multiple containers with base ubuntu images. ([Example Image](https://github.com/mmumshad/ubuntu-ssh-enabled))
-- The containers will be auto-assigned an IP based on Docker’s internal network (172.17.0.<x> range)
+- The containers will be auto-assigned an IP based on Docker's internal network (172.17.0.<x> range)
 - Verify installation via `ansible` and `docker`
 - Create docker containers: `docker run -it -d  <image>`  (or use a Docker-compose file)
 - Use `docker inspect <container id>` to get the container IPs

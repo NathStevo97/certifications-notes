@@ -117,7 +117,7 @@ Tags: Done
   - **Savings Plan**
     - Similar to reserved instances
     - Supports compute with EC2, Fargate and Lambda
-    - Unlike reserved, it doesn’t reserve capacity
+    - Unlike reserved, it doesn't reserve capacity
     - Provides up to 72% savings
     - 1-3 Year terms available.
   - **Spot**
@@ -150,7 +150,7 @@ Tags: Done
   - User data - commands to run when starting
 - Configure storage
 - Configure network security group
-  - For general purpose testing, allow only “my IP” to access e.g. for SSH
+  - For general purpose testing, allow only "my IP" to access e.g. for SSH
 - Summary & Launch
 - Note: a key pair should be selected or created as appropriate.
 - Once launch, find public dns and access via browser to validate.
@@ -318,7 +318,7 @@ Tags: Done
 
 ## AWS Global Accelerator
 
-- Networking service that sends user traffic through Amazon’s global network infrastructure.
+- Networking service that sends user traffic through Amazon's global network infrastructure.
 - Utilizes IP addresses that route to edge locations
 - When request reaches edge locations, traffic is routed through AWS network
 - Routes requests to many resources including
@@ -368,7 +368,7 @@ Tags: Done
 
 ## Amazon S3 Overview
 
-- Files stored as objects in “buckets”
+- Files stored as objects in "buckets"
 - Provides different storage classes per use case
 - Data can be stored across multiple availability zones
 - Enables URL access for files
@@ -410,13 +410,13 @@ Tags: Done
     - Tags
     - Permissions
       - Enable public access (if acting as a public website)
-- Select bucket and upload desired files e.g. “index.html and logo”
+- Select bucket and upload desired files e.g. "index.html and logo"
 - Set the. permissions for users as required.
 - Configure the file storage classes as required e.g. storage, intelligent-tiering.
   - Encryption - Amazon S3 Master Key ensures encryption at-rest.
 - When viewing the files, each should come with an object URL
-- Configure the permissions as required e.g. “everyone read access for the object”
-- Under properties → Static website hosting → “use this bucket to host a website”
+- Configure the permissions as required e.g. "everyone read access for the object"
+- Under properties → Static website hosting → "use this bucket to host a website"
   - Select index file and error document where required.
   - Redirect rules are optional.
 - Once enabled, URL endpoint provided - permissions must be set to allow access
@@ -473,7 +473,7 @@ Tags: Done
 ## Data Transfer with AWS Snowball
 
 - Service to phyically migrate petabyte scale data to AWS
-- AWS snowmobille - “” for exobyte scale data
+- AWS snowmobille - "" for exobyte scale data
 - Snowball:
   - Designed for large scale data transfer
   - Supports petabyte-scale transfer
@@ -497,7 +497,7 @@ Tags: Done
 - S3 stores assets needed per tutorials
 - Assets very popular within the week of launch
 - Not popular a week after
-- What’s the most cost-effective solution whilst maintaining durability?
+- What's the most cost-effective solution whilst maintaining durability?
   - S3 Lifecycle rules with S3 Standard IA storage class
 
 ### Scenario 2
@@ -673,7 +673,7 @@ Tags: Done
 - Ecommerce building a custom platform
 - New functionality getting added
 - Aspects of the platform should listen for events like orders and refunds
-- Don’t know all elements that would need to respond to the events.
+- Don't know all elements that would need to respond to the events.
 - Recommended Service: Simple Messaging Service (SNS)
 
 ---
@@ -751,7 +751,7 @@ Resources:
 - Comprised of 3 mains ervices:
   - AWS OpsWork for Chef Automate
   - AWS OpsWork for Puppet Enterprise
-  - AWS OpsWork Stacks - Can define application in “layers” to then be managed by Chef/Puppet as appropriate.
+  - AWS OpsWork Stacks - Can define application in "layers" to then be managed by Chef/Puppet as appropriate.
 
 ## AWS Organizations and Control Tower
 

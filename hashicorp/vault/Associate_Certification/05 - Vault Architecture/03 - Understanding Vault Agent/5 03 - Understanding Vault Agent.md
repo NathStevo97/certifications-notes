@@ -29,7 +29,7 @@ The Vault agent works as follows:
 
 ## Running Vault Agent
 
-- To use the Vault agent, the binary can be ran in “agent mode”
+- To use the Vault agent, the binary can be ran in "agent mode"
 - To do so, run `vault agent config=<config file>`
     - The agent configuration file must specify the auth method and sink locations where the tokens are to be written.
 
@@ -37,7 +37,7 @@ The Vault agent works as follows:
 
 - When Vault is started in agent mode, it will attempt to get a Vault token via the auth method specified in the agent config file.
 - Upon successful authentication, the token is written to the sink locations.
-- Whenever the current token’s value changes; the agent writes to the sinks.
+- Whenever the current token's value changes; the agent writes to the sinks.
 
 ## Practical Example:
 

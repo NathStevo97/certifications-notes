@@ -14,9 +14,9 @@ Status: Done
 
 # Ignore Errors, Failed_When
 
-- If there’s any tasks you’re not concerned about throwing errors, add to a task: `ignore_errors: yes`
-- If there’s any tasks with specific fail conditions, add similar to:
-`failed_when: “<Error Condition>”`  - this requires a `register:` usage
+- If there's any tasks you're not concerned about throwing errors, add to a task: `ignore_errors: yes`
+- If there's any tasks with specific fail conditions, add similar to:
+`failed_when: "<Error Condition>"`  - this requires a `register:` usage
 - Example:
 
 ```yaml

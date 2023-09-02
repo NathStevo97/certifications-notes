@@ -53,7 +53,7 @@ Tags: Done
 
 - Trade capital expense for variable expense
   - No need for initial investment to build out a datacentre
-  - Only pay for the resources used and how long they’re used for
+  - Only pay for the resources used and how long they're used for
 - Economies of scale
   - AWS buys the datacentre resources on a large scale, allowing them to provision the resources on such a price - savings are passed to the customers
 - No need to guess capacity - cloud computing can allow scaling on demand.
@@ -71,7 +71,7 @@ The ability to acquire resources as needed and release when no longer required.
 
 **Reliability:**
 
-A solution’s ability to provide functionality for its users when needed.
+A solution's ability to provide functionality for its users when needed.
 
 </aside>
 
@@ -145,7 +145,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
   - All located within the geographic area of the AWS region (sub-regions effectively)
   - Have redundant power, networking and connectivity for disaster recovery / high availability purposes.
 - Example - US has 6 regions, each with at least 3 availability zones
-- **Availability:** The extent to which an application is fulfilling its intended purpose. Applications that are highly-available are built in a manner where a single failure won’t lessen its ability to be fully operational.
+- **Availability:** The extent to which an application is fulfilling its intended purpose. Applications that are highly-available are built in a manner where a single failure won't lessen its ability to be fully operational.
 
 ### Region and Availability Zone Naming
 
@@ -210,7 +210,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
 
 - Legacy applications transitioning to AWS
 - 99.5% uptime required
-- Don’t want issues at single datacentres to cause outages
+- Don't want issues at single datacentres to cause outages
 - What element of the global infrastructure will help?
   - Availability zones
 
@@ -239,7 +239,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
 
 ### Handling Demand in the Cloud
 
-- Companies in the cloud can ensure the capacity is always “just enough” to ensure the demand is met
+- Companies in the cloud can ensure the capacity is always "just enough" to ensure the demand is met
 - As the cloud resources are being leveraged, there is no CapEx costs, instead, the OpEx costs vary depending on the application usage adn the demand.
 
 ### Financial Implications
@@ -307,7 +307,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
 - Upfront, Monthly and Total 12 month costs are provided upon completion.
 - Any additional services can then be added to the estimate as required e.g. Amazon RDS for PostgreSQL
 - The estimate can then be exported or shared.
-- Additionally estimates can be grouped within the estimate e.g. group based on “application” or “function”.
+- Additionally estimates can be grouped within the estimate e.g. group based on "application" or "function".
 
 ## Reviewing Costs - Costs Explorer
 
@@ -418,7 +418,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
   - Shows summary and recommendation categories
   - Recommendations only provided based on checks available.
   - Details on recommended actions provided, with remediation steps.
-  - Will show checks which aren’t included for reference.
+  - Will show checks which aren't included for reference.
   - Checks can be downloaded.
 - **AWS Health Dashboard**
   - Service health dashboard

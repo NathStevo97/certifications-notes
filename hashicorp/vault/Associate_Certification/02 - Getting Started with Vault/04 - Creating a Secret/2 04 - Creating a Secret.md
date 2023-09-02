@@ -10,7 +10,7 @@ You done?: 🔥🔥🔥🔥
 
 # Notes
 
-- One of Vault’s key features is to read and write arbitrary secrets securely.
+- One of Vault's key features is to read and write arbitrary secrets securely.
 - It does so utilising Secrets engines - these are components responsible for the storage, generation, or encryption of data.
 - Secrets can be stored based on a specific secret engine - each engine offers particular features.
 

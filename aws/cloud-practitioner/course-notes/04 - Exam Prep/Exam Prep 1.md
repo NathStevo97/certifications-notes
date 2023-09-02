@@ -13,7 +13,7 @@ Rationale: Technically all, but by adopting IAC, infrastructure deployments are 
 Additional Notes:
 
 - Fault tolerance is not a pillar
-- Security and Cost Optimization aren’t fully related to IAC
+- Security and Cost Optimization aren't fully related to IAC
 
 ## Question 2
 
@@ -111,7 +111,7 @@ A - Duration (based on memory allocated)\
 
 D - Number of requests
 
-Rationale: If it’s a resource intensive Lambda AND frequently used then those require greater consideration.
+Rationale: If it's a resource intensive Lambda AND frequently used then those require greater consideration.
 
 No charges applied based on instances
 
@@ -119,7 +119,7 @@ No charges applied based on instances
 
 D - Loose Coupling
 
-Rationale: Avoid tight coupling, HA and Least Privilege Access don’t relate to the statement
+Rationale: Avoid tight coupling, HA and Least Privilege Access don't relate to the statement
 
 ## Question 16
 
@@ -151,7 +151,7 @@ C - Amazon DynamoDB
 
 B - Custom Software Development
 
-Rationale: TCO highlights areas of cost differences for on-prem vs cloud - question is asking “what is effectively gonna be the same”
+Rationale: TCO highlights areas of cost differences for on-prem vs cloud - question is asking "what is effectively gonna be the same"
 
 ## Question 22
 
@@ -160,7 +160,7 @@ Rationale: TCO highlights areas of cost differences for on-prem vs cloud - quest
 
 Rationale: Edge location is managed by AWS, as is datacenter connectivity
 
-*Got wrong initially 
+*Got wrong initially
 
 ## Question 23
 
@@ -212,7 +212,7 @@ A - AWS Trusted Advisor
 
 C - AWS Well-Architected Framework
 
-Rationale: Only one that makes sense for “before” deploying anything
+Rationale: Only one that makes sense for "before" deploying anything
 
 ## Question 33
 
@@ -354,15 +354,15 @@ Rationale: Customer data is handled by customer, Data center physical security a
 
 D - Reduced total cost of ownership (TCO)
 
-Rationale: Any increased costs goes against the question, we’re not ELIMINATING outright the Opex costs.
+Rationale: Any increased costs goes against the question, we're not ELIMINATING outright the Opex costs.
 
 # Questions 61-65
 
 ## Question 61
 
-B - AWS Config 
+B - AWS Config
 
-Rationale: All other services in the questions don’t provide the services required.
+Rationale: All other services in the questions don't provide the services required.
 
 ## Question 62
 
