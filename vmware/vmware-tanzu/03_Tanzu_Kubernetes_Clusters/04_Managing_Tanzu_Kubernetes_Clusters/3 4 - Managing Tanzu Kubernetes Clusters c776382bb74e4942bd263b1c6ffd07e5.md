@@ -25,7 +25,7 @@ Tags: Done
 - To scale clusters, use the `scale` command and include the required `controlplane-machine-count` and `worker-machine-count` values
 - Example:
 `tanzu cluster scale <cluster name> --controlplane-machine-count <value> --worker-machine-count <value>`
-    - From this, the Tanzu CLI modifies the Cluster API spec of the cluster; triggering the Cluster API controllers to create the new nodes
+  - From this, the Tanzu CLI modifies the Cluster API spec of the cluster; triggering the Cluster API controllers to create the new nodes
 - Scaling can be done up or down
 - Control plane nodes can ONLY be scaled to an ODD number of nodes - aims to prevent quorum issues during etcd leader elections.
 
@@ -40,7 +40,7 @@ Tags: Done
 
 - To enable Cluster Autoscaler for the workload cluster, various options prefixed with `AUTOSCALER_` must be specified in the configuration file used to deploy the cluster.
 - This feature works with the native Kubernetes Autoscaler feature.
-- https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscalerl
+- <https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscalerl>
 - Example parameters follow:
 
 ![Untitled](3%204%20-%20Managing%20Tanzu%20Kubernetes%20Clusters%20c776382bb74e4942bd263b1c6ffd07e5/Untitled%201.png)
@@ -51,17 +51,17 @@ Tags: Done
 
 - MachineHealthCheck - a controller that provides node health monitoring and auto-repair for Tanzu Kubernetes clusters.
 - Monitors for the following conditions:
-    - Ready State
-    - MemoryPressure
-    - DiskPressure
-    - PIDPressure
-    - NetworkUnavailable
+  - Ready State
+  - MemoryPressure
+  - DiskPressure
+  - PIDPressure
+  - NetworkUnavailable
 - If a node status reports the condition for a particular amount of time, the node is considered unhealthy and is recreated by Cluster API.
 
 # Configuring Machine Health Checks
 
 - Each created cluster must have `ENABLE_MGC` set to true or false to enable or disable MachineHealthCheck
-    - This can be modified by the Tanzu CLI
-    - `tanzu cluster machinehealthcheck set <parameters and args>`
+  - This can be modified by the Tanzu CLI
+  - `tanzu cluster machinehealthcheck set <parameters and args>`
 - Example: `tanzu cluster machinehealthcheck set <cluser name> --unhealthy-conditions "Ready:False:5m,Ready:Unknown:5m"`
-    - If False or Unknown is reported as the ready status for 5 mins, the node will be recreated.
+  - If False or Unknown is reported as the ready status for 5 mins, the node will be recreated.

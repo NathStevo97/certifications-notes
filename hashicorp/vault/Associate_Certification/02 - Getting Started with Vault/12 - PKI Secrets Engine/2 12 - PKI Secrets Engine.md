@@ -12,9 +12,9 @@ You done?: 🌚🌚🌚🌚
 
 - Disclaimer - PKI is a huge topic in itself, however for the purposes of the certification, you can only consider it at a high level.
 - Certificate Authority:
-    - Any entity that issues digital certificates
-    - Both the receiver and sender have a trusted relationship with the CA during the process.
-    - The certificate authority validates the address/domain being accessed and the users accessing the domain.
+  - Any entity that issues digital certificates
+  - Both the receiver and sender have a trusted relationship with the CA during the process.
+  - The certificate authority validates the address/domain being accessed and the users accessing the domain.
 - Typically, CAs work via the following process:
     1. Users/Entities generate a Certificate Signing Request (CSR)
         1. Generate public/private keys
@@ -38,7 +38,7 @@ openssl x509 -req -in ca.csr -signkey ca.key -CAcreateserial -out ca.crt -days 1
 ```
 
 - The PKI Secrets Engine Provided by HashiCorp Vault aims to simplify this process by generating dynamic X509 certificates.
-    - This removes the need for manual generation of certificates as outlined in the steps above - Vault acts as the CA.
+  - This removes the need for manual generation of certificates as outlined in the steps above - Vault acts as the CA.
 - PKI Secrets Engines can be implemented easily enough via the Vault UI. Once done, selecting "issue certificate" and the common name will allow generation of the certificate.
 
 ## Benefits of PKI In Vault

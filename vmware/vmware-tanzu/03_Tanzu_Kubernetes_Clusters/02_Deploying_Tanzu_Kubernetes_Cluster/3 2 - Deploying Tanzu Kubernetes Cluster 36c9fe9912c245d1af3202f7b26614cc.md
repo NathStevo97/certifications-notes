@@ -23,7 +23,7 @@ The following  flags can be added to the `tanzu cluster create` command:
 # Creating Tanzu Kubernetes Clusters
 
 - When running `tanzu cluster create -f <file.yaml>`, the Tanzu CLI communicates with the Cluster API in the management cluster, which then uses the Cloud Infrastructure provider e.g. vSphere CAPV to deploy the Tanzu Kubernetes Cluster(s) required.
-    - This will use the configuration and deployment plans outlined e.g. deploy x control plane nodes, y  Worker nodes.
+  - This will use the configuration and deployment plans outlined e.g. deploy x control plane nodes, y  Worker nodes.
 - Once deployed, the cluster API will continuously compare the configuration in the Tanzu Kubernetes Cluster to manage and facilitate various operations.
 
 ![Untitled](3%202%20-%20Deploying%20Tanzu%20Kubernetes%20Cluster%2036c9fe9912c245d1af3202f7b26614cc/Untitled%202.png)
@@ -38,8 +38,8 @@ The following  flags can be added to the `tanzu cluster create` command:
 # Deploying Clusters with a High Availability Control Plane
 
 - The `CLUSTER_PLAN` parameter determines the number of control plane nodes:
-    - `dev` sets 1 control plane node
-    - `prod` deploys 3 control plane nodes and 3 worker nodes.
+  - `dev` sets 1 control plane node
+  - `prod` deploys 3 control plane nodes and 3 worker nodes.
 
 # Previewing the YAML File for Tanzu Kubernetes Clusters
 
@@ -55,7 +55,7 @@ The following  flags can be added to the `tanzu cluster create` command:
 # Deploying Clusters that Run a Specific Kubernetes Version
 
 - Each release of Tanzu Kubernetes Grid:
-    - provides a default Kubernetes version
-    - Supports a defined set of Kubernetes versions
+  - provides a default Kubernetes version
+  - Supports a defined set of Kubernetes versions
 - Example command to deploy with a specific version:
 `tanzu cluster create -f <cluster yaml> --tkr v1.19.9---vmware.2-tkg.1`

@@ -1,1 +1,56 @@
 # 7.4 - TLS In Kubernetes
+
+- In the previous section, three types of certificates were discussed, for the purposes
+of discussing them in Kubernetes, how they're referred to will change:
+  - Public and Private Keys used to secure connectivity between the likes of web
+browsers and servers: **Server Certificates**
+  - Certificate Authority Public and Private Keys for signing and validating
+certificates: **Root Certificates**
+  - Servers can request a client to verify themselves: **Client Certificates**
+- **Note:**
+  - Certificates with a public key are named with the extension `.crt` or `.pem`, with
+the prefix of whatever it is being communicated with
+  - Private keys will have the extension of either `.key` or `-key.pem`
+- All communication within a Kubernetes cluster must be secure, be it pods
+interacting with one another, services with their associated clients, or accessing the
+APIServer using the Kubectl utility
+- Secure TLS communication is a requirement
+- Therefore, it is required that the following are implemented:
+- Server Certificates for Servers
+  - Client Certificates for Clients
+
+## Server Components
+
+- Kube-API Server
+■ Exposes an HTTPS service that other components and external users
+use to manage the Kubernetes cluster
+■ Requires certificates and a key pair
+- apiserver.crt and apiserver.key
+  - ETCD Server
+■ Stores all information about the cluster
+■ Requires a certificate and key pair
+- Etcdserver.crt and apiserver.key
+  - Kubelet server:
+■ Exposes HHTPS API Endpoint that the Kube-API Server uses to interact
+with the worker nodes
+- Client Certificates:
+  - All of the following require access to the Kube-API Server
+  - Admin user
+■ Requires certificate and key pair to authenticate to the API Server
+■ admin.crt and admin.key
+  - Scheduler
+■ Client to the Kube-APIServer for object scheduling pods etc
+- scheduler.crt and scheduler.key
+  - Kube-Controller:
+■ controller-manager.crt and controller-manager.key
+  - Kube-Proxy
+■ kube-proxy.crt and kube-proxy.key
+- Note: The API Server is the only component that communicates with the ETCD
+server, which views the API server as a client
+  - The API server can use the same keys as before for serving itself as a service
+OR a new pair of certificates can be generated specifically for ETCD Server
+Authentication
+  - The same principle applies for the API Server connecting to the Kubelet
+service
+- To verify the certificates, a CA is required. Kubernetes requires at least 1 CA to be
+present; which has its own certificate and key (ca.crt and ca.key)

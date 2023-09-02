@@ -1,1 +1,0 @@
-# 7.12 - ClusterRoles and Rolebindings

@@ -13,9 +13,9 @@ You done?: 🌚🌚🌚🌚
 - Up until this point, Vault has been used in development mode only.
 - In this, all data is stored in-memory ONLY.
 - This is obviously not suitable for production, a new storage class is required. Vault supports a multitude of storage class options, such as:
-    - Filesystem
-    - S3 Bucket (AWS)
-    - Databases (MySQL, PostgreSQL, etc.)
+  - Filesystem
+  - S3 Bucket (AWS)
+  - Databases (MySQL, PostgreSQL, etc.)
 
 ## Deploying in Production Mode
 
@@ -24,7 +24,7 @@ You done?: 🌚🌚🌚🌚
 
 ```go
 storage "file" {
-	path = "/root/vault-data"
+ path = "/root/vault-data"
 }
 
 listener "tcp" {
@@ -35,17 +35,18 @@ listener "tcp" {
 
 - Once setup, the Vault can be started using the config file: `vault server -config /path/to file`
 - As we're using a new backend, once the Vault server is started, it must be initialized.
-    - In this step, encryption keys are generated, as well as unseal keys and the initial root token.
-    - To do so: `vault operator init`
-    - This will output the Unseal keys and Root Tokens.
+  - In this step, encryption keys are generated, as well as unseal keys and the initial root token.
+  - To do so: `vault operator init`
+  - This will output the Unseal keys and Root Tokens.
 - Once initialized, the Vault must be unsealed. This is true of every initialized Vault.
-    - Unsealing is required as Vault knows where to look in the particular storage backend, but it does not have the key to decrypting it and reading the data.
-    - To unseal the Vault: `vault operator unseal`
+  - Unsealing is required as Vault knows where to look in the particular storage backend, but it does not have the key to decrypting it and reading the data.
+  - To unseal the Vault: `vault operator unseal`
 
-## Practical Example:
+## Practical Example
 
 - For any VMs used, ensure that SSH port 22 is open for ease of use.
 - This example will be set up for Linux.
+
 1. Creating the config file. The following areas should be added:
     1. Storage (required)
     2. Listener (required)

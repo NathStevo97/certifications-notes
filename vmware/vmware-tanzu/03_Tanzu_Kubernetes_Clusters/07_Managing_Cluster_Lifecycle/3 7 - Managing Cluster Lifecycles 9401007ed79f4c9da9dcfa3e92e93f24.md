@@ -11,8 +11,8 @@ Tags: Done
 # Tanzu Kubernetes Cluster VMs
 
 - Depending on the plan used, the following VMs will be created:
-    - Control plan VMs: `<cluster name>-control-pane-......`
-    - Worker node VMs: `<cluster name>-md-0-........`
+  - Control plan VMs: `<cluster name>-control-pane-......`
+  - Worker node VMs: `<cluster name>-md-0-........`
 - There will always be one or more of each.
 
 # Upstream Kubernetes Components

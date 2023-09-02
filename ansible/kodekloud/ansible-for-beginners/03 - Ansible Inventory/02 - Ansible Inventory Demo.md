@@ -40,13 +40,13 @@ ansible-target1 | SUCCESS => {
 
 - Repeat for the second target machine.
 - Note, if SSH has not been successful for any of the target machines, this will fail.
-    - Alternatively, changes can be made to the /etc/ansible/ansible.cfg by uncommenting the line that asks "host key check
+  - Alternatively, changes can be made to the /etc/ansible/ansible.cfg by uncommenting the line that asks "host key check
 
     ---
 
     ---
 
-    ## Exercises
+## Exercises
 
     1. We have a sample inventory file with 3 servers listed. Add a fourth server by the name `server4.company.com`
 

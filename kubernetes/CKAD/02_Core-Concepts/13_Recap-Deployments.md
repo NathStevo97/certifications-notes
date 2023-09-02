@@ -44,7 +44,7 @@ spec:
       type: frontend
 ```
 
-- To create deployment: `kubectl creat -f <deployment>.yaml`
+- To create deployment: `kubectl create -f <deployment>.yaml`
 - View deployments: `kubectl get deployments`
 
 - Other commands: `kubectl get all` -> Display all Kubernetes objects

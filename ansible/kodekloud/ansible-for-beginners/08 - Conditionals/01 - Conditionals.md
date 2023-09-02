@@ -28,6 +28,6 @@ You done?: 🌚🌚🌚🌚
 ![Conditionals with Loops](images/conditional-loop.png)
 
 - Conditionals can also be used in conjunction with the outputs of prior tasks, this would require the use of the register module.
-    - The example causes a mail message to be sent to the email address provided only if the httpd service is shown to be down
+  - The example causes a mail message to be sent to the email address provided only if the httpd service is shown to be down
 
 ![Conditional Output](images/conditional-output.png)

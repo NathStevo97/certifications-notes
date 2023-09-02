@@ -26,7 +26,7 @@ key1: value1
 ```
 
 - Arrays:
-    - - indicates an element of an array
+  - - indicates an element of an array
 
 ```yaml
 array1:
@@ -35,7 +35,7 @@ array1:
 ```
 
 - Dictionaries:
-    - All entries in a particular dictionary offset by a set amount of spaces.
+  - All entries in a particular dictionary offset by a set amount of spaces.
 
 ```yaml
 dictionary:
@@ -48,10 +48,10 @@ dictionary2:
 
 - Spacing determines what data is a property of which, any values that are child properties of a particular parent must have the same amount of spaces before definition.
 - Note:
-    - You may have a need to store different sets of information for a particular "thing".
-    - Dictionary within dictionaries are used for using multiple values of different types
-    - Arrays used for different values of the same types
-    - Use a list of dictionaries for storing the same set of information for multiple entries of similar nature. In the example below, each element in the array is in fact a dictionary.
+  - You may have a need to store different sets of information for a particular "thing".
+  - Dictionary within dictionaries are used for using multiple values of different types
+  - Arrays used for different values of the same types
+  - Use a list of dictionaries for storing the same set of information for multiple entries of similar nature. In the example below, each element in the array is in fact a dictionary.
 
     ```yaml
     Fruits:
@@ -66,12 +66,12 @@ dictionary2:
     ```
 
 - When to use dictionaries v lists:
-    - Dictionary = Unordered data
-    - List = Ordered
+  - Dictionary = Unordered data
+  - List = Ordered
 
     ---
 
-    ## Exercises
+## Exercises
 
     1. Given a dictionary with the property `property1` and value `value1`
 

@@ -12,7 +12,7 @@ You done?: 🔥🔥🔥🔥
 
 - Vault is available on all major operating systems and can also be installed on platforms such as Kubernetes clusters.
 
-## Windows:
+## Windows
 
 - Download and extract binary file from [https://www.vaultproject.io/downloads](https://www.vaultproject.io/downloads)
 - Or use package managers such as Chocolatey:

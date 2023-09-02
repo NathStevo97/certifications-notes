@@ -20,11 +20,11 @@ You done?: 🔥🔥🔥🔥
 ## Secret Engine Types
 
 - Similar to Terraform Providers, multiple secret engine types are available, each providing particular features for specific use cases. Examples include:
-    - AWS
-    - Active Directory
-    - Key/Value
-    - SSH
-    - Azure
+  - AWS
+  - Active Directory
+  - Key/Value
+  - SSH
+  - Azure
 
 ## Secret Engine Paths
 
@@ -38,10 +38,10 @@ vault kv put <secret engine path>/<secret name> mykey=myvalue
 ## Secret Engine Lifecycle
 
 - In general, engines can be:
-    - Enabled
-    - Disabled
-    - Tuned
-    - Moved
+  - Enabled
+  - Disabled
+  - Tuned
+  - Moved
 
     | Option | Description |
     | --- | --- |
@@ -49,30 +49,30 @@ vault kv put <secret engine path>/<secret name> mykey=myvalue
     | Disable | Disables an existing secrets engine - this by default will revoke all secrets associated with the engine |
     | Move | Moves the path for an existing secrets engine, |
 
-    ## Example - Key/Value Secret Engine
+## Example - Key/Value Secret Engine
 
-    - The KV secrets engine stores arbitrary secrets within the configured physical storage for Vault
-    - Key names must always be strings
-    - Provides various functionalities e.g. versioning.
-    - Further information regarding secrets engines is available at [https://www.vaultproject.io/docs/secrets](https://www.vaultproject.io/docs/secrets)
+- The KV secrets engine stores arbitrary secrets within the configured physical storage for Vault
+- Key names must always be strings
+- Provides various functionalities e.g. versioning.
+- Further information regarding secrets engines is available at [https://www.vaultproject.io/docs/secrets](https://www.vaultproject.io/docs/secrets)
 
     > Note: There are two versions of the kv secrets engine, version 2 is the latest.
     >
-    - Engines can be enabled via the CLI or the UI.
+- Engines can be enabled via the CLI or the UI.
 
-    ### Enabling a Secrets Engine - UI
+### Enabling a Secrets Engine - UI
 
-    - From the home page, select `Enable new engine`
-    - Select the desired engine from the list provided, in this case, KV.
+- From the home page, select `Enable new engine`
+- Select the desired engine from the list provided, in this case, KV.
 
     ![Untitled](./2%2005%20-%20Overview%20of%20Secrets%20Engine//Untitled%201.png)
 
-    - Configure the `Path` AND the Maximum number of versions per key to keep, then enable the engine.
-    - The secret engine is now available for usage and can have secrets be created within.
+- Configure the `Path` AND the Maximum number of versions per key to keep, then enable the engine.
+- The secret engine is now available for usage and can have secrets be created within.
 
-    ### Enabling a Secrets Engine - CLI
+### Enabling a Secrets Engine - CLI
 
-    - To enable a secrets engine, run:
+- To enable a secrets engine, run:
 
     ```powershell
     vault secrets enable -path=demopath -version=2 kv
@@ -80,9 +80,9 @@ vault kv put <secret engine path>/<secret name> mykey=myvalue
 
     ![Untitled](./2%2005%20-%20Overview%20of%20Secrets%20Engine//Untitled%202.png)
 
-    ## Disabling a Secret Engine
+## Disabling a Secret Engine
 
-    - To disable a secret engine via the CLI, run:
+- To disable a secret engine via the CLI, run:
 
     ```powershell
     vault secrets disable <pathname>/

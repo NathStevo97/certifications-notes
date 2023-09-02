@@ -11,11 +11,11 @@ You done?: 🔥🔥🔥🔥
 # Notes
 
 - Vault has two modes for operation:
-    - Dev
-        - Typically used for local development, testing, and practice
-        - Very insecure
-        - All data is stored in-memory ⇒ Any data stored will be lost upon restart
-    - Prod
+  - Dev
+    - Typically used for local development, testing, and practice
+    - Very insecure
+    - All data is stored in-memory ⇒ Any data stored will be lost upon restart
+  - Prod
 - Vault can be started as a server in "dev" mode via the following command:
 
 ```bash
@@ -53,10 +53,10 @@ Development mode should NOT be used in production installations!
 ```
 
 - Once in the UI, menu options available will include:
-    - Secrets - Secrets stored via various storage methods (engines)
-    - Access -
-    - Policies
-    - Tools
+  - Secrets - Secrets stored via various storage methods (engines)
+  - Access -
+  - Policies
+  - Tools
 - To verify the status of the Vault Server, use the `vault status` command, appending the server address via the —address option.
 
 ```bash

@@ -19,8 +19,8 @@ You done?: 🔥🔥🔥🔥
 ## Example
 
 - When starting Vault in dev server mode, two secret engines exist as part of the standard setup:
-    - Cubbyhole
-    - Key-Value
+  - Cubbyhole
+  - Key-Value
 
 ![Untitled](./2%2004%20-%20Creating%20a%20Secret/Untitled.png)
 
@@ -31,13 +31,13 @@ You done?: 🔥🔥🔥🔥
 ![Untitled](./2%2004%20-%20Creating%20a%20Secret/Untitled%201.png)
 
 - For keyvalue add the following:
-    - path - secret name
-    - secret metadata - maximum number of versions
-    - version data - add password associated with secret in key-value form
+  - path - secret name
+  - secret metadata - maximum number of versions
+  - version data - add password associated with secret in key-value form
 - Once saved, the secret is logged and the password can be checked by selecting the eye icon
 - This secret can be edited at any point - changes are logged as versions which can be switched between at any point
 - Delete and destroy operations are available for each version, or all versions can be destroyed
-    - In this case, destroy is permanent deletion, delete offers the chance to recover the secret.
+  - In this case, destroy is permanent deletion, delete offers the chance to recover the secret.
 
 ### CLI Creation
 

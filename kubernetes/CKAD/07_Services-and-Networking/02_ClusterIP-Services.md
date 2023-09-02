@@ -38,7 +38,7 @@ spec:
     type: backend
 ```
 
-- To create the service: `kubectl create -f <service file>.yaml` or `kubectl create expose <deployment or pod name> --port=<port> --target-port=<port> --type=clusterIP`
+- To create the service: `kubectl create -f <service file>.yaml` or `kubectl expose <deployment or pod name> --port=<port> --target-port=<port> --type=clusterIP`
 
 - View services via `kubectl get services`
 

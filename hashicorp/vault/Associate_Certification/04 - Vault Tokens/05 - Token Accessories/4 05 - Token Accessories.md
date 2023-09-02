@@ -12,10 +12,10 @@ You done?: 🌚🌚🌚🌚
 
 - When a token is created, a token accessor is also created and returned.
 - This accessor is a value that acts as a reference to a token, and can only be used to carry out certain actions regarding it e.g.:
-    - Look up a tokens properties
-    - Look up a tokens capabilities for a particular path
-    - Renew the token
-    - Revoke the token
+  - Look up a tokens properties
+  - Look up a tokens capabilities for a particular path
+  - Renew the token
+  - Revoke the token
 
 # Example Use Case
 
