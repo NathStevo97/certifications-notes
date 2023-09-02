@@ -14,9 +14,9 @@ You done?: 🌚🌚🌚🌚
 
 - By default, any users created / assigned to authentication methods doesn't have any/many capabilities. Permissions come as a result of authorization in Vault, which is determined by Vault policies.
 - Examples of policies include:
-    - Read from secret/
-    - Read and write from secret/
-    - Read, write, update and delete from secret/, as well as work with auth methods
+  - Read from secret/
+  - Read and write from secret/
+  - Read, write, update and delete from secret/, as well as work with auth methods
 
 ## Predefined Policies
 
@@ -36,7 +36,7 @@ Policies can be easily viewed from the top toolbar (above).
 ```go
 path "auth/*"
 {
-	capabilities = ["create", "read", "update", "delete", "list", "sudo"]
+ capabilities = ["create", "read", "update", "delete", "list", "sudo"]
 {
 ```
 
@@ -44,7 +44,7 @@ path "auth/*"
 
 ```go
 path "<path>" {
-	capabilities = [ "capability 1", "capability 2", ..... , "capability N"]
+ capabilities = [ "capability 1", "capability 2", ..... , "capability N"]
 }
 ```
 
@@ -58,7 +58,7 @@ path "<path>" {
 - Sudo
 - Deny
 
-## Example:
+## Example
 
 - Ensuring a user has been created, authenticate to Vault via the userpass method
 
@@ -68,7 +68,7 @@ vault login -method=<method path> <parameters>
 ```
 
 - When authenticated, this user should have "default" as the policy. To verify, run `vault secrets list` - this should provide an error as it goes against the default policy.
-    - Typically the error will be of the form `URL <REQUEST TYPE> <vault address>/version/path`
+  - Typically the error will be of the form `URL <REQUEST TYPE> <vault address>/version/path`
 - To fix this, one can create a new policy. Navigate to policies and select "Create ACL Policy" from the menu - you will be presented with an editor to write an ACL policy.
 
     !["Create New ACL Policy" Menu](./3%2002%20-%20Overview%20of%20Vault%20Policies/2022-07-13_20h54_16.png)
@@ -80,7 +80,7 @@ vault login -method=<method path> <parameters>
 ![Untitled](./3%2002%20-%20Overview%20of%20Vault%20Policies/Untitled%201.png)
 
 - The policy must then be assigned the policy(ies). To do so, navigate to the user under "access" and select "edit user".
-    - Under "Generated Token's Policies", add the name of the policy(ies) you which to attach, then click save.
+  - Under "Generated Token's Policies", add the name of the policy(ies) you which to attach, then click save.
 
 <aside>
 💡 Once the policy is assigned to the user, it will NOT automatically work. You must re-authenticate via the vault login command to generate a new token for the user.
@@ -96,8 +96,8 @@ vault login -method=<method path> <parameters>
 </aside>
 
 - In some cases, there may be an unexpected change to the path e.g. `secret/data/secret1`  to fix this, the path in the policy could be changed to `secret/*` - using the * as a wildcard operator.
-    - This poses a security risk - as multiple secrets may be under the path `secret/` that users shouldn't have access to.
-    - To fix, either explicitly define the secret path provided i.e. `full path to secret`  OR add an additional policy to deny access to the other secret(s), an example follows:
+  - This poses a security risk - as multiple secrets may be under the path `secret/` that users shouldn't have access to.
+  - To fix, either explicitly define the secret path provided i.e. `full path to secret`  OR add an additional policy to deny access to the other secret(s), an example follows:
 
 ```go
 path "secret/*" {
@@ -117,11 +117,11 @@ path "secret/data/<secret not to be seen>" {
 ## Root-Protected API Endpoints
 
 - Some paths are more restrictive than others, requiring root token or sudo capabilities in the policy to allow the operations. Examples include:
-    - auth/token/accessors
-    - auth/token
-    - sys/audit
-    - sys/rotate
-    - sys/seal
+  - auth/token/accessors
+  - auth/token
+  - sys/audit
+  - sys/rotate
+  - sys/seal
 
 ---
 

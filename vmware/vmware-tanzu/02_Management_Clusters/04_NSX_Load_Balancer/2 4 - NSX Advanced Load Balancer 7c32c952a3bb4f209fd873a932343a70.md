@@ -32,9 +32,9 @@ Tags: Done
 
 - The AKO Operator (AKOO) runs on management clusters and is reponsible for deploying the AKO on workload clusters.
 - When any new workload cluster is deployed, the AKOO:
-    - Creates a user dedicated to the workload cluster in the NSX Advanced LoadBalancer controller
-    - Creates a Kubernetes secret in the workload cluster; containing the new user credentials
-    - Deploys the AKO Controller to the workload cluster
+  - Creates a user dedicated to the workload cluster in the NSX Advanced LoadBalancer controller
+  - Creates a Kubernetes secret in the workload cluster; containing the new user credentials
+  - Deploys the AKO Controller to the workload cluster
 
 # AVI Kubernetes Operator Functionality
 

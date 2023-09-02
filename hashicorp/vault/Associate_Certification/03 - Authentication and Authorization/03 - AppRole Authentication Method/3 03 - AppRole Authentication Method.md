@@ -12,14 +12,14 @@ You done?: 🌚🌚🌚🌚
 
 - Before a client can interact with Vault, it must authenticate against a particular auth method as outlined previously.
 - Auth methods are generally targeted for one of two types of users:
-    - Human users e.g. userpass
-    - Machine/App users
+  - Human users e.g. userpass
+  - Machine/App users
 - Once authenticated, a token is generated, which may have a policy associated.
 - For machine/app users, the most common one is AppRole.
-    - This allows multiple "roles" to be defined corresponding to different applications, each with different access levels e.g. one role for MySQL or a database application, another for a particular CI/CD application e.g. Jenkins.
+  - This allows multiple "roles" to be defined corresponding to different applications, each with different access levels e.g. one role for MySQL or a database application, another for a particular CI/CD application e.g. Jenkins.
 - When authenticating via the AppRole method, applications will need to take note of:
-    - Role ID
-    - Secret ID
+  - Role ID
+  - Secret ID
 
 ## Configuring AppRole Authentication Method
 

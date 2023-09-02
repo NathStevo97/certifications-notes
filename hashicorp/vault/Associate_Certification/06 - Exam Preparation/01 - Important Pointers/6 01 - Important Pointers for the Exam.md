@@ -16,20 +16,20 @@ You done?: 🌚🌚🌚🌚
 
 - Dynamic secrets allow on-demand credential generation dynamically. They are automatically revoked after a particular amount of time (lease).
 - Not all secrets engines support dynamic credentials. Primary engines that can utilise it include:
-    - AWS
-    - Database
-    - Google Cloud
-    - Azure
+  - AWS
+  - Database
+  - Google Cloud
+  - Azure
 - Dynamic secrets do not provide any stroger cryptographic key generation.
 
 # Lease Management
 
 - With every dynamic secret and service type authentication token, Vault will create a lease.
-    - Lease - Metadata containing information regarding a secret or service type authentication. Contains information such as time duration, renewability, etc.
+  - Lease - Metadata containing information regarding a secret or service type authentication. Contains information such as time duration, renewability, etc.
 - Once the lease expires, Vault can automatically revoke the data, preventing future access.
 - When working with Leases, Vault has two main operations that can be achieved via the CLI or UI:
-    - Renew - renews the lease on a secret, extending its usage time before automatic revocation
-    - Revoke - Force-invalidates a secret with immediate effect, preventing any further renewals.
+  - Renew - renews the lease on a secret, extending its usage time before automatic revocation
+  - Revoke - Force-invalidates a secret with immediate effect, preventing any further renewals.
 - Example commands:
 - `vault lease renew -increment=3600 <lease id>` - Requests an adjustment of a lease's TTL to 1 hour
 - `vault lease revoke <lease id>` - Revokes a lease
@@ -46,7 +46,7 @@ You done?: 🌚🌚🌚🌚
 
 - Transit engine supports versioning of keys
 - Key versions earlier than a key's specified `min_decryption_version` will be archived. Any later belong to the working set.
-    - This facilitates enhanced performance and security.
+  - This facilitates enhanced performance and security.
 - By disallowing decryption of old versions, any found ciphertext associated with obsolete data cannot be decrypted. The only way that this could be achieved would be if `min_decryption_version` was manually lowered.
 
 ---
@@ -69,14 +69,14 @@ You done?: 🌚🌚🌚🌚
 - A root user can do ANYTHING within Vault. Therefore, it is highly recommended that any root tokens are revoked before running Vault in production.
 - When a Vault server is first initialized, one root user always exists. This user is primarily used to do the initial configuration and setup of Vault.
 - After configuration, the initial root token should be revoked and more strictly controlled users and authentication should be used.
-    - E.g. have an administrator user as the primary usage point.
+  - E.g. have an administrator user as the primary usage point.
 
 # Token Accessor
 
 - The accessor is a value that acts as a reference to a token - used to perform limited actions such as:
-    - Lookup a token's properties
-    - Lookup a tokens capabilities for a particular path
-    - Renew and revoke the token
+  - Lookup a token's properties
+  - Lookup a tokens capabilities for a particular path
+  - Renew and revoke the token
 
 # Policy Association
 
@@ -99,7 +99,7 @@ You done?: 🌚🌚🌚🌚
 - To enable an authentication method, utilise the following example command for userpass method:
 `vault auth enable -path=my-login userpass`
 - To disable an auth method: `vault auth disable <method name>`
-    - This will auto-logout any users logged in via that method.
+  - This will auto-logout any users logged in via that method.
 
 ---
 
@@ -128,9 +128,9 @@ You done?: 🌚🌚🌚🌚
 
 - The agent doesn't persist anything to storage - all data is stored in memory
 - The agent looks to utilise two main functionalities:
-    - **Auto-Auth:** Facilitates automatic authentication to Vault and management of token renewal processes
-    - **Caching**: Allows client-side caching of responses containing newly-created tokens.
-        - If configured with `use_auto_auth_token`, clients will not be required to provide a Vault token to the requests made to the agent.
+  - **Auto-Auth:** Facilitates automatic authentication to Vault and management of token renewal processes
+  - **Caching**: Allows client-side caching of responses containing newly-created tokens.
+    - If configured with `use_auto_auth_token`, clients will not be required to provide a Vault token to the requests made to the agent.
 
 # Response Wrapping Token
 
@@ -153,14 +153,14 @@ You done?: 🌚🌚🌚🌚
 # Vault Replication
 
 - For performance replication - secondary clusters will service reads locally
-    - Some data is also stored locally and not replicated from the primary cluster
+  - Some data is also stored locally and not replicated from the primary cluster
 - For DR Replication - ALL data is replicated, but the secondary cluster cannot accept client requests.
 
 # Entities and Aliases
 
 - Each client is internally termed as an entity - entities can have multiple aliases.
 - Policies defined at entity-level will be associated with all aliases associated with the entities.
-    - E.g. users under the  "dev team" entity
+  - E.g. users under the  "dev team" entity
 
 # Identity Groups
 
@@ -170,9 +170,9 @@ You done?: 🌚🌚🌚🌚
 # Vault Output
 
 - Vault data output can be configured for a variety of output formats, including:
-    - Table
-    - JSON
-    - YAML
+  - Table
+  - JSON
+  - YAML
 - Table is the default output format.
 - Output can be specified when running vault commands e.g. `vault secrets list -format table`
 
@@ -185,8 +185,8 @@ You done?: 🌚🌚🌚🌚
 # Reading Output from KV Path
 
 - Suppose you want to read a secret at a particular path, what capability is needed?
-    - LIST - Allows for listing values at the particular paths
-    - READ - Allows reading of data at a particular path
+  - LIST - Allows for listing values at the particular paths
+  - READ - Allows reading of data at a particular path
 
 # Audit
 
@@ -202,9 +202,9 @@ You done?: 🌚🌚🌚🌚
 # Vault Token Lookup
 
 - Via the `vault token lookup <command>`, the following parameters are output:
-    - Creation_TTL - How long is the token valid for upon first creation?
-    - Orphan - True/False - Does the token have a parent token?
-    - TTL - How long is the token valid for at the moment in time?
+  - Creation_TTL - How long is the token valid for upon first creation?
+  - Orphan - True/False - Does the token have a parent token?
+  - TTL - How long is the token valid for at the moment in time?
 
 # Orphan Tokens
 
@@ -236,40 +236,40 @@ You done?: 🌚🌚🌚🌚
 
 - Multiple secrets engine of the same type can be enabled ata given time
 - They can be distinguished uniquely be separating them via path
-    - Example:
-        - Key-Value engine at /secret
-        - Key-value engine at /kv
+  - Example:
+    - Key-Value engine at /secret
+    - Key-value engine at /kv
 
 ---
 
 # Supported Backend - HashiCorp Support
 
 - The following backends are officially supported by HashiCorp:
-    - In-Memory
-    - Filesystem
-    - Consul
-    - Raft
+  - In-Memory
+  - Filesystem
+  - Consul
+  - Raft
 - Technical support is available from HashiCorp community and technical team.
 
 # Vault Enterprise Features
 
 - Vault Enterprise includes features to utilise particular workflows such as:
-    - Disaster recovery
-    - Namespaces
-    - Monitoring
-    - Multi-Factor Authentication
-    - Auto-unseal with HSM
+  - Disaster recovery
+  - Namespaces
+  - Monitoring
+  - Multi-Factor Authentication
+  - Auto-unseal with HSM
 
 # Vault Namespace
 
 - Namespaces are isolated environments that act as "vaults within Vault"
 - Each namespace has separate login paths and supports creating and managing data isolated to their namespace
 - Each namespace can have its own:
-    - Policies
-    - Authentication methods
-    - Secrets engines
-    - tokens
-    - identify entities and groups
+  - Policies
+  - Authentication methods
+  - Secrets engines
+  - tokens
+  - identify entities and groups
 
 # Vault Replication
 
@@ -285,7 +285,7 @@ You done?: 🌚🌚🌚🌚
 - Note: Requires shell restart after install
 - Installation via: `vault -autocomplete-install`
 
-# Vault CLI Commands:
+# Vault CLI Commands
 
 | Use Case | Example Command |
 | --- | --- |
@@ -299,11 +299,11 @@ You done?: 🌚🌚🌚🌚
 
 - Auto unseal delegates the responsibility of securing the unseal key from users to a trusted device or service
 - Following are some of the supported services:
-    - AWS KMS
-    - Transit Secret Engine
-    - Azure Key Vault
-    - HSM
-    - GCP Cloud KMS
+  - AWS KMS
+  - Transit Secret Engine
+  - Azure Key Vault
+  - HSM
+  - GCP Cloud KMS
 - For private connectivity, VPC endpoints can be used
 
 # Identify Output of Transit Engine
@@ -318,8 +318,8 @@ You done?: 🌚🌚🌚🌚
 
 - Allows generation of dynamic X509 certificates
 - Benefits include:
-    - Allows vault to act as an intermediate Certificate Authority
-    - Reduces or eliminates the amount of certificate revocations required
+  - Allows vault to act as an intermediate Certificate Authority
+  - Reduces or eliminates the amount of certificate revocations required
 
 # TOTP Secrets Engine
 
@@ -337,8 +337,8 @@ You done?: 🌚🌚🌚🌚
 
 - All telemetry related metrics are available at `/sys/metrics` endpoint
 - The primary metrics analysed are:
-    - Metrics
-    - Vault Audit Logs
+  - Metrics
+  - Vault Audit Logs
 
 # Security Best Practices - Root Tokens
 
@@ -392,9 +392,10 @@ path "secret/data/alice/" {
 | Can be used across performance replication clusters | No | Yes (if orphan) |
 | Creation scales with performance standby node count | No | Yes |
 | Cost | Heavy Weight - Multiple Storage Writes per token creation | Lightweight - No storage cost for token creation |
+
 - Key points to note are:
-    - Can be root tokens
-    - Cost
+  - Can be root tokens
+  - Cost
 
 # Vault Tools
 
@@ -414,42 +415,42 @@ path "secret/data/alice/" {
 - The `/sys/leader` endpoint is used to check HA status and current leader of vault
 - `vault operator init` initializes a vault server
 - Vault config files can be used to configure various settings e.g.:
-    - Cluster name
-    - Storage backends
-    - seal settings
+  - Cluster name
+  - Storage backends
+  - seal settings
 - Configuration for setup like namespaces and auth methods are handled directly within Vault itself.
 - Identity secrets engine is mounted by default in Vault
 - Storage backends are not trusted by default in Vault.
 - Port Numbers:
-    - 8200 - Vault API and UI
-    - 8201 - Cluster-cluster communication
+  - 8200 - Vault API and UI
+  - 8201 - Cluster-cluster communication
 - Root tokens in Vault are not associated with TTLs - non-root tokens are
 - The default max TTL is 32 days for tokens, but this can be modified.
 - Transit secret engine stores no data
 - VAULT_ADDR needs to be set to allow for any commands to be ran.
-    - Post-authentication,  the CLI and UI automatically assumes the token used in authentication for subsequent requests.
-    - For the API, the token must be provided for all subsequent requests.
+  - Post-authentication,  the CLI and UI automatically assumes the token used in authentication for subsequent requests.
+  - For the API, the token must be provided for all subsequent requests.
 - Vault Secrets engines supports multiple cloud providers e.g. AWS, Azure, GCP
 - Cubbyhole is a default secrets engine enabled for all users.
 - When generating dynamic secrets, Vault returns the `lease_id`
-    - This can be used with commands for lease renew, revoke, etc
+  - This can be used with commands for lease renew, revoke, etc
 - Vault login command is used for CLI authentication
 - After initializing, Vault provides the root token to the user. This is the only way to login to Vault to configure additional auth methods
-- + and * are associated with wildcard path in policies.
+  - + and * are associated with wildcard path in policies.
 - Config files for Vault can be done in either JSON or HCL.
 - When data is decrypted via the transit engine, the output is base64 format
-    - To get the original data, it must be decoded via base64
+  - To get the original data, it must be decoded via base64
 - Vault UI needs to be enabled from the configuration file ONLY and not the CLI
 - For token renewal, `vault token renew <token>` can be utilised to extend the TTL.
 - When the Vault is sealed, users can only:
-    - View the vault status
-    - Attempt to unseal the Vault
+  - View the vault status
+  - Attempt to unseal the Vault
 - If the Vault CLI can access a specific path but a user cannot access it via the GUI, the issue is that the user is missing the LIST capability against that path.
 - If a secret has been manually removed, `vault lease revoke` will result in an error (which can be avoided by appending the `-force` flag.
 - Storage backend and HTTP API are outside of the security barrier and cannot be pretected
 - WAL = Write-Ahead Logging
-    - Changes are first recorded in the log (which has to be written to stable storage) before changes are written/applied to any data stores.
-    - This is commonly noted in HA setups.
+  - Changes are first recorded in the log (which has to be written to stable storage) before changes are written/applied to any data stores.
+  - This is commonly noted in HA setups.
 
 ---
 
@@ -512,10 +513,10 @@ path "transit/keys/demo-key" {
 
 - HCL Policy files can be auto-formatted by `vault policy fmt <filename>.hcl`
 
-# Misc Pointers.
+# Misc Pointers
 
 - Kubernetes authentication is required for any kubernetes-based workloads
 - For kubernetes-based authentication, passing JWT token is required for all API requests.
 - `/sys/seal` endpoints are used to seal the Vault. It requires a token with root policy or sudo capability on the path.
 - For EC2-based workloads, AWS Authentication method can be used.
-    - It is not mandatory, AppRole can also be used.
+  - It is not mandatory, AppRole can also be used.

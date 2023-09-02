@@ -31,7 +31,7 @@ The Vault agent works as follows:
 
 - To use the Vault agent, the binary can be ran in "agent mode"
 - To do so, run `vault agent config=<config file>`
-    - The agent configuration file must specify the auth method and sink locations where the tokens are to be written.
+  - The agent configuration file must specify the auth method and sink locations where the tokens are to be written.
 
 ## Working of Vault Agent
 
@@ -39,11 +39,11 @@ The Vault agent works as follows:
 - Upon successful authentication, the token is written to the sink locations.
 - Whenever the current token's value changes; the agent writes to the sinks.
 
-## Practical Example:
+## Practical Example
 
 - Various Auth methods are available, including AppRole, Azure, and AWS.
 - Ensure the AppRole Auth method is enabled either via the CLI or UI
-    - `vault auth enable approle`
+  - `vault auth enable approle`
 - Create a policy for the agent. An example follows:
 
 ```go
@@ -62,27 +62,27 @@ exit_after_auth = false
 pid_file = "./pidfile"
 
 auto_auth {
-	method "approle" {
-		mount_path = "auth/approle"
-		config = {
-				role_id_file_path = "/path/to/role-id" # files must exist!
-				secret_id_file	_path = "/path/to/secret-id" # files must exist!
-				remove_secret_id_file_after_reading = false
-		}
+ method "approle" {
+  mount_path = "auth/approle"
+  config = {
+    role_id_file_path = "/path/to/role-id" # files must exist!
+    secret_id_file _path = "/path/to/secret-id" # files must exist!
+    remove_secret_id_file_after_reading = false
+  }
 }
 
 sink "file" {
-	config = {
-		path = "/path/to/token"
-	}
+ config = {
+  path = "/path/to/token"
+ }
 }
 
 vault {
-	address = "http://127.0.0.1:8200
+ address = "http://127.0.0.1:8200
 }
 ```
 
 - Start the Vault in agent mode via `vault agent -config=/path/to/file.hcl`
-    - Information provided regarding the sink file with the token
-    - This can be looked up via `vault token lookup <token>`
+  - Information provided regarding the sink file with the token
+  - This can be looked up via `vault token lookup <token>`
 - Now, any application wishing to use the token must fetch it from the sink file location. As an example, a Kubernetes secret could be based on this.

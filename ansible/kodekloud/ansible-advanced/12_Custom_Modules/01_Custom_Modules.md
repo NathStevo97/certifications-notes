@@ -5,9 +5,9 @@ Status: Done
 # 12.1 - Introdcution
 
 - Modules are each item in a task that carries out a particular command, this can be for anything such as:
-    - System management
-    - Running commands
-    - Managing files
+  - System management
+  - Running commands
+  - Managing files
 - Each module is a set of python script(s) to perform a particular action - this leads to the potential problem of "what if there is no ready-made solution?"
 
 # 12.2 - Example: Custom Debug
@@ -18,11 +18,11 @@ Status: Done
 ![Untitled](img/Untitled.png)
 
 - AnsibleModule helps parse arguments
-    - Initiated by providing an argument_spec, a spec outlining how arguments should be provided to the module in a playbook, specifying parameters such as:
-        - Type
-        - Required (Boolean)
-    - module.params['argname'] then passes the arguments into the code for usage
-    - Any other actions with the code can then follow.
+  - Initiated by providing an argument_spec, a spec outlining how arguments should be provided to the module in a playbook, specifying parameters such as:
+    - Type
+    - Required (Boolean)
+  - module.params['argname'] then passes the arguments into the code for usage
+  - Any other actions with the code can then follow.
 
 ---
 

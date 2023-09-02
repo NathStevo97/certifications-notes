@@ -9,9 +9,9 @@ Status: Done
 [Ansible for Beginners](https://www.notion.so/Ansible-for-Beginners-f5daddb3ec374428a263dda867c99cc9)
 
 - Ansible was introduced, showing how it can be used for a variety of operations e.g.@
-    - Infrastructure Provisioning
-    - Configuration Management
-    - Application Deployment
+  - Infrastructure Provisioning
+  - Configuration Management
+  - Application Deployment
 
 - Various use case examples were shown and discussed for public and private cloud infrastructure.
 - Ansible installation was discussed:
@@ -28,12 +28,12 @@ pip install ansible
 ```
 
 - Modules such as the following were discussed:
-    - System
-    - Commands
-    - Files
-    - Database
-    - Cloud
-    - Windows
+  - System
+  - Commands
+  - Files
+  - Database
+  - Cloud
+  - Windows
 - Variables were shown to be usable in playbooks, as well as conditionals and loops - all will be expanded upon in the course.
 
 # 1.4 - Note on Enabling SSH in the VMs
@@ -79,5 +79,5 @@ ansible <target hostname> -m ping -i inventory.txt
 - Create docker containers: `docker run -it -d  <image>`  (or use a Docker-compose file)
 - Use `docker inspect <container id>` to get the container IPs
 - Create an inventory file for each container and test connection with the ping module.
-    - **Username:** root
-    - **Password:** Passw0rd
+  - **Username:** root
+  - **Password:** Passw0rd

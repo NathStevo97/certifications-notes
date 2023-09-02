@@ -29,7 +29,7 @@ Tags: Done
 
 - When Pinniped authentication is enabled, the `tanzu cluster kubeconfig get` command returns a kubeconfig file that's configured to run the Tanzu pinniped-auth plugin
 - The plugin initiates the Pinniped authentication workflow
-    - Users will be redirected to the Pinniped supervisor endpoint on the management cluster
+  - Users will be redirected to the Pinniped supervisor endpoint on the management cluster
 
 ![Untitled](2%205%20-%20Cluster%20Authentication%201595ffbfc3c549f5b8921f02a1ae446c/Untitled.png)
 

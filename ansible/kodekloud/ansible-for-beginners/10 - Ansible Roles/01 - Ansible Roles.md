@@ -12,13 +12,13 @@ You done?: 🌚🌚🌚🌚
 
 - Roles can be assigned to each server involved in an Ansible playbook to allow them to perform particular tasks.
 - Assigning a role in Ansible requires the performance of tasks such that the server can perform the required task. Example:
-    - mysql
-        - Prerequisite and mysql packages should be installed
-        - mysql service configuration
-        - database and user configuration
-    - nginx
-        - Prerequisite and nginxpackages should be installed
-        - Service configuration
+  - mysql
+    - Prerequisite and mysql packages should be installed
+    - mysql service configuration
+    - database and user configuration
+  - nginx
+    - Prerequisite and nginxpackages should be installed
+    - Service configuration
 - Example playbook:
 
 ![Playbook-Example](images/playbook-example.png)
@@ -31,12 +31,12 @@ You done?: 🌚🌚🌚🌚
 
 - Roles therefore allow the best-practices of Ansible to be adhered to.
 - Typical directory structure:
-    - Role
-        - tasks carried out by role(s)
-        - variables used by tasks
-        - defaults values for tasks
-        - handlers
-        - templates used by playbooks
+  - Role
+    - tasks carried out by role(s)
+    - variables used by tasks
+    - defaults values for tasks
+    - handlers
+    - templates used by playbooks
 - Roles also allow easier sharing of code and roles within the community - Ansible Galaxy being a primary example
 
 ---
@@ -52,8 +52,8 @@ ansible-galaxy init <role-name>
 
 - This will create the skeleton structure required for the role, and the code can then be moved into it as required.
 - When referencing a role in a playbook, one must specify its location.
-    - One option would be to create a designated directory for the roles
-    - Ansible by default will look in /etc/ansible/roles
+  - One option would be to create a designated directory for the roles
+  - Ansible by default will look in /etc/ansible/roles
 - Roles can then be shared via GitHub in Ansible Galaxy
 - Ansible-galaxy's UI or CLI have search functionality to help look for "suitable" roles for users.
 - To install a role:

@@ -7,12 +7,12 @@ Status: Done
 - Recommended way of developing playbooks
 - Allows for organization of project in a standard structure and for reusable tasks
 - Role creation automatically creates a folder structure for it, containing:
-    - README
-    - tests folder
-    - tasks folder
-    - handlers folder
-    - vars folder
-    - defaults folder
+  - README
+  - tests folder
+  - tasks folder
+  - handlers folder
+  - vars folder
+  - defaults folder
 - To use a role, implement it at the top level of the playbook in a similar manner to:
 
 ```yaml
@@ -36,9 +36,9 @@ Status: Done
 - Login to [https://galaxy.ansible.com](https://galaxy.ansible.com)
 - Navigate to the roles directory
 - For each role:
-    - cd into the role
-    - Ensure the README and metadata/main.yaml files are updated as required. For the latter:
-        - Uncomment platforms section
-        - Add any galaxy_tags desired
-    - Add the role to a designated Github repository
-    - Via ansible galaxy, import the role from github.
+  - cd into the role
+  - Ensure the README and metadata/main.yaml files are updated as required. For the latter:
+    - Uncomment platforms section
+    - Add any galaxy_tags desired
+  - Add the role to a designated Github repository
+  - Via ansible galaxy, import the role from github.

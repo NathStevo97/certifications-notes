@@ -21,7 +21,7 @@ tasks:
 - This will kick off the task, wait for 6 minutes to allow the task to finish, and move on.
 - For multiple async jobs, this could be time-consuming, especially if tasks can be ran in parallel; this can be done by setting `poll` to 0.
 - It's best practice to register the result of the async action via `register: <result name>`
-    - One can then add an additional task at the end to check the status of the asynchronous tasks before concluding the play:
+  - One can then add an additional task at the end to check the status of the asynchronous tasks before concluding the play:
 
 ```yaml
 - name: Check status of tasks

@@ -9,7 +9,7 @@ Status: Done
 - Up until now, variables such as `ansible_ssh_pass` and `ansible_host` are all included in the same inventory file.
 - This is not good practice for security purposes.
 - What should be done is storing the variables under a separate YAML file under a new directory called `host_vars`.
-    - The YAML file name should match up with the host defined in the inventory file.
+  - The YAML file name should match up with the host defined in the inventory file.
 - An example follows:
 
 ```
@@ -32,8 +32,8 @@ ansible_host: <host IP Address>
 
 - If you ever have a set of tasks that can be re-used, it's often beneficial to split these sets of actions into tasks.
 - In the case of the simple-webapp example, you could have:
-    - Tasks to install the Database
-    - Tasks to set up the web server
+  - Tasks to install the Database
+  - Tasks to set up the web server
 - Each of these should be stored under a `tasks` directory and named accordingly e.g. `deploy_db.yaml`
 - These can then be referenced from the primary playbook in a similar manner to the following:
 

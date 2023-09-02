@@ -34,4 +34,3 @@ Status: Done
 
 [Example for GCP](https://github.com/mmumshad/udemy-ansible-assignment)
 [Ansible EC2 Docs](https://docs.ansible.com/ansible/latest/collections/amazon/aws/ec2_instance_module.html)
-

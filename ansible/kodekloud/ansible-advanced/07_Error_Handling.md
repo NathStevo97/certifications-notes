@@ -7,8 +7,8 @@ Status: Done
 - As discussed in strategy, Ansible will execute each task sequentially until completion
 - In the event of failure, the playbook will fail
 - For multiple servers, if one task fails but runs fine on others, you do not want the entire playbook to stop, you should allow the others to continue for as long as possible.
-    - This is default behaviour.
-    - If wanting to change, add `any_errors_fatal: true` at the beginning of the playbook.
+  - This is default behaviour.
+  - If wanting to change, add `any_errors_fatal: true` at the beginning of the playbook.
 
 ---
 
