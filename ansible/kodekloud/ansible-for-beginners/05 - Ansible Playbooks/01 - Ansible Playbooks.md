@@ -8,7 +8,7 @@ Status: Complete
 Watch: Yes
 You done?: 🔥🔥🔥🌚
 
-# Notes
+## Notes
 
 - Playbooks are configuration files used to help Ansible understand what it needs to do when running.
 - Example - Running commands on particular servers in a particular order, then restarting said servers in a particular order.

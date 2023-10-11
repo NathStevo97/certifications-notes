@@ -8,7 +8,7 @@ Status: Complete
 Watch: Yes
 You done?: 🔥🔥🔥🌚
 
-# Notes
+## Notes
 
 - The labs for this course and project are advised to be done on Virtualbox, the free Virtualisation tool.
 - Whilst this program is free and can be downloaded from [here](https://www.virtualbox.org/), its UI, functionality, and performance pales in comparison to the likes of VMWare, which I'll be using for this.

@@ -8,7 +8,7 @@ Status: Complete
 Watch: Yes
 You done?: 🔥🔥🔥🌚
 
-# Notes
+## Notes
 
 - Now that a base template VM has been created, we can create clone VMs from this for the purposes of the practice labs.
 - Linked clones are generally preferred as the only additional storage required for them is any changes made to them outside of the base VM e.g. installed packages.
