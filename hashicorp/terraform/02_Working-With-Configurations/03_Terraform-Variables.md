@@ -14,7 +14,7 @@ variable "<variable id>" {
 ```
 
 - To reference a variable in a configuration, add `var.<variable_id>` where appropriate.
-- Depending on the type of the variable, to adhere to data types, you may need to include it within parentheses e.g. []
+- Depending on the type of the variable, to adhere to data types, you may need to include it within parentheses e.g. [] for lists, or {} for maps.
 
 - Once done, when `terraform apply` is ran, the variables stored in `variables.tf` are referenced.
 - This massively simplifies things in production for variable values subject to change, such as IP addresses.

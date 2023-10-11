@@ -5,7 +5,7 @@
 
 - Example: Suppose there are a set of resources that should only be created if a particular variable is set e.g. `use_dev_env = true`
 
-- For each resource, add an attribute property followed by the conidtion:
+- For each resource, add an attribute property followed by the condition:
     `attribute = var.<variable name> == true ? <true value> : false value`
 
 - In the other dependent variable:

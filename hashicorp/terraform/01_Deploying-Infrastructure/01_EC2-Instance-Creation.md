@@ -29,9 +29,8 @@ location for the vm deployment, along with the access and secret keys
 a particular ami and instance type:
   - Instance type specifies parameters such as memory and cpu
 - Note: ami and instance_type are the only two required parameters for a aws_instance resource, there are optionals available
-- To initialize: terraform init
-  - Terraform initialises the current directory, downloading additional
-plugins required; which vary for each provider
+- To initialize: `terraform init`
+  - Terraform initialises the current directory, downloading additional plugins required; which vary for each provider.
 - To validate the syntax used in config files: `terraform validate`
 - To format: `terraform fmt`
 - To plan the execution of the configuration: `terraform plan`

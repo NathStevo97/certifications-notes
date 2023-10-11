@@ -7,3 +7,4 @@
 - State file is always named `terraform.tfstate`
 - If changes made outside the terraform configuration files, when terraform apply is ran again, the tfstate file will be checked to make sure that the real world configuration is set up correctly, if not it will attempt to apply the appropriate changes to return/update to the desired state.
   - This may not work OR it may require recreation of resources (if the affected resource(s) have any dependencies)
+- To destroy a specific resource: `terraform destroy -target <resource_type>.<local_name>`

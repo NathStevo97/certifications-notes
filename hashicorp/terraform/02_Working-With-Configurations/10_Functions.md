@@ -2,12 +2,12 @@
 
 - Terraform has many built-in functions that can be used to transform and combine values.
 - The general syntax for a function is the function name followed by arguments separated by commas.
-- User-defined functions aren't supported, but built-in function categories are:
+- *User-defined functions aren't supported*, but built-in function categories are:
   - Numeric
   - String
   - Collection
   - Encoding
-  - Fileystem
+  - Filesystem
   - Date and time
   - Hash and Crypto
   - IP Network
@@ -18,4 +18,8 @@
 
 - Example: `lookup(map, key, default)`
 
-- Another function is `element`, which retrieves a single element from a list, example usage: `element(list, index)`
+- Another function is `element`, which retrieves a single element from a list, example usage: `element(list, index)` - `count.index` is often used here.
+
+- File" `file("/path/to/file")` reads the contents of the file defined in quotation marks, commonly used for ssh keys, etc.
+
+- `formatdate` & `timestamp` are often used in conjunction to format the value returned by `timestamp` into a more readable manner

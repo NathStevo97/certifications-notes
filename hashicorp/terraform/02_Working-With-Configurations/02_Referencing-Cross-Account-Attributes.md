@@ -2,8 +2,8 @@
 
 - As suggested previously, when creating resources, one should be able to use attributes and outputs to allow automatic configuration
 - Examples follow:
-    - Creating an Elastic IP and assigning it to an AWS EC2 Instance.
-    - Creating an Elastic IP and assignign it to a Security Group for whitelisting
+  - Creating an Elastic IP and assigning it to an AWS EC2 Instance.
+  - Creating an Elastic IP and assigning it to a Security Group for whitelisting
 
 ## 2.2.1 - EIP Association to EC2 Instance
 
@@ -26,7 +26,7 @@ resource "aws_security_group" "allow_tls" {
         to_port = 443
         8
         protocol = "tcp"
-        cidr_blocks = [aws_vpc.main.cidr_block]
+        cidr_blocks = [aws_eip.myeip.public_ip]
     }
     egress {
         from_port = 0

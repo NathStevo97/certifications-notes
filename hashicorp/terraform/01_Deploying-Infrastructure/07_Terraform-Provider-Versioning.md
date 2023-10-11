@@ -14,3 +14,4 @@
 | >=a.b,<=c.d      | Any version between a.b and c.d                                |
 
 - **Note:** Certain provider plugins aren't compatible with particular versions of Terraform - it will specify and suggest alternate versions if this occurs.
+- If wanting to make an upgrade / change: `terraform init -upgrade`
