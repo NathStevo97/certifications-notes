@@ -6,7 +6,7 @@
   - Ingress Rules
   - Egress Rules
 
-- To work with this, one can use a dyanmic block, indicated by the usage of `dynamic` prior to the resource identifier.
+- To work with this, one can use a dynamic block, indicated by the usage of `dynamic` prior to the resource identifier.
 - Dynamic blocks allow you to iteratively add content defined in a separate variable list or map.
 
 - Ingress Property Example:
@@ -41,8 +41,8 @@ resource "aws_security_group" "dynamicsg" {
 
 ```
 
-- This dynamic block will iterativey fill out the contents of the ingress and egress blocks with the content defined in a separate variable as a list. The egress block is filled out in a similar manner.
+- This dynamic block will iteratively fill out the contents of the ingress and egress blocks with the content defined in a separate variable as a list. The egress block is filled out in a similar manner.
 
-- Iterators are optional arguments which set the name of a temprary variable that represents the current element of a more complex value.
+- Iterators are optional arguments which set the name of a temporary variable that represents the current element of a more complex value. It's commonly seen in conjunction with the `for_each` operator i.e. `for_each = var.sg_ports` - where `sg_ports` is a list to be iterated over.
 
 - If omitted, the name of the variable defaults to the dynamic block's label (similar to the egress example above).

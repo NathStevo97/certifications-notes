@@ -21,7 +21,7 @@ output "arns" {
 ```
 
 - The above aims to create 3 IAM users in AWS.
-- The value `aws_iam_user.lb[*].arn` will look for each 3 arn assoicated with the IAM user.
+- The value `aws_iam_user.lb[*].arn` will look for each of the 3 arns associated with the IAM user.
 - The resultant output will therefore be:
 
 ```go
