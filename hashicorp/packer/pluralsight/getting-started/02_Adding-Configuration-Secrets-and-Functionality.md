@@ -125,7 +125,6 @@ provisioner "shell" {
 }
 ```
 
-
 ## Multi-Provider Builds
 
 - Packer can allow simultaneous generation of images on different providers, such as:

@@ -27,7 +27,6 @@
   - Infrastructure becomes a "unit of deployment" - deployed alongside the workloads
   - Facilitates confidence in changes
 
-
 ### Why Packer?
 
 - Packer uses images as its packaging mechanism, offering specific packages per platform
@@ -93,7 +92,7 @@ build {
   - Export to an AWS AMI or Vagrant Box
 - Multiple post-processors can be used sequentially by usage of the `post_porcessors {}` block
 
-### Common Commands:
+### Common Commands
 
 - `packer fmt <template>.pkr.hcl` - Apply standard formatting
 - `packer validate <template>.pkr.hcl` - Syntax validation of configuration
