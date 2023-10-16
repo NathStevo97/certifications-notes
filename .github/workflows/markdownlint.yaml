@@ -21,7 +21,43 @@ jobs:
       uses: actions/checkout@v3
 
     - uses: articulate/actions-markdownlint@v1
+      name: markdown-lint - Ansible
+      with:
+        config: .markdownlint.json
+        files: 'ansible/**/*.md'
+
+    - uses: articulate/actions-markdownlint@v1
+      name: markdown-lint - AWS
+      with:
+        config: .markdownlint.json
+        files: 'aws/**/*.md'
+
+    - uses: articulate/actions-markdownlint@v1
       name: markdown-lint - Packer
       with:
         config: .markdownlint.json
-        files: '**/**/*.md'
+        files: 'hashicorp/packer/**/*.md'
+
+    - uses: articulate/actions-markdownlint@v1
+      name: markdown-lint - Terraform
+      with:
+        config: .markdownlint.json
+        files: 'hashicorp/terraform/**/*.md'
+
+    - uses: articulate/actions-markdownlint@v1
+      name: markdown-lint - Vault
+      with:
+        config: .markdownlint.json
+        files: 'hashicorp/vault/**/*.md'
+
+    - uses: articulate/actions-markdownlint@v1
+      name: markdown-lint - Kubernetes and GitOps
+      with:
+        config: .markdownlint.json
+        files: 'kubernetes/**/*.md'
+
+    - uses: articulate/actions-markdownlint@v1
+      name: markdown-lint - VMware
+      with:
+        config: .markdownlint.json
+        files: 'vmware/**/*.md'
