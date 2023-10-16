@@ -24,5 +24,4 @@ jobs:
       name: markdown-lint - Packer
       with:
         config: .markdownlint.json
-        files: 'hashicorp/packer/**/*.md'
-        version: 0.37.0
+        files: '**/**/*.md'
