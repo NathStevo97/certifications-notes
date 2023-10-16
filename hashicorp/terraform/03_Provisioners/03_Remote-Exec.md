@@ -1,4 +1,4 @@
-#  3.3 - Remote-Exec Implementation
+#  3.3 - Remote-Exec Implementation
 
 - For remote-exec to run, the resource must be created first i.e. the provisioner must be added within a resource block.
 - Requires 2 properties to be defined:
@@ -10,7 +10,7 @@ resource "aws_instance" "myec2" {
   ami           = "ami-0a13d44dccf1f5cf6"
   instance_type = "t2.micro"
   key_name      = "remote-exec-keypair"
-  
+
   #configure provisioner with inline commands
   provisioner "remote-exec" {
     inline = [
@@ -25,7 +25,7 @@ resource "aws_instance" "myec2" {
       #private key for authentication
       private_key = file("./remote-exec-keypair.pem")
       host        = self.public_ip
-      } 
+      }
   }
 }
 ```

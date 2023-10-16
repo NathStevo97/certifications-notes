@@ -1,13 +1,5 @@
 # 05.2 - Demo: Run Ansible Playbooks
 
-Complete: No
-Flash Cards: No
-Lab: Yes
-Read: Yes
-Status: Complete
-Watch: Yes
-You done?: 🔥🔥🔥🌚
-
 ## Notes
 
 ---
@@ -19,11 +11,11 @@ You done?: 🔥🔥🔥🌚
 
     ```yaml
     ansible <hosts> -a <command>
-    
+
     ansible all -a "/sbin/reboot"
-    
+
     ansible <hosts> -m <module>
-    
+
     ansible target1 -m ping
     ```
 
@@ -67,7 +59,7 @@ ansible-playbook playbook-pingtest.yaml -i inventory.txt
 
 ### Q1
 
-Update name of the play to `Execute a date command on localhost`
+Update name of the play to `Execute a date command on localhost`
 
 ```yaml
 -
@@ -81,8 +73,8 @@ Update name of the play to `Execute a date command on localhost`
 
 ### Q2
 
-Update the task to execute the command `cat /etc/hosts`
- and change task name to `Execute a command to display hosts file`
+Update the task to execute the command `cat /etc/hosts`
+ and change task name to `Execute a command to display hosts file`
 
 ```yaml
 -
@@ -96,8 +88,8 @@ Update the task to execute the command `cat /etc/hosts`
 
 ### Q3
 
-Update the playbook to add a second task. The new task must execute the command `cat /etc/hosts`
- and change new task name to `Execute a command to display hosts file`
+Update the playbook to add a second task. The new task must execute the command `cat /etc/hosts`
+ and change new task name to `Execute a command to display hosts file`
 
 ```yaml
 -
@@ -113,7 +105,7 @@ Update the playbook to add a second task. The new task must execute the command�
 
 ### Q4
 
-We have been running all tasks on localhost. We would now like to run these tasks on the web_node1. Update the play to run the tasks on `web_node1`
+We have been running all tasks on localhost. We would now like to run these tasks on the web_node1. Update the play to run the tasks on `web_node1`
 
 ```yaml
 -
@@ -130,7 +122,7 @@ We have been running all tasks on localhost. We would now like to run these task
 
 ### Q5
 
-Refer to the attached inventory file. We would like to run the tasks defined in the play on all servers in `boston`
+Refer to the attached inventory file. We would like to run the tasks defined in the play on all servers in `boston`
 
 Inventory:
 
@@ -184,7 +176,7 @@ Answer:
 
 ### Q6
 
-Create a new play named `Execute a command to display hosts file contents on web_node2` to execute `cat /etc/hosts` command on second node `web_node2` and name the task `Execute a command to display hosts file`.
+Create a new play named `Execute a command to display hosts file contents on web_node2` to execute `cat /etc/hosts` command on second node `web_node2` and name the task `Execute a command to display hosts file`.
 
 Refer to the attached inventory file (see Q5)
 
@@ -211,11 +203,11 @@ You are assigned a task to restart a number of servers in a particular sequence.
 
 > Note: Use the description below to name the plays and tasks.
 >
-1. `Stop` the `web` services on web server nodes - `service httpd stop`
-2. `Shutdown` the `database` services on db server nodes - `service mysql stop`
-3. `Restart` `all` servers (web and db) at once - `/sbin/shutdown -r`
-4. `Start` the `database` services on db server nodes - `service mysql start`
-5. `Start` the `web` services on web server nodes - `service httpd start`
+1. `Stop` the `web` services on web server nodes - `service httpd stop`
+2. `Shutdown` the `database` services on db server nodes - `service mysql stop`
+3. `Restart` `all` servers (web and db) at once - `/sbin/shutdown -r`
+4. `Start` the `database` services on db server nodes - `service mysql start`
+5. `Start` the `web` services on web server nodes - `service httpd start`
 
 > Warning: Do not use this playbook in a real setup. There are better ways to do these actions. This is only for simple practise.
 >

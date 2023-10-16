@@ -1,13 +1,5 @@
 # 03.1 - Ansible Inventory
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: Yes
-Status: Complete
-Watch: Yes
-You done?: 🔥🔥🌚🌚
-
 ## Notes
 
 - Ansible can work with one or multiple systems in the system at the same time

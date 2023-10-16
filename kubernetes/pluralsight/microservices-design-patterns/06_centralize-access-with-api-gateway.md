@@ -15,7 +15,7 @@
 
 - API gateways aim to resolved this by centralizing these various components being managed.
 
-## 6.2 - Need for Centralized Access
+## 6.2 - Need for Centralized Access
 
 ![Sample Decentralized Application](./img/mobile-client-example.png)
 

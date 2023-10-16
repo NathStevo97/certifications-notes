@@ -1,4 +1,4 @@
-#  4.2 - Module Implementation: EC2 Instance
+#  4.2 - Module Implementation: EC2 Instance
 
 - Adopting the following Architecture:
 
@@ -11,7 +11,7 @@
 - A sample EC2 Module can be created by adding the following to a file under `modules`
 
 ```go
-resource "aws_instance" "myec2" {  
+resource "aws_instance" "myec2" {
   ami           = "ami-0a13d44dccf1f5cf6"
   instance_type = "t2.micro"
   key_name      = "remote-exec-keypair"
@@ -28,7 +28,7 @@ resource "aws_instance" "myec2" {
       #private key for authentication
       private_key = file("./remote-exec-keypair.pem")
       host        = self.public_ip
-    } 
+    }
   }
 }
 ```

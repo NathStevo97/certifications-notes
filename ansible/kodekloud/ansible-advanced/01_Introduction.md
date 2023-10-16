@@ -2,7 +2,7 @@
 
 Status: Done
 
-# 1.2 - Recap
+## 1.2 - Recap
 
 - In the previous course:
 
@@ -36,7 +36,7 @@ pip install ansible
   - Windows
 - Variables were shown to be usable in playbooks, as well as conditionals and loops - all will be expanded upon in the course.
 
-# 1.4 - Note on Enabling SSH in the VMs
+## 1.4 - Note on Enabling SSH in the VMs
 
 - Ensure `/etc/apt/sources.list` has been updated  with the following 2 lines:
     1. `deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main`
@@ -51,7 +51,7 @@ apt-get install openssh-server
 service sshd start
 ```
 
-# 1.6 - Environment Setup: Virtualbox
+## 1.6 - Environment Setup: Virtualbox
 
 - Use `ifconfig -a` to get the IP address for the machine
 - Generally can just clone or create 2 other VMs after the controlplane creation.
@@ -70,14 +70,14 @@ ansible <target hostname> -m ping -i inventory.txt
 
 - Note: One may need to modify the `/etc/ansible/ansible.cfg` file to disable host key checking, or just ssh to the systems from the controlplane; for practice, either are fine.
 
-# 1.7 - Environment Setup: Docker Containers
+## 1.7 - Environment Setup: Docker Containers
 
 - Ensure running a machine (VM or typical host) with Ansible and Docker installed.
 - One can then deploy multiple containers with base ubuntu images. ([Example Image](https://github.com/mmumshad/ubuntu-ssh-enabled))
-- The containers will be auto-assigned an IP based on Docker's internal network (172.17.0.<x> range)
+- The containers will be auto-assigned an IP based on Docker's internal network (`172.17.0.<x>` range)
 - Verify installation via `ansible` and `docker`
 - Create docker containers: `docker run -it -d  <image>`  (or use a Docker-compose file)
 - Use `docker inspect <container id>` to get the container IPs
 - Create an inventory file for each container and test connection with the ping module.
-  - **Username:** root
-  - **Password:** Passw0rd
+  - **Username:**: root
+  - **Password:**: Passw0rd

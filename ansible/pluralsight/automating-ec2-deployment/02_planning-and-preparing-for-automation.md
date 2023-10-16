@@ -5,16 +5,16 @@
 - Prior to any deployment, one should always design and plan the resources / architecture required.
 - If deploying to the cloud, there's always guidance provided.
 
-### AWS Terminology:
+### AWS Terminology
 
-  - VMs in AWS = Instances
-  - Instance types define the resource capacity of the instance e.g. memory, cpu, etc.
-  - Amazon Machine Image (AMIs) provide templates for the base OS and configuration
-  - Virtual Private Cloud = Virtual Network - Isolated from AWS Cloud
-  - Security Groups control firewall rules for the instances and associated resources
-  - Tags = Metadata used to label resources.
+- VMs in AWS = Instances
+- Instance types define the resource capacity of the instance e.g. memory, cpu, etc.
+- Amazon Machine Image (AMIs) provide templates for the base OS and configuration
+- Virtual Private Cloud = Virtual Network - Isolated from AWS Cloud
+- Security Groups control firewall rules for the instances and associated resources
+- Tags = Metadata used to label resources.
 
-### Deployment Process Overview:
+### Deployment Process Overview
 
 - Create a network:
   - VPC
@@ -54,7 +54,7 @@
 
 - For AWS, ensure that a specific IAM user has been created for Ansible's usage - allowing you to limit the access Ansible has to the account.
   - Ensure Access Key and Secret Key are saved, and the user has programmatic access.
-  - Recommended actions: 
+  - Recommended actions:
     - Add user to a group and give permissions for EC2 and VPC "Full Access" only (principle of least privilege)
     - Add tags for further ease of identification.
 

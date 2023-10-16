@@ -1,4 +1,4 @@
-# 6.4 - Terraform and Assume-Role with AWS STS
+# 6.4 - Terraform and Assume-Role with AWS STS
 
 - When working with multiple accounts and credentials, it's advised to make use of the assume-role functionality of the AWS Security Token Service (STS).
 - This is a web service that enables the request of temporary, limited-privilege credentials for AWS Identity and Access Management (IAM) users or for users that you authenticate (federated users)

@@ -1,13 +1,5 @@
 # 03.2 - Demo: Ansible Inventory
 
-Complete: No
-Flash Cards: No
-Lab: Yes
-Read: Yes
-Status: Complete
-Watch: Yes
-You done?: 🔥🔥🔥🌚
-
 ## Notes
 
 - Verify connection between ansible-controller and targets 1-2 via ssh
@@ -48,7 +40,7 @@ ansible-target1 | SUCCESS => {
 
 ## Exercises
 
-1. We have a sample inventory file with 3 servers listed. Add a fourth server by the name `server4.company.com`.
+1. We have a sample inventory file with 3 servers listed. Add a fourth server by the name `server4.company.com`.
 
 ```yaml
 # Sample Inventory File
@@ -59,10 +51,10 @@ server3.company.com
 server4.company.com
 ```
 
-1. We have added aliases named `web1`
-, `web2`
- and `web3`
- for the first three servers. Update server4 to have an alias `db1`
+1. We have added aliases named `web1`
+, `web2`
+ and `web3`
+ for the first three servers. Update server4 to have an alias `db1`
 
 ```yaml
 # Sample Inventory File
@@ -73,7 +65,7 @@ web3 ansible_host=server3.company.com
 db1 ansible_host=server4.company.com
 ```
 
-1. The web servers are linux, but the db server is windows. Add additional parameters in each line to add `ansible_connection`, `ansible_user` and `password`. Use the below table for information about credentials.
+1. The web servers are linux, but the db server is windows. Add additional parameters in each line to add `ansible_connection`, `ansible_user` and `password`. Use the below table for information about credentials.
 
 | Alias | Host | Connection | User | Password |
 | --- | --- | --- | --- | --- |
@@ -82,7 +74,7 @@ db1 ansible_host=server4.company.com
 | web3 | server3.company.com | SSH | root | Password123! |
 | db1 | server4.company.com | Windows | administrator | Password123! |
 
-Note: For linux use `ansible_ssh_pass` and for windows use `ansible_password`. Connector for windows is `winrm`
+Note: For linux use `ansible_ssh_pass` and for windows use `ansible_password`. Connector for windows is `winrm`
 
 ```shell
 web1 ansible_host=server1.company.com ansible_connection=ssh ansible_user=root ansible_ssh_pass=Password123!
@@ -91,7 +83,7 @@ web3 ansible_host=server3.company.com ansible_connection=ssh ansible_user=root a
 db1 ansible_host=server4.company.com ansible_connection=winrm ansible_user=administrator ansible_password=Password123!
 ```
 
-1. We have created a group for web servers. Similarly create a group for database servers named `db_servers` and add `db1` server to it.
+1. We have created a group for web servers. Similarly create a group for database servers named `db_servers` and add `db1` server to it.
 
 ```shell
 # Web Servers
@@ -113,7 +105,7 @@ db1
 
 1.
 
-Let us now create a group of groups. Create a new group called `all_servers` and add the previously created groups `web_servers` and `db_servers` to it.
+Let us now create a group of groups. Create a new group called `all_servers` and add the previously created groups `web_servers` and `db_servers` to it.
 
 Note: Syntax:
 

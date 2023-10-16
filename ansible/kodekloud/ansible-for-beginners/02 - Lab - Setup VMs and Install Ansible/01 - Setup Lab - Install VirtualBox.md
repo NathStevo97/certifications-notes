@@ -1,13 +1,5 @@
 # 02.1 - Setup Lab: Install VirtualBox
 
-Complete: No
-Flash Cards: No
-Lab: Yes
-Read: Yes
-Status: Complete
-Watch: Yes
-You done?: 🔥🔥🔥🌚
-
 ## Notes
 
 - The labs for this course and project are advised to be done on Virtualbox, the free Virtualisation tool.

@@ -1,4 +1,4 @@
-# 2.1 - Recap: Kubernetes Architecture
+# 2.1 - Recap: Kubernetes Architecture
 
 ## Node
 
@@ -8,7 +8,7 @@
 - To avoid applications failing to run on a node, it's advised to have multiple nodes together or multiple replicase of an app.
   - This can support high-availability and fault-tolerance.
 
-## Cluster
+## Cluster
 
 - A set of nodes grouped together
 - In the event of one node or app failing, users can be redirected to another node; maintaining accessibility.

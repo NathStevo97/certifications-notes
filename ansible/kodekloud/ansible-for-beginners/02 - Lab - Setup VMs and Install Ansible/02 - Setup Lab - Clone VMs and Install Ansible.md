@@ -1,13 +1,5 @@
 # 02.2 - Setup Lab: Clone VMs and Install Ansible
 
-Complete: No
-Flash Cards: No
-Lab: Yes
-Read: Yes
-Status: Complete
-Watch: Yes
-You done?: 🔥🔥🔥🌚
-
 ## Notes
 
 - Now that a base template VM has been created, we can create clone VMs from this for the purposes of the practice labs.

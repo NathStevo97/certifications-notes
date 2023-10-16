@@ -1,10 +1,8 @@
 # 3.0 - File Separation
 
-Status: Done
+## 3.1 - Intro to File Separation
 
-# 3.1 - Intro to File Separation
-
-## 3.1.1 - Host_Vars and Group_Vars
+### 3.1.1 - Host_Vars and Group_Vars
 
 - Up until now, variables such as `ansible_ssh_pass` and `ansible_host` are all included in the same inventory file.
 - This is not good practice for security purposes.
@@ -12,7 +10,7 @@ Status: Done
   - The YAML file name should match up with the host defined in the inventory file.
 - An example follows:
 
-```
+```shell
 # Inventory
 
 db_and_web_server
@@ -28,7 +26,7 @@ ansible_host: <host IP Address>
 - When the Ansible playbook is triggered, it, by default, will look in this directory for the required YAML file.
 - Similarly, `group_vars` should be used for group variables
 
-## 3.1.2 - Include
+### 3.1.2 - Include
 
 - If you ever have a set of tasks that can be re-used, it's often beneficial to split these sets of actions into tasks.
 - In the case of the simple-webapp example, you could have:

@@ -103,7 +103,7 @@
 
 ---
 
-##  3.4 - IAM Exam Tips
+## 3.4 - IAM Exam Tips
 
 - The root account can be secured by:
   - Enabling MFA for the root account

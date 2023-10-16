@@ -1,7 +1,5 @@
 # 1.6 - End of Module Assessment
 
-Tags: Done
-
 1. What component of TKG manages cluster lifecycle?
     1. Cluster API
 2. What's the purpose of the bootstrap machine?

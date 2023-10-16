@@ -1,4 +1,4 @@
-#  1.3 - Destroying Infrastructure
+#  1.3 - Destroying Infrastructure
 
 - Obviously we don't want to keep infrastructure running forever and racking up charges
 - To bring down infrastructure, can run the command `terraform destroy`

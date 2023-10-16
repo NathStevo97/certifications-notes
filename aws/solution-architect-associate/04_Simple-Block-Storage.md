@@ -40,19 +40,19 @@
 - Build for 99.95-99.99% service availability (tier-dependent)
 - Designed fro 99.999999999% durability
 
-### Standard S3
+### Standard S3
 
-  - Default S3 Offering
-  - Data stored redundantly across multiple devices in multiple facilities (>=3 AZs)
-  - 99.99% availability and 99.99999999999% durability
-  - Designed for frequent access
-  - Suitable for most workloads:
-    - Websites
-    - Content distribution
-    - Mobile and gaming applications
-    - Big data analytics
+- Default S3 Offering
+- Data stored redundantly across multiple devices in multiple facilities (>=3 AZs)
+- 99.99% availability and 99.99999999999% durability
+- Designed for frequent access
+- Suitable for most workloads:
+  - Websites
+  - Content distribution
+  - Mobile and gaming applications
+  - Big data analytics
 
-### Security
+### Security
 
 - S3 Data can be secured by any of:
   - Server-side encryption: Encryption within the bucket upon upload and storage of object
@@ -144,7 +144,7 @@
 
 ## 4.4 - Versioning Objects in S3
 
-## 4.5 - 
+## 4.5 -
 
 ## 4.6
 

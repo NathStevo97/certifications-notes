@@ -1,8 +1,6 @@
 # 5.0 - Asynchronous Actions
 
-Status: Done
-
-# 5.1 - Asynchronous Actions Introduction
+## 5.1 - Asynchronous Actions Introduction
 
 - SSH connections stay alive for the duration of the playbook
 - This is not good for when there are tasks we want to run post-playbook to check the result, this is typically admin tasks such as "check that the connection to the database"

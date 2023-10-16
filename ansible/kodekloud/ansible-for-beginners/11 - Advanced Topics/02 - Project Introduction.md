@@ -11,37 +11,37 @@ You done?: 🌚🌚🌚🌚
 ## Project Introduction
 
 - Project Aim: Use Ansible to automate the provisioning of the Kodekloud Store
-    - LAMP Stack Application (Linux - Apache - MySQL - PHP)
+  - LAMP Stack Application (Linux - Apache - MySQL - PHP)
 - Note: MariaDB will be used instead of MySQL
 - Need to understand what we actually want to achieve.
 - System:
-    - CentOS / Linux target machines
-        - Need to ensure Firewall is configured appropriately or installed if not there
-    - Apache HTTPD Server needs to be installed:
-        - install httpd
-        - configure httpd
-        - configure Firewall to allow httpd
-        - Start httpd service
-    - MariaDB needs to be set up and configured
-        - Install MariaDB
-        - Configure MariaDB
-        - Start MariaDB
-        - Configure Firewall
-        - Configure Database
-        - Load data
-    - PHP
-        - Install PHP
-        - Configure Code
-    - Configure any other system requirements
+  - CentOS / Linux target machines
+    - Need to ensure Firewall is configured appropriately or installed if not there
+  - Apache HTTPD Server needs to be installed:
+    - install httpd
+    - configure httpd
+    - configure Firewall to allow httpd
+    - Start httpd service
+  - MariaDB needs to be set up and configured
+    - Install MariaDB
+    - Configure MariaDB
+    - Start MariaDB
+    - Configure Firewall
+    - Configure Database
+    - Load data
+  - PHP
+    - Install PHP
+    - Configure Code
+  - Configure any other system requirements
 - For ease with the project, the steps will go:
-    - Install firewall (system)
-    - Install and setup MariaDB
-    - Install and Setup Apache HTTPD Server
-    - Download PHP Code and Run/Test it
+  - Install firewall (system)
+  - Install and setup MariaDB
+  - Install and Setup Apache HTTPD Server
+  - Download PHP Code and Run/Test it
 
 ---
 
-## Firewall:
+## Firewall
 
 ```bash
 sudo yum install firewalld # install firewalld package
@@ -49,7 +49,7 @@ sudo service firewalld start # start firewalld service
 sudo systemctl enable firewalld # enable the firewalld service
 ```
 
-## MariaDB:
+## MariaDB
 
 ```bash
 sudo yum install mariadb-server
@@ -98,11 +98,11 @@ curl http:://localhost # test code
 ## Setup Variations
 
 - Could just run all of the above on a single node, however in practice, one would have a DB server and a web server.
-    - The MariaDB instructions are to be carried out on one target
-    - Apache and PHP-related operations on another
-    - Firewall operations will need to be ran on both
+  - The MariaDB instructions are to be carried out on one target
+  - Apache and PHP-related operations on another
+  - Firewall operations will need to be ran on both
 - In a multi-node setup, the index.php file needs to be configured a bit differently
-    - On the web server, configure with the IP address of the DB server
-    - On the DB server, supply the IP Address of the web server to ensure it is given sufficient permissions in the MariaDB commands
+  - On the web server, configure with the IP address of the DB server
+  - On the DB server, supply the IP Address of the web server to ensure it is given sufficient permissions in the MariaDB commands
 - As far as the code goes, the only modification will be to index.php at around line 107 as this contains details regarding the MariaDB connection
 - Repo link kodekloudhub/learning-app-ecommerce

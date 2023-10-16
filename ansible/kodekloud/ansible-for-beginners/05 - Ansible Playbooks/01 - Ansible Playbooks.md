@@ -1,13 +1,5 @@
 # 05.1 - Ansible Playbooks
 
-Complete: No
-Flash Cards: No
-Lab: Yes
-Read: Yes
-Status: Complete
-Watch: Yes
-You done?: 🔥🔥🔥🌚
-
 ## Notes
 
 - Playbooks are configuration files used to help Ansible understand what it needs to do when running.

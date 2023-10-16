@@ -1,13 +1,5 @@
 # 01.1 - Introduction
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: Yes
-Status: Complete
-Watch: Yes
-You done?: 🔥🔥🌚🌚
-
 ## Notes
 
 - Course content via lectures, hands-on exercises and practice projects to work on.

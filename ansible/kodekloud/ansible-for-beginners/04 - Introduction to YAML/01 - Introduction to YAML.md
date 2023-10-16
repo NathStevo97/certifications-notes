@@ -1,13 +1,5 @@
 # 04.1 - Introduction to YAML
 
-Complete: No
-Flash Cards: No
-Lab: Yes
-Read: Yes
-Status: Complete
-Watch: Yes
-You done?: 🔥🔥🔥🌚
-
 ## Notes
 
 - All Ansible Playbooks are written in YAML
@@ -73,9 +65,9 @@ dictionary2:
 
 ## Exercises
 
-  1. Given a dictionary with the property `property1` and value `value1`
+  1. Given a dictionary with the property `property1` and value `value1`
 
-  Add an additional property `property2` and value `value2`.
+  Add an additional property `property2` and value `value2`.
 
   ```yaml
   property1: value1
@@ -84,7 +76,7 @@ dictionary2:
 
   1.
 
-  Given a dictionary with the property `name` and value `apple`. Add additional properties to the dictionary.
+  Given a dictionary with the property `name` and value `apple`. Add additional properties to the dictionary.
 
   | Key/Property | Value |
   | --- | --- |
@@ -100,7 +92,7 @@ dictionary2:
 
   1.
 
-  A dictionary `employee` is given. Add the remaining properties to it using information from the table below.
+  A dictionary `employee` is given. Add the remaining properties to it using information from the table below.
 
   | Key/Property | Value |
   | --- | --- |
@@ -173,7 +165,7 @@ dictionary2:
     weight: 150g
   ```
 
-  1. We would like to record information about multiple employees. Convert the dictionary `employee` to an array `employees`
+  1. We would like to record information about multiple employees. Convert the dictionary `employee` to an array `employees`
 
   ```yaml
   employees:
@@ -203,7 +195,7 @@ dictionary2:
 
   1.
 
-  Now try adding the pay information. Remember while `address` is a dictionary, `payslips` is an array of `month` and `amount`
+  Now try adding the pay information. Remember while `address` is a dictionary, `payslips` is an array of `month` and `amount`
 
   | Key/Property | Value |
   | --- | --- |

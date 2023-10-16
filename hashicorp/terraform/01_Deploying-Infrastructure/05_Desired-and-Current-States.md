@@ -1,4 +1,4 @@
-#  1.5 - Desired and Current States
+# 1.5 - Desired and Current States
 
 ## 1.5.1 - Desired State
 

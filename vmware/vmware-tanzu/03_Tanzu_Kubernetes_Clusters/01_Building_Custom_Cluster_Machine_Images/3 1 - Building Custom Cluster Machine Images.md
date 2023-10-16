@@ -17,9 +17,9 @@ Tags: Done
 
 - Custom machine images can be used as VM templates for Tanzu Kubernetes workload cluster nodes
 - Each custom machine image packages a base OS version and a Kubernetes version, as well as any additional customizations into an image capable of running on:
-    - vSphere
-    - AWS
-    - Azure
+  - vSphere
+  - AWS
+  - Azure
 - Base OS can be any OS that VMware supports but does not distribute e.g. Red Hat Enterprise Linux (RHEL) v7
 
 <aside>
@@ -36,13 +36,13 @@ Tags: Done
 # Building Custom Images - Requirements
 
 - The following requirements must be met for custom images:
-    - Account on vSphere/AWS/Azure with sufficient permissions
-    - Docker installed on Mac OS or Linux workstation
-    - For AWS - aws CLI enabled
-    - Azure - az CLI enabled
-    - vSphere - OVFTool must be installed
+  - Account on vSphere/AWS/Azure with sufficient permissions
+  - Docker installed on Mac OS or Linux workstation
+  - For AWS - aws CLI enabled
+  - Azure - az CLI enabled
+  - vSphere - OVFTool must be installed
 
-# Steps to Create Custom Image:
+# Steps to Create Custom Image
 
 1. Determine and download image builder configuration version to be built from
 Each version corresponds to the Kubernetes version that the Image Builder will use.
@@ -53,6 +53,7 @@ Each version corresponds to the Kubernetes version that the Image Builder will u
 # Using Custom Images
 
 - After creating the custom images, you need to allow the Tanzu CLI to use the image - this requires creation of a custom Tanzu Kubernetes release based on the image
+
 1. Open the BOM (Bill Of Materials) file corresponding to the Kubernetes version being used by the custom image
 2. Edit the configuration as appropriate
 3. Encode the BOM configuration in Base64

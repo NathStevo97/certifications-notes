@@ -1,4 +1,4 @@
-# 1.1 - Introduction
+# 1.1 - Introduction
 
 ## Course Stucture and Notes
 

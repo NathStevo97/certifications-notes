@@ -1,16 +1,14 @@
 # 11.0 - Dynamic Inventory
 
-Status: Done
-
-# 11.1 - Introduction
+## 11.1 - Introduction
 
 - Commonly inventory files are stored in plaintext form.
 - This generally is bad practice, but becomes tedious and unmanageable for larger inventories.
 - One may wish to leverage Dynamic Inventories
-    - Inventories stored in the cloud or external databases
-    - Ansible will retrieve this information programmatically during the play
+  - Inventories stored in the cloud or external databases
+  - Ansible will retrieve this information programmatically during the play
 
-## Example
+### Example
 
 - Convert a static inventory file into a python script
 
@@ -69,7 +67,7 @@ if __name__ == "__main__":
 ```
 
 - Many dynamic scripts are available via the Ansible Github predeveloped for providers such as:
-    - AWS
-    - Azure
-    - VMware
-    - Docker
+  - AWS
+  - Azure
+  - VMware
+  - Docker

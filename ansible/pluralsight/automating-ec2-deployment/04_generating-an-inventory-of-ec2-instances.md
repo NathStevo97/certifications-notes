@@ -1,16 +1,12 @@
 # 4.0 - Generating an Inventory of EC2 Instances
 
-## 4.1 - Using a Dynamic Inventory Script
+## 4.1 - Using a Dynamic Inventory Script
 
 - At small resource numbers, management is easy. In practice, one could be dealing with anywhere from  10,000 - 100,000 instances (or more).
   - Each of these instances may have frequently changing IPs (either they're spun up on-demand or frequently autoscaled)
 - To help manage these, one can utilise `EC2.py` and `EC2.ini` files, which leverage the AWS CLI.
 - `EC2.py` is a script using the Boto EC2 library, which queries AWS for any particular running EC2 instances for a given account.
 - `EC2.ini` acts as configuration for `EC2.py` and is used to limit the scope of Ansible's reach.
-
-- The file are available via the fillowing links:
-  -
-  - 
 
 - Environment variables need to be set for these files to be leveraged:
   - `export ANSIBLE_HOSTS=/working_dir/ec2.py`
@@ -30,9 +26,9 @@
 ---
 
 - **Note** - The links have now been deprecated, This is now an AWS Plugin! Refer to guidance on how to use
-  - https://docs.ansible.com/ansible/latest/collections/amazon/aws/aws_ec2_inventory.html
-  - https://docs.ansible.com/ansible/latest/collections/amazon/aws/docsite/aws_ec2_guide.html
-  - https://devopscube.com/setup-ansible-aws-dynamic-inventory/
+  - <https://docs.ansible.com/ansible/latest/collections/amazon/aws/aws_ec2_inventory.html>
+  - <https://docs.ansible.com/ansible/latest/collections/amazon/aws/docsite/aws_ec2_guide.html>
+  - <https://devopscube.com/setup-ansible-aws-dynamic-inventory/>
 
 ---
 
@@ -48,8 +44,7 @@
 
 - Red Hat Ansible Tower 3.3 uses this mechanism with a graphical frontend to generate inventory information from EC2. This is generally easier to use but as powerful as the CLI.
 
-
-## 4.2 - Using the AWS EC2 Inventory Plugin
+## 4.2 - Using the AWS EC2 Inventory Plugin
 
 ### Inventory Plugins
 
@@ -78,4 +73,3 @@ compose:
   # set the env variable to the value of the env tag
   env: tags.env
 ```
-

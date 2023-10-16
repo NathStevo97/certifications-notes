@@ -1,8 +1,6 @@
 # 12.0 - Custom Modules
 
-Status: Done
-
-# 12.1 - Introdcution
+## 12.1 - Introdcution
 
 - Modules are each item in a task that carries out a particular command, this can be for anything such as:
   - System management
@@ -10,7 +8,7 @@ Status: Done
   - Managing files
 - Each module is a set of python script(s) to perform a particular action - this leads to the potential problem of "what if there is no ready-made solution?"
 
-# 12.2 - Example: Custom Debug
+## 12.2 - Example: Custom Debug
 
 - For any custom plugins, one must develop a custom python script to support it. This can then be stored in the project and referred to via an environment variable, or stored alongside other ansible modules downloaded.
 - Example:
@@ -26,7 +24,7 @@ Status: Done
 
 ---
 
-# 12.3 - Best Practices
+## 12.3 - Best Practices
 
 - Modules should always come with documentation for live viewing and in the ansible docs
 - `ansible-doc <module name>`
@@ -44,6 +42,6 @@ Status: Done
 
 ---
 
-# Guidance
+## Guidance
 
 - Additional guidance for testing is available in the ansible docs.

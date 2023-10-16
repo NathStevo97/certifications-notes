@@ -1,8 +1,6 @@
 # 14.0 - Assignment
 
-Status: Done
-
-# 14.1 - Overview
+## 14.1 - Overview
 
 - Deploy the simple-webapp to the cloud
 - Deploy all required servers e.g. 1 db and 1 web servers
@@ -19,7 +17,7 @@ Status: Done
 
 ---
 
-# AWS
+## AWS
 
 - Deploy EC2 Instances
 - Configure Networking for EC2 Instances
@@ -27,7 +25,7 @@ Status: Done
 
 ## Areas to Check
 
-- Mysql CNF Updates e.g. bind_address at /etc/mysql/<cnf file>
+- Mysql CNF Updates e.g. bind_address at `/etc/mysql/<cnf file>`
 - Make sure web_server host is set accordingly
 
 ---

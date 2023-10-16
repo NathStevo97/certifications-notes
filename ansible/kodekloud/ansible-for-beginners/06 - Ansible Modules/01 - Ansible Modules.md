@@ -1,14 +1,6 @@
 # 06.1 - Ansible Modules
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: Yes
-Status: Complete
-Watch: Yes
-You done?: 🔥🔥🌚🌚
-
-# Notes
+## Notes
 
 - Modules are categorised based on functionalities e.g
   - System - Commands based on the host system e.g. start/stop service

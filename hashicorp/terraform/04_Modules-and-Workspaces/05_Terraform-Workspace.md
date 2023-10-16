@@ -1,4 +1,4 @@
-#  4.5 - Terraform Workspace
+# 4.5 - Terraform Workspace
 
 - Workspace = Groupings of applications.
 - Terraform allows the use of multiple workspaces. Each workspace can use a set of environment variables.

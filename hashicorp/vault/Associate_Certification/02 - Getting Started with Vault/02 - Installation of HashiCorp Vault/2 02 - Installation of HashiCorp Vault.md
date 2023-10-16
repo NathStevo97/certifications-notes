@@ -37,7 +37,7 @@ vault
 
 ### Ubuntu
 
-- Add the HashiCorp [GPG key](https://apt.releases.hashicorp.com/gpg)
+- Add the HashiCorp [GPG key](https://apt.releases.hashicorp.com/gpg)
 
 ```bash
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -

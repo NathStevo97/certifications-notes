@@ -1,8 +1,6 @@
 # 7.0 - Error Handling
 
-Status: Done
-
-# 7.1 - Introduction
+## 7.1 - Introduction
 
 - As discussed in strategy, Ansible will execute each task sequentially until completion
 - In the event of failure, the playbook will fail
@@ -12,7 +10,7 @@ Status: Done
 
 ---
 
-# Ignore Errors, Failed_When
+### Ignore Errors, Failed_When
 
 - If there's any tasks you're not concerned about throwing errors, add to a task: `ignore_errors: yes`
 - If there's any tasks with specific fail conditions, add similar to:

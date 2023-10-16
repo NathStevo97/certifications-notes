@@ -1,8 +1,6 @@
 # 4.0 - Roles
 
-Status: Done
-
-# 4.1 - Roles Introduction
+## 4.1 - Roles Introduction
 
 - Recommended way of developing playbooks
 - Allows for organization of project in a standard structure and for reusable tasks
@@ -31,7 +29,7 @@ Status: Done
 
 ---
 
-# 4.2 - Publishing Roles to Ansible-Galaxy
+## 4.2 - Publishing Roles to Ansible-Galaxy
 
 - Login to [https://galaxy.ansible.com](https://galaxy.ansible.com)
 - Navigate to the roles directory

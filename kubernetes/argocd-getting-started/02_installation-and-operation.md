@@ -27,7 +27,7 @@
   - **Namespace-Level:**
     - Use when you have namespace-level access and will deploy apps to external K8s cluster from where ArgoCD is running.
 
-### Installation:
+### Installation
 
 - Create a namespace for ArgoCD: `kubectl create namespace argocd`
 - `kubectl apply -n argocd -f <link to install.yaml>`
@@ -47,12 +47,12 @@
   - Managing user accounts
 - The CLI supports scripting and AUTOMATION
 
-### Installation:
+### Installation
 
 - Windows: `choco install argocd-cli`
 - Linux and Mac: `brew install argocd`\
 
-### Common Commands:
+### Common Commands
 
 | argocd command | Description                                                           |
 | -------------- | --------------------------------------------------------------------- |
@@ -86,7 +86,7 @@
 - **Resources:** Clusters, projects, applications, repositories, certificates, accounts, gpgkeys
 - **Actions:** get, create, update, delete, sync, override, action
 
-### ArgoCD RBAC - Permissions:
+### ArgoCD RBAC - Permissions
 
 - Split into two caregories:
   - All resources except applications: `p, <role/user/group>, <resource>, <action>, <object>`
@@ -94,14 +94,14 @@
 
 - These permissions and roles are typically defined in configmaps, where user groups are chosen by `g, <group name>`
 
-## 2.7 - Configuring User Management
+## 2.7 - Configuring User Management
 
 - By default ArgoCD has only one user created (admin)
 - For new users there are 2 options:
   - **Local users** - Recommended for small teams 5 or less, as well as usage of API Accounts for automation.
   - **SSO Integration** - Recommended for larger teams & integrating with external identity providers.
 
-### Local Users
+### Local Users
 
 - Stored in a ConfigMap that is applied to ArgoCD
 - Lack access to advanced features e.g. groups, login history, etc.
@@ -143,7 +143,7 @@
   - aws-secret-operator
   - argocd-vault-plugin
 
-## 2.9 - HA, Backup and Disaster Recovery
+## 2.9 - HA, Backup and Disaster Recovery
 
 - ArgoCD is made up of mostly stateless components
 - For any data in ArgoCD that needs to persist, it is written to the etcd kubernetes database

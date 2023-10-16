@@ -16,7 +16,7 @@
   - Verify with `kubectl config get-contexts -o name`
   - Add the context to ArgoCD, installing a service account `argocd-manager` to that context's `kube-system` namespace via `argocd cluster add <context name>`
 
-## 3.2 - Setting Up Projects in ArgoCD
+## 3.2 - Setting Up Projects in ArgoCD
 
 - Projects: A logical grouping of apps in ArgoCD
 - Projects serve multiple purposes including:
