@@ -31,7 +31,7 @@ jobs:
       if: (success() || failure())
       with:
         config: .markdownlint.json
-        files: 'aws/**/*.md'
+        files: 'aws/**/**/*.mdc'
 
     - uses: articulate/actions-markdownlint@v1
       name: markdown-lint - Packer
@@ -59,11 +59,11 @@ jobs:
       if: (success() || failure())
       with:
         config: .markdownlint.json
-        files: 'kubernetes/**/*.md'
+        files: 'kubernetes/**/**/*.md'
 
     - uses: articulate/actions-markdownlint@v1
       name: markdown-lint - VMware
       if: (success() || failure())
       with:
         config: .markdownlint.json
-        files: 'vmware/**/*.md'
+        files: 'vmware/**/**/*.md'
