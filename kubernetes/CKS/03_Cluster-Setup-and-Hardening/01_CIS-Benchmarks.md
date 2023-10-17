@@ -20,7 +20,7 @@ implemented for server (or other appropriate device) security.
 - **CIS** - Centre for Internet Security
   - Commonly used tool to check if security best practices are implemented
   - Available on Linux, Windows, Cloud platforms, Mobile and many other platforms as well as Kubernetes.
-- Can be downloaded from <https://www.cisecurity.org/cis-benchmarks/>
+- Can be downloaded from `https://www.cisecurity.org/cis-benchmarks/`
 - Guides come with predefined instructions for your associated platform(s) best practices and how to implement them (commands included)
 - CIS Provide tools such as the CIS-CAT tool to automate the assessment of best
 practices implementation
@@ -50,11 +50,11 @@ A:
 
 - Run Assessor-CLI.sh
 - Note options:
-  - -i (interactive)
-  - --rd <reports dir>
-  - --rp <report prefix>
-- Run Assessor-CLI.sh with options for /var/www/html/ and
-index.html respectively (and --nts) and -i
+  - `-i (interactive)`
+  - `--rd <reports dir>`
+  - `--rp <report prefix>`
+- Run Assessor-CLI.sh with options for `/var/www/html/` and
+index.html respectively (and `--nts`) and `-i`
 - **Note:** Run options in order that they are displayed
 - Apply conditions for benchmark setting and profiles
 

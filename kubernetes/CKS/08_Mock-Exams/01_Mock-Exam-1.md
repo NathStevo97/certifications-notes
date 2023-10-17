@@ -83,7 +83,8 @@ Make use of the following specs to integrate it with the cluster using an
 ImagePolicyWebhook:
 
   1. Create a new admission configuration file at `/etc/admission-controllers/admission-configuration.yaml`
-  2. The kubeconfig file with the credentials to connect to the webhook server is located at `/root/CKS/ImagePolicy/admission-kubeconfig.yaml`.<br> **Note:** The directory /root/CKS/ImagePolicy/ has already been mounted on the kube-apiserver at path `/etc/admission-controllers` so use this path to store the admission configuration. <br>
+  2. The kubeconfig file with the credentials to connect to the webhook server is located at `/root/CKS/ImagePolicy/admission-kubeconfig.yaml`.<br>
+  **Note:** The directory /root/CKS/ImagePolicy/ has already been mounted on the kube-apiserver at path `/etc/admission-controllers` so use this path to store the admission configuration. <br>
 
   3. Make sure that if the latest tag is used, the request must be rejected at all times.
   4. Enable the Admission Controller.

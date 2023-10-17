@@ -12,8 +12,8 @@ container
   - Create the ConfigMap
   - Inject it to the Pod
 - To create, can run either:
-  - kubectl create configmap <configmap name>
-  - kubectl create -f <configmap-definition>.yaml
+  - `kubectl create configmap <configmap name>`
+  - `kubectl create -f <configmap-definition>.yaml`
 - By using the first command specified above, you can immediately create key-value
 pairs:
 

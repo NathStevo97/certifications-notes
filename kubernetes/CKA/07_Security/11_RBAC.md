@@ -11,8 +11,8 @@
 apiGroup for authorization
   - RoleRef - The role to be linked to the subject
 - To view roles: `kubectl get roles`
-- To view rolebindings: kubectl get rolebindings
-- To get additional details: kubectl describe role/rolebinding <name>
+- To view rolebindings: `kubectl get rolebindings`
+- To get additional details: `kubectl describe role/rolebinding <name>`
 - To check access level: `kubectl auth can-i <command/activity>`
 - To check if a particular user can do an activity, append `--as <username>`
 - To check if an activity can be done via a user in a particular namespace, append

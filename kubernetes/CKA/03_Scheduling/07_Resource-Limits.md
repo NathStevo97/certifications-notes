@@ -85,14 +85,14 @@ spec:
 - Aspects such as environment variables, service accounts and resource limits cannot
 be edited easily, but there are ways to do it:
   - Editing the specification:
-■ Run kubectl edit pod <podname> and edit the appropriate features
+■ Run `kubectl edit pod <podname>` and edit the appropriate features
 ■ When saving to log the changes, if the feature cannot be edited for an
 existing pod, the changes will be denied
 ■ A copy of the definition file with the changes will saved to a temporary
 location, which can be used to recreate the pod with the changes once
 the current version is deleted
   - Extracting and editing the yaml definition file:
-■ Run kubectl get pod <podname> -o yaml > <filename.yaml>
+■ Run `kubectl get pod <podname> -o yaml > <filename.yaml>`
 ■ Make the desired changes to the yaml file and delete the current
 version of the pod
 ■ Create the pod again with the file

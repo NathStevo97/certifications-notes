@@ -27,9 +27,9 @@ administrators across the cluster
   - From here, the request can be reviewed and approved using kubectl, the
 resultant certificate can then be extracted and shared with the user
 - Steps:
-  - User generates key: openssl genrsa -out <keyname>.key 2048
+  - User generates key: `openssl genrsa -out <keyname>.key 2048`
   - User generates certificate signing request and sends to administrator:
-openssl req -new -key <key>.name -subk "/CN=name" -out name.csr
+`openssl req -new -key <key>.name -subk "/CN=name" -out name.csr`
   - Admin receives request and creates the API object using a manifest file,
 where the spec file includes the following:
     - Groups - To set the permissions for the user
@@ -39,19 +39,18 @@ be signed?
 which must be encoded in base64 language first i.e. cat cert.crt |
 base64
     - Admins across the cluster can view certificate requests via:
-kubectl get csr
+`kubectl get csr`
     - If all's right with the csr, any admin can approve the request with:
-kubectl certificate approve <name>
+`kubectl certificate approve <name>`
     - You can view the CSR in a YAML form, like any Kubernetes object by
 appending -o yaml to the kubectl get command i.e.
-kubectl get csr <user> -o yaml
-- Note: The certificate will still be in base64 code, so run: echo
-"CODED CERTIFICATE" | base64 --decode
+`kubectl get csr <user> -o yaml`
+- Note: The certificate will still be in base64 code, so run: `echo "CODED CERTIFICATE" | base64 --decode`
 - Note: The controller manager is responsible for all operations associated with
 approval and management of CSR
 - The controller manager's YAML file has options where you can specify the key and
 certificate to be used when signing certificate
-  - --cluster-signing-key-file
+  - `--cluster-signing-key-file`
 
 ```yaml
 spec:

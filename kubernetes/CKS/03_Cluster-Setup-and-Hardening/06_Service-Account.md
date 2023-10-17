@@ -5,13 +5,13 @@
   - Service - Used by application services for various tasks e.g. Monitoring, CI/CD
 tools like Jenkins
 - For an application to query the Kubernetes API, a service account is required
-- Creation: kubectl create serviceaccount <serviceaccount name>
+- Creation: `kubectl create serviceaccount <serviceaccount name>`
 - View: kubectl get serviceaccount
-- For detailed information: kubectl describe serviceaccount <name>
+- For detailed information: `kubectl describe serviceaccount <name>`
 - When a serviceaccount is created, an authentication token is automatically created
 for it and stored in a Kubernetes secret.
   - Serviceaccount token used for application authentication to the kube-api server
-  - The secret can be viewed via kubectl describe secret <secret name>
+  - The secret can be viewed via `kubectl describe secret <secret name>`
   - This token can then be passed as an Authorization Bearer token when
 making a curl request.
   - E.g `curl https://<IP-ADDRESS> -insecure --header "Authorization: Bearer <token>"`

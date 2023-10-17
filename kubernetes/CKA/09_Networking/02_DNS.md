@@ -18,4 +18,4 @@ looks in the `/etc/hosts` file first, then DNS, taking whichever one comes first
   - A - Domain Name - IP address
   - AAAA - Domain name to full Address
   - CNAME - 1-to-1 name mapping for the same IP
-- Dig - tool to test DNS resolution (dig <DNS NAME>)
+- Dig - tool to test DNS resolution (`dig <DNS NAME>`)

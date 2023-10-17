@@ -22,18 +22,17 @@ applications are container-based
   - `docker -H <domain name> run --privileged -it ubuntu bash`
   - Runs a basic ubuntu container with escalated privileges within the infrastructure, allowing ssh'ing into other containers within the infrastructure
 - Suppose the hacker already has a script capable of exploiting the infrastructure's vulnerability(ies), they should be able to download it to their privileged container without issue:
-  - Curl not found
-  - Wget not found
-  - Apt-get install <curl>
-  - Apt-get update
+  - `Curl not found`
+  - `Wget not found`
+  - `Apt-get install <curl>`
+  - `Apt-get update`
   - Since the authentication isn't in place, the packages can be successfully installed and the hacker can run their script(s) to infiltrate the underlying infrastructure and mess around with the other applications, or learn additional information about the system e.g.:
     - Volume mounts: `df -h`
     - Username currently on system: `uname`
     - Host name: `hostname`
     - Additional containers: `sudo docker ps`
 - Running these commands allows identification of a Kubernetes workload running in a container with Kubernetes-dashboard
-- The Kubernetes dashboard must be running on a port somewhere, run `sudo
-iptables -L -t nat | grep kubernetes-dashboard`
+- The Kubernetes dashboard must be running on a port somewhere, run `sudo iptables -L -t nat | grep kubernetes-dashboard`
   - Shows dashboard running on 30080
   - Dashboard can be accessed and viewed easily if there's no authentication
 and security controls setup

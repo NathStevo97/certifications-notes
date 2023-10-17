@@ -1,6 +1,6 @@
 # 7.13 - Image Security
 
-- Docker images follow the naming convention where image: <image name>
+- Docker images follow the naming convention where `image: <image name>`
   - Image name = image / repository referenced
   - i.e. library/image name
     - Library = default account where docker official images are stored

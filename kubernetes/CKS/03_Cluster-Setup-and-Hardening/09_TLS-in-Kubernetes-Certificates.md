@@ -6,7 +6,8 @@
   - CFSSL
 - **Steps - Server Certificates: CA Example**
   - Generate the private key: openssl genrsa -out ca.key 2048
-    - The number "2048" in the above command indicates the size of the private key. You can choose one of five sizes: 512, 758, 1024, 1536 or 2048 (these numbers represent bits). The larger sizes offer greater security, but this is offset by a penalty in CPU performance. We recommend the best practice size of 1024.
+    - The number "2048" in the above command indicates the size of the private key. You can choose one of five sizes: 512, 758, 1024, 1536 or 2048 (these numbers represent bits).
+    The larger sizes offer greater security, but this is offset by a penalty in CPU performance. We recommend the best practice size of 1024.
   - Generate certificate signing request: `openssl req -new -key ca.key -subj "/CN=KUBERNETES-CA" -out ca.csr`
   - **Note:** `"/CN=<NAME>"` outlines the name of the component the certificate is for.
   - Sign certificates, this is self-signed via the ca key pair: `openssl x509 -req -in ca.csr -signkey ca.key -out ca.crt`

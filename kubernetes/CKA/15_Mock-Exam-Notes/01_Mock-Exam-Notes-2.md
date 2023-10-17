@@ -11,8 +11,7 @@
   - Cert
   - Key
 
-- Run the command: `ETCDCTL_API=3 etcdctl --endpoints=<> --cacert=<> --cert=<> --key=<> snapshot
-save <filepath to backup>`
+- Run the command: `ETCDCTL_API=3 etcdctl --endpoints=<> --cacert=<> --cert=<> --key=<> snapshot save <filepath to backup>`
 
 ## Use-PV Question
 
@@ -49,5 +48,3 @@ save <filepath to backup>`
 - `kubectl describe svc` -> get IP and endpoing
 - `kubectl run test nslookup --image=busybox:1.28 --rm -it -- nslookup nginx-resolver-service > /root/nginx.svc`
 - `kubectl run test-nslookup --image=busybox:1.28 --rm-it -- nslookup <pod IP address> > filepath`
-
-##
