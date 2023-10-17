@@ -1,6 +1,6 @@
 # 09.2 - Coding Exercise: Ansible Loops
 
-Q1:
+## Q1
 
 The playbook currently runs an echo command to print a fruit name. Apply a loop directive (with_items) to the task to print all fruits defined in the `fruits`
  variable.
@@ -21,7 +21,7 @@ The playbook currently runs an echo command to print a fruit name. Apply a loop 
             with_items: '{{fruits}}'
 ```
 
-Q2:
+## Q2
 
 To a more realistic use case. We are attempting to install multiple packages using yum module.The current playbook installs only a single package.
 

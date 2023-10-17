@@ -12,7 +12,7 @@
 - Multiple Response:
   - 2 Correct responses out of 5.
 
-### Domains:
+### Domains
 
 - Original Domains and Weighting:
   - Design Resilient Architectures - 30%

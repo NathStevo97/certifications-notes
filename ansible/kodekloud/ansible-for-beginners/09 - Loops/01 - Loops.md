@@ -1,21 +1,13 @@
 # 09.1 - Loops
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
-# Notes
+## Notes
 
 - Loops allow the same command(s) to be ran iteratively to accommodate an ever-changing value(s)
 - A common example is creating users
 
 ![Loop Example](images/loop-example.png)
 
-- Note: **‘{{ item }}'** is used to call the loop iteration variable
+- Note: **'{{ item }}'** is used to call the loop iteration variable
 - What happens if you have multiple sets of variables e.g. user name and user id
   - Use a list of dictionaries in the loop
 
@@ -31,8 +23,8 @@ You done?: 🌚🌚🌚🌚
 ---
 
 - With_ allows more flexibilty compared to loops e.g.:
-  - with_items
-  - with_files
-  - with_url
-  - with_env
+  - `with_items`
+  - `with_files`
+  - `with_url`
+  - `with_env`
 - These are all custom plugins primarily focused on lookup tasks.

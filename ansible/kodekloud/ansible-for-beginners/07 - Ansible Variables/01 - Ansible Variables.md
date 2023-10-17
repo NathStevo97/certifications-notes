@@ -1,14 +1,6 @@
 # 07.1 - Ansible Variables
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
-# Notes
+## Notes
 
 - Variables are used in a very similar manner to other programming / scripting languages.
 - Could be used to allow changeability of username / host details.
@@ -21,7 +13,7 @@ You done?: 🌚🌚🌚🌚
 
 ![Variable Example](images/var-example.png)
 
-## Using Variables
+### Using Variables
 
 - To use variables, enter the variable name in ‘{{}}' i.e.
 

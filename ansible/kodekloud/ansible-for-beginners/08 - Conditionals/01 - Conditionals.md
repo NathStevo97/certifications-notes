@@ -1,14 +1,6 @@
 # 08.1 - Conditionals
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
-# Notes
+## Notes
 
 - Consider two Playbooks that look to install NGINX, but one on Red Hat, another on Debian. This requires the use of the yum and apt packages respectively.
 

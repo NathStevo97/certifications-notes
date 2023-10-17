@@ -1,14 +1,6 @@
 # 07.2 - Coding Exercise: Ansible Variables
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
-# Q1
+## Q1
 
 The playbook is used to update name server entry into resolv.conf file on localhost. The name server information is also updated in the inventory file as a variable `nameserver_ip`. Refer to the inventory file.
 
@@ -26,7 +18,7 @@ The playbook is used to update name server entry into resolv.conf file on localh
                 line: 'nameserver {{ nameserver_ip }}'
 ```
 
-# Q2
+## Q2
 
 We have added a new task to disable SNMP port in the playbook. However the port is hardcoded in the playbook. Update the inventory file to add a new variable `snmp_port` and assign the value used here. Then update the playbook to use value from the variable.
 
@@ -50,7 +42,7 @@ Remember to use curly braces around the variable name.
                 state: disabled
 ```
 
-# Q3
+## Q3
 
 We are printing some personal information to the screen. We would like to move the `car_model`, `country_name` and `title` to a variable defined at the play level.
 

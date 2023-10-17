@@ -120,7 +120,7 @@
   - Edge Locations - Endpoints for AWS typically used for caching content.
 
 - Shared Responsibility Model:
-  - If the answer is "yes" to the question "Can I do <x> task in the AWS Console?" - Then you as a user is responsible for it when using AWS.
+  - If the answer is "yes" to the question "Can I do `<x>` task in the AWS Console?" - Then you as a user is responsible for it when using AWS.
   - AWS is responsible for tasks such as data center management and patching RDS operating systems
   - Both user and AWS are responsible for encryption
 

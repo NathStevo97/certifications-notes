@@ -1,14 +1,6 @@
 # 10.1 - Ansible Roles
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
-# Notes
+## Notes
 
 - Roles can be assigned to each server involved in an Ansible playbook to allow them to perform particular tasks.
 - Assigning a role in Ansible requires the performance of tasks such that the server can perform the required task. Example:
@@ -41,7 +33,7 @@ You done?: 🌚🌚🌚🌚
 
 ---
 
-## Getting Started with a Role
+### Getting Started with a Role
 
 - Create the directory structure
 - Run the ansible-galaxy command:

@@ -102,7 +102,7 @@
   - Object -> Actions -> Make Public Using ACL -> Make Public
   - Object can then be viewed via the object URL provided
 
-### Summary
+### S3 Bucket Security Summary
 
 - Buckets are private by default - upon creation, users must take action to allow public access on the bucket and its objects to make it public
 - Access to buckets is controlled by ACLs and Bucket Policies:
@@ -136,7 +136,7 @@
   - Add the desired policy in and save changes, ensuring the arn of the S3 bucket is specified correctly.
   - All objects will then be made public upon upload.
 
-### Summary
+### Static Site Hosting Summary
 
 - Bucket policies used to make entire buckets public
 - Static content hosting is achieved by using S3
