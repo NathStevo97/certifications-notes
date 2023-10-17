@@ -18,13 +18,13 @@ Tags: Done
 
 ## Components
 
-![Untitled](2%204%20-%20NSX%20Advanced%20Load%20Balancer%207c32c952a3bb4f209fd873a932343a70/Untitled.png)
+![Untitled](img/nsx-components.png)
 
 ## Architecture
 
 - When applications running on a workload cluster are exposed using a load balancer service type, traffic inbound to the apps is routed to the Service Engines, from which they're routed to a NodePort IP address on the workload cluster.
 
-![Untitled](2%204%20-%20NSX%20Advanced%20Load%20Balancer%207c32c952a3bb4f209fd873a932343a70/Untitled%201.png)
+![Untitled](img/nsx-architecture.png)
 
 - The AVI controller determines the configuration and operations of the Service engines
 
@@ -43,4 +43,4 @@ Tags: Done
 - The NSX Advanced Load Balancer controller sends a request to the SE to configure a virtual service
 - The SE load balances traffic to pods running in the cluster.
 
-![Untitled](2%204%20-%20NSX%20Advanced%20Load%20Balancer%207c32c952a3bb4f209fd873a932343a70/Untitled%202.png)
+![Untitled](img/avi-kubernetes-operator.png)

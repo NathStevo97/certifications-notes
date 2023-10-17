@@ -31,23 +31,23 @@ Tags: Done
 - The plugin initiates the Pinniped authentication workflow
   - Users will be redirected to the Pinniped supervisor endpoint on the management cluster
 
-![Untitled](2%205%20-%20Cluster%20Authentication%201595ffbfc3c549f5b8921f02a1ae446c/Untitled.png)
+![Untitled](img/pinniped-kubeconfig.png)
 
 # Pinniped Authentication Workflow
 
-![Untitled](2%205%20-%20Cluster%20Authentication%201595ffbfc3c549f5b8921f02a1ae446c/Untitled%201.png)
+![Untitled](img/pinniped-auth-workflow.png)
 
 1. Kubectl calls the Tanzu CLI
 2. Tanzu CLI realises that the user requesting doesn't have a token for authentication; opens a web browser to the Pinniped supervisor - redirecting to the Dex Login Page
 3. The user provides their LDAP credentials and Dex authenticates with the LDAP server → Redirecting to Pinniped Supervisor
 
-![Untitled](2%205%20-%20Cluster%20Authentication%201595ffbfc3c549f5b8921f02a1ae446c/Untitled%202.png)
+![Untitled](img/pinniped-ldap-dex-flow.png)
 
 1. Pinniped Supervisor generates an ID token and passes it to the Tanzu CLI
 2. The Tanzu CLI sends the token to Pinniped concierge on the workload cluster
 3. Pinniped concierge swaps the ID token for client certificate via the Pinniped supervisor
 
-![Untitled](2%205%20-%20Cluster%20Authentication%201595ffbfc3c549f5b8921f02a1ae446c/Untitled%203.png)
+![Untitled](img/pinniped-ldap-dex-flow-2.png)
 
 1. The client certificate is passed to the Tanzu CLI
 2. The client certificate is passed to kubectl

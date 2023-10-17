@@ -17,7 +17,7 @@ Tags: Done
 
 # Port Requirements
 
-![Untitled](2%201%20-%20Overview%20of%20Management%20Clusters%20and%20Preparin%201118d98208cc4a76ad8d7e6427926dff/Untitled.png)
+![Untitled](img/port-requirements.png)
 
 # Dedicated vSphere SSO User
 
@@ -28,7 +28,7 @@ Tags: Done
   - Networks to which the clusters are assigned
   - VM and template folders
 
-![Untitled](2%201%20-%20Overview%20of%20Management%20Clusters%20and%20Preparin%201118d98208cc4a76ad8d7e6427926dff/Untitled%201.png)
+![Untitled](img/vsphere-objects.png)
 
 # SSH Key Pairs
 

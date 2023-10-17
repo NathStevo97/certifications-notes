@@ -16,7 +16,7 @@ Tags: Done
 
 </aside>
 
-![Untitled](2%206%20-%20Creating%20Management%20Clusters%208c073206e0314500937887bc703b61dd/Untitled.png)
+![Untitled](img/tkg-instance-installation.png)
 
 - The boostrap cluster will use the appropriate Cloud Infrastructure Provider to deploy the required resources
 
@@ -45,34 +45,34 @@ Tags: Done
 
 - When deploying a management cluster using the Tanzu CLI, the `Tanzu Management-Cluster` plugin will be used
 
-![Untitled](2%206%20-%20Creating%20Management%20Clusters%208c073206e0314500937887bc703b61dd/Untitled%201.png)
+![Untitled](img/tanzu-mgmt-plugin.png)
 
 ## Tanzu CLI Management Cluster Create
 
 - When using `tanzu management-cluster create`:
 
-![Untitled](2%206%20-%20Creating%20Management%20Clusters%208c073206e0314500937887bc703b61dd/Untitled%202.png)
+![Untitled](img/tanzu-mgmt-cluster-create.png)
 
 # Tanzu Kubernetes Grid Installer
 
 1. Access the installer UI - `tanzu management-cluster create --ui`
     1. Select the desired IaaS provider
 
-![Untitled](2%206%20-%20Creating%20Management%20Clusters%208c073206e0314500937887bc703b61dd/Untitled%203.png)
+![Untitled](img/tkg-installer.png)
 
 1. Assuming vSphere's selected, provide vCenter FQDN, username and password
     1. Auto-determines version of vSphere
     2. For vSphere 7 and above - additional dialog will be added questioning if Tanzu is already enabled on the cluster → Determines whether TKG Management cluster can be deployed or not.
     3. Specify the SSH public key associated with the datacenter
 
-![Untitled](2%206%20-%20Creating%20Management%20Clusters%208c073206e0314500937887bc703b61dd/Untitled%204.png)
+![Untitled](img/tkg-vsphere-ssh.png)
 
 1. Choose cluster plan to be developed and any additional configuration - development and production are pre-available by default
     1. Provide management cluster name
     2. Control plane endpoint - IP address for Kube-VIP to connect to
     3. Configure control plane and worker node size/resource configuration
 
-![Untitled](2%206%20-%20Creating%20Management%20Clusters%208c073206e0314500937887bc703b61dd/Untitled%205.png)
+![Untitled](img/tkg-vsphere-cluster-settings.png)
 
 1. Optional - Configure the NSX Load Balancer e.g.
     1. FQDN Name (VM to connect to)
@@ -87,7 +87,7 @@ Tags: Done
     2. What cluster, hosts and resource pools should be utilised?
     3. What datastore should be used?
 
-![Untitled](2%206%20-%20Creating%20Management%20Clusters%208c073206e0314500937887bc703b61dd/Untitled%206.png)
+![Untitled](img/tkg-cluster-config.png)
 
 1. Specify the vSphere network, Kubernetes service and pod CIDR ranges
     1. Configure the CNI (Container Network Interface)
@@ -95,13 +95,13 @@ Tags: Done
     3. Cluster Pod CIDR
     4. Network name
 
-![Untitled](2%206%20-%20Creating%20Management%20Clusters%208c073206e0314500937887bc703b61dd/Untitled%207.png)
+![Untitled](img/tkg-network-config.png)
 
 1. Configure Identity Management
     1. What provider is being used?
     2. What configuration is required for that provider? E.g. LDAP has its own particular configuration requirements
 
-![Untitled](2%206%20-%20Creating%20Management%20Clusters%208c073206e0314500937887bc703b61dd/Untitled%208.png)
+![Untitled](img/tkg-iam.png)
 
 1. Specify the base OS for Kubernetes to run on
     1. This will be the OS OVA file that was converted into a template
@@ -147,9 +147,8 @@ Tags: Done
 
 <aside>
 💡 Deployment will output particular logs associated with each step
-
 </aside>
 
 - Once deployment is completed, two VM types will be created,one for control plane nodes, another type for worker nodes.
 
-![Untitled](2%206%20-%20Creating%20Management%20Clusters%208c073206e0314500937887bc703b61dd/Untitled%209.png)
+![Untitled](img/mgmt-cluster-vms.png)

@@ -13,7 +13,7 @@
 - Cluster API controllers running on a Kubernetes cluster receives Cluster API definitions that specify the desired state of the new cluster
 - They also send requests to the cloud/IaaS provider(s) to create the new cluster by using the required provider configurations.
 
-![Untitled](img/Untitled.png)
+![Untitled](img/clusterapi-overview.png)
 
 ```shell
 CRD = Custom Resource Definition
@@ -23,7 +23,7 @@ CRD = Custom Resource Definition
 
 - Cluster API provides custom resource definitions (CRDs) to management clusters to help the management cluster know what to deploy to the particular workload cluster(s).
 
-![Untitled](img/Untitled%201.png)
+![Untitled](img/clusterapi-crd.png)
 
 ## Machine Health Checks
 
@@ -32,7 +32,7 @@ CRD = Custom Resource Definition
 - If any of the conditions are met for the duration of the timeout, the machine is remediated
 - The action of remediating a machine triggers a new machine to be created to replace the old one.
 
-![Untitled](img/Untitled%202.png)
+![Untitled](img/machine-health-check-yaml.png)
 
 - **Note: This is equivalent to the traditional Readiness and Liveness probe functionalities available in Kubernetes for deployments.
 
@@ -61,7 +61,7 @@ CRD = Custom Resource Definition
 
 - Responsible for watching the Kubernetes API for cluster API (CAPI) resources and perform the required steps to provision clusters
 
-![Untitled](img/Untitled%203.png)
+![Untitled](img/clusterapi-controllers.png)
 
 **Note:** This is analagous to the traditional kube-system deployments like kube-scheduler, kube-controller-manager, etc.
 
@@ -69,7 +69,7 @@ CRD = Custom Resource Definition
 
 - An infrastructure provider that provides the following controller and custom resource definitions
 
-![Untitled](img/Untitled%204.png)
+![Untitled](img/vsphere-capv.png)
 
 ---
 
