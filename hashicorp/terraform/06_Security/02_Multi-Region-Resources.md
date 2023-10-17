@@ -14,7 +14,7 @@ provider "aws" {
 provider "aws" {
     alias = "aws02"
     region = "ap-south-1"
-    profile = "account02" 
+    profile = "account02"
 }
 ```
 

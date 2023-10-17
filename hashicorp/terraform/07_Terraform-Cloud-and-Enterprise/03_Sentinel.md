@@ -27,6 +27,7 @@
 - Now when a plan is queued, the policies will be checked to see if the `apply` can be ran, displaying the results as logs in the UI.
 
 - Example Policy:
+
 ```go
 import "tfplan"
 

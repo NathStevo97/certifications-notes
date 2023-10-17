@@ -1,18 +1,10 @@
 # 2.02 - Installation of HashiCorp Vault
 
-Complete: Yes
-Flash Cards: Yes
-Lab: Yes
-Read: Yes
-Status: Complete
-Watch: Yes
-You done?: 🔥🔥🔥🔥
-
-# Notes
+## Notes
 
 - Vault is available on all major operating systems and can also be installed on platforms such as Kubernetes clusters.
 
-## Windows
+### Windows
 
 - Download and extract binary file from [https://www.vaultproject.io/downloads](https://www.vaultproject.io/downloads)
 - Or use package managers such as Chocolatey:
@@ -31,11 +23,11 @@ vault
 
 ---
 
-## Linux
+### Linux
 
 - [https://learn.hashicorp.com/tutorials/vault/getting-started-install?in=vault/getting-started](https://learn.hashicorp.com/tutorials/vault/getting-started-install?in=vault/getting-started)
 
-### Ubuntu
+#### Ubuntu
 
 - Add the HashiCorp [GPG key](https://apt.releases.hashicorp.com/gpg)
 
@@ -64,6 +56,6 @@ mv <vault binary> $PATH
 
 ---
 
-## MacOS
+### MacOS
 
 [https://learn.hashicorp.com/tutorials/vault/getting-started-install?in=vault/getting-started](https://learn.hashicorp.com/tutorials/vault/getting-started-install?in=vault/getting-started)

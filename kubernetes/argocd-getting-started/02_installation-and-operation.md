@@ -47,7 +47,7 @@
   - Managing user accounts
 - The CLI supports scripting and AUTOMATION
 
-### Installation
+### ArgoCD Installation
 
 - Windows: `choco install argocd-cli`
 - Linux and Mac: `brew install argocd`\

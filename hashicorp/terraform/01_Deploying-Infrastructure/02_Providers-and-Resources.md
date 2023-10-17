@@ -30,14 +30,14 @@ resource "digitalocean_droplet" "droplet" {
   - Since this is for a different provider (DigitalOcean), the syntax for parameters such as the image or region names
   - In terms of authentication, only one token is required for provider configuration unlike AWS.
 
-### Provider Maintainers
+## Provider Maintainers
 
 - There are 3 main types of provider tiers in Terraform:
   - **Official** - Owned and maintained by HashiCorp
   - **Partner** - Owned and maintained by a direct partner of HashiCorp
   - **Community** - Owned and Maintained by Individual Contributors
 
-### Required Providers
+## Required Providers
 
 - For providers not directly maintained by HashiCorp, a `required_providers` block is required, taking DigitalOcean as an example, the configuration before would become:
 

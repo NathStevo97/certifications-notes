@@ -1,4 +1,4 @@
-#  3.3 - Remote-Exec Implementation
+# 3.3 - Remote-Exec Implementation
 
 - For remote-exec to run, the resource must be created first i.e. the provisioner must be added within a resource block.
 - Requires 2 properties to be defined:

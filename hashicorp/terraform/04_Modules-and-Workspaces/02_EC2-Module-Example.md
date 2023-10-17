@@ -1,4 +1,4 @@
-#  4.2 - Module Implementation: EC2 Instance
+# 4.2 - Module Implementation: EC2 Instance
 
 - Adopting the following Architecture:
 

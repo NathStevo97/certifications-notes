@@ -14,10 +14,7 @@ You done?: 🌚🌚🌚🌚
 - Vault supports a multi-server mode for High-Availability. This further protects organisations against outages by running multiple servers.
   - The data will be replicated across each based on the "leader".
 
-<aside>
-💡 High-Availability IS STORAGE BACKEND DEPENDENT - Integrated Storage is also available to support this.
-
-</aside>
+- **Note:** High-Availability IS STORAGE BACKEND DEPENDENT - Integrated Storage is also available to support this.
 
 - Out-of the box, Raft is available for use, an integrated storage backend.
 - To configure:

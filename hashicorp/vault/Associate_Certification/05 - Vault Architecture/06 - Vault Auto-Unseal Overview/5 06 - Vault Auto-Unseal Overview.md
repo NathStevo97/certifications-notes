@@ -1,13 +1,5 @@
 # 5.06 - Vault Auto-Unseal Overview
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
 ## Background
 
 - During Vault Unseal process, users must enter they key(s) required.

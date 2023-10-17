@@ -7,7 +7,7 @@
 - ArgoCD automates deployment and lifecycle management of apps
 - ArgoCD supports complex application rollouts such as Blue-Green and Canary
 
-## Resources:
+## Resources
 
 - ArgoCD Bloc
 - The GitOps Book: GitOps and Kubernetes: Continuous Deployment with ArgoCD, Jenkins X, and Flux.

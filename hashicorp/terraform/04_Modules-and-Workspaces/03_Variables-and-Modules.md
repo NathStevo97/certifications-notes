@@ -1,4 +1,4 @@
-#  4.3 - Variables and Terraform Modules
+# 4.3 - Variables and Terraform Modules
 
 - A common challenge with infrastructure management is the need to build environments, such as dev, staging, and production, with generally similar setups, but with slightly different variables.
 - Module variables cannot be overridden, if you wish to change the values of a property, you can create a variables.tf file to reference in the folder

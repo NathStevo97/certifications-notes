@@ -1,27 +1,19 @@
 # 3.10 - ACL Policy Path Templating
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
 ## Contexts
 
 - Consider `/secret` has two prefixes for two users:
-    - `/alice`
-    - `/bob`
+  - `/alice`
+  - `/bob`
 - Each user should only be able to view what is available to them at their particular path i.e. a policy would be required for each:
 
 ```go
 path "secret/data/alice/" {
-	capabilities = ["create", "update", "delete"]
+ capabilities = ["create", "update", "delete"]
 }
 
 path "secret/data/bob/" {
-	capabilities = ["create", "update", "delete"]
+ capabilities = ["create", "update", "delete"]
 }
 ```
 
@@ -34,7 +26,7 @@ path "secret/data/bob/" {
 
 ```go
 path "secret/data/{{identity.entity.name}}/*" {
-	capabilities = ["create", "update", "delete"]
+ capabilities = ["create", "update", "delete"]
 }
 ```
 
@@ -55,13 +47,13 @@ path "secret/data/{{identity.entity.name}}/*" {
 
 | Name | Description |
 | --- | --- |
-| identity.entity.id | Entity ID |
-| identity.entity.name | Entity Name |
-| identity.entity.metadata.<metadata-key> | Metadata associated with an entity for a given key |
-| identity.entity.aliases.<mount-accessor>.id | Entity alias ID for a particular mount |
-| identity.entity.aliases.<mount-accessor>.name | Entity alias name for particular mount |
-| identity.entity.aliases.<mount-accessor>.metadata.<metadada-key> | Metadata associated with an alias for a given mount and metadata key |
-| identity.groups.ids.<groupid>.name | Group name for a particular group ID |
-| identity.groups.names.<group name>.id | Group ID for a particular group name |
-| identity.groups.ids.<group id>.metadata.<metadata key> | Metadata associated with a particular group id for a particular metadata key |
-| identity.groups.names.<group name>.metadata.<metadata key> | Metadata associated with a particular group name for a particular metadata key |
+| `identity.entity.id` | Entity ID |
+| `identity.entity.name` | Entity Name |
+| `identity.entity.metadata.<metadata-key>` | Metadata associated with an entity for a given key |
+| `identity.entity.aliases.<mount-accessor>.id` | Entity alias ID for a particular mount |
+| `identity.entity.aliases.<mount-accessor>.name` | Entity alias name for particular mount |
+| `identity.entity.aliases.<mount-accessor>.metadata.<metadada-key>` | Metadata associated with an alias for a given mount and metadata key |
+| `identity.groups.ids.<groupid>.name` | Group name for a particular group ID |
+| `identity.groups.names.<group name>.id` | Group ID for a particular group name |
+| `identity.groups.ids.<group id>.metadata.<metadata key>` | Metadata associated with a particular group id for a particular metadata key |
+| `identity.groups.names.<group name>.metadata.<metadata key>` | Metadata associated with a particular group name for a particular metadata key |

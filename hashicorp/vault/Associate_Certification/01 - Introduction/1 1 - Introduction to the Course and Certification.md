@@ -1,17 +1,8 @@
 # 1.1 - Introduction to the Course and Certification
 
-Complete: Yes
-Flash Cards: Yes
-Lab: Yes
-Read: Yes
-Status: Complete
-Study Date: September 9, 2022 12:00 AM (CDT)
-Watch: Yes
-You done?: 🔥🔥🔥🔥
+## Notes
 
-# Notes
-
-## Introduction
+### Introduction
 
 - Organisations can have security breaches due to any of, amongst other use cases:
   - Database credentials or access/secret keys being stored in notepad
@@ -25,7 +16,7 @@ You done?: 🔥🔥🔥🔥
 
 ---
 
-## Dynamic Secrets - High-Level View
+### Dynamic Secrets - High-Level View
 
 - Consider a developer wanting to authenticate to a database for testing in a system where Vault has been implemented.
 
@@ -38,7 +29,7 @@ You done?: 🔥🔥🔥🔥
 
 ---
 
-## Course Disclaimers
+### Course Disclaimers
 
 - Course structure ≠ HashiCorp Exam structure - all relevant content is included.
 - Exam:

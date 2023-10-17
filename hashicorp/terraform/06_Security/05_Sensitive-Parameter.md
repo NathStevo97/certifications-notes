@@ -1,6 +1,6 @@
 # 6.5 - The Sensitive Parameter
 
--  When managing large sets of infrastructure in Terraform, it's highly likely it will involve the use of sensitive information such as credentials.
+- When managing large sets of infrastructure in Terraform, it's highly likely it will involve the use of sensitive information such as credentials.
 - This should never be output directly in plaintext for security reasons.
 - To avoid, use the `sensitive` parameter, refer to the following example:
 

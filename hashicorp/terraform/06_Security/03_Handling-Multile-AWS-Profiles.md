@@ -3,7 +3,7 @@
 - When considering resource deployment to multiple accounts, in particular with AWS, one must consider the credentials file at `~/.aws/credentials`
 - This file can store credentials for multiple accounts, in a format similar to:
 
-```
+```shell
 [account01]
 aws_access_key_id = ACCESS_KEY
 aws_secret_access_key = SECRET_KEY

@@ -1,14 +1,6 @@
 # 2.10 - Transit Secret Engine
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
-# Overview
+## Overview
 
 - Many applications require proper encryption/decryption functionalities
 - Building the custom logic to handle this can add excessive workloads to application developers, particularly if they lack expertise in this area.
@@ -19,8 +11,8 @@ You done?: 🌚🌚🌚🌚
 ![Untitled](./2%2010%20-%20Transit%20Secret%20Engine/Untitled.png)
 
 - Based on the above, one can see:
-    - Apps can send data to vault to be encrypted prior to storage in databases.
-    - The app can then retrieve the encrypted data from the database and request decryption via Vault
+  - Apps can send data to vault to be encrypted prior to storage in databases.
+  - The app can then retrieve the encrypted data from the database and request decryption via Vault
 - Once the transit secrets engine is enabled, you are required to create an encryption key to facilitate cryptographic operations.
 
 ![Untitled](./2%2010%20-%20Transit%20Secret%20Engine//Untitled%201.png)
@@ -32,13 +24,13 @@ You done?: 🌚🌚🌚🌚
 
 - This data will not be stored by the Vault - to decrypt, provide the ciphertext provisioned during encryption.
 - To do this via the CLI:
-    - `vault write transit/encrypt/<key-name> plaintext=<base64 / encoded text>`
-    - The ciphertext is then provided and must be stored safely outside the vault - otherwise the data cannot be decrypted
-    - To decrypt: `vault write transit/decrypt/<key-name> ciphertext=<cipher key>`
+  - `vault write transit/encrypt/<key-name> plaintext=<base64 / encoded text>`
+  - The ciphertext is then provided and must be stored safely outside the vault - otherwise the data cannot be decrypted
+  - To decrypt: `vault write transit/decrypt/<key-name> ciphertext=<cipher key>`
 
 ---
 
-# Dealing with larger Data Blobs
+## Dealing with larger Data Blobs
 
 - When data is encrypted, the encryption key to encrypt plaintext is referred to as a data key.
 - This data key needs to be protected so that the encrypted data cannot be decrypted easily by an unauthorized party.
@@ -51,15 +43,15 @@ You done?: 🌚🌚🌚🌚
 
 - The data key can now be used for encryption operations, the ciphertext can then be used for decryption operations with vault, submitting the ciphertext to obtain the plaintext decryption key.
 - Best practices:
-    - Whenever generating a data key in plaintext - the response contains the plaintext of the data key as well as its ciphertext
-    - Use the plaintext to encrypt the large data and store the ciphertext in the desired location e.g. key/value secrets engine.
-    - When the blob requires decryption, request Vault to decrypt the ciphertext of the data key - allowing you to get the plaintext back for local decryption.
+  - Whenever generating a data key in plaintext - the response contains the plaintext of the data key as well as its ciphertext
+  - Use the plaintext to encrypt the large data and store the ciphertext in the desired location e.g. key/value secrets engine.
+  - When the blob requires decryption, request Vault to decrypt the ciphertext of the data key - allowing you to get the plaintext back for local decryption.
 
 ---
 
-# Important Features
+## Important Features
 
-## Key Rotation
+### Key Rotation
 
 - It's not recommended to encrypt all data with the same encryption keys for obvious reasons.
 - Transit Engine allows a rotation of the encryption key.
@@ -67,7 +59,7 @@ You done?: 🌚🌚🌚🌚
 - When creating an encryption key, the format will always be `vault:v<number>:<ciphertext>` - the number following the v denotes the version.
 - To rotate the encryption key - simply select "rotate encryption key" - for future encryption options you will then be allowed to select which version you wish to encrypt the data with.
 
-## Minimum Decrypt Version
+### Minimum Decrypt Version
 
 - As multiple versions of encryption keys appear, this leads to an increased likelihood of working keys being obtained for decryption in the event of an attack.
 - Using the **min_decryption_version** setting we can plan on what data can get decrypted.
@@ -76,7 +68,7 @@ You done?: 🌚🌚🌚🌚
 
 ![Untitled](./2%2010%20-%20Transit%20Secret%20Engine//Untitled%205.png)
 
-## Rewrapping Data
+### Rewrapping Data
 
 - When a key is rotated, Vault can allow encrypted data to be rewrapped.
 - The Vault can send the data encrypted with an older version of the key to have it re-encrypted with the latest version

@@ -8,11 +8,11 @@ Status: Complete
 Watch: Yes
 You done?: 🔥🔥🔥🔥
 
-# Notes
+## Notes
 
 ---
 
-## Getting Started
+### Getting Started
 
 - Vault allows enhanced management and storage of secrets such as tokens, passwords, tokens, certificates, etc.
 - Secret management in general is one of the most common and high-priority challenges faced by organisations - this generally includes storage, access management, and rotation of secrets.
@@ -20,7 +20,7 @@ You done?: 🔥🔥🔥🔥
 
 ---
 
-## Dynamic Secrets and Vault Console
+### Dynamic Secrets and Vault Console
 
 - As discussed in the previous section, Vault aims to offer Dynamic Secrets i.e. users request the credentials from Vault, the credentials generated are then rotated based on the policies set.
 - Vault was previously CLI-only, but is now packaged with a UI / Console to help with management.

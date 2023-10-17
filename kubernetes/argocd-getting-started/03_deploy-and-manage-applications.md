@@ -2,7 +2,7 @@
 
 ## 3.1 - Register a Kubernetes Cluster with ArgoCD
 
-- By default with an ArgoCD deployment, the cluster it is running on is set as "in-cluster" -> https://kubernetes.default.svc
+- By default with an ArgoCD deployment, the cluster it is running on is set as "in-cluster" -> `https://kubernetes.default.svc`
 - When apps are deployed, you deploy them to the "in-cluster" Kubernetes cluster, or to external clusters.
 - External clusters must first be registered with ArgoCD, this is achieved via the CLI ONLY, but it can then be modified via the UI.
   - Common commands include:
@@ -38,7 +38,6 @@
   - `argocd proj add-source`
   - `argocd proj allow-cluster-resource`
   - `argocd proj allow-namespace`
-
 
 ## 3.3 - Using Repositories with ArgoCD
 
