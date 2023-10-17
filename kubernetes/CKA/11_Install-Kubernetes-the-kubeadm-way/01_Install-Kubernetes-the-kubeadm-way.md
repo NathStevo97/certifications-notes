@@ -9,7 +9,7 @@
 
 ---
 
-## Resources:
+## Resources
 
 - [Github Repo](https://github.com/kodekloudhub/certified-kubernetes-administrator-course)
 - [Kubernetes Documentation](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm)

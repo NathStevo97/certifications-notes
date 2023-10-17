@@ -14,8 +14,8 @@ releases.
 provided as they are separate projects.
 
 - **Reference Links**
-  - https://github.com/kubernetes/kubernetes/releases
-  - https://github.com/kubernetes/community/blob/master/contributors/design-proposals/release/versioning.md
-  - https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md
-  - https://blog.risingstack.com/the-history-of-kubernetes/
-  - https://kubernetes.io/docs/setup/version-skew-policy
+  - <https://github.com/kubernetes/kubernetes/releases>
+  - <https://github.com/kubernetes/community/blob/master/contributors/design-proposals/release/versioning.md>
+  - <https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md>
+  - <https://blog.risingstack.com/the-history-of-kubernetes/>
+  - <https://kubernetes.io/docs/setup/version-skew-policy>

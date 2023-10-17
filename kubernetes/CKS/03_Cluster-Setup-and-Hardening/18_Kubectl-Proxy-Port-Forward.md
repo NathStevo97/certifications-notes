@@ -2,7 +2,7 @@
 
 - In the CKA Course, it was learned that the kubectl tool can be used to interact with the Kubernetes API server
 - No API authentication required as it was applied in the kube config file
- - Kubectl can be found anywhere e.g. master node, a personal laptop (with a cluster
+- Kubectl can be found anywhere e.g. master node, a personal laptop (with a cluster
 in a VM)
 - No matter where the cluster is, so long as the kubeconfig is appropriately
 configured with the security credentials, the kubectl tool can be used to manage it.
@@ -22,5 +22,5 @@ clusterIP service):
 - Alternative: Port-Forward
   - Takes a resource (pod, deployment, etc) as an argument and specifies a port on the host that you would like traffic to be forwarded to (and the service port)
   - Example: `kubectl port-forward service/nginx 28080:80`
-  - The service can then be accessed via curl http://localhost:28080/
+  - The service can then be accessed via curl <http://localhost:28080/>
 - Allows remote access to any cluster service you have access to.

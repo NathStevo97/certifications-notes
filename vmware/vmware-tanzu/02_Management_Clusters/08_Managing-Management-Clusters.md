@@ -19,4 +19,5 @@ Tags: Done
 2. Select `new server`
 3. Select `server endpoint` → Provide the login URL of the vSphere with Tanzu supervisor cluster
 4. If not 3. select local kubeconfig and provide kubeconfig file of the other management cluster.
+
 - In one command, this could be achieved via: `tanzu login --kubeconfig <kube config path> --context <context name> --name <management cluster name>`

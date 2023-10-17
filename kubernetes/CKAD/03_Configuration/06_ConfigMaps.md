@@ -46,6 +46,7 @@ data:
   - Each item in the resultant list corresponds to a ConfigMap item.
 
 - Example usage:
+
 ```yaml
 envFrom:
 - configMapRef:
@@ -59,7 +60,7 @@ envFrom:
 - ConfigMaps can be used to inject environmental variables into pods
 - Could also inject the data as a file or via a volume
 
-### env:
+### env
 
 ```yaml
 envFrom:
@@ -67,7 +68,7 @@ envFrom:
     name: <configmap key name>
 ```
 
-### single env:
+### single env
 
 ```yaml
 env:
@@ -78,7 +79,7 @@ env:
       key: <configmap key name>
 ```
 
-### Volumes:
+### Volumes
 
 ```yaml
 volumes:

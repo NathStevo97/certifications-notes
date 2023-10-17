@@ -33,4 +33,3 @@ pods or updating resources, the same changes are updated in the etcd server.
   --initial-cluster controller-0=https://${CONTROLLER0_IP}:2380, controller-1=https://${CONTROLLER1_IP}:2380, ...,
   controller-N=https://${CONTROLLERN_IP}:2380
   ```
-

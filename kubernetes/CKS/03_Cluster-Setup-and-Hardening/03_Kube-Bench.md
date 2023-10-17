@@ -69,6 +69,7 @@ A: Follow exact commands given in Remediation of given test
 Q10:
 Run the kube-bench test again and ensure that all tests for the fixes we
 implemented now pass
+
 - 1.3.1 Ensure that the --terminated-pod-gc-threshold argument
 is set as appropriate
 - 1.3.6 Ensure that the RotateKubeletServerCertificate

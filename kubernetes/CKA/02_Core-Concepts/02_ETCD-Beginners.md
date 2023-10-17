@@ -5,7 +5,7 @@
 unique key and stored in a database.
 - To install and run ETCD:
 
-1. Download and extract the binaries from https://github.com/etcd-io/etcd
+1. Download and extract the binaries from <https://github.com/etcd-io/etcd>
 1. Run the associated executable `./etcd`
 
 - This starts a service running on port 2379 by default.

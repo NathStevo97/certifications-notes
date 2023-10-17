@@ -20,7 +20,7 @@ implemented for server (or other appropriate device) security.
 - **CIS** - Centre for Internet Security
   - Commonly used tool to check if security best practices are implemented
   - Available on Linux, Windows, Cloud platforms, Mobile and many other platforms as well as Kubernetes.
-- Can be downloaded from https://www.cisecurity.org/cis-benchmarks/
+- Can be downloaded from <https://www.cisecurity.org/cis-benchmarks/>
 - Guides come with predefined instructions for your associated platform(s) best practices and how to implement them (commands included)
 - CIS Provide tools such as the CIS-CAT tool to automate the assessment of best
 practices implementation
@@ -47,6 +47,7 @@ v2.1.0
 Profile : Level 1 - Server
 
 A:
+
 - Run Assessor-CLI.sh
 - Note options:
   - -i (interactive)
@@ -86,6 +87,7 @@ are configured
 
 **Q10:** In the previous questions we fixed the below 3 failed tests. Now run
 CIS-CAT tool test again and verify that all the below tests pass.
+
 - 1.7.6 Ensure local login warning banner is configured properly
 - 4.2.1.1 Ensure rsyslog is installed
 - 5.1.2 Ensure permissions on /etc/crontab are configured

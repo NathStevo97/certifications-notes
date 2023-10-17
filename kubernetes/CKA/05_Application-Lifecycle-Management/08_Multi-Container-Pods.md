@@ -41,4 +41,3 @@ spec:
   - name: log-agent
     image: log-agent
 ```
-

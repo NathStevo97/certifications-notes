@@ -22,7 +22,7 @@ communication between different processes on the same host
     - Add the following flags to the dockerd command:
       - `--tls=true`
       - `--tlscert=/var/docker/server.pem` (path to certificate)
-      - `--tlskey=/var/docker/serverkey.pem `(path to private key)
+      - `--tlskey=/var/docker/serverkey.pem`(path to private key)
   - With TLS enabled, the standard port becomes 2376 - encrypted traffic; 2375 remains for unencrypted traffic.
 - All the options specified in this section can be added to a configuration file for ease of use; typically located at `/etc/docker/daemon.json`
   - This must be created if it doesn't already exist; it's not included by default

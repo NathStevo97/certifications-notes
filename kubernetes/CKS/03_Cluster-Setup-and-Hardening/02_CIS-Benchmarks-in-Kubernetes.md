@@ -9,6 +9,6 @@ rectify any errors.
 - CIS CAT Lite only supports certain OS's and benchmarks like Windows, Ubuntu,
 Kubernetes not included.
 - CIS-CAT Pro includes Kubernetes support.
-- CIS Benchmarks Link: https://www.cisecurity.org/cis-benchmarks/#kubernetes
+- CIS Benchmarks Link: <https://www.cisecurity.org/cis-benchmarks/#kubernetes>
 - CIS CAT Tool:
-https://www.cisecurity.org/cybersecurity-tools/cis-cat-pro/cis-benchmarks-supported-by-cis-cat-pro/
+<https://www.cisecurity.org/cybersecurity-tools/cis-cat-pro/cis-benchmarks-supported-by-cis-cat-pro/>

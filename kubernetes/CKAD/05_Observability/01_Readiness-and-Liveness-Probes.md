@@ -1,4 +1,5 @@
 # 5.1 - Readiness and Liveness Probes
+
 - Pod lifecycles are defined by 2 parameters:
   - Status
   - Conditions

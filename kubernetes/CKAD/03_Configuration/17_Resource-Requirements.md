@@ -54,5 +54,3 @@ resources:
 - The limits and requests are set for each pod and container
 - If CPU overload occurs, CPU usage is "throttled" ont he node
 - If repeated memory use is exceeded, the pod is terminated.
-
-

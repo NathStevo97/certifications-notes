@@ -7,4 +7,4 @@
 - To understand what each service or port is being used for, can check in the services file under `/etc`
   - Example: `cat /etc/services | grep -w 53`
 - This begs the question, what ports should be open for nodes on the Kubenetes cluster? Answer: Review the documentation!
-- https://kubernetes/doc.setup/production-environment/tools/production-environment/tools/kubeadm/install-kubeadm/#check-required-ports
+- <https://kubernetes/doc.setup/production-environment/tools/production-environment/tools/kubeadm/install-kubeadm/#check-required-ports>

@@ -27,7 +27,7 @@
 
 - **Note:** The default service account is restricted to basic operations.
   - Automatically created and mounted.
-  - If you wish to switch it, edit the pod definition file to add `serviceAccount: ` under the `spec:`, then delete and recreate the pod.
+  - If you wish to switch it, edit the pod definition file to add `serviceAccount:` under the `spec:`, then delete and recreate the pod.
   - Changes like this are automatically applied if editing a deployment.
 
 - **Note:** One can avoid automatic service account association via the addition of `automountServiceAccountToken: false`

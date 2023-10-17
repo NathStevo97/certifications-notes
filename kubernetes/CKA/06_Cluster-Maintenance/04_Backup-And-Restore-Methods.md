@@ -18,7 +18,7 @@ store via the `--data-dir` flag
   - Kube-API Server query - Generally the more common method
   - ETCD Server
 
-## Disaster Recovery with ETCD in Kubernetes:
+## Disaster Recovery with ETCD in Kubernetes
 
 Assuming ETCDCTL is installed, use it to take a snapshot, make sure to specify the flags,
 which can all be found via examining the etcd pod and ARE MANDATORY for
@@ -59,4 +59,3 @@ of the mandatory global options.
   - `--key`
 - Use the snapshot restore option for backup: `etcdctl snapshot restore -h`
   - Note options available and apply as appropriate
-

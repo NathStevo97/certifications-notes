@@ -55,6 +55,7 @@
 ```
 
 - Macros can be used to shorten filters e.g.:
+
 ```yaml
 - macro: container
   condition: container.id != host

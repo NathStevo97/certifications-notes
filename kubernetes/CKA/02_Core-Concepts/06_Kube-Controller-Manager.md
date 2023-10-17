@@ -48,7 +48,7 @@ namespace
 ■ Options can be viewed within the pod definition file at:
 `/etc/kubernetes/manifests/kube-controller-manager.yaml`
   - Non-kubeadm setup:
-■ Options displayed in `kube-controller-manager.service `file at
+■ Options displayed in `kube-controller-manager.service`file at
 `/etc/systemd/system/kube-apiserver.service`
 ■ Alternatively, use `ps -aux | grep kube-controller-manager` to view
 the process and its associated options.

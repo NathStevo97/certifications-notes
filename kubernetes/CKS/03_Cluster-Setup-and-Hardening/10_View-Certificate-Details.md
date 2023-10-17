@@ -17,4 +17,4 @@
   - Run `docker ps - a` to identify the container ID
   - View the logs via `docker logs <container ID>`
 - A sample health check spreadsheet can be found here:
-https://github.com/mmumshad/kubernetes-the-hard-way/tree/master/tools
+<https://github.com/mmumshad/kubernetes-the-hard-way/tree/master/tools>

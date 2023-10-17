@@ -5,7 +5,7 @@
 - When running a container there are 2 main options:
 
 1. Live / Forefront
-    -  `docker run <image>`
+    - `docker run <image>`
     - Displays live logs and processes associated with the container.
     - Good for testing standalone containers
 2. Detached / Background

@@ -10,5 +10,5 @@ listed on the website.
 - Checksum can be viewed by using the shasum utility (Mac): `shasum -a 512 <filename>` or `sha512sum <filename>` (Linux)
   - Checksum can then be compared against the release page checksum
 - **Reference Links:**
-  - https://kubernetes.io/docs/setup/release/notes
-  - https://github.com/kubernetes/kubernetes/tree/master/CHANGELOG
+  - <https://kubernetes.io/docs/setup/release/notes>
+  - <https://github.com/kubernetes/kubernetes/tree/master/CHANGELOG>

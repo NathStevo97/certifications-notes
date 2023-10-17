@@ -61,6 +61,7 @@
     - When generating the signing request, you can reference the config file by appending: `--config <config name>.cnf` to the signing request command
     - From this, the certificate can be signed using the ca.crt and ca.key file as normal
   - The location of all certificates are passed into the exec start file for the api server or the service's configuration file, specifically:
+
     ```shell
     ExecStart=/usr/local/bin/kube-apiserver \\
       --advertise-address=${INTERNAL_IP} \\
@@ -87,6 +88,7 @@
       --tls-private-key-file=/var/lib/kubernetes/apiserver.key \\
       --v=2
     ```
+
     - **etcd:**:
       - CA File = `--etcd-cafile`
       - ETCD Certificate = `--etchd-certfile`
@@ -109,4 +111,3 @@
   - Client certificates used to authenticated to the Kube API Server
     - Naming convention should be `system:node:nodename`
   - Nodes must also be added to `system:nodes` group for associated privileges
-

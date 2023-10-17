@@ -45,13 +45,13 @@ data:
 
 - As discussed, the secrets should not be stored in plaintext string format. Typically, Kubernetes secrets are stored in Base64 encrypted format.
 - To convert: `echo -n '<secret plaintext value>' | base64`
-- Create the secret via `kubectl create -f .... ` as normal
+- Create the secret via `kubectl create -f ....` as normal
 - Secrets can be viewed via: `kubectl get secrets`
 - Detailed information viewed via: `kubectl describe secrets <secret name>`
 
 - To view secret in more detail: `kubectl get secret <secret name> -o yaml`
 
-- To decode secret: ` echo -n '<secret base64 value>' | base64 --decode`
+- To decode secret: `echo -n '<secret base64 value>' | base64 --decode`
 
 ## Secrets in Pods
 
@@ -65,7 +65,7 @@ spec:
         name: <secret name>
 ```
 
-- When `kubectl create -f ... ` is run, the secret data is available as environment variables in the pod.
+- When `kubectl create -f ...` is run, the secret data is available as environment variables in the pod.
 
 - As before, one can inject secrets to pods via environment variables (above) OR a single environment variable (below):
 
