@@ -1,23 +1,15 @@
 # 2.05 - Overview of Secrets Engine
 
-Complete: Yes
-Flash Cards: Yes
-Lab: Yes
-Read: Yes
-Status: Complete
-Watch: Yes
-You done?: 🔥🔥🔥🔥
+## Notes
 
-# Notes
-
-## Secret Engine Overview
+### Secret Engine Overview
 
 - Secrets engines are components that **store**, **generate** or **encrypt** data.
 - Secrets can be stored based on specific secret engines, each offer particular features.
 
 ![Untitled](./2%2005%20-%20Overview%20of%20Secrets%20Engine/Untitled.png)
 
-## Secret Engine Types
+### Secret Engine Types
 
 - Similar to Terraform Providers, multiple secret engine types are available, each providing particular features for specific use cases. Examples include:
   - AWS
@@ -26,7 +18,7 @@ You done?: 🔥🔥🔥🔥
   - SSH
   - Azure
 
-## Secret Engine Paths
+### Secret Engine Paths
 
 - Secret engines are enabled at a given path. Once enabled, the secrets are stored at that particular path.
 - You can control where a secret is installed via the following command:
@@ -35,7 +27,7 @@ You done?: 🔥🔥🔥🔥
 vault kv put <secret engine path>/<secret name> mykey=myvalue
 ```
 
-## Secret Engine Lifecycle
+### Secret Engine Lifecycle
 
 - In general, engines can be:
   - Enabled
@@ -49,7 +41,7 @@ vault kv put <secret engine path>/<secret name> mykey=myvalue
     | Disable | Disables an existing secrets engine - this by default will revoke all secrets associated with the engine |
     | Move | Moves the path for an existing secrets engine, |
 
-## Example - Key/Value Secret Engine
+### Example - Key/Value Secret Engine
 
 - The KV secrets engine stores arbitrary secrets within the configured physical storage for Vault
 - Key names must always be strings
@@ -60,7 +52,7 @@ vault kv put <secret engine path>/<secret name> mykey=myvalue
     >
 - Engines can be enabled via the CLI or the UI.
 
-### Enabling a Secrets Engine - UI
+#### Enabling a Secrets Engine - UI
 
 - From the home page, select `Enable new engine`
 - Select the desired engine from the list provided, in this case, KV.
@@ -70,7 +62,7 @@ vault kv put <secret engine path>/<secret name> mykey=myvalue
 - Configure the `Path` AND the Maximum number of versions per key to keep, then enable the engine.
 - The secret engine is now available for usage and can have secrets be created within.
 
-### Enabling a Secrets Engine - CLI
+#### Enabling a Secrets Engine - CLI
 
 - To enable a secrets engine, run:
 
@@ -80,7 +72,7 @@ vault kv put <secret engine path>/<secret name> mykey=myvalue
 
     ![Untitled](./2%2005%20-%20Overview%20of%20Secrets%20Engine//Untitled%202.png)
 
-## Disabling a Secret Engine
+### Disabling a Secret Engine
 
 - To disable a secret engine via the CLI, run:
 

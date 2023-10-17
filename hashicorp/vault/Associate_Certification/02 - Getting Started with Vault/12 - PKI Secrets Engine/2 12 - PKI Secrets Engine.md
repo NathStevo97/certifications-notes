@@ -1,14 +1,6 @@
 # 2.12 - PKI Secrets Engine
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
-# Notes
+## Notes
 
 - Disclaimer - PKI is a huge topic in itself, however for the purposes of the certification, you can only consider it at a high level.
 - Certificate Authority:
@@ -41,7 +33,7 @@ openssl x509 -req -in ca.csr -signkey ca.key -CAcreateserial -out ca.crt -days 1
   - This removes the need for manual generation of certificates as outlined in the steps above - Vault acts as the CA.
 - PKI Secrets Engines can be implemented easily enough via the Vault UI. Once done, selecting "issue certificate" and the common name will allow generation of the certificate.
 
-## Benefits of PKI In Vault
+### Benefits of PKI In Vault
 
 - Vault can act as an Intermediate CA i.e. a liaising certificate authority between the identity certificate authority and a third-party root CA.
 - It reduces or eliminates certificate revocations

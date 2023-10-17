@@ -1,14 +1,6 @@
 # 5.01 - Vault for Production Environments
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
-# Overview
+## Overview
 
 - Up until this point, Vault has been used in development mode only.
 - In this, all data is stored in-memory ONLY.
@@ -17,7 +9,7 @@ You done?: 🌚🌚🌚🌚
   - S3 Bucket (AWS)
   - Databases (MySQL, PostgreSQL, etc.)
 
-## Deploying in Production Mode
+### Deploying in Production Mode
 
 - Vault servers are configured using a particular file in JSON or HCL.
 - **Example config:**
@@ -42,7 +34,7 @@ listener "tcp" {
   - Unsealing is required as Vault knows where to look in the particular storage backend, but it does not have the key to decrypting it and reading the data.
   - To unseal the Vault: `vault operator unseal`
 
-## Practical Example
+### Practical Example
 
 - For any VMs used, ensure that SSH port 22 is open for ease of use.
 - This example will be set up for Linux.
@@ -80,12 +72,9 @@ listener "tcp" {
 
 ---
 
-## Verifying Storage Persistence
+### Verifying Storage Persistence
 
 - As production mode persists storage, if Vault is shut down, the data isn't deleted.
 - Upon restart of Vault, the process outlined previously must be followed to unseal the vault and verify data persistence.
 
-<aside>
-💡 THE UNSEAL KEYS SHOULD NOT BE STORED WITH ONLY 1 PERSON - THEY SHOULD BE DISTRIBUTED AMONGST TEAM MEMBERS
-
-</aside>
+- **Note:** THE UNSEAL KEYS SHOULD NOT BE STORED WITH ONLY 1 PERSON - THEY SHOULD BE DISTRIBUTED AMONGST TEAM MEMBERS

@@ -1,14 +1,6 @@
 # 2.04 - Creating a Secret
 
-Complete: Yes
-Flash Cards: Yes
-Lab: Yes
-Read: Yes
-Status: Complete
-Watch: Yes
-You done?: 🔥🔥🔥🔥
-
-# Notes
+## Notes
 
 - One of Vault's key features is to read and write arbitrary secrets securely.
 - It does so utilising Secrets engines - these are components responsible for the storage, generation, or encryption of data.
@@ -16,7 +8,7 @@ You done?: 🔥🔥🔥🔥
 
 ---
 
-## Example
+### Example
 
 - When starting Vault in dev server mode, two secret engines exist as part of the standard setup:
   - Cubbyhole
@@ -24,7 +16,7 @@ You done?: 🔥🔥🔥🔥
 
 ![Untitled](./2%2004%20-%20Creating%20a%20Secret/Untitled.png)
 
-### GUI Secret Generation - KeyValue
+#### GUI Secret Generation - KeyValue
 
 - To create a secret, navigate to the secret engine of choice and select `create secret`
 
@@ -39,7 +31,7 @@ You done?: 🔥🔥🔥🔥
 - Delete and destroy operations are available for each version, or all versions can be destroyed
   - In this case, destroy is permanent deletion, delete offers the chance to recover the secret.
 
-### CLI Creation
+#### CLI Creation
 
 - Options for secret generation in the KV engine via the CLI can be viewed via, this includes CRUD operations, amongst others:
 

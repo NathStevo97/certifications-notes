@@ -1,14 +1,6 @@
 # 2.03 - Initializing Vault with Dev Server Mode
 
-Complete: Yes
-Flash Cards: Yes
-Lab: Yes
-Read: Yes
-Status: Complete
-Watch: Yes
-You done?: 🔥🔥🔥🔥
-
-# Notes
+## Notes
 
 - Vault has two modes for operation:
   - Dev

@@ -1,13 +1,5 @@
 # 3.08 - Tools in Vault
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
 ## Vault Tools
 
 - Vault contains tools allowing specific functions

@@ -1,13 +1,5 @@
 # 2.08 - Managing Leases
 
-Complete: Yes
-Flash Cards: Yes
-Lab: Yes
-Read: Yes
-Status: Complete
-Watch: Yes
-You done?: 🔥🔥🔥🔥
-
 ## Overview of Lease
 
 - With every dynamic secret and service type authentication token, Vault will create a lease.
@@ -31,8 +23,6 @@ vault lease renew -increment=<time in seconds> path/to/lease
 
 - This will extend the lease duration by the increment defined.
 
-> Note: The default and maximum TTLs will vary depending on the organization, but they can be customised to suit and renewed via the methods above.
->
+- **Note:** The default and maximum TTLs will vary depending on the organization, but they can be customised to suit and renewed via the methods above.
 
-> If a user requests a renewal longer than the maximum TTL, the request will be denied.
->
+- If a user requests a renewal longer than the maximum TTL, the request will be denied.

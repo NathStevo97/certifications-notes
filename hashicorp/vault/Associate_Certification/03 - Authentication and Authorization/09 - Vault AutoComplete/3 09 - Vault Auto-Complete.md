@@ -1,13 +1,5 @@
 # 3.09 - Vault Auto-Complete
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
 ## Auto-Completion Overview
 
 - Vault auto-complete allows automatic completion for input flags, subcommands and arguments in the vault CLI

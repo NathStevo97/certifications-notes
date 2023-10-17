@@ -1,14 +1,6 @@
 # 3.01 - Authentication in Vault
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
-# Notes
+## Notes
 
 - Authentication is the process of recognizing a user's identity. It's typically based on various approaches e.g. username/passwords or tokens.
 - In Vault it's no different - you have multiple ways to authenticate, including:

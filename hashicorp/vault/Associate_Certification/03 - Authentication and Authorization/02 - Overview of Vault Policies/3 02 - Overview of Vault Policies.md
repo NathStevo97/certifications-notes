@@ -1,16 +1,8 @@
 # 3.02 - Overview of Vault Policies
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
+## Vault Policies 01
 
-# Vault Policies 01
-
-## Introduction
+### Introduction
 
 - By default, any users created / assigned to authentication methods doesn't have any/many capabilities. Permissions come as a result of authorization in Vault, which is determined by Vault policies.
 - Examples of policies include:
@@ -18,7 +10,7 @@ You done?: 🌚🌚🌚🌚
   - Read and write from secret/
   - Read, write, update and delete from secret/, as well as work with auth methods
 
-## Predefined Policies
+### Predefined Policies
 
 - When first initialized, Vault creates a root policy by default and assigns it to the root / superuser allowing them to do anything in Vault; including setup additional policies and authentication methods.
 - Another policy titled **default** is also created upon initialization - this is attached to all tokens and provides minimum common permissions.
@@ -27,7 +19,7 @@ You done?: 🌚🌚🌚🌚
 
 Policies can be easily viewed from the top toolbar (above).
 
-## Basics of Policy Writing
+### Basics of Policy Writing
 
 - Policies are written in HCL format, referred to as ACL policies.
 - Typically, policies are written based on secret engine paths. Admins write policies to allow/deny certain paths and operations.
@@ -48,7 +40,7 @@ path "<path>" {
 }
 ```
 
-## Primary Capabilities
+### Primary Capabilities
 
 - Create
 - Read
@@ -58,7 +50,7 @@ path "<path>" {
 - Sudo
 - Deny
 
-## Example
+### Example
 
 - Ensuring a user has been created, authenticate to Vault via the userpass method
 
@@ -82,18 +74,12 @@ vault login -method=<method path> <parameters>
 - The policy must then be assigned the policy(ies). To do so, navigate to the user under "access" and select "edit user".
   - Under "Generated Token's Policies", add the name of the policy(ies) you which to attach, then click save.
 
-<aside>
-💡 Once the policy is assigned to the user, it will NOT automatically work. You must re-authenticate via the vault login command to generate a new token for the user.
-
-</aside>
+- **Note:** Once the policy is assigned to the user, it will NOT automatically work. You must re-authenticate via the vault login command to generate a new token for the user.
 
 - Re-authenticate the user and verify the user has the capability(ies) required.
 - Repeat this process for any other issues / capability problems as required for the user.
 
-<aside>
-💡 Once a policy is assigned to a user, any changes made to it will automatically apply to that user.
-
-</aside>
+- **Note:** Once a policy is assigned to a user, any changes made to it will automatically apply to that user.
 
 - In some cases, there may be an unexpected change to the path e.g. `secret/data/secret1`  to fix this, the path in the policy could be changed to `secret/*` - using the * as a wildcard operator.
   - This poses a security risk - as multiple secrets may be under the path `secret/` that users shouldn't have access to.
@@ -109,12 +95,9 @@ path "secret/data/<secret not to be seen>" {
 }
 ```
 
-<aside>
-💡 If you did not wish to add the path information between the endpoints of the path, such as `data` in the above example, you can replace it with `+` , this will automatically apply to any secrets ending in the secret path prefix and suffix.
+- **Note:** If you did not wish to add the path information between the endpoints of the path, such as `data` in the above example, you can replace it with `+` , this will automatically apply to any secrets ending in the secret path prefix and suffix.
 
-</aside>
-
-## Root-Protected API Endpoints
+### Root-Protected API Endpoints
 
 - Some paths are more restrictive than others, requiring root token or sudo capabilities in the policy to allow the operations. Examples include:
   - auth/token/accessors
@@ -125,9 +108,9 @@ path "secret/data/<secret not to be seen>" {
 
 ---
 
-# Vault Policies 02
+## Vault Policies 02
 
-## ACL Rules Format - KV Secret Engine Version 2
+### ACL Rules Format - KV Secret Engine Version 2
 
 - The version 2 key-value store uses a prefixed API that differs from version 1
 - Writing and reading versions are prefixed with the `data/` path.
@@ -141,7 +124,7 @@ capabilities = ["create"]
 capabilities = ["create"]
 } |
 
-### Practical Example
+#### Practical Example - ACL Policies
 
 - Create a policy for KV Version 1
 
@@ -172,7 +155,7 @@ vault login -method=userpass username="demo-user" password="demo-password"
 - As expected, the get request is denied in line with the policy. Note the path is `/secret/data/demo01` as the secret is under key vault version 2.
 - Editing the policy to add the /data prefix will fix this.
 
-## Listing Secrets
+### Listing Secrets
 
 - The `metadata/` endpoint returns a list of key names at the specified location.
 - Any input for this must be a folder
@@ -184,7 +167,7 @@ vault login -method=userpass username="demo-user" password="demo-password"
 capabilities =["list"]
 } |
 
-### Practical Example
+#### Practical Example - Listing Secrets
 
 - Add some more secrets to the key-value secrets engine
 
@@ -197,7 +180,7 @@ capabilities =["list"]
 
 - This can then be tested in the UI by logging in as the user and verifying if you can `list` the secrets but not `read` them.
 
-## Reading Secret Metadata
+### Reading Secret Metadata
 
 - To retrieve the metadata and versions for the secret at the specified path:
 
@@ -207,7 +190,7 @@ capabilities =["list"]
    capabilities = ["read"]
 } |
 
-## Summary
+### Summary
 
 | Operation | Path [Capability(ies)] |
 | --- | --- |

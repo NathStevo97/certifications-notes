@@ -1,14 +1,6 @@
 # 3.04 - HTTP APIs in Vault
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
-# Notes
+## Notes
 
 - All of Vault's capabilities are accessible via the HTTP API.
 - Most CLI commands invoke the HTTP API, however, some Vault features can only be accessed via the HTTP API.
@@ -18,7 +10,6 @@ You done?: 🌚🌚🌚🌚
 - All response data from Vault is via JSON.
 
 - The HTTP request types correspond to a particular Vault capability or operation
-    -
 
     | Capability | HTTP Request Type |
     | --- | --- |
@@ -30,4 +21,4 @@ You done?: 🌚🌚🌚🌚
 
 ---
 
-- Sample requests are well-documented for multiple secret types at <https://vaultproject.io/api-docs/>
+- Sample requests are well-documented for multiple secret types at the following [link](https://vaultproject.io/api-docs/)

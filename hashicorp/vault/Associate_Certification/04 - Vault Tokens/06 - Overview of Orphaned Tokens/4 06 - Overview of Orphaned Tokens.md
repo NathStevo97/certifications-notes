@@ -1,14 +1,6 @@
 # 4.06 - Overview of Orphaned Tokens
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
-# Overview
+## Overview
 
 - Orphan tokens are not children of any parent token - they therefore do not expire when the "parent" does
 - They are the root of their own token tree, however orphan tokens still expire when their own max TTL is reached

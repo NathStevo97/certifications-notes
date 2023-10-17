@@ -1,14 +1,6 @@
 # 3.03 - AppRole Authentication Method
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
-# Notes
+## Notes
 
 - Before a client can interact with Vault, it must authenticate against a particular auth method as outlined previously.
 - Auth methods are generally targeted for one of two types of users:
@@ -21,7 +13,7 @@ You done?: 🌚🌚🌚🌚
   - Role ID
   - Secret ID
 
-## Configuring AppRole Authentication Method
+### Configuring AppRole Authentication Method
 
 1. Create policy for role and apps
 2. Get Role ID
