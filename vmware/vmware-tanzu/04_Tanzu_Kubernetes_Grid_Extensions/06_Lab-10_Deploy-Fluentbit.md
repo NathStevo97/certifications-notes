@@ -1,14 +1,12 @@
 # 4.06 - Lab 10
 
-Tags: Done
-
-# Objectives
+## Objectives
 
 - Configure FluentBit
 - Deploy FluentBit
 - Access vRealize log insight to view logs
 
-# Configure Fluentbit
+## Configure Fluentbit
 
 1. Using the terminal, navigate to the `fluent-bit` directory.
 
@@ -43,7 +41,7 @@ Tags: Done
 
     2. Save the file and close Visual Studio Code.
 
-# Deploy FluentBit
+## Deploy FluentBit
 
 1. Using the terminal, navigate to the `fluent-bit` directory.
 
@@ -77,7 +75,7 @@ Tags: Done
 
     `kapp inspect --app fluent-bit-ctrl -n tanzu-system-logging`
 
-# Access VRealize Log Insight to View Logs
+## Access VRealize Log Insight to View Logs
 
 1. In Firefox, open the vRealize Log Insight bookmark in a new tab.
 

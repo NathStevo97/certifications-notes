@@ -1,15 +1,13 @@
 # 5.6 - Lab 17
 
-Tags: Done
-
-# Objectives
+## Objectives
 
 - Unzip the Tanzu Kubernetes Grid Image Builder Files
 - Load the OVF tool into the Image Builder Container Image
 - Prepare the Image Builder Configuration
 - Run Image Builder
 
-# Unzip the Tanzu Kubernetes Grid Image Builder Files
+## Unzip the Tanzu Kubernetes Grid Image Builder Files
 
 1. Using the terminal, navigate to the `Downloads` directory.
 
@@ -27,7 +25,7 @@ Tags: Done
 
     `ls -l ~/Workspace/imagebuilder/TKG-Image-Builder-for-Kubernetes-v1.19.9`
 
-# Load the OVF tool into the Image Builder Container Image
+## Load the OVF tool into the Image Builder Container Image
 
 1. Using the terminal, navigate to the imagebuilder directory.
 
@@ -58,7 +56,7 @@ Tags: Done
 
     `docker build . -t harbor.vclass.local/tkg/imagebuilder-byoi:v0.1.9`
 
-# Prepare the Image Builder Configuration
+## Prepare the Image Builder Configuration
 
 1. Using the terminal, navigate to the `imagebuilder` directory.
 
@@ -128,7 +126,7 @@ Tags: Done
 
     2. Save the file and close Visual Studio Code.
 
-# Run Image Builder
+## Run Image Builder
 
 1. Using the terminal, navigate to the `imagebuilder` directory.
 

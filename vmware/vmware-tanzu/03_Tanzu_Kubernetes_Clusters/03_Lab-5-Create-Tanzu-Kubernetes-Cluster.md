@@ -2,7 +2,7 @@
 
 Tags: Done
 
-# Create a Tanzu Kubernetes Cluster Configuration File
+## Create a Tanzu Kubernetes Cluster Configuration File
 
 1. Using the terminal, navigate to the `clusterconfigs` directory.
 
@@ -37,7 +37,7 @@ Tags: Done
 
     1. If the output displays `exit status 1`, review the configuration parameters from step 3.
 
-# Create a Tanzu Kubernetes Cluster
+## Create a Tanzu Kubernetes Cluster
 
 1. Using the terminal, navigate to the `clusterconfigs` directory.
 

@@ -1,13 +1,11 @@
 # 4.08 - Lab 11
 
-Tags: Done
-
-# Objectives
+## Objectives
 
 - Configure Contour
 - Deploy Contour
 
-# Configure Contour
+## Configure Contour
 
 1. Using the terminal, navigate to the `contour` directory.
 
@@ -17,7 +15,7 @@ Tags: Done
 
     `cp vsphere/contour-data-values-lb.yaml.example contour-data-values.yaml`
 
-# Deploy Contour
+## Deploy Contour
 
 1. Using the terminal, navigate to the `contour` directory.
 

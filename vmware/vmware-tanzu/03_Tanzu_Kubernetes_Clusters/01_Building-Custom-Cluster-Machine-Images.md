@@ -1,17 +1,17 @@
 # 3.1 - Building Custom Cluster Machine Images
 
-# Overview
+## Overview
 
 - Tanzu Kubernetes clusters = Workload Clusters
 - Applications are typically deployed to these clusters and managed by TKG Management clusters
 - Provisioning and configuring Tanzu Kubernetes clusters is the key functionality that TKG provides
 
-# Learner Objectives
+## Learner Objectives
 
 - Describe the steps to build a custom image
 - Describe the available customizations
 
-# Deploying Clusters Using Custom Machine Images
+## Deploying Clusters Using Custom Machine Images
 
 - Custom machine images can be used as VM templates for Tanzu Kubernetes workload cluster nodes
 - Each custom machine image packages a base OS version and a Kubernetes version, as well as any additional customizations into an image capable of running on:
@@ -20,18 +20,15 @@
   - Azure
 - Base OS can be any OS that VMware supports but does not distribute e.g. Red Hat Enterprise Linux (RHEL) v7
 
-<aside>
-💡 for TKG v1.3 - only workload clusters support custom images, both these and management clusters are supported in v1.4
+- **Note:** for TKG v1.3 - only workload clusters support custom images, both these and management clusters are supported in v1.4
 
-</aside>
-
-# Custom Machine Image Customizations
+## Custom Machine Image Customizations
 
 ![Untitled](img/machine-image-custom-vars.png)
 
 - Variables including the above can be used to customize the image builds.
 
-# Building Custom Images - Requirements
+## Building Custom Images - Requirements
 
 - The following requirements must be met for custom images:
   - Account on vSphere/AWS/Azure with sufficient permissions
@@ -40,7 +37,7 @@
   - Azure - az CLI enabled
   - vSphere - OVFTool must be installed
 
-# Steps to Create Custom Image
+## Steps to Create Custom Image
 
 1. Determine and download image builder configuration version to be built from
 Each version corresponds to the Kubernetes version that the Image Builder will use.
@@ -48,7 +45,7 @@ Each version corresponds to the Kubernetes version that the Image Builder will u
 3. Prepare the required configuration
 4. Run image builder (recommended to do a dry run first)
 
-# Using Custom Images
+## Using Custom Images
 
 - After creating the custom images, you need to allow the Tanzu CLI to use the image - this requires creation of a custom Tanzu Kubernetes release based on the image
 

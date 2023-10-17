@@ -2,13 +2,13 @@
 
 Tags: Done
 
-# Objectives
+## Objectives
 
 - Retrieve the secret key for DNS updates
 - Configure external DNS
 - Deploy External DNS
 
-# Retrieve the Secret Key For DNS Updates
+## Retrieve the Secret Key For DNS Updates
 
 1. In the terminal, display the BIND configuration.
 
@@ -18,7 +18,7 @@ Tags: Done
 
 2. Under externaldns-key, copy the value of `secret` and paste it in to `commands.txt` on the desktop.
 
-# Configure External DNS
+## Configure External DNS
 
 1. Using the terminal, navigate to the `external-dns` directory.
 
@@ -46,7 +46,7 @@ Tags: Done
 
     2. Save the file and close Visual Studio Code.
 
-# Deploy External DNS
+## Deploy External DNS
 
     1. Using the terminal, navigate to the `external-dns` directory.
 

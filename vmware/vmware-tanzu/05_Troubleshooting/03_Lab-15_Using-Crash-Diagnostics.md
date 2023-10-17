@@ -1,8 +1,6 @@
 # 5.3 - Lab 15
 
-Tags: Done
-
-# Install the Crash Diagnostics CLI
+## Install the Crash Diagnostics CLI
 
 1. Using the terminal, navigate to the `Downloads` directory.
 
@@ -20,7 +18,7 @@ Tags: Done
 
     `crashd --help`
 
-# Configure the Crash Diagnostics Arguments File
+## Configure the Crash Diagnostics Arguments File
 
 1. Using the terminal, navigate to the `crashd` directory.
 
@@ -47,7 +45,7 @@ Tags: Done
 
     2. Save the file and close Visual Studio Code.
 
-# Run the Crash Diagnostics CLI
+## Run the Crash Diagnostics CLI
 
 1. Run the Crash Diagnostics CLI.
 

@@ -2,7 +2,7 @@
 
 Tags: Done
 
-# About Harbor
+## About Harbor
 
 - A container image registry that supports:
   - RBAC
@@ -11,7 +11,7 @@ Tags: Done
   - Signed images
   - Image replication between registries.
 
-# Harbor Components
+## Harbor Components
 
 - Components included in Harbor follow:
 
@@ -19,7 +19,7 @@ Tags: Done
 
 - Note: Scanning is available either via Trivy or Clair
 
-# Vulnerability Scanning
+## Vulnerability Scanning
 
 - Trivy provides multiple vulnerability scanning functionality in Harbor:
   - Scans container images
@@ -28,14 +28,14 @@ Tags: Done
     - Clair lacks this functionality!
 - Configuration can be put in place to prevent image deployments depending on the level of vulnerabilities found.
 
-# Harbor Deployment Options
+## Harbor Deployment Options
 
 - Harbor is deployed on a shared-services cluster - all workload clusters deployed in a TKG instance can therefore access it.
 - Common configuration options follow:
 
 ![Untitled](img/harbor-deployment-params.png)
 
-# Harbor Authentication
+## Harbor Authentication
 
 - Configuration → Authentication
   - Allows configuration of LDAP and OIDC, amongst other methods, depending on requirements

@@ -2,12 +2,12 @@
 
 Tags: Done
 
-# Objectives
+## Objectives
 
 - Unzip the TKG extensions
 - Change the image registry location
 
-# Unzip the TKG Extensions
+## Unzip the TKG Extensions
 
 1. Using the terminal, navigate to the `Downloads` directory.
 
@@ -29,7 +29,7 @@ Tags: Done
 
     The other directories contain the kapp and ytt templates for overriding advanced parameters for each extension.
 
-# Change the Image Registry Location
+## Change the Image Registry Location
 
 1. Using the terminal, navigate to the `Workspace` directory.
 

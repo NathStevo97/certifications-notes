@@ -1,13 +1,11 @@
 # 5.4 - Troubleshooting Commands
 
-Tags: Done
-
-# Objectives
+## Objectives
 
 - Describe how to use SSH to connect to a Tanzu Kubernetes VM
 - Detail the steps to troubleshoot a failed cluster deployment
 
-# Connecting to Cluster Nodes with SSH
+## Connecting to Cluster Nodes with SSH
 
 - SSH can be used  connect to individual nodes in both management and Tanzu Kubernetes clusters
 - For this to happen, you need an SSH key pair - one should already exist following deployment of the management cluster
@@ -16,7 +14,7 @@ Tags: Done
   - Assume root privileges with `sudo -i`
 - As the SSH key is present on the system running the SSH command, no password will eb required
 
-# Failure of Management Cluster Create Command
+## Failure of Management Cluster Create Command
 
 - Sometimes a cluster fails to create - a typical error is `waiting for cert-manager to be available`
 - Following steps can be used:
@@ -29,7 +27,7 @@ Tags: Done
   - Delete the management cluster - `tanzu management-cluster delete`
   - Run the create command again to ensure a clean deployment: `tanzu management-cluster create`
 
-# Recovering Cluster Credentials
+## Recovering Cluster Credentials
 
 - Run `tanzu management-cluster create` - recreates the `.kube-tkg/config` file
 - Obtain the IP address of the management cluster control plane node from vSphere

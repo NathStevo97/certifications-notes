@@ -2,18 +2,18 @@
 
 Tags: Done
 
-# Learner Objectives
+## Learner Objectives
 
 - Describe the commands available for working with management clusters.
 
-# Working with Multiple Management Clusters
+## Working with Multiple Management Clusters
 
 | Command | Description |
 | --- | --- |
 | tanzu login | Displays list of management clusters deployed and enables changes to the .kube-tkg/config context to change the context |
 | tanzu-management-cluster get | Display data of a particular  management cluster |
 
-# Adding Existing Management Clusters to Tanzu CLI
+## Adding Existing Management Clusters to Tanzu CLI
 
 1. Run `tanzu login`
 2. Select `new server`

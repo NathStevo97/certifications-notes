@@ -2,7 +2,7 @@
 
 Tags: Done
 
-# Module Context
+## Module Context
 
 - Any standard Kubernetes installation will lack some of the functionalities required for production-level deployment.
 - This is typically achieved by usage of extensions - TKG extensions provide functionality such as:
@@ -11,16 +11,16 @@ Tags: Done
   - Service Discovery
   - Monitoring
 
-# Learner Objectives
+## Learner Objectives
 
 - Describe the TKG Extensions and their functionalities
 
-# About the TKG Extensions Bundle
+## About the TKG Extensions Bundle
 
 - TKG extensions bundle includes binaries for tools to help provide in-cluster and shared services to your TKG instance
 - VMware builds all the provided binaries and container images associated.
 
-# Extensions Overview
+## Extensions Overview
 
 - For each set of functionality, TKG extensions bundle typically has 1 preset extension readily available, though in the case of Monitoring, both Prometheus and Grafana are used in combination as standard practice.
 
@@ -28,7 +28,7 @@ Tags: Done
 
 - Note: Other options are available for each function e.g. NGINX, Traefik for Ingress
 
-# Container Images
+## Container Images
 
 - VMware builds all container images used by Tanzu Kubernetes Grid and TKG extensions
 - All container images are hosted on projects.registry.vmware.com
@@ -36,7 +36,7 @@ Tags: Done
 - For internet-restricted environments, container images can be copied to an accessible image registry
   - The extension manifest must then be updated to include the specific image registry
 
-# Deployment with kapp-controller
+## Deployment with kapp-controller
 
 - When extensions are deployed:
   - The namespace, configuration (-data-values.yaml), and extension (-extension.yaml) YAML files for the particular extension are applied.
@@ -50,14 +50,14 @@ Tags: Done
 
 ![Untitled](img/kapp-controller-overview.png)
 
-# Configuring Extensions with Kubernetes Secrets
+## Configuring Extensions with Kubernetes Secrets
 
 - Extensions are configured by creating a Kubernetes secret containing related configuration data
 - The configuration file for each extension is defined in a file of format `<extension>-data-values.yaml` - this is used to create a Kubernetes secret named `<extension>-data-values`
 - When kapp-controller deploys an extension, it reads the secret configuration to apply it to the extension
 - Changes to the secret resource will automatically be picked up by the kapp-controller once the secret's data is updated.
 
-# Cert-Manager
+## Cert-Manager
 
 - A native Kubernetes certificate management controller
 - Functionalities include:
@@ -66,7 +66,7 @@ Tags: Done
   - Allows generation of certificates internally and connection to external services (e.g. Lets Encrypt) to request certifcates
 - It's not considered a TKG extension outright, however it is included in the extensions bundle as Contour, Grafana, Prometheus and Harbor all depend on its functionality to work.
 
-# Deleting Extensions
+## Deleting Extensions
 
 - For troubleshooting or deletion of extensions, simply use `kubectl delete -f` against the YAML files associated with the extension i.e.:
   - `<extension>-extension.yaml`

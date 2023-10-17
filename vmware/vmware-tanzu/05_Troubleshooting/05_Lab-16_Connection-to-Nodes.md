@@ -1,12 +1,10 @@
 # 5.5 - Lab 16
 
-Tags: Done
-
-# Objective
+## Objective
 
 - Connect to a Node using SSH
 
-# Connect to a Node Using SSH
+## Connect to a Node Using SSH
 
 1. Using the terminal, set the kubectl context to the tkc-01 cluster.
 

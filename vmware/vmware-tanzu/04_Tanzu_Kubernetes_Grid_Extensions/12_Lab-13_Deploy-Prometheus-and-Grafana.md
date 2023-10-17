@@ -2,14 +2,14 @@
 
 Tags: Done
 
-# Objectives
+## Objectives
 
 - Deploy Prometheus
 - Configure Grafana
 - Deploy Grafana
 - Access the Grafana Instance
 
-# Deploy Prometheus
+## Deploy Prometheus
 
 1. Using the terminal, navigate to the `prometheus` directory.
 
@@ -47,7 +47,7 @@ Tags: Done
 
     `kapp inspect --app prometheus-ctrl -n tanzu-system-monitoring`
 
-# Configure Grafana
+## Configure Grafana
 
 1. Using the terminal, navigate to the `grafana` directory.
 
@@ -82,7 +82,7 @@ Tags: Done
 
     2. Save the file and close Visual Studio Code.
 
-# Deploy Grafana
+## Deploy Grafana
 
 1. Using the terminal, navigate to the `grafana` directory.
 
@@ -112,7 +112,7 @@ Tags: Done
 
     `kapp inspect --app grafana-ctrl -n tanzu-system-monitoring`
 
-# Access the Grafana Web Interface
+## Access the Grafana Web Interface
 
 1. Using Firefox, open the Grafana bookmark in a new tab.
 

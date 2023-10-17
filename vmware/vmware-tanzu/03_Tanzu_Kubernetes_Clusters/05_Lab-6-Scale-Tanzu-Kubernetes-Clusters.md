@@ -2,12 +2,12 @@
 
 Tags: Done
 
-# Objectives and Tasks
+## Objectives and Tasks
 
 - Examine the Tanzu Kubernetes Cluster
 - Scale the Tanzu Kubernetes Cluster
 
-# Examine the Tanzu Kubernetes Cluster
+## Examine the Tanzu Kubernetes Cluster
 
 1. Using the terminal, retrieve the admin kubeconfig file for the workload cluster.
 
@@ -39,7 +39,7 @@ Tags: Done
 
     The VM names correspond to the node names in the `kubectl get nodes` output.
 
-# Scale the Cluster
+## Scale the Cluster
 
 1. Using the terminal, get the Tanzu Kubernetes cluster information.
 

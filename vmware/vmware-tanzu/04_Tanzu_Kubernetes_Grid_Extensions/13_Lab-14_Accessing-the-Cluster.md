@@ -1,13 +1,13 @@
 # 4.13 - Lab 14
 
-# Objectives
+## Objectives
 
 1. Access the cluster as a developer
 2. Deploy a workload
 3. Inspect the NSX Advanced load balancer
 4. Inspect the logs in vRealize log insight
 
-# Access the Cluster as a Developer
+## Access the Cluster as a Developer
 
 1. Using the terminal, click the new terminal tab button in the top left.
 
@@ -54,7 +54,7 @@
 
     The `tanzu-cli-tkc-01@tkc-01` context displays.
 
-# Developer Workload
+## Developer Workload
 
 1. Using the terminal, navigate to the `Workspace` directory.
 
@@ -88,7 +88,7 @@
 
     The VMBeans website displays.
 
-# Inspect the NSX Advanced Load Balancer UI
+## Inspect the NSX Advanced Load Balancer UI
 
 1. Using Firefox, open the NSX Adv LB bookmark.
 
@@ -116,7 +116,7 @@
 
     Continue to the next task while waiting for the graph to update.
 
-# Inspec the Logs in Vrealize Log Insight
+## Inspect the Logs in Vrealize Log Insight
 
 1. Using Firefox, click the vRLI bookmark in a new tab.
 

@@ -2,12 +2,12 @@
 
 Tags: Done
 
-# Objectives
+## Objectives
 
 - Describe the Contour Ingress Controller
 - Explain how to install Contour to a Tanzu Kubernetes cluster
 
-# Ingress Overview
+## Ingress Overview
 
 - A method used in Kubernetes for routing external traffic to pods
 - Operates on layer 7 traffic
@@ -18,7 +18,7 @@ Tags: Done
   - Amazon ALB
   - NSX Advanced Load Balancer
 
-# Contour Overview
+## Contour Overview
 
 - An open-source Kubernetes ingress controller
 - Used as the default ingress controller for Tanzu Kubernetes Grid
@@ -27,7 +27,7 @@ Tags: Done
   - Envoy used to perform traffic routing - handles rerouting traffic based on rules in place
 - Supports dynamic configuration updates based on `kubectl apply` commands etc.
 
-# HTTPProxy Resources
+## HTTPProxy Resources
 
 - Match requests based on the configured virtualhost FQDN field
 - Routes requests based on routes matching the ULR path to the defined service and port
@@ -52,7 +52,7 @@ spec:
           port: 80
 ```
 
-# How Contour Works
+## How Contour Works
 
 - Contour deployment dynamically configures an Envoy proxy DaemonSet by using the following steps:
 
@@ -64,7 +64,7 @@ spec:
 
 ![Untitled](img/contour-architecture.png)
 
-# Contour Configuration
+## Contour Configuration
 
 - Under `extensions/ingress/contour/vsphere` - the following two config files are required:
 

@@ -2,30 +2,30 @@
 
 Tags: Done
 
-# Objectives
+## Objectives
 
 - Describe how Kubernetes manages authentication
 - Explain what Pinniped is
 - Explain what Dx is
 - Describe the Pinniped authentication workflow
 
-# External Authentication
+## External Authentication
 
 - Users aren't directly managed or authenticated by Kubernetes
 - An external identity service must be used to generate trusted tokens or certificates for users to communicate with the Kubernetes API server
 - Kubernetes supports OIDC tokens as a way to identify users accessing the cluster.
 
-# User Authentication - Pinniped
+## User Authentication - Pinniped
 
 - In TKG, user authentication is provided by Pinniped by default
 - Allows integration of external OIDC OR LDAP identity providers into Tanzu Kubernetes clusters so access to said clusters can be controlled.
 
-# LDAP Authentication - Dex
+## LDAP Authentication - Dex
 
 - Dex is an identity service that supports LDAP authentication
 - Pinniped uses Dex if LDAP authentication is required.
 
-# KubeConfig File Setup - Pinniped
+## KubeConfig File Setup - Pinniped
 
 - When Pinniped authentication is enabled, the `tanzu cluster kubeconfig get` command returns a kubeconfig file that's configured to run the Tanzu pinniped-auth plugin
 - The plugin initiates the Pinniped authentication workflow
@@ -33,7 +33,7 @@ Tags: Done
 
 ![Untitled](img/pinniped-kubeconfig.png)
 
-# Pinniped Authentication Workflow
+## Pinniped Authentication Workflow
 
 ![Untitled](img/pinniped-auth-workflow.png)
 
@@ -53,7 +53,7 @@ Tags: Done
 2. The client certificate is passed to kubectl
 3. kubectl sends the client certificate with its request, the client certificate is already now trusted by the cluster and the user is authenticated.
 
-# Pinniped Session Cache
+## Pinniped Session Cache
 
 - On successful login, the Tanzu CLI stores the client certificate to `~/.tanzu/pinniped/session.yaml`
 - Deleting this file will require users to re-authenticate via the process outlined above.

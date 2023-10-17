@@ -7,5 +7,5 @@ Tags: Done
 2. When connecting to a node via SSH, what's the username?
     1. capv
 3. How are arguments passed to Crashd?
-    1. —args-file <arg file name>
-    2. —args key1=value1
+    1. `—args-file <arg file name>`
+    2. `—args key1=value1`

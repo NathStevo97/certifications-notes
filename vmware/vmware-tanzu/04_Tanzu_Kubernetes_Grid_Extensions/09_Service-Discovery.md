@@ -2,13 +2,13 @@
 
 Tags: Done
 
-# Objectives
+## Objectives
 
 - Describe Service Discovery
 - Describe External DNS
 - Detail the configuration options for BND Servers
 
-# Service Discovery Overview
+## Service Discovery Overview
 
 - Kubernetes provides a declarative API for deploying apps, services, ingress and load balancer resources
 - Services, ingress, load balancer resources provide methods to route external IP network traffic into a cluster and to an application.
@@ -17,7 +17,7 @@ Tags: Done
   - This can be queried by applications and end users needing access to a particular application.
 - Additionally, this external registry should be regularly updated whenever these resources are changed.
 
-# External DNS Overview
+## External DNS Overview
 
 - A service discovery solution that:
   - Uses DNS as a service registry
@@ -25,14 +25,14 @@ Tags: Done
   - Creates DNS entries for applications in the configured DNS server
   - Allows users and applications outside a cluster to use DNS to access workloads inside a cluster
 
-# DNS Servers Supported by External DNS
+## DNS Servers Supported by External DNS
 
 - RFC2136 (BIND) Server
 - Microsoft DNS using RFC2136 (Insecure) or RFC3645 (Secure)
 - AWS Route 53
 - Microsoft Azure
 
-# How External DNS Works
+## How External DNS Works
 
 - External DNS:
   - Watches for hostnames in Kubernetes API resources
@@ -41,7 +41,7 @@ Tags: Done
   - Creates a DNS entry in the configured DNS server that points to the ingress or Load Balancer IP
   - Deletes the DNS entry when the ingress / HTPProxy / LoadBalancer resources are deleted
 
-# External DNS Configuration for BIND Servers
+## External DNS Configuration for BIND Servers
 
 - Example configuration files are of the format `external-dns-data-values-<type>.yaml`
   - The config files determines how load balancers are watched for External DNS annotations

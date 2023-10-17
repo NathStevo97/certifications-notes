@@ -2,12 +2,12 @@
 
 Tags: Done
 
-# Objectives
+## Objectives
 
 1. Create a Library in Harbor
 2. Push Tanzu Kubernetes Grid Container Images to Harbor
 
-# Create a Library in Harbor
+## Create a Library in Harbor
 
 1. Using Firefox, open the Harbor bookmark in a new tab.
 2. Log in to Harbor.
@@ -18,7 +18,7 @@ Tags: Done
     2. For Access Level select **Public**.
 4. Click **OK**.
 
-# Push Tanzu Kubernetes Grid Container Images to Harbor
+## Push Tanzu Kubernetes Grid Container Images to Harbor
 
 1. Using the terminal, navigate to the `Workspace` directory.
 

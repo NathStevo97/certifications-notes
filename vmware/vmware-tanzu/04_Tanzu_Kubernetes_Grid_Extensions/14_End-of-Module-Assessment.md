@@ -1,7 +1,5 @@
 # 4.14 - End of Module Assessment
 
-Tags: Done
-
 1. What extension provides logging functionality?
     1. Fluent-Bit
 2. What extensions facilitate cluster monitoring?

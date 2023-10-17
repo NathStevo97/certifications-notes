@@ -2,13 +2,13 @@
 
 Tags: Done
 
-# Learner Objectives
+## Learner Objectives
 
 - Describe FluentBit
 - Detail the logs collected by FluentBit
 - Describe basic Fluentbit configuration
 
-# Fluentbit Overview
+## Fluentbit Overview
 
 - A lightweight logging framework
 - Functionality includes:
@@ -21,7 +21,7 @@ Tags: Done
     - Splunk
     - HTTP Endpoint
 
-# Configuration and Deployment
+## Configuration and Deployment
 
 - FluentBit is deployed as a Daemonset by default (runs on all nodes!)
 - Configuration files and architecture follow:
@@ -30,7 +30,7 @@ Tags: Done
 
 - Depending on what logs are enabled, FluentBit collates all logs and outputs it to the desired service endpoint.
 
-# Metadata Considered
+## Metadata Considered
 
 - Fluentbit includes metadata such as:
   - Pod ID
@@ -42,7 +42,7 @@ Tags: Done
   - Cluster name
   - Instance Name
 
-# Fluentbit Syslog Output Configuration
+## Fluentbit Syslog Output Configuration
 
 - When configuring output to syslog, the following parameters should be considered:
 

@@ -2,11 +2,11 @@
 
 Tags: Done
 
-# Objectives
+## Objectives
 
 - Deploy cert-manager
 
-# Deploy Cert-Manager
+## Deploy Cert-Manager
 
 1. Using the terminal, navigate to the `cert-manager` directory.
 

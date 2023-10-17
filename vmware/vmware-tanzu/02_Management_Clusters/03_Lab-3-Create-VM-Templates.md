@@ -2,7 +2,7 @@
 
 Tags: Done
 
-# Objectives
+## Objectives
 
 1. Log in to the vSphere Client
 2. Create Resource Pools
@@ -10,7 +10,7 @@ Tags: Done
 4. Import the Base OS Template OVA Files
 5. Convert the VMs to Templates
 
-# Login to the vSphere Client
+## Login to the vSphere Client
 
 1. Using Firefox, open the vSphere Client bookmark in a new tab.
 2. Log in to the vSphere Client.
@@ -20,7 +20,7 @@ Tags: Done
 4. Verify that nsx-adv-lb-controller is powered on.
     1. If nsx-adv-lb-controller is not powered on, right-click **nsx-adv-lb-controller** and select **Power** > **Power On**.
 
-# Create the Resource Pools
+## Create the Resource Pools
 
 You create resource pools for the management cluster and workload clusters.
 
@@ -34,7 +34,7 @@ You create resource pools for the management cluster and workload clusters.
 8. Click **New Resource Pool**.
 9. Enter rp-tkg-production in the **Name** text box and click **OK**.
 
-# Create a VM Folder
+## Create a VM Folder
 
 You create a VM folder to place VMs created by Tanzu Kubernetes Grid.
 
@@ -44,7 +44,7 @@ You create a VM folder to place VMs created by Tanzu Kubernetes Grid.
 4. Select **New Folder > New VM and Template Folder**.
 5. In the New Folder window, enter tkg-vms in the **Enter a name for the folder** text box and click **OK**.
 
-# Import the Base OS Template OVA Files
+## Import the Base OS Template OVA Files
 
 1. In the vSphere Client, click **Menu**.
 2. Click **Hosts and Clusters**.
@@ -72,7 +72,7 @@ You create a VM folder to place VMs created by Tanzu Kubernetes Grid.
 
     Wait for the OVF deployment to finish before proceeding to the next task.
 
-# Convert the VMs to Templates
+## Convert the VMs to Templates
 
 1. In the vSphere Client, click **Menu**.
 2. Click **VMs and Templates**.
