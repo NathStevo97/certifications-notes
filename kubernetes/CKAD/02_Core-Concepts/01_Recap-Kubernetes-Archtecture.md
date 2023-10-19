@@ -3,7 +3,6 @@
 ## Node
 
 - A physical or virtual machine where Kubernetes is installed
-- Also known as "worker machines" or "minions"
 - Containers are deployed to these nodes via the Kubernetes CLI.
 - To avoid applications failing to run on a node, it's advised to have multiple nodes together or multiple replicase of an app.
   - This can support high-availability and fault-tolerance.
@@ -30,7 +29,7 @@
 - Acts as the frontend for Kubernetes
 - User Management devices and CLI tools all go through the API server when interacting with the cluster.
 
-### etcd Server
+### ETCD Server
 
 - Acts as a key store service
 - Stores all data used to manage the cluster
@@ -45,13 +44,13 @@
 
 - The primary orchestrators
 - Responsible for noticing and responding to node/container failure, etc.
-- Makes decisions to bring up new containers to replace those that have vailed (or another appropriate action
+- Makes decisions to bring up new containers to replace those that have vailed (or another appropriate action)
 
 ### Container Runtime
 
 - The underlying software used to run containers.
 
-### kubectl
+### Kubelet
 
 - The agent running on each node.
 - Responsible for ensuring containers run on nodes as expected.
@@ -76,9 +75,7 @@
 
 ## Kubectl
 
-- AKA kube-control
-- Tool used to deploy and manage resources on a kubernetes cluster
-
+- Tool used to deploy and manage resources on a Kubernetes cluster
 - Common command examples:
 
 ```shell

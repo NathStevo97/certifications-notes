@@ -1,6 +1,6 @@
 # 1.1 - Introduction
 
-## Course Stucture and Notes
+## Course Structure and Notes
 
 - Exam is 100% Practical
 - Prerequisites Tools and Knowledge:
@@ -8,7 +8,7 @@
   - Kubernetes Architecture
   - Master and Worker Node Functionality
   - Pods, ReplicaSets, and Deployments
-  - Kubernetes CLI (kubectl)
+  - Kubernetes CLI (`kubectl`)
   - Understand YAML
   - Services
   - Namespaces
