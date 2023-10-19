@@ -1,13 +1,5 @@
 # 11.1 - Advanced Topics
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
 ## Preparing Windows Server
 
 - Ansible Control Machines can ONLY be Linux Machines

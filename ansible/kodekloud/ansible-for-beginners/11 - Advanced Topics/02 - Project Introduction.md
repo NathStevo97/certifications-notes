@@ -1,13 +1,5 @@
 # 11.2 - Project Introduction
 
-Complete: No
-Flash Cards: No
-Lab: No
-Read: No
-Status: Complete
-Watch: No
-You done?: 🌚🌚🌚🌚
-
 ## Project Introduction
 
 - Project Aim: Use Ansible to automate the provisioning of the Kodekloud Store
