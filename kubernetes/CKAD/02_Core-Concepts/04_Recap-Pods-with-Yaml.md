@@ -2,19 +2,19 @@
 
 - Kubernetes uses YAML files as inputs for object creation e.g. pods, deployments, services.
 - These YAML files always contain 4 key fields:
-  - apiVersion:
+  - **apiVersion:**
     - Version of Kubernetes API used to create the object
     - Correct api version required for varying objects e.g. `v1` for Pods and Services, `apps/v1` for Deployments
-  - kind:
+  - **kind:**
     - type of object being created
-  - metadata:
+  - **metadata:**
     - data referring to specifics of the object
     - Expressed as a dictionary
     - Labels: Children of metadata
       - Indents denote what metadata is related toa  child of a property
       - Used to differentiate pods
       - Any key-value pairs allowed in labels
-  - spec:
+  - **spec:**
     - specification containing additional information around the object
     - Written in a dictionary
     - `-` denotes first item in a dictionary

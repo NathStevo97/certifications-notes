@@ -37,21 +37,21 @@ metadata:
 
 - To create: `kubectl create -f <namespace>.yaml`
 - Alternatively: `kubectl create namespace <namespace name>`
-- To switch context: `kubectl config set-context $(kubectl config current-context --namespace=<namespace>)`
+- To switch context: `kubectl config set-context $(kubectl config current-context) --namespace=<namespace>`
 - To view all pods in each namespace add `--all-namespaces` to the `get pods` commands.
 
 ## Resource Quota
 
 - Creates limitations on resources for namespaces
 - Created via definition file
-- Kind: ResourceQuota
-- Spec must specify variables such as:
+- **Kind:** ResourceQuota
+- **Spec:** must specify variables such as:
   - Pod numbers
   - Memory limits
   - CPU limits
   - Minimum requested/required CPU and Memory
 
-- Example:
+- **Example:**
 
 ```yaml
 apiVersion: v1
