@@ -33,7 +33,7 @@ metadata:
 - Kubernetes also uses labels and selectors internally to connect different objects.
   - Example: for a replicaset, one needs to configure the replicaset to match labels for a particular key-value pair
     - If matched correctly, the replicaset is created and manages the desired pods.
-    - This is by supplying the desired labels under `selector` in the ReplicaSet spec, and the metadata labels in the ReplicaSet `template`. 
+    - This is by supplying the desired labels under `selector` in the ReplicaSet spec, and the metadata labels in the ReplicaSet `template`.
 
 ## Annotations
 
