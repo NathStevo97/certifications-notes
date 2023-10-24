@@ -1,25 +1,25 @@
 # 5.1 - Readiness and Liveness Probes
 
 - Pod lifecycles are defined by 2 parameters:
-  - Status
-  - Conditions
+  - `Status`
+  - `Conditions`
 
 - Status determines Pod lifecycle stage
-  - Pending (Until Scheduled)
-  - ContainerCreating (Once Scheduled)
-  - Running (Once Container Running)
+  - `Pending` (Until Scheduled)
+  - `ContainerCreating` (Once Scheduled)
+  - `Running` (Once Container Running)
 
 - Status may be viewed by `kubectl get pods`
 - For additional information, consider Pod conditions:
   - A set of True/False conditions to determine lifecycle stage:
-    - PodScheduled
-    - Initialized
-    - ContainersReady
-    - Ready
+    - `PodScheduled`
+    - `Initialized`
+    - `ContainersReady`
+    - `Ready`
 
-- In some scenarios, the service provided by a container may take additional time to load beynd the pod being declared "Ready".
+- In some scenarios, the service provided by a container may take additional time to load beyond the pod being declared "Ready".
 - This can cause issues as if a service isn't fully ready, but Kubernetes deems it to be, Kubernetes will automatically route traffic to the pod.
-- By default, Kubernetes assumes services to be ready as sson as the associated container is ready, not the associated services.
+- By default, Kubernetes assumes services to be ready as soon as the associated container is ready, not the associated services.
 - If the application isn't ready, the users will be requesting to an unavailable pod.
 - To fix, one needs to change the readiness condition to suit the application within the container, this is defined by **Readiness Probes**
 

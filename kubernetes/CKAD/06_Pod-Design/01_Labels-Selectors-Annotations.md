@@ -1,13 +1,13 @@
-# 6.1 - Lables, Selectors and Annotations
+# 6.1 - Lablels, Selectors and Annotations
 
-- Labels and selectors allow standardised categorisation of resources or objects
+- Labels and selectors allow standardized categorization of resources or objects
   - Objects can then be filtered by the categories selected
 
 - **Labels:** Properties attached to each item
-- **Seclectors:** Filter criteria for items based on labels
+- **Selectors:** Filter criteria for items based on labels
   - E.g. Kind: Pod
-- Over time one could end up with thousands of objects in a cluster, includign Pods, nodes, etc.
-  - Need to filter and categorise them.
+- Over time one could end up with thousands of objects in a cluster, including Pods, nodes, etc.
+  - Need to filter and categorize them.
 - Could group objects via:
   - Type
   - Associated application
@@ -33,6 +33,7 @@ metadata:
 - Kubernetes also uses labels and selectors internally to connect different objects.
   - Example: for a replicaset, one needs to configure the replicaset to match labels for a particular key-value pair
     - If matched correctly, the replicaset is created and manages the desired pods.
+    - This is by supplying the desired labels under `selector` in the ReplicaSet spec, and the metadata labels in the ReplicaSet `template`. 
 
 ## Annotations
 

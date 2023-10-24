@@ -12,11 +12,11 @@
     - Recommended
     - `docker run -d <image>`
 
-- To view the logs associated with the detached container: `docker logs -f <container id>`
+- To view the logs associated with the detached container and stream them: `docker logs -f <container id>`
 
 ## Logs - Kubernetes
 
 - When running a pod in Kubernetes, you can view the container's logs via: `kubectl logs -f <pod name>`
 - This only works for 1 container, what about 2?
   - Error will occur
-  - To view specific container logs within a pod, run the above command and append the container name.
+  - To view specific container logs within a pod, run the above command and append the container name i.e. `kubectl logs -f <pod name> <container name>`.

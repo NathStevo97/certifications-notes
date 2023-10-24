@@ -7,12 +7,12 @@
   - Performance metrics:
     - CPU Usage
     - Memory Usage
-    - Disk Utilisation
+    - Disk Utilization
   - Pod metric levels:
     - Pod numbers
     - Pod performance levels
 
-- Need to monitor, store and analyse these metrics.
+- Need to monitor, store and analyze these metrics.
 - This is not automatically done by Kubernetes, it lacks the functionality.
 
 - Additional tools are available for this, such as Prometheus Metrics Server.
@@ -26,11 +26,11 @@
 ### Heapster
 
 - One of the original projects for Kubernetes monitoring and analysis
-- Now deprecated
+- Now deprecated.
 
 ### Metrics-Server
 
-- A slimmed-down version of heapster
+- A slimmed-down version of Heapster
 
 ---
 

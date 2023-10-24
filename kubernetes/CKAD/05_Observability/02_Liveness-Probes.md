@@ -1,8 +1,8 @@
 # 5.2 - Liveness Probes
 
-- Suppose you run an nginx docker image and is serving users:
+- Suppose you run an `nginx` docker image and is serving users:
   - In the event of this container failing, the service will stop, and will remain stopped until restarted; as Docker is not an orchestration tool.
-- This problem can be fixed via Kubernetes' orchesteration. During application failure, Kubernetes will always try to restart failed containers to minimise user downtime.
+- This problem can be fixed via Kubernetes' orchestration. During application failure, Kubernetes will always try to restart failed containers to minimize user downtime.
 - This will work fine so long as it's not an application-level issue.
   - If the container is working but the issue is at an application level, Kubernetes will see no issue. This is not good for user experience.
 

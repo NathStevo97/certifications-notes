@@ -6,7 +6,7 @@
   - Run a docker container via an ubuntu image: `docker run ubuntu`
   - Runs an instance of the Ubuntu image and exits immediately, noted upon execution of `docker ps -a`
 
-- This occurs beause containers aren't designed to host an OS, but instead to run a specific task or process.
+- This occurs because containers aren't designed to host an OS, but instead to run a specific task or process.
   - Example: host a web server or database
   - So long as that process stays active, so does the container.
   - If the service stops or crashes, the container exits.

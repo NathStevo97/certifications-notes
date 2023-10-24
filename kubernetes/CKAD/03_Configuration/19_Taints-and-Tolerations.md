@@ -29,11 +29,15 @@
 - In the spec section, add similar to the following:
 
 ```yaml
-tolerations:
-- key: app
-  operator: "Equal"
-  value: "blue"
-  effect: "NoSchedule"
+...
+spec:
+  containers:
+  ...
+  tolerations:
+  - key: app
+    operator: "Equal"
+    value: "blue"
+    effect: "NoSchedule"
 ```
 
 - Be sure to apply the same values used when applying the taint to the node.
@@ -47,7 +51,7 @@ tolerations:
 
 - Taints and tolerations are only used to restrict pod access to nodes.
 - As there are no restrictions / taints applied to the other pods, there's a chance the app could still be placed on a different node(s).
-- If wanting the pod to go to a particular node, one can utilise node affinity.
+- If wanting the pod to go to a particular node, one can utilize node affinity.
 
 - **Note:** A taint is automatically applied to the master node, such that no pods can be scheduled to it.
   - View it via `kubectl describe node kubemaster | grep Taint`

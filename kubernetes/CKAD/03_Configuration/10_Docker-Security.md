@@ -17,9 +17,9 @@
 
 - To edit the default user for the container, use `docker run` in a similar manner to: `docker run --user=<username> <container> <command>`
 
-- To enforce security, one can add `USER` value to the Dockerfile
+- To enforce security, one can add `USER` value to the Dockerfile e.g. `USER 1000`
   - This automatically defines the user when the container is built and run.
-- When running a container that defaults to the root user, Docker takes measures to prvent the root user from taking unnecessary actions via Linux Capabilities.
+- When running a container that defaults to the root user, Docker takes measures to prevent the root user from taking unnecessary actions via Linux Capabilities.
 
 ## Linux Capabilities
 

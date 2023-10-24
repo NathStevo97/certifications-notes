@@ -14,4 +14,22 @@
 - To configure at container-level, add the same fields to the containers list
 - To add capabilities, add `capabilities:`, then in a dictionary, add `add: ["<CAPABILITY ID>", .... ]`.
 
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod
+spec:
+  #securityContext:
+  #    runAsUser: 1000
+  containers:
+  - name: ubuntu
+    image: ubuntu
+    command: ["sleep", "3600"]
+    securityContext:
+      runAsUser: 1000
+      capabilities:
+        add: ["MAC_ADMIN"]
+```
+
 - **Note:** Capabilities are only supported at container-level, not pod-level.

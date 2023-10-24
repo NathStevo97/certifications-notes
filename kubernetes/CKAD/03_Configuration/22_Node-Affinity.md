@@ -5,7 +5,7 @@
 
 - Node affinity allows more complex capabilities regarding pod-node limitation.
 
-- To specify in the spec section of a pod definition filem add in a new field:
+- To specify, in the spec section of a pod definition file add in a new field:
 
 ```yaml
 affinity:
@@ -22,11 +22,11 @@ affinity:
 - **Note:** If just needing a pod to go to any node with a particular label, regardless of value, use the `Exists` operator -> no values are required in this case.
 
 - Additional operators are available, with further details provided in the documentation.
-- In the event that a node cannot be allocated due to a lable fault, the resulting action is dependent upon the NodeAffinityType set.
+- In the event that a node cannot be allocated due to a label fault, the resulting action is dependent upon the NodeAffinityType set.
 
 ## Node Affinity Types
 
-- Defines the scheduler's behaviour regarding Node Affinity and pod lifecycle stages
+- Defines the scheduler's behavior regarding Node Affinity and pod lifecycle stages
 
 - 2 main types available:
   1. `RequireDuringSchedulingIgnoredDuringExecution`
@@ -35,8 +35,8 @@ affinity:
 - Other types are to be released such as `requiredDuringSchedulingRequiredDuringExecution`
 
 - Considering the 2 available types, can break it down into the 2 stages of a pod lifecycle:
-  1. DuringScheduling -> The pod has been created for the first time and not deployed
-  2. DuringExecution
+  1. **DuringScheduling** -> The pod has been created for the first time and not deployed
+  2. **DuringExecution**
 
 - If the node isn't available according to the NodeAffinity, the resultant action is dependent upon the NodeAffinity type:
 
@@ -67,16 +67,16 @@ affinity:
   - Node 1: To run the grey pod
   - Node 2: " "
 
-- Applying a taint ot each of the coloured nodes to accept their respective pod
+- Applying a taint to each of the colored nodes to accept their respective pod
   - Tolerances are then are applied to the pods
 
-- Need to apply a taint to node 1 and node 2 as the coloured pods can still be allocated to nodes where they're not wanted.
+- Need to apply a taint to node 1 and node 2 as the colored pods can still be allocated to nodes where they're not wanted.
 
-- To overcome, use Node Affinity:
-  - Label nodes with respective colours
+- To overcome, use **Node Affinity**:
+  - Label nodes with respective colors
   - Pods end up in the correct nodes via use of Node Selector.
 
-- There's a chance that the unwanted pods could still be allocated.
+- There's a chance that the unwanted pods could still be allocated e.g. the grey pods could still be scheduled on the colored nodes.
 
 - A combination of taints and tolerations, and node affinity must be used.
   - Apply taints and tolerations to present unwanted pod placement on nodes
