@@ -22,7 +22,7 @@ metadata:
   name: pv-vol1
 spec:
   accessModes:
-    - ReadWriteOnce / ReadOnlyMany / ReadWriteMany
+    - ReadWriteOnce / ReadOnlyMany / ReadWriteMany # how a volume should be mounted on a host
   capacity:
     storage: 1Gi
   hostPath:

@@ -1,7 +1,7 @@
 # 8.1 - Volumes
 
 - In practice, Docker containers are ran on a "need-to-use" basis.
-  - They only exist for a short amount of time
+  - They only exist for a short amount of time / are ephemeral.
   - Once the associated job or process is complete, they're taken down, along with any associated data.
 
 - To persist data associated with a container, one can attach a volume.
