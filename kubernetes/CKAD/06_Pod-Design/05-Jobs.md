@@ -6,11 +6,11 @@
   - Analytics
   - Image processing
 
-- When creating a container to perform a particular jon, Kubernetes will want the container to "live forever".
+- When creating a container to perform a particular job, Kubernetes will want the container to "live forever", default behavior for a replicaSet.
 - When a container completes its job it'll exit and its state will become "completed"
 - By default, Kubernetes will continuously restart it as it views there to be a problem, despite this not being the case.
 
-- To work around, one can configure the "restartPolicy" property of the pod
+- To work around, one can configure the `restartPolicy` property of the pod
   - By default, this is set to `always` but can be changed to `never` or `on failure`
 
 - Example Usage:
@@ -32,7 +32,7 @@ spec:
   - All pods need to complete their task and exit.
 
 - ReplicaSets could be used to ensure identical sets of pods are created.
-  - Use a job to runa  set of pods to complete a common goal
+  - Use a job to run a set of pods to complete a common goal
 
 - As usual, a pod definition file to describe the job is needed.
   - Additionally, need a job definition file to create it:
@@ -71,7 +71,7 @@ spec:
 - To run multiple instances / pods to complete the job, add the property `completions` should be added as a sibling to `template`.
   - Pods will be created sequentially as each are completed.
 
-- To create jobs in parallel rather than sequentially, add `parralellism` property as a simpling to `completions`.
+- To create jobs in parallel rather than sequentially, add `parralellism` property as a sibling to `completions`.
   - Creates `x` pods simultaneously (so long as the system can handle it)
 
 - More recommended to use `parralellism` rather than sequential creation as this could create more pods than necessary.

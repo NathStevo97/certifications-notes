@@ -1,4 +1,4 @@
-# 7.2 - ClusterIP Servicce
+# 7.2 - ClusterIP Service
 
 - In general, a fill stack will comprise of groups of pods, hosting different parts of an application, such as:
   - Frontend

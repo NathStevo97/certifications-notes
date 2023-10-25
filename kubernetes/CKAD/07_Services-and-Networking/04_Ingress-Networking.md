@@ -47,7 +47,7 @@
 
 - **Note:** Even with Ingress in place, one still needs to expose the application via a NodePort or Load Balancer -> this would be a 1-time configuration.
 
-- Once exposed, all load balancing authenticaiton, SSL and URL routing configrations are manageable and viewable via an Ingress Cotnroller.
+- Once exposed, all load balancing authentication, SSL and URL routing configurations are manageable and viewable via an Ingress Controller.
 
 - Ingress controllers aren't set up by default in Kubernetes, example solutions that can be deployed include:
   - GCE
@@ -219,3 +219,70 @@ rules:
 
 - **Note:** If not specifying the host field, it'll assume it to be a `*` and / or accept all incoming traffic without matching the hostname
   - Acceptable for a single backend
+
+## Updates and Additional Notes
+
+- As of Kubernetes versions 1.20+, Ingress resources are defined a little differently, in particular the `apiVersion` and `service` parameters. An example follows:
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-cluster
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /wear
+        backend:
+          service:
+            name: wear-service
+            port: 
+              number: 80
+      - path: /watch
+        backend:
+          service:
+            name: watch-service
+            port: 
+              number: 80
+```
+
+- Ingress resources can be created imperatively via commands similar to: `kubectl create ingress <ingress-name> --rule="<host>/<path>=service:port"`
+
+### Rewrite-Target Option
+
+- Different ingress controllers come with particular customization options. For example, NGINX has the `rewrite-target` option.
+- To understand this, consider two services to be linked via the same ingress, accessible at the following urls for standalone services and via ingress respectively:
+  - `http://<service 1>:<port>/` & `http://<service 2>:<port>/`
+  - `http://<ingress-service>:<ingress-port>/<service 1 path>` & `http://<ingress-service>:<ingress-port>/<service 2 path>`
+
+- The two applications will not have the paths defined in the ingress urls configured on them, without the `rewrite-target` configuration, the following journey would occur for each given service:
+  - `http://<ingress-service>:<ingress-port>/<service 1 path>` -> `http://<service 1>:<port>/<service 1 path>`
+- As the service paths aren't configured for the applications, this would throw an unexpected error. To avoid, one can use the `rewrite-target` option to rewrite the URL upon the ingress URL being called.
+  - This will replace the content under `path` for the given `paths` with a value defined in a `rewrite-target` annotation. This is analogous to a `replace` function.
+- This is implemented in a similar manner to below:
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-cluster
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /wear
+        backend:
+          service:
+            name: wear-service
+            port: 
+              number: 80
+      - path: /watch
+        backend:
+          service:
+            name: watch-service
+            port: 
+              number: 80
+```

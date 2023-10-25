@@ -2,13 +2,13 @@
 
 ## Rollout and Versioning
 
-- When first creating a deployment, a rollour is triggered
+- When first creating a deployment, a rollout is triggered
   - Rollout = Deployment Revision
 - When future upgrades occur, a new rollout and therefore a new revision of the deployment is created.
 - This functionality allows tracking of deployment changes
   - Allows rollback capability in the event of application failure.
 
-## Rollour Commands
+## Rollout Commands
 
 - View rollout status: `kubectl rollout status <deployment name>`
 - View rollout history and versioning: `kubectl rollout history <deployment name>`
@@ -34,8 +34,8 @@
 - Changes can also be applied via the CLI directly, though this would not update the base definition YAML: `kubectl set image deployment/<deployment name> <image name>=<image name>:<new tag>`
 
 - Deployment strategies can be viewed in detail for a given deployment via `kubectl describe deployment <deployment name>`
-- For recreate strategy, during the upgrade process, one will see the deployment is gradually scaled down to 0 instances and back again.
-- For rolling update:
+- For **recreate** strategy, during the upgrade process, one will see the deployment is gradually scaled down to 0 instances and back again.
+- For **rolling update**:
   - Scaled down individually, old version is scaled down, then new version is brought up, this repeats per replicas.
 
 ## Upgrades
@@ -66,3 +66,9 @@
 - Rollout History: `kubectl rollout history <deployment name>`
 
 - Rollback: `kubectl rollout undo <deployment name>`
+
+## Additional Notes
+
+- Get the history of a particular deployment revision: `kubectl rollout history deployment <name> --revision=<revision number>`
+- When updating a deployment revision, append the `--record` flag to save the command used to cause the revision update, this will be stored in the `change-cause` field of the above command's output.
+- To rollback to a specific revision: `kubectl rollout undo deployment <name> --to-revision=<revision number>`

@@ -20,7 +20,7 @@
   - The pod's network is separate
   - To access the container's contents, could either use a `curl` request to the IP or access via local browser
   - In practice, wouldn't want to have to ssh into the node to access the container's content, you'd want to access it as an "external" user.
-  - Kubernetes service(s) cna be introduced to map the request from a local machine -> node -> pod
+  - Kubernetes service(s) can be introduced to map the request from a local machine -> node -> pod
   - Kubernetes services are treated as objects in Kubernetes like Pods, ReplicaSets, etc.
   - To facilitate external communications, one can use NodePort:
     - Listens to a port on the node
@@ -39,7 +39,7 @@
 
 ## NodePort
 
-- Maps a port on the clsuter node to a port on the pod to allow accessibility
+- Maps a port on the cluster node to a port on the pod to allow accessibility
 - On closer inspection, this service type can b e broken down into 3 parts:
   1. The port of the application on the pod it's running from -> `targetPort`
   1. The port on the service itself -> `port`
@@ -69,9 +69,12 @@ spec:
 - Under `selector`, add any labels associated with the pod definition file e.g.:
 
 ```yaml
-selector:
-  app: myapp
-  type: frontend
+spec:
+  ...
+  selector:
+    app: myapp
+    type: frontend
+  ...
 ```
 
 - The service can then be created using `kubectl create -f <filename>.yaml` as per usual.

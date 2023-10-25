@@ -16,13 +16,13 @@
   - **Egress:** Traffic sent out from a resource
 
 - For the setup above, we could control traffic by allowing ONLY the following traffic to and from each resource across particular ports:
-  - Web Server:
+  - **Web Server:**
     - Ingress: 80 (HTTP)
     - Egress: 5000 (API port)
-  - API Server:
+  - **API Server:**
     - Ingress: 5000
     - Egress: 3306 (MySQL Database Port)
-  - Database Server:
+  - **Database Server:**
     - Ingress: 3306
 
 - Considering this from a Kubernetes perspective:
@@ -47,24 +47,37 @@ spec:
     matchLabels:
       role: db
   policyTypes:
-  - Ingress:
+  - Ingress
+  - Egress
   ingress:
   - from:
-    - podSelector:
+    - podSelector: # what pods can communicate with this pod?
         matchLabels:
           name: api-pod
+      namespaceSelector: # what namespaced resources can communicate with this pod?
+        matchLabels:
+          name: prod
+    - ipBlock: # what IP range(s) are allowed?
+        cidr: 192.168.5.10/32
     ports:
     - protocol: TCP
       port: 3306
+  egress:
+  - to:
+    - ipBlock: # what IP range(s) are allowed?
+        cidr: 192.168.5.10/32
+    
 ```
 
 - The policy can then be created via `kubectl create -f ....`
 
 - Network policies are enforced and supported by the network solution implemented on the cluster.
 - Solutions that support network policies include:
-  - kube-router
-  - calico
-  - romana
-  - weave-net
+  - `kube-router`
+  - `calico`
+  - `romana`
+  - `weave-net`
 
 - Flannel doesn't support Network Policies, they can still be created, but will not be enforced.
+- Rules are separated by `-` in order of listing, in the example above, the conditions for `podSelector` and `namespaceSelector` must be met. If this isn't met, then the `ipBlock` condition would be checked.
+- Similar syntax for `egress` policies are used with some slight tweaks e.g. replace `from` with `to`.
