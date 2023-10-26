@@ -29,15 +29,15 @@ used to access the cluster "MyKubeCluster"
 and the server address
   - Under users, specify username and associated key(s) and certificate(s)
   - Under contexts:
-■ Name format: username@clustername
-■ Under context specify cluster name and users
+    - Name format: username@clustername
+    - Under context specify cluster name and users
   - Repeat for all clusters and users associated
 - The file is automatically read by the kubectl utility
 - Use current-context field in the yaml file to set the current context
 - **CLI Commands:**
   - View current config file being used: `kubectl config view`
-■ Default file automatically used if not specified
-■ To view non-default config files, append: `--kubeconfig=/path/to/file`
+    - Default file automatically used if not specified
+    - To view non-default config files, append: `--kubeconfig=/path/to/file`
   - To update current context: `kubectl config use-context <context-name>`
   - Other commands available via `kubectl config -h`
   - Default namespaces for particular contexts can be added also
