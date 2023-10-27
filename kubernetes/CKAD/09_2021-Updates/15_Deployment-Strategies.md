@@ -13,4 +13,8 @@
 
 - This is commonly seen in conjunction with Service Mesh tools like Istio, but it can be achieved by Kubernetes alone.
 
+- In Kubernetes, one can create two deployments, each labelled uniquely e.g. `version: v1`, `version: v2`.
+- One can create a service that filters traffic by sharing the selector `version: v1` to the one deployment.
+- When the time comes for switchover, the selector for the service can be updated to match that of the "newer" deployment.
+
 ## 9.15.2 - Canary
