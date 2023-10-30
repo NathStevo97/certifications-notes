@@ -1,7 +1,5 @@
 # 08.1 - Conditionals
 
-## Notes
-
 - Consider two Playbooks that look to install NGINX, but one on Red Hat, another on Debian. This requires the use of the yum and apt packages respectively.
 
 ![Separate Playbooks](images/two-scenarios.png)
@@ -23,3 +21,20 @@
   - The example causes a mail message to be sent to the email address provided only if the httpd service is shown to be down
 
 ![Conditional Output](images/conditional-output.png)
+
+## Conditionals based on Facts, Variables, Re-Use
+
+- If tasks need to be ran depending on specific conditionsm such as OS architecture, `ansible_facts` can be utilised in combination with the `when:` for conditionals.
+- Example, only run a task on hosts running Ubuntu 18: `when: ansible_facts['os_family'] == 'Debian' and ansible_facts['distribution_major_version'] == '18'`
+- If wanting to run particular tasks using variables, use `vars:` in a similar manner to below for the given task:
+
+```yaml
+- name: deploy configuration files
+    template:
+      src: "{{ app_env }}_config.j2"
+      dest: "/etc/myapp/config.conf"
+    vars:
+      app_env: production
+```
+
+- For follow-on tasks for a play, you can then add `when: <var name> == '<var value>'` after the variable was defined previously e.g. at CLI-level.
