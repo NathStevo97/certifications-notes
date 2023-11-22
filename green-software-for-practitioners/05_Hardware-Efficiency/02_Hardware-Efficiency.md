@@ -2,7 +2,8 @@
 
 ## Improving Hardware Efficiency
 
-If we take into account the embodied carbon, it is clear that by the time we come to buy a computer, it's already emitted a good deal of carbon. Computers also have a limited lifespan, which means they eventually are unable to handle modern workloads and need to be replaced. In these terms, hardware is a proxy for carbon, and since our goal is to be carbon efficient, we must also be hardware efficient.
+- If we take into account the embodied carbon, it is clear that by the time we come to buy a computer, it's already emitted a good deal of carbon. Computers also have a limited lifespan, which means they eventually are unable to handle modern workloads and need to be replaced.
+  - In these terms, hardware is a proxy for carbon, and since our goal is to be carbon efficient, we must also be hardware efficient.
 
 There are two main approaches to hardware efficiency:
 
@@ -17,13 +18,18 @@ Hardware is retired when it breaks down or struggles to handle modern workloads.
 
 ### Increasing Device Utilization
 
-In the cloud space, hardware efficiency most often translates to an increase in the utilization of servers. It’s better to use one server at 100% utilization than 5 servers at 20% utilization because of the cost of embodied carbon. In the same way that owning one car and using it every day of the week is much better than owning five and using a different one each day of the week, it is much more efficient to use servers at their full capacity rather than employing several at below capacity. Although emissions are the same, the embodied carbon that is used is much lower.
+- In the cloud space, hardware efficiency most often translates to an increase in the utilization of servers. It's better to use one server at 100% utilization than 5 servers at 20% utilization because of the cost of embodied carbon.
+  - In the same way that owning one car and using it every day of the week is much better than owning five and using a different one each day of the week, it is much more efficient to use servers at their full capacity rather than employing several at below capacity.
+  - Although emissions are the same, the embodied carbon that is used is much lower.
 
-The most common reason for having under-utilized servers is so that peak capacity is accounted for. Running servers at 20% means that you know you will be able to handle peaks in demand without impacting performance. However, in the meantime, all that spare capacity just sitting there idle represents wasted embodied carbon. Being hardware efficient means making sure that every hardware device is being utilized as much as possible for as long as possible.
+- The most common reason for having under-utilized servers is so that peak capacity is accounted for. Running servers at 20% means that you know you will be able to handle peaks in demand without impacting performance.
+  - However, in the meantime, all that spare capacity just sitting there idle represents wasted embodied carbon.
+  - Being hardware efficient means making sure that every hardware device is being utilized as much as possible for as long as possible.
 
-This is one of the main advantages of the public cloud; you know that when you do need to scale up, the space will be there to take up the slack. With multiple organizations making use of the public cloud, spare capacity can always be made available to whoever needs it, so that no servers are sitting idle.
+- This is one of the main advantages of the public cloud; you know that when you do need to scale up, the space will be there to take up the slack.
+- With multiple organizations making use of the public cloud, spare capacity can always be made available to whoever needs it, so that no servers are sitting idle.
 
-It’s important to note that simply moving operations to the public cloud will not automatically reduce your emissions. It simply gives you the space to be able to re-architect your software so that a reduction is possible.
+It's important to note that simply moving operations to the public cloud will not automatically reduce your emissions. It simply gives you the space to be able to re-architect your software so that a reduction is possible.
 
 ## Summary
 

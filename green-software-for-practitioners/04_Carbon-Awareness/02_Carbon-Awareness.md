@@ -28,7 +28,8 @@ If you suddenly need to access more power - for example, you need to turn on a l
 
 Marginal carbon intensity is the carbon intensity of the power plant that would have to be employed to meet any new demand.
 
-Fossil-fueled power plants rarely scale down to 0. They have a minimum functioning threshold, and some don't scale; they are considered a consistent, always-on baseload. Because of this, we sometimes have the scenario where we curtail (throw away) renewable energy while still consuming energy from fossil fuel power plants.
+- Fossil-fueled power plants rarely scale down to 0. They have a minimum functioning threshold, and some don't scale; they are considered a consistent, always-on baseload.
+  - Because of this, we sometimes have the scenario where we curtail (throw away) renewable energy while still consuming energy from fossil fuel power plants.
 
 In these situations, the marginal carbon intensity will be 0 gCO2eq/kWh since we know that any new demand will match the renewable energy we are curtailing.
 
@@ -42,7 +43,7 @@ When the demand for electricity goes down, utilities need to reduce the supply t
 
 Energy from fossil fuel plants is usually the most expensive so this is the preferred method. This directly translates to burning fewer fossil fuels.
 
-2. Buy less energy from renewable sources.
+1. Buy less energy from renewable sources.
 
 Renewable sources are the cheapest, so they prefer not to do this. If a renewable source doesn't manage to sell all of its electricity, it has to throw the rest away.
 
@@ -54,11 +55,12 @@ When the demand for electricity goes up, utilities need to increase the supply t
 
 If you are curtailing, it means you have excess energy you could dispatch. Renewable energy is already the cheapest, so curtailed renewable energy will be the cheapest dispatchable energy source. Renewable plants will then sell the energy they would have had to curtail.
 
-2. Buy more energy from fossil fuel plants.
+1. Buy more energy from fossil fuel plants.
 
-Fossil fuels are inherently dispatchable; they can quickly increase energy production by burning more. However, coal costs money, so this is the least preferred solution.
+- Fossil fuels are inherently dispatchable; they can quickly increase energy production by burning more. However, coal costs money, so this is the least preferred solution.
 
-Energy markets are some of the most complex markets in the world so the above explanation is a simplification. But what's important to understand is that our goal is to increase investment into lower carbon energy sources, like renewables, and decrease investment into higher carbon sources, like coal. The best way to ensure money flows in the right direction is to make sure you use electricity with the least carbon intensity.
+- Energy markets are some of the most complex markets in the world so the above explanation is a simplification. But what's important to understand is that our goal is to increase investment into lower carbon energy sources, like renewables, and decrease investment into higher carbon sources, like coal.
+- The best way to ensure money flows in the right direction is to make sure you use electricity with the least carbon intensity.
 
 ## Carbon Awareness Tips
 
@@ -67,7 +69,9 @@ Energy markets are some of the most complex markets in the world so the above ex
 
 ## Demand Shifting
 
-Being carbon aware means responding to shifts in carbon intensity by increasing or decreasing your demand. If your work allows you to be flexible with when and where you run workloads, you can shift accordingly - consuming electricity when the carbon intensity is lower and pausing production when it is higher. For example, training a Machine Learning model at a different time or region with much lower carbon intensity.
+- Being carbon aware means responding to shifts in carbon intensity by increasing or decreasing your demand.
+- If your work allows you to be flexible with when and where you run workloads, you can shift accordingly - consuming electricity when the carbon intensity is lower and pausing production when it is higher.
+- For example, training a Machine Learning model at a different time or region with much lower carbon intensity.
 
 Studies show these actions can result in 45% to 99% carbon reductions depending on the number of renewables powering the grid.
 
@@ -79,11 +83,13 @@ Spatial shifting means moving your computation to another physical location wher
 
 ## Temporal Shifting
 
-If you can't shift your computation spatially to another region, another option you have is to shift to another time. Perhaps later in the day or night when it's sunnier or windier and, therefore, the carbon intensity is lower. This is called temporal demand shifting. We can predict future carbon intensity reasonably well through advances in weather forecasting.
+- If you can't shift your computation spatially to another region, another option you have is to shift to another time. Perhaps later in the day or night when it's sunnier or windier and, therefore, the carbon intensity is lower.
+  - This is called temporal demand shifting. We can predict future carbon intensity reasonably well through advances in weather forecasting.
 
 Some of the biggest technology companies have recognized the importance of carbon awareness and are using advanced modeling techniques to implement demand shifting.
 
-Google Carbon Aware Data Centers - Google launched a project to make some of the cloud workloads carbon aware. They created models to predict tomorrow's carbon intensity and workload. They then shaped large-scale workloads so more would happen when and where the carbon intensity is lowest, but in such a way that they could still handle the expected load.
+- Google Carbon Aware Data Centers - Google launched a project to make some of the cloud workloads carbon aware.
+- They created models to predict tomorrow's carbon intensity and workload. They then shaped large-scale workloads so more would happen when and where the carbon intensity is lowest, but in such a way that they could still handle the expected load.
 Microsoft Carbon Aware Windows - Microsoft announced a project to make Windows 11 more sustainable. Initially, this means running Windows updates when the carbon intensity is lower.
 
 ## Demand Shaping
@@ -95,7 +101,8 @@ Demand shifting is the strategy of moving computation to regions or times when t
 
 Demand shaping for carbon-aware applications is all about the supply of carbon. When the carbon cost of running your application becomes high, shape the demand to match the supply of carbon. This can happen automatically, or the user can make a choice.
 
-Eco mode is an example of demand shifting. Eco modes are found in everyday appliances like cars or washing machines. When activated, some amount of performance is sacrificed in order to consume fewer resources (gas or electricity). Because there is this trade-off with performance, eco modes are always presented to a user as a choice.
+- Eco mode is an example of demand shifting. Eco modes are found in everyday appliances like cars or washing machines. When activated, some amount of performance is sacrificed in order to consume fewer resources (gas or electricity).
+  - Because there is this trade-off with performance, eco modes are always presented to a user as a choice.
 
 Software applications can also have eco modes that can - either automatically or with user consent - make decisions to reduce carbon emissions.
 
