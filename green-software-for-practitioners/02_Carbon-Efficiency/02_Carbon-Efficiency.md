@@ -20,7 +20,7 @@
 
 - A lot of the changes can lead to flooding in coastal and rural areas; the latter via increased rainfall. Drought, wildfires and more frequent extreme conditions may also occur.
 
-##  Greenhouse Gases and the Greenhouse Effect
+## Greenhouse Gases and the Greenhouse Effect
 
 - Greenhouse gases: A group of gases that trap heat from solar radition in the Earth's atmosphere.
 - The gases act as a blanket, increasing earth's surface temperature.
@@ -28,13 +28,13 @@
 - The grenhouse gases and effect are essential for life on earth, and typically comes from natural sources such as animals and geological activity.
   - The effect allows earth to have a higher temperature than it would via solar radiation alone, but it must be managed appropriately.
 
-##  Carbon and CO2eq
+## Carbon and CO2eq
 
 - Carbon acts as a broad term to cover the impact of all types of emissions and activities relating to global warming.
 - CO2eq/CO2-eq/CO2e = Carbon equivalence - the term used to measure impact.
 - Example: 1 ton of methane = 84 tons of CO2 over 20 years, it is therefore 84 tons CO2eq.
 
-##  Monitoring Climate Change
+## Monitoring Climate Change
 
 - To try and mitigate the effects of climate change, some agreements and events have been arranged, a summary follows:
 
@@ -64,5 +64,7 @@
 ## Summary
 
 - Greenhouse gases are a group of gases contributing to global warming. Carbon is often used as a broad term to refer to the impact of all types of emissions and activities on global warming. CO2eq is a measurement term used to measure this impact.
-- The international community, in groups such as the UNFCCC, has come together to limit the impact of global warming by reducing emissions, aiming for a 'preferable' lower limit of 1.5°C. This was agreed through the UN IPCC in 2015 in the Paris Climate Agreement and is monitored at the regular COP event.
-- Everything we do emits carbon into the atmosphere, and our goal is to emit the least amount of carbon possible. This constitutes the first principle of green software: carbon efficiency, emitting the least amount of carbon possible per unit of work.
+- The international community, in groups such as the UNFCCC, has come together to limit the impact of global warming by reducing emissions, aiming for a 'preferable' lower limit of 1.5&deg;C.
+  - This was agreed through the UN IPCC in 2015 in the Paris Climate Agreement and is monitored at the regular COP event.
+- Everything we do emits carbon into the atmosphere, and our goal is to emit the least amount of carbon possible.
+  - This constitutes the first principle of green software: carbon efficiency, emitting the least amount of carbon possible per unit of work.

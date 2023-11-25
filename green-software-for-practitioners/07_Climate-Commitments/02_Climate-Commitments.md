@@ -164,12 +164,12 @@ Carbon aware computing involves responding to electrical carbon intensity signal
 
 ## Summary
 
-There are a number of methodologies commonly applied to help in the overall fight against climate change. These fall into the general categories of carbon elimination (also known as 'abatement'), carbon avoidance (a.k.a. 'compensating'), or carbon removal (a.k.a. 'neutralizing').
-Abatement includes increasing energy efficiency to eliminate some of the emissions associated with energy generation. Abatement is the most effective way to fight climate change although complete carbon elimination is not possible.
-Compensating includes the adoption of renewable energy sources, sustainable living practices, recycling, planting trees etc.
-Neutralizations refer to the removal and permanent storage of atmospheric carbon to counterbalance the effect of releasing CO2 into the atmosphere. Neutralizations tend to remove the carbon from the atmosphere in the short and medium-term.
-An organization can call itself Carbon Neutral when its total emissions are matched by the total of its emissions offsets through carbon reduction projects
-Net zero aims to eliminate emissions and only offset the residual emissions that you cannot eliminate to reach the 1.5°C target set by the Paris Climate Agreement.
-The SCI is carefully designed so that eliminating emissions, through energy efficiency, hardware efficiency and carbon awareness is the only way to reduce the score. Together with a separate neutralization strategy, it can form the basis of a net-zero strategy for an organization.
-When organizations set a target of 100% renewable power, they can either be “matched by” vs. “powered by” renewables, where “powered by” means the electrons flowing into your device can only come from renewable sources. This can be achieved by purchasing RECs as part of a PPA.
-24/7 hourly matching is one of the many strategies we need to employ to help accelerate the transition to a 100% renewable-powered grid.
+- There are a number of methodologies commonly applied to help in the overall fight against climate change. These fall into the general categories of carbon elimination (also known as 'abatement'), carbon avoidance (a.k.a. 'compensating'), or carbon removal (a.k.a. 'neutralizing').
+- Abatement includes increasing energy efficiency to eliminate some of the emissions associated with energy generation. Abatement is the most effective way to fight climate change although complete carbon elimination is not possible.
+- Compensating includes the adoption of renewable energy sources, sustainable living practices, recycling, planting trees etc.
+- Neutralizations refer to the removal and permanent storage of atmospheric carbon to counterbalance the effect of releasing CO2 into the atmosphere. Neutralizations tend to remove the carbon from the atmosphere in the short and medium-term.
+- An organization can call itself Carbon Neutral when its total emissions are matched by the total of its emissions offsets through carbon reduction projects
+- Net zero aims to eliminate emissions and only offset the residual emissions that you cannot eliminate to reach the 1.5&deg;C target set by the Paris Climate Agreement.
+- The SCI is carefully designed so that eliminating emissions, through energy efficiency, hardware efficiency and carbon awareness is the only way to reduce the score. Together with a separate neutralization strategy, it can form the basis of a net-zero strategy for an organization.
+- When organizations set a target of 100% renewable power, they can either be "matched by" vs. "powered by" renewables, where "powered by" means the electrons flowing into your device can only come from renewable sources. This can be achieved by purchasing RECs as part of a PPA.
+- 24/7 hourly matching is one of the many strategies we need to employ to help accelerate the transition to a 100% renewable-powered grid.

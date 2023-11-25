@@ -33,7 +33,7 @@ It's important to note that simply moving operations to the public cloud will no
 
 ## Summary
 
-Embodied carbon is the amount of carbon pollution emitted during the creation and disposal of a device.
-When calculating your total carbon pollution, you must consider both that which is emitted when running the computer as well as the embodied carbon associated with its creation and disposal.
-Extending the lifetime of a device has the effect of amortizing the carbon emitted so that its CO2eq/year is reduced.
-Cloud computing is more energy efficient then an on-premise server as it can apply demand shifting as well as demand shaping.
+- Embodied carbon is the amount of carbon pollution emitted during the creation and disposal of a device.
+- When calculating your total carbon pollution, you must consider both that which is emitted when running the computer as well as the embodied carbon associated with its creation and disposal.
+- Extending the lifetime of a device has the effect of amortizing the carbon emitted so that its CO2eq/year is reduced.
+- Cloud computing is more energy efficient then an on-premise server as it can apply demand shifting as well as demand shaping.

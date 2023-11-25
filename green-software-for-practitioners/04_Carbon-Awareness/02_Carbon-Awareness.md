@@ -7,7 +7,7 @@
 - How much Carbon (CO2e) is emitted per kWh of electricity consumed. Measured in gCO2eq/kWh (grams of carbon per kilowatt hour).
 - Carbon intensity is a mix of all the current power sources in the power grid, both the low and high-carbon using resources will be considered in the measurement.
 
-###  Variability of Carbon Intensity
+### Variability of Carbon Intensity
 
 - This varies by location, depending on the clean energy sources available.
 - Additional variability follows due to changes in when clean energy could be available / unavailable due to weather conditions e.g. on a windy day carbon intensity will decrease / not be as intense.
@@ -24,14 +24,13 @@
 
 ### Marginal Carbon Intensity
 
-If you suddenly need to access more power - for example, you need to turn on a light - that energy comes from the marginal power plant. The marginal power plant is dispatchable, which means marginal power plants are often powered by fossil fuels.
-
-Marginal carbon intensity is the carbon intensity of the power plant that would have to be employed to meet any new demand.
-
-- Fossil-fueled power plants rarely scale down to 0. They have a minimum functioning threshold, and some don't scale; they are considered a consistent, always-on baseload.
-  - Because of this, we sometimes have the scenario where we curtail (throw away) renewable energy while still consuming energy from fossil fuel power plants.
-
-In these situations, the marginal carbon intensity will be 0 gCO2eq/kWh since we know that any new demand will match the renewable energy we are curtailing.
+- In the event of suddenly needing to access more power than expected, the energy supplied would come from a marginal power plant.
+- Marginal Power Plants are **dispatchable**; meaning these plants are often powered by fossil fuels.
+- **Marginal Carbon Intensity** - The carbon intensity of the power plant employed to meet the new extra demand.
+- Fossil-fueled power plants rarely scale down to zero. Typically they have a minimum functioning threshold.
+  - Others don't scale at all, and are considered a consistent, always-on baseload.
+  - Because of this, there may be the need to curtail (throw away) renewable energy while still consuming fossil fuel power plant energy.
+    - In these scenarios, the marginal carbon intensity will be 0 gCO2eq/kWh - any new demand will match the renewable energy we are curtailing.
 
 ### Energy Markets
 
@@ -110,16 +109,16 @@ One example of this is video conferencing software that adjusts streaming qualit
 
 Another example is TCP/IP. The transfer speed increases in response to how much data is broadcast over the wire.
 
-A third example is progressive enhancement with the web. The web experience improves depending on the resources and bandwidth available on the end user’s device.
+A third example is progressive enhancement with the web. The web experience improves depending on the resources and bandwidth available on the end user's device.
 
 Demand shaping is related to a broader concept in sustainability, which is to reduce consumption. We can achieve a lot by becoming more efficient with resources, but we also need to consume less at some point.
 
 As Green Software practitioners, we would consider canceling a process when the carbon intensity is high instead of demand shifting - reducing the demands of our application and the expectations of our end users.
 
-##  Summary
+## Summary
 
-Carbon awareness means understanding that the energy you consume does not always have the same impact in terms of carbon intensity.
-Carbon intensity varies depending on the time and place it is consumed.
-The nature of fossil fuels and renewable energy sources means that consuming energy when carbon intensity is low increases the demand for renewable energy sources and increases the percentage of renewable energy in the supply.
-Demand shifting means moving your energy consumption to different locations or times of days where the carbon intensity is lower.
-Demand shaping means adapting your energy consumption around carbon intensity variability in order to consume more in periods of low intensity and less in periods of high intensity.
+- Carbon awareness means understanding that the energy you consume does not always have the same impact in terms of carbon intensity.
+- Carbon intensity varies depending on the time and place it is consumed.
+- The nature of fossil fuels and renewable energy sources means that consuming energy when carbon intensity is low increases the demand for renewable energy sources and increases the percentage of renewable energy in the supply.
+- Demand shifting means moving your energy consumption to different locations or times of days where the carbon intensity is lower.
+- Demand shaping means adapting your energy consumption around carbon intensity variability in order to consume more in periods of low intensity and less in periods of high intensity.

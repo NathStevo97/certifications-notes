@@ -133,8 +133,8 @@ Now you are ready to execute. Using the methodology described in the previous st
 
 ## Summary
 
-The GHG protocol is a metric for measuring an organization's total carbon emissions and is used by organizations all over the world.
-The GHG protocol puts carbon emissions into three scopes. Scope 3, also known as value chain emissions, refers to the emissions from organizations that supply others in a chain. In this way, one organization's scope 1 and 2 will sum up into another organization's scope 3.
-Calculating software-driven emissions using the GHG protocol is possible but can be difficult for open-source software.
-The SCI is a metric designed specifically to calculate software emissions and is a rate rather than a total.
-The functional unit of measurement is not prescribed in the SCI and you should choose something that reflects your application.
+- The GHG protocol is a metric for measuring an organization's total carbon emissions and is used by organizations all over the world.
+- The GHG protocol puts carbon emissions into three scopes. Scope 3, also known as value chain emissions, refers to the emissions from organizations that supply others in a chain. In this way, one organization's scope 1 and 2 will sum up into another organization's scope 3.
+- Calculating software-driven emissions using the GHG protocol is possible but can be difficult for open-source software.
+- The SCI is a metric designed specifically to calculate software emissions and is a rate rather than a total.
+- The functional unit of measurement is not prescribed in the SCI and you should choose something that reflects your application.

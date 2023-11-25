@@ -1,4 +1,4 @@
-#  8.4 - Storage Classes
+# 8.4 - Storage Classes
 
 ## Static Provisioning
 

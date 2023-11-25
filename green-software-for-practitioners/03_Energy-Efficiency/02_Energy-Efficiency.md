@@ -25,7 +25,7 @@
 - Kilowatt (kW) = 1000 Joules per second
 - kilowatt-hour (kWh) = measure of energy corresponding to 1 kilowatt sustained for 1 hour.
 
-##  Improving Energy Efficiency
+## Improving Energy Efficiency
 
 ### Power Usage Effectiveness
 
@@ -37,7 +37,7 @@
 - Effectively, PUE = a multiplier to an application's energy consumption.
 - Example: if an application uses 10kWh and the data center's PUE is 1.5, the actual consumption is 15kWh; 5kWh goes towards operational overhead of the data center and 10kWh is used to run the application.
 
-##  Energy Proportionality
+## Energy Proportionality
 
 - Measures the relationship between power consumed by a computer and the rate at which useful work is done (its utilization).
 - Utilization = how much of a computer's resources are used, usually expressed as a percentage.
