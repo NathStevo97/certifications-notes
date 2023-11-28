@@ -48,7 +48,6 @@
 
 ### Acronyms
 
-
 | Acronym               | Term               | Definition   |
 |-----------------------|--------------------|--------------|
 | CFE                   | Carbon-free energy | This term is usually used to talk about the percentage of renewable energy used as a proportion of the total energy used. |
