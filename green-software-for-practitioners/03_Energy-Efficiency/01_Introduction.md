@@ -2,7 +2,7 @@
 
 - The energy efficiency principle is simple: **Use the least amount of energy possible**
 
-- Energy = Ability to do work
+- **Energy** = Ability to do work
 - Multiple forms of energy exist and can each be converted to another in some form e.g. chemical to electrical conversion happens during coal burning.
 - In the example above, electricity is the secondary energy converted from another type; this allows measurement of electricity usage.
 

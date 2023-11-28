@@ -31,7 +31,7 @@
 
 ### Course Disclaimers
 
-- Course structure ≠ HashiCorp Exam structure - all relevant content is included.
+- Course structure &ne; HashiCorp Exam structure - all relevant content is included.
 - Exam:
   - 1-hour multiple choice assessment that is online proctored
   - Cost $70.50

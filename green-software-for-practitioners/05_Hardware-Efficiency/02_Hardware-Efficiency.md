@@ -4,17 +4,15 @@
 
 - If we take into account the embodied carbon, it is clear that by the time we come to buy a computer, it's already emitted a good deal of carbon. Computers also have a limited lifespan, which means they eventually are unable to handle modern workloads and need to be replaced.
   - In these terms, hardware is a proxy for carbon, and since our goal is to be carbon efficient, we must also be hardware efficient.
-
-There are two main approaches to hardware efficiency:
-
-For end-user devices, it's extending the lifespan of the hardware.
-For cloud computing, it's increasing the utilization of the device.
+- **There are two main approaches to hardware efficiency:**
+  - For end-user devices, it's extending the lifespan of the hardware.
+  - For cloud computing, it's increasing the utilization of the device.
 
 ### Extending the Lifespan of Hardware
 
-In the example we saw previously, if we can add just one more year to the lifespan of our server, then the amortized carbon drops from 1000kg CO2eq/year to 800kg CO2eq/year.
-
-Hardware is retired when it breaks down or struggles to handle modern workloads. Of course, hardware will always break down eventually but, as developers, we can use software to build applications that run on older hardware and extend their lifetime.
+- In the example we saw previously, if we can add just one more year to the lifespan of our server, then the amortized carbon drops from 1000kg CO2eq/year to 800kg CO2eq/year.
+- Hardware is retired when it breaks down or struggles to handle modern workloads.
+  - Of course, hardware will always break down eventually but, as developers, we can use software to build applications that run on older hardware and extend their lifetime.
 
 ### Increasing Device Utilization
 
@@ -29,7 +27,8 @@ Hardware is retired when it breaks down or struggles to handle modern workloads.
 - This is one of the main advantages of the public cloud; you know that when you do need to scale up, the space will be there to take up the slack.
 - With multiple organizations making use of the public cloud, spare capacity can always be made available to whoever needs it, so that no servers are sitting idle.
 
-It's important to note that simply moving operations to the public cloud will not automatically reduce your emissions. It simply gives you the space to be able to re-architect your software so that a reduction is possible.
+- It's important to note that simply moving operations to the public cloud will not automatically reduce your emissions.
+  - It simply gives you the space to be able to re-architect your software so that a reduction is possible.
 
 ## Summary
 

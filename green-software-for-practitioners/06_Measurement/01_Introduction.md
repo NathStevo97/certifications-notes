@@ -8,4 +8,4 @@
 - To complement the GHG protocol, you can also use the Software Carbon Intensity (SCI) specification.
 - While the GHG is a more generic measurement suitable for all types of organizations, the SCI is specifically for measuring a rate of software emissions and designed to incentivize the elimination of those emissions.
 
-The GHG is a protocol to measure total emissions, the SCI is a tool to enable the elimination of software driven emissions.
+- The GHG is a protocol to measure total emissions, the SCI is a tool to enable the elimination of software driven emissions.

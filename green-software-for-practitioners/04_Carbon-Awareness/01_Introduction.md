@@ -3,7 +3,7 @@
 - The Carbon Awareness Principle: Do more when the electricity is cleaner, and less when it is dirtier.
 
 - Electricity is production comes with a lot of variability per method e.g.:
-  - **Locations*8 - where is it produced?
+  - **Locations** - where is it produced?
   - **Time** - when is it produced?
   - **How** - what source is used to produce it?
 
