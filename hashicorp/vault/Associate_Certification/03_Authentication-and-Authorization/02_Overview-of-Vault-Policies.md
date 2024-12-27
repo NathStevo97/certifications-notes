@@ -118,11 +118,7 @@ path "secret/data/<secret not to be seen>" {
 
 | Path | KV Version 1 | KV Version 2 |
 | --- | --- | --- |
-| /secret/first | path "secret/first" {
-capabilities = ["create"]
-} | path "secret/data/first" {
-capabilities = ["create"]
-} |
+| /secret/first    |  `path "secret/first" { capabilities = ["create"] }`   | `path "secret/data/first" { capabilities = ["create"] }`    |
 
 #### Practical Example - ACL Policies
 
@@ -163,9 +159,7 @@ vault login -method=userpass username="demo-user" password="demo-password"
 
 | Path | KV Version 2 |
 | --- | --- |
-| /secret/ | path "secret/metadata/" {
-capabilities =["list"]
-} |
+| `/secret/` | `path "secret/metadata/" { capabilities =["list"] }` |
 
 #### Practical Example - Listing Secrets
 
@@ -186,9 +180,7 @@ capabilities =["list"]
 
 | Path | KV Version 2 |
 | --- | --- |
-| /secret/firstsecret | path "secret/metadata/firstsecret" {
-   capabilities = ["read"]
-} |
+| `/secret/firstsecret` | `path "secret/metadata/firstsecret" { capabilities = ["read"] }` |
 
 ### Summary
 
