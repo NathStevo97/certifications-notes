@@ -1,5 +1,9 @@
 # 5.06 - Vault Auto-Unseal Overview
 
+- [5.06 - Vault Auto-Unseal Overview](#506---vault-auto-unseal-overview)
+  - [Background](#background)
+  - [Auto-Unseal Overview](#auto-unseal-overview)
+
 ## Background
 
 - During Vault Unseal process, users must enter they key(s) required.

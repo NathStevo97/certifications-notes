@@ -1,8 +1,11 @@
 # 2.01 - Overview of HashiCorp Vault
 
-## Notes
+- [2.01 - Overview of HashiCorp Vault](#201---overview-of-hashicorp-vault)
+  - [Notes](#notes)
+    - [Getting Started](#getting-started)
+    - [Dynamic Secrets and Vault Console](#dynamic-secrets-and-vault-console)
 
----
+## Notes
 
 ### Getting Started
 

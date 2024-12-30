@@ -1,5 +1,11 @@
 # 4.01 - Overview of Vault Tokens
 
+- [4.01 - Overview of Vault Tokens](#401---overview-of-vault-tokens)
+  - [Tokens Overview](#tokens-overview)
+  - [Mapping of Tokens to Policies](#mapping-of-tokens-to-policies)
+  - [Practical](#practical)
+  - [Lookup Token Information](#lookup-token-information)
+
 ## Tokens Overview
 
 - Tokens are the core method for authentication within Vault

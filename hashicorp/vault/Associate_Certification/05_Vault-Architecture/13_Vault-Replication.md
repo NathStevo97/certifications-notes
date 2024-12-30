@@ -1,5 +1,10 @@
 # 5.13 - Vault Replication
 
+- [5.13 - Vault Replication](#513---vault-replication)
+  - [Background Context](#background-context)
+  - [Performance Replication](#performance-replication)
+  - [Disaster Recovery Replication](#disaster-recovery-replication)
+
 ## Background Context
 
 - Having a single Vault cluster can impose various challenges, such as:

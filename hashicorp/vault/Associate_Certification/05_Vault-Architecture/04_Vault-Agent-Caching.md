@@ -1,5 +1,10 @@
 # 5.04 - Vault Agent Caching
 
+- [5.04 - Vault Agent Caching](#504---vault-agent-caching)
+  - [Primary Functionalities of Vault Agent](#primary-functionalities-of-vault-agent)
+  - [Overview of Caching](#overview-of-caching)
+  - [In-Practice](#in-practice)
+
 ## Primary Functionalities of Vault Agent
 
 - Auto-Auth

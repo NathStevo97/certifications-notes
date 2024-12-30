@@ -1,5 +1,12 @@
 # 1.2 - Providers and Resources
 
+- [1.2 - Providers and Resources](#12---providers-and-resources)
+  - [Introduction](#introduction)
+  - [Provider Maintainers](#provider-maintainers)
+  - [Required Providers](#required-providers)
+
+## Introduction
+
 - Terraform is capable of supporting multiple providers
 - The provider details the infrastructure is to be launched on must be specified in the configuration files
 - In some/most cases, authentication tokens will also be required - these should never be included in source code, referenced instead via environment variables or another appropriate method.

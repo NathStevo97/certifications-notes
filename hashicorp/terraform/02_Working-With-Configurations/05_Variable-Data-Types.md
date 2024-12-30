@@ -1,6 +1,8 @@
 # 2.5 - Data Types
 
-- When defining a variable, it's good practice to define its data type during implementation; preventing errors by invalid data.
+- [2.5 - Data Types](#25---data-types)
+  - [2.5.1 - Example](#251---example)
+  - [2.5.2 - Data Types Overview](#252---data-types-overview)
 
 ## 2.5.1 - Example
 

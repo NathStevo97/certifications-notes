@@ -1,5 +1,9 @@
 # 2.06 - Overview of Dynamic Secrets
 
+- [2.06 - Overview of Dynamic Secrets](#206---overview-of-dynamic-secrets)
+  - [Dynamic Secrets Overview](#dynamic-secrets-overview)
+    - [Example - AWS Secret Engine](#example---aws-secret-engine)
+
 ## Dynamic Secrets Overview
 
 - In the KV secret engine, data had to be stored manually.

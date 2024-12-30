@@ -1,5 +1,10 @@
 # 5.14 - Monitoring Telemetry in Vault
 
+- [5.14 - Monitoring Telemetry in Vault](#514---monitoring-telemetry-in-vault)
+  - [Overview](#overview)
+  - [Metrics Output](#metrics-output)
+  - [Configuration](#configuration)
+
 ## Overview
 
 - Telemetry covers any data being output by a particular device.

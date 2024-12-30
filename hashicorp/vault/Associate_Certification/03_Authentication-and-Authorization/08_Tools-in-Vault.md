@@ -1,5 +1,8 @@
 # 3.08 - Tools in Vault
 
+- [3.08 - Tools in Vault](#308---tools-in-vault)
+  - [Vault Tools](#vault-tools)
+
 ## Vault Tools
 
 - Vault contains tools allowing specific functions

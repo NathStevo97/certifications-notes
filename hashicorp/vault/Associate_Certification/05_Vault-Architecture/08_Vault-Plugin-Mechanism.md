@@ -1,5 +1,10 @@
 # 5.08 - Vault Plugin Mechanism
 
+- [5.08 - Vault Plugin Mechanism](#508---vault-plugin-mechanism)
+  - [Overview](#overview)
+  - [In Practice](#in-practice)
+  - [Production](#production)
+
 ## Overview
 
 - Plugins are the building blocks of Vault. All auth and secret backends are considered plugins.

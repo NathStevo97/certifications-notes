@@ -1,5 +1,12 @@
 # 5.03 - Understanding Vault Agent
 
+- [5.03 - Understanding Vault Agent](#503---understanding-vault-agent)
+  - [Challenges](#challenges)
+  - [Vault Agent Overview](#vault-agent-overview)
+  - [Running Vault Agent](#running-vault-agent)
+  - [Working of Vault Agent](#working-of-vault-agent)
+  - [Practical Example](#practical-example)
+
 ## Challenges
 
 - For applications needing to interact with Vault, they must first authenticate to Vault and then use the tokens for their required tasks.

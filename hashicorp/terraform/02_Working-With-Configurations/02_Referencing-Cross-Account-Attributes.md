@@ -1,5 +1,12 @@
 # 2.2 - Referencing Cross-Account Resource Attributes
 
+- [2.2 - Referencing Cross-Account Resource Attributes](#22---referencing-cross-account-resource-attributes)
+  - [Introduction](#introduction)
+  - [2.2.1 - EIP Association to EC2 Instance](#221---eip-association-to-ec2-instance)
+  - [2.2.2 - EIP Association with Security Group](#222---eip-association-with-security-group)
+
+## Introduction
+
 - As suggested previously, when creating resources, one should be able to use attributes and outputs to allow automatic configuration
 - Examples follow:
   - Creating an Elastic IP and assigning it to an AWS EC2 Instance.

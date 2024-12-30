@@ -1,5 +1,10 @@
 # 5.05 - Shamirs Secret for Unsealing Process
 
+- [5.05 - Shamirs Secret for Unsealing Process](#505---shamirs-secret-for-unsealing-process)
+  - [Overview](#overview)
+  - [Notes](#notes)
+  - [Seal Stanza](#seal-stanza)
+
 ## Overview
 
 - Storage backend in Vault is considered to be untrusted.

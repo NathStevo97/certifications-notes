@@ -1,5 +1,11 @@
 # 5.01 - Vault for Production Environments
 
+- [5.01 - Vault for Production Environments](#501---vault-for-production-environments)
+  - [Overview](#overview)
+    - [Deploying in Production Mode](#deploying-in-production-mode)
+    - [Practical Example](#practical-example)
+    - [Verifying Storage Persistence](#verifying-storage-persistence)
+
 ## Overview
 
 - Up until this point, Vault has been used in development mode only.

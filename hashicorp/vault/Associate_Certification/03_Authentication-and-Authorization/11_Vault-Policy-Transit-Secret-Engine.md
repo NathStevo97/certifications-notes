@@ -1,5 +1,9 @@
 # 3.11 - Vault Policy - Transit Secret Engine
 
+- [3.11 - Vault Policy - Transit Secret Engine](#311---vault-policy---transit-secret-engine)
+  - [Vault Policy Rules - Transit Engine](#vault-policy-rules---transit-engine)
+  - [Practical Demo](#practical-demo)
+
 ## Vault Policy Rules - Transit Engine
 
 - For Vault clients to be able to perform encryption and decryption operations, two policy rules are required:

@@ -1,5 +1,11 @@
 # 5.15 - High-Availability Setup & Implementation in Vault
 
+- [5.15 - High-Availability Setup \& Implementation in Vault](#515---high-availability-setup--implementation-in-vault)
+  - [Overview of HA](#overview-of-ha)
+  - [In Practice](#in-practice)
+  - [Implementing Vault HA](#implementing-vault-ha)
+  - [Important Pointers](#important-pointers)
+
 ## Overview of HA
 
 - In general, running a single instance of anything is risky. Vault is no exception.

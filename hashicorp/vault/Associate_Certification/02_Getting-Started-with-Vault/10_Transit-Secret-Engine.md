@@ -1,5 +1,13 @@
 # 2.10 - Transit Secret Engine
 
+- [2.10 - Transit Secret Engine](#210---transit-secret-engine)
+  - [Overview](#overview)
+  - [Dealing with larger Data Blobs](#dealing-with-larger-data-blobs)
+  - [Important Features](#important-features)
+    - [Key Rotation](#key-rotation)
+    - [Minimum Decrypt Version](#minimum-decrypt-version)
+    - [Rewrapping Data](#rewrapping-data)
+
 ## Overview
 
 - Many applications require proper encryption/decryption functionalities

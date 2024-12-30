@@ -1,5 +1,8 @@
 # 3.09 - Vault Auto-Complete
 
+- [3.09 - Vault Auto-Complete](#309---vault-auto-complete)
+  - [Auto-Completion Overview](#auto-completion-overview)
+
 ## Auto-Completion Overview
 
 - Vault auto-complete allows automatic completion for input flags, subcommands and arguments in the vault CLI

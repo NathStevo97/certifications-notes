@@ -1,5 +1,8 @@
 # 5.02 - Vault UI for Production
 
+- [5.02 - Vault UI for Production](#502---vault-ui-for-production)
+  - [Overview](#overview)
+
 ## Overview
 
 - By default, the Vault GUI is disabled for production. It can be enabled via the Vault config file however.

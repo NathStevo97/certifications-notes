@@ -1,5 +1,10 @@
 # 4.09 - Overview of Batch Tokens
 
+- [4.09 - Overview of Batch Tokens](#409---overview-of-batch-tokens)
+  - [Overview](#overview)
+  - [Analysis](#analysis)
+  - [In Practice](#in-practice)
+
 ## Overview
 
 - Batch tokens are encrypted blobs to carry information to be used in Vault actions - but they do not require any on-disk storage to track them.

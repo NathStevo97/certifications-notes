@@ -1,5 +1,9 @@
 # 3.03 - AppRole Authentication Method
 
+- [3.03 - AppRole Authentication Method](#303---approle-authentication-method)
+  - [Notes](#notes)
+    - [Configuring AppRole Authentication Method](#configuring-approle-authentication-method)
+
 ## Notes
 
 - Before a client can interact with Vault, it must authenticate against a particular auth method as outlined previously.

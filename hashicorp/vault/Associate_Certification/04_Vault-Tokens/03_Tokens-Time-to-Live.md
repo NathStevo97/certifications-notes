@@ -1,5 +1,11 @@
 # 4.03 - Tokens Time-to-Live
 
+- [4.03 - Tokens Time-to-Live](#403---tokens-time-to-live)
+  - [Overview](#overview)
+  - [TTL For Tokens](#ttl-for-tokens)
+  - [Token Renewal](#token-renewal)
+  - [Token Defaults](#token-defaults)
+
 ## Overview
 
 - Time-to-Live (TTL) defines the lifetime of data

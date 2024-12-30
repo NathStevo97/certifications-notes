@@ -1,5 +1,16 @@
 # 2.05 - Overview of Secrets Engine
 
+- [2.05 - Overview of Secrets Engine](#205---overview-of-secrets-engine)
+  - [Notes](#notes)
+    - [Secret Engine Overview](#secret-engine-overview)
+    - [Secret Engine Types](#secret-engine-types)
+    - [Secret Engine Paths](#secret-engine-paths)
+    - [Secret Engine Lifecycle](#secret-engine-lifecycle)
+    - [Example - Key/Value Secret Engine](#example---keyvalue-secret-engine)
+      - [Enabling a Secrets Engine - UI](#enabling-a-secrets-engine---ui)
+      - [Enabling a Secrets Engine - CLI](#enabling-a-secrets-engine---cli)
+    - [Disabling a Secret Engine](#disabling-a-secret-engine)
+
 ## Notes
 
 ### Secret Engine Overview

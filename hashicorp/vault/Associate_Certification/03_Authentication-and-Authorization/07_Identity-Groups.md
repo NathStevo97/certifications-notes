@@ -1,8 +1,11 @@
 # 3.07 - Identity Groups
 
-## Identity Groups
+- [3.07 - Identity Groups](#307---identity-groups)
+  - [Identity Groups](#identity-groups)
+    - [Demonstration](#demonstration)
+    - [Internal and External Groups](#internal-and-external-groups)
 
----
+## Identity Groups
 
 - Groups can contain multiple entities as members
 - Policies set at group level will be applied to all members of the group i.e. all entities and the associated aliases

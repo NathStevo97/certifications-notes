@@ -1,5 +1,8 @@
 # 2.03 - Initializing Vault with Dev Server Mode
 
+- [2.03 - Initializing Vault with Dev Server Mode](#203---initializing-vault-with-dev-server-mode)
+  - [Notes](#notes)
+
 ## Notes
 
 - Vault has two modes for operation:

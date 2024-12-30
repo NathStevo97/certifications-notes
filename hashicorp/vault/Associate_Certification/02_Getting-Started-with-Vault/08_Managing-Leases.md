@@ -1,5 +1,8 @@
 # 2.08 - Managing Leases
 
+- [2.08 - Managing Leases](#208---managing-leases)
+  - [Overview of Lease](#overview-of-lease)
+
 ## Overview of Lease
 
 - With every dynamic secret and service type authentication token, Vault will create a lease.

@@ -1,5 +1,9 @@
 # 3.06 - Entities and Aliases
 
+- [3.06 - Entities and Aliases](#306---entities-and-aliases)
+  - [Authentication for Multiple Users](#authentication-for-multiple-users)
+  - [The Identity Secret Engine](#the-identity-secret-engine)
+
 ## Authentication for Multiple Users
 
 - Vault supports multiple authentication methods, as well as allowing the same type of authentication method for different mount paths.

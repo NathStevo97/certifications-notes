@@ -1,5 +1,11 @@
 # 3.10 - ACL Policy Path Templating
 
+- [3.10 - ACL Policy Path Templating](#310---acl-policy-path-templating)
+  - [Contexts](#contexts)
+  - [Path Templating Overview](#path-templating-overview)
+  - [Practical Example](#practical-example)
+  - [Supported Parameters](#supported-parameters)
+
 ## Contexts
 
 - Consider `/secret` has two prefixes for two users:

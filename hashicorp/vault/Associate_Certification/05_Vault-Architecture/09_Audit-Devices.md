@@ -1,5 +1,10 @@
 # 5.09 - Audit Devices
 
+- [5.09 - Audit Devices](#509---audit-devices)
+  - [Overview](#overview)
+  - [In Practice](#in-practice)
+  - [Important Pointers](#important-pointers)
+
 ## Overview
 
 - Components in Vault that log requests and responses to Vault.

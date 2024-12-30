@@ -1,5 +1,8 @@
 # 2.07 - Generating AWS Credentials Dynamically
 
+- [2.07 - Generating AWS Credentials Dynamically](#207---generating-aws-credentials-dynamically)
+  - [Example - Generating AWS Credentials Dynamically from Scratch](#example---generating-aws-credentials-dynamically-from-scratch)
+
 ## Example - Generating AWS Credentials Dynamically from Scratch
 
 - From the home screen in the UI, select "Create New Engine" and select "AWS" from it.

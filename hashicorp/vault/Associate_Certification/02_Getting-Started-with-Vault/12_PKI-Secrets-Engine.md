@@ -1,5 +1,9 @@
 # 2.12 - PKI Secrets Engine
 
+- [2.12 - PKI Secrets Engine](#212---pki-secrets-engine)
+  - [Notes](#notes)
+    - [Benefits of PKI In Vault](#benefits-of-pki-in-vault)
+
 ## Notes
 
 - Disclaimer - PKI is a huge topic in itself, however for the purposes of the certification, you can only consider it at a high level.

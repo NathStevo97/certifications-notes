@@ -1,5 +1,10 @@
 # 1.5 - Desired and Current States
 
+- [1.5 - Desired and Current States](#15---desired-and-current-states)
+  - [1.5.1 - Desired State](#151---desired-state)
+  - [1.5.2 - Current State](#152---current-state)
+  - [1.5.3 - Updating Current State](#153---updating-current-state)
+
 ## 1.5.1 - Desired State
 
 - The state defined within a configuration resource block e.g. in an `aws_instance` resource, if `instance_type = t2.micro`, that is reflective of the desired state - you desire an aws_instance of size `t2.micro` to be created.

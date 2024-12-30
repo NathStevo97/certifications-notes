@@ -1,5 +1,21 @@
 # 3.02 - Overview of Vault Policies
 
+- [3.02 - Overview of Vault Policies](#302---overview-of-vault-policies)
+  - [Vault Policies 01](#vault-policies-01)
+    - [Introduction](#introduction)
+    - [Predefined Policies](#predefined-policies)
+    - [Basics of Policy Writing](#basics-of-policy-writing)
+    - [Primary Capabilities](#primary-capabilities)
+    - [Example](#example)
+    - [Root-Protected API Endpoints](#root-protected-api-endpoints)
+  - [Vault Policies 02](#vault-policies-02)
+    - [ACL Rules Format - KV Secret Engine Version 2](#acl-rules-format---kv-secret-engine-version-2)
+      - [Practical Example - ACL Policies](#practical-example---acl-policies)
+    - [Listing Secrets](#listing-secrets)
+      - [Practical Example - Listing Secrets](#practical-example---listing-secrets)
+    - [Reading Secret Metadata](#reading-secret-metadata)
+    - [Summary](#summary)
+
 ## Vault Policies 01
 
 ### Introduction

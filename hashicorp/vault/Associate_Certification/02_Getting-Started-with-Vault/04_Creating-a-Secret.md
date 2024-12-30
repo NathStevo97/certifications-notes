@@ -1,5 +1,11 @@
 # 2.04 - Creating a Secret
 
+- [2.04 - Creating a Secret](#204---creating-a-secret)
+  - [Notes](#notes)
+    - [Example](#example)
+      - [GUI Secret Generation - KeyValue](#gui-secret-generation---keyvalue)
+      - [CLI Creation](#cli-creation)
+
 ## Notes
 
 - One of Vault's key features is to read and write arbitrary secrets securely.

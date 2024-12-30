@@ -1,5 +1,8 @@
 # 5.07 - Auto-Unseal with AWS KMS
 
+- [5.07 - Auto-Unseal with AWS KMS](#507---auto-unseal-with-aws-kms)
+  - [Setting up AWS Auto-Unseal From Scratch](#setting-up-aws-auto-unseal-from-scratch)
+
 ## Setting up AWS Auto-Unseal From Scratch
 
 - As a prerequisite when implementing auto-unseal, you should have an understanding of the mechanism to be used.

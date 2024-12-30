@@ -1,5 +1,12 @@
 # 2.02 - Installation of HashiCorp Vault
 
+- [2.02 - Installation of HashiCorp Vault](#202---installation-of-hashicorp-vault)
+  - [Notes](#notes)
+    - [Windows](#windows)
+    - [Linux](#linux)
+      - [Ubuntu](#ubuntu)
+    - [MacOS](#macos)
+
 ## Notes
 
 - Vault is available on all major operating systems and can also be installed on platforms such as Kubernetes clusters.

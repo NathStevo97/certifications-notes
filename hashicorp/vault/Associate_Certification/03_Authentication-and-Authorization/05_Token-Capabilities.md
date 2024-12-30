@@ -10,5 +10,3 @@
 - If a token is provided as an argument, the "/sys/capabilities" endpoint and permission is used.
 - If no token is provided, the "/sys/capabilities-self" endpoint and permission is used with the locally authenticated token
 - To provide the token as an argument, simply add the token prior to the `<path>`
-
----
