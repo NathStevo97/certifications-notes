@@ -1,5 +1,11 @@
 # 5.2 - Hardware Efficiency
 
+- [5.2 - Hardware Efficiency](#52---hardware-efficiency)
+  - [Improving Hardware Efficiency](#improving-hardware-efficiency)
+    - [Extending the Lifespan of Hardware](#extending-the-lifespan-of-hardware)
+    - [Increasing Device Utilization](#increasing-device-utilization)
+  - [Summary](#summary)
+
 ## Improving Hardware Efficiency
 
 - If we take into account the embodied carbon, it is clear that by the time we come to buy a computer, it's already emitted a good deal of carbon. Computers also have a limited lifespan, which means they eventually are unable to handle modern workloads and need to be replaced.

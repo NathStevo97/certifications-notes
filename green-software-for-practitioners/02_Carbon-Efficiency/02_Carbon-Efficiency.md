@@ -1,5 +1,17 @@
 # 2.2 - Carbon Efficiency
 
+- [2.2 - Carbon Efficiency](#22---carbon-efficiency)
+  - [Global Warming vs Climate Change](#global-warming-vs-climate-change)
+  - [Climate vs Weather](#climate-vs-weather)
+  - [Greenhouse Gases and the Greenhouse Effect](#greenhouse-gases-and-the-greenhouse-effect)
+  - [Carbon and CO2eq](#carbon-and-co2eq)
+  - [Monitoring Climate Change](#monitoring-climate-change)
+    - [The Paris CLimate Agreement](#the-paris-climate-agreement)
+  - [United Nations Framework Convention on CLimate (UNFCCC)](#united-nations-framework-convention-on-climate-unfccc)
+  - [Conference of Parties (COP)](#conference-of-parties-cop)
+  - [Intergovernmental Panel on Climate Change (IPCC)](#intergovernmental-panel-on-climate-change-ipcc)
+  - [Summary](#summary)
+
 ## Global Warming vs Climate Change
 
 - Global Warming: The long-term heating of earth's climate system, observed since the pre-industrial period.

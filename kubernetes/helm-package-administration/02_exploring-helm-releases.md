@@ -1,5 +1,15 @@
 # 2.0 - Exploring Helm Releases
 
+- [2.0 - Exploring Helm Releases](#20---exploring-helm-releases)
+  - [2.1 - Deploying a Chart to Kubernetes](#21---deploying-a-chart-to-kubernetes)
+  - [2.2 - Chart Deployment Demo](#22---chart-deployment-demo)
+  - [2.3 - Retrieving Information on Helm Releases](#23---retrieving-information-on-helm-releases)
+  - [2.4 - Helm Release Information Retrieval Demo](#24---helm-release-information-retrieval-demo)
+  - [2.5 - Upgrading a Release](#25---upgrading-a-release)
+  - [2.6 - Release Upgrade Demo](#26---release-upgrade-demo)
+  - [2.7 - Rolling Back a Release](#27---rolling-back-a-release)
+  - [2.9 - Exploring a Chart](#29---exploring-a-chart)
+
 ## 2.1 - Deploying a Chart to Kubernetes
 
 - Releases = Instance of a chart running in Kubernetes.

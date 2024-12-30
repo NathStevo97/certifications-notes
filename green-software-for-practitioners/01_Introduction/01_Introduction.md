@@ -1,5 +1,18 @@
 # 1.0 - Introduction
 
+- [1.0 - Introduction](#10---introduction)
+  - [1.1 - Course Introduction](#11---course-introduction)
+    - [1.1.1 - What is Green Software?](#111---what-is-green-software)
+    - [1.1.2 - Who Should Read This?](#112---who-should-read-this)
+    - [1.1.3 - History](#113---history)
+    - [1.1.4 - How to be a Green Software Practitioner](#114---how-to-be-a-green-software-practitioner)
+    - [1.1.5 - Principles, Patterns, and Practices](#115---principles-patterns-and-practices)
+  - [1.2 - Glossary](#12---glossary)
+    - [Acronyms](#acronyms)
+    - [Useful Terms](#useful-terms)
+  - [1.4 - Additional Information](#14---additional-information)
+    - [1.4.1 - The Green Software Foundation](#141---the-green-software-foundation)
+
 ## 1.1 - Course Introduction
 
 ### 1.1.1 - What is Green Software?

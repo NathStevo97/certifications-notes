@@ -1,5 +1,7 @@
 # 14.2 - Using Loki
 
+- [14.2 - Using Loki](#142---using-loki)
+
 - Grafana introduced Loki as "like prometheus, but for logs".
 - Prometheus is already a leading technology - Loki aimed to remove text-indexing, introducing labels to log lines in a similar vein to Prometheus metrics labels.
   - Loki actually uses the same metrics labelling library as Prometheus.

@@ -1,5 +1,19 @@
 # 1.0 - Introduction
 
+- [1.0 - Introduction](#10---introduction)
+  - [1.1 - Containers and Kubernetes Overview](#11---containers-and-kubernetes-overview)
+    - [Containers](#containers)
+    - [Kubernetes](#kubernetes)
+  - [1.2 - Helm and Kustomize Overview](#12---helm-and-kustomize-overview)
+    - [Helm](#helm)
+    - [Kustomize](#kustomize)
+  - [1.3 - GitOps Core Concepts](#13---gitops-core-concepts)
+  - [1.4 - ArgoCD Overview](#14---argocd-overview)
+  - [1.5 - ArgoCD Core Concepts and Architectures](#15---argocd-core-concepts-and-architectures)
+    - [Architecture](#architecture)
+    - [Components](#components)
+  - [1.6 - Supported Tooling with ArgoCD](#16---supported-tooling-with-argocd)
+
 ## 1.1 - Containers and Kubernetes Overview
 
 ### Containers

@@ -1,5 +1,19 @@
 # 4.2 - Carbon Awareness
 
+- [4.2 - Carbon Awareness](#42---carbon-awareness)
+  - [Key Concepts](#key-concepts)
+    - [Carbon Intensity](#carbon-intensity)
+    - [Variability of Carbon Intensity](#variability-of-carbon-intensity)
+    - [Dispatchability \& Curtailment](#dispatchability--curtailment)
+    - [Marginal Carbon Intensity](#marginal-carbon-intensity)
+    - [Energy Markets](#energy-markets)
+  - [Carbon Awareness Tips](#carbon-awareness-tips)
+  - [Demand Shifting](#demand-shifting)
+  - [Spatial Shifting](#spatial-shifting)
+  - [Temporal Shifting](#temporal-shifting)
+  - [Demand Shaping](#demand-shaping)
+  - [Summary](#summary)
+
 ## Key Concepts
 
 ### Carbon Intensity

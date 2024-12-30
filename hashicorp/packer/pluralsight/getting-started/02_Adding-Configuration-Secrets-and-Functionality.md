@@ -1,5 +1,14 @@
 # 2.0 - Adding Configuration, Secrets, and Multi-Platform Functionality
 
+- [2.0 - Adding Configuration, Secrets, and Multi-Platform Functionality](#20---adding-configuration-secrets-and-multi-platform-functionality)
+  - [Provisioners](#provisioners)
+  - [Provisioners - File](#provisioners---file)
+    - [Example](#example)
+  - [Provisioners - Script](#provisioners---script)
+  - [Data Sources](#data-sources)
+  - [Multi-Provider Builds](#multi-provider-builds)
+  - [Post-Processors](#post-processors)
+
 ## Provisioners
 
 - Provisioners are typically used to help configure Packer images to particular needs.

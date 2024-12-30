@@ -1,5 +1,15 @@
 # 3.2 - Energy Efficiency
 
+- [3.2 - Energy Efficiency](#32---energy-efficiency)
+  - [Fossil Fuels and High-Carbon Sources of Energy](#fossil-fuels-and-high-carbon-sources-of-energy)
+  - [Low-Carbon Sources of Energy](#low-carbon-sources-of-energy)
+  - [Energy Measurement](#energy-measurement)
+  - [Improving Energy Efficiency](#improving-energy-efficiency)
+    - [Power Usage Effectiveness](#power-usage-effectiveness)
+  - [Energy Proportionality](#energy-proportionality)
+    - [Static Power Draw](#static-power-draw)
+  - [Summary](#summary)
+
 ## Fossil Fuels and High-Carbon Sources of Energy
 
 - Most electricity is produced via fossil fuel burning.

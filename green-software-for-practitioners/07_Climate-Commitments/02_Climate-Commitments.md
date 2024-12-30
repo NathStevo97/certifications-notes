@@ -1,5 +1,24 @@
 # 7.2 - Climate Commitments
 
+- [7.2 - Climate Commitments](#72---climate-commitments)
+  - [Carbon Reduction Methodologies](#carbon-reduction-methodologies)
+    - [Abatement / Carbon Elimination](#abatement--carbon-elimination)
+    - [Offsets](#offsets)
+    - [SCI and Offsets](#sci-and-offsets)
+    - [Compensating / Carbon Avoidance](#compensating--carbon-avoidance)
+    - [Neutralizing / Carbon Removal](#neutralizing--carbon-removal)
+  - [Climate Commitments](#climate-commitments)
+  - [Carbon Neutral](#carbon-neutral)
+  - [Net Zero](#net-zero)
+  - [100% Renewable](#100-renewable)
+    - [Renewable Energy Certificates (REC)](#renewable-energy-certificates-rec)
+    - [PPAs](#ppas)
+  - [24/7 Hourly Matching](#247-hourly-matching)
+    - [Daily vs Hourly Matching](#daily-vs-hourly-matching)
+    - [Carbon-Free Energy](#carbon-free-energy)
+    - [Carbon Awareness as Part of a 24/7 Hourly Matching Strategy](#carbon-awareness-as-part-of-a-247-hourly-matching-strategy)
+  - [Summary](#summary)
+
 ## Carbon Reduction Methodologies
 
 - There are many ways to reduce emissions but it's important to understand the exact mechanism of the reduction when thinking about reduction targets.

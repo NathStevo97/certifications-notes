@@ -1,5 +1,14 @@
 # 2.0 - Using the GitOps Approach for Automating Deployments
 
+- [2.0 - Using the GitOps Approach for Automating Deployments](#20---using-the-gitops-approach-for-automating-deployments)
+  - [2.1 - GitOps Principles](#21---gitops-principles)
+  - [2.2 - GitOps in the Wild](#22---gitops-in-the-wild)
+  - [2.3 - Introducing Flux](#23---introducing-flux)
+    - [Note](#note)
+    - [Toolkit Components](#toolkit-components)
+    - [Flux CLI](#flux-cli)
+  - [2.4 - Installing Flux](#24---installing-flux)
+
 ## 2.1 - GitOps Principles
 
 - GitOps is a discipline governed by a set of principles that:

@@ -1,6 +1,14 @@
 
 # 3.0 - Configuring Helm Repositories
 
+- [3.0 - Configuring Helm Repositories](#30---configuring-helm-repositories)
+  - [3.1 - Repository Overview](#31---repository-overview)
+  - [3.2 - Packaging a Helm Chart](#32---packaging-a-helm-chart)
+  - [3.3 - Packaging a Helm Chart Demo](#33---packaging-a-helm-chart-demo)
+  - [3.4 - Creating a Local Helm Repository](#34---creating-a-local-helm-repository)
+  - [3.6 - Creating a Remote Helm Repository](#36---creating-a-remote-helm-repository)
+    - [3.6.1 - Example: Github Repository](#361---example-github-repository)
+
 ## 3.1 - Repository Overview
 
 - Chart repository = Any HTTP server that can serve YAML or TAR files. Needs to be able to respond to GET requests.

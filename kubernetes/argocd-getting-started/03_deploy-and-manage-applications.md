@@ -1,5 +1,16 @@
 # 3.0 - Deployment and Management of Applications
 
+- [3.0 - Deployment and Management of Applications](#30---deployment-and-management-of-applications)
+  - [3.1 - Register a Kubernetes Cluster with ArgoCD](#31---register-a-kubernetes-cluster-with-argocd)
+  - [3.2 - Setting Up Projects in ArgoCD](#32---setting-up-projects-in-argocd)
+  - [3.3 - Using Repositories with ArgoCD](#33---using-repositories-with-argocd)
+  - [3.4 - Deploy an App Using ArgoCD](#34---deploy-an-app-using-argocd)
+    - [App of Apps](#app-of-apps)
+  - [3.5 - Application Sync and Rollback](#35---application-sync-and-rollback)
+    - [Rollback](#rollback)
+  - [3.6 - Deleting Applications](#36---deleting-applications)
+  - [3.7 - Application Health and Status Reporting](#37---application-health-and-status-reporting)
+
 ## 3.1 - Register a Kubernetes Cluster with ArgoCD
 
 - By default with an ArgoCD deployment, the cluster it is running on is set as "in-cluster" -> `https://kubernetes.default.svc`

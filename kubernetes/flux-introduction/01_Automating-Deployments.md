@@ -1,5 +1,13 @@
 # 1.0 - Understanding the Challenges of Automating Deployments
 
+- [1.0 - Understanding the Challenges of Automating Deployments](#10---understanding-the-challenges-of-automating-deployments)
+  - [Introduction](#introduction)
+  - [1.1 - Declarative Configuration with Kubernetes](#11---declarative-configuration-with-kubernetes)
+  - [1.2 - Cloud Native Workflows](#12---cloud-native-workflows)
+  - [1.3 - Managing the Integrity of Configuration](#13---managing-the-integrity-of-configuration)
+
+## Introduction
+
 - When transitioning to cloud native approaches and automated deployments, common reliability issues can occur such as:
   - Failed deployments
   - Environment-level ambiguity

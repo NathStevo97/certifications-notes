@@ -1,5 +1,19 @@
 # 6.2 - Measurement
 
+- [6.2 - Measurement](#62---measurement)
+  - [The GHG Protocol](#the-ghg-protocol)
+  - [What Scope Does my Application Fall Into?](#what-scope-does-my-application-fall-into)
+  - [Calculating a Total for Software Carbon Emissions](#calculating-a-total-for-software-carbon-emissions)
+  - [Do Totals Tell the Whole Story?](#do-totals-tell-the-whole-story)
+  - [Software Carbon Intensity Specification](#software-carbon-intensity-specification)
+  - [The SCI Equation](#the-sci-equation)
+  - [Calculating the SCI Score](#calculating-the-sci-score)
+    - [Decide what to Include](#decide-what-to-include)
+    - [Choose the Functional Unit](#choose-the-functional-unit)
+    - [Decide how to Measure Your Emissions](#decide-how-to-measure-your-emissions)
+    - [Quantify](#quantify)
+  - [Summary](#summary)
+
 ## The GHG Protocol
 
 - The **Greenhouse Gas protocol** is the most widely used and internationally recognized greenhouse gas accounting standard. 92% of Fortune 500 companies use the GHG protocol when calculating and disclosing their carbon emissions.

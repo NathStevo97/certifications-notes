@@ -1,5 +1,11 @@
 # 4.0 - Next Steps for Using ArgoCD
 
+- [4.0 - Next Steps for Using ArgoCD](#40---next-steps-for-using-argocd)
+  - [Overview](#overview)
+  - [Resources](#resources)
+
+## Overview
+
 - GitOps is growing at a fast rate and quickly being adopted into DevOps, especially Kubernetes.
   - ArgoCD is one of the top operators
 - ArgoCD maintains K8s resources within Git - making it the single source of truth for devs, instead of kubectl.

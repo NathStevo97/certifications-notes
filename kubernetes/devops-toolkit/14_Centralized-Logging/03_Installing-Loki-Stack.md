@@ -1,5 +1,11 @@
 # 14.3 - Installing the Loki Stack
 
+- [14.3 - Installing the Loki Stack](#143---installing-the-loki-stack)
+  - [Prerequisites](#prerequisites)
+  - [Supporting Links](#supporting-links)
+  - [Steps](#steps)
+  - [Notes](#notes)
+
 ## Prerequisites
 
 - Loki stack shall be run in Kubernetes

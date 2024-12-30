@@ -1,5 +1,16 @@
 # 1.0 - Creating Basic Images
 
+- [1.0 - Creating Basic Images](#10---creating-basic-images)
+  - [1.1 - Why Packer?](#11---why-packer)
+    - [Why Packer?](#why-packer)
+    - [Packer Basics](#packer-basics)
+      - [Sources](#sources)
+      - [Builds](#builds)
+      - [Provisioners](#provisioners)
+      - [Post-Processors](#post-processors)
+    - [Common Commands](#common-commands)
+  - [1.2](#12)
+
 ## 1.1 - Why Packer?
 
 - Packer facilitates the development of immutable infrastructure.

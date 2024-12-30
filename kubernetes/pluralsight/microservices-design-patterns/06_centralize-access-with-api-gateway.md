@@ -1,5 +1,13 @@
 # 6.0 - How to Centralize Access to Microservices Using an API Gateway
 
+- [6.0 - How to Centralize Access to Microservices Using an API Gateway](#60---how-to-centralize-access-to-microservices-using-an-api-gateway)
+  - [6.1 - Introduction](#61---introduction)
+  - [6.2 - Need for Centralized Access](#62---need-for-centralized-access)
+  - [6.3 - API Gateway](#63---api-gateway)
+  - [6.4 - API Gateway Example](#64---api-gateway-example)
+  - [6.5 - Kong API Gateway](#65---kong-api-gateway)
+
+
 ## 6.1 - Introduction
 
 - Centralizing access to microservices = central component to route to separate microservices
