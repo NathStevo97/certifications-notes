@@ -1,5 +1,9 @@
 # 11.0 - Dynamic Inventory
 
+- [11.0 - Dynamic Inventory](#110---dynamic-inventory)
+  - [11.1 - Introduction](#111---introduction)
+    - [Example](#example)
+
 ## 11.1 - Introduction
 
 - Commonly inventory files are stored in plaintext form.

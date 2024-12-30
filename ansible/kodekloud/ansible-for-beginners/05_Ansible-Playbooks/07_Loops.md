@@ -1,5 +1,8 @@
 # 09.1 - Loops
 
+- [09.1 - Loops](#091---loops)
+  - [Notes](#notes)
+
 ## Notes
 
 - Loops allow the same command(s) to be ran iteratively to accommodate an ever-changing value(s)

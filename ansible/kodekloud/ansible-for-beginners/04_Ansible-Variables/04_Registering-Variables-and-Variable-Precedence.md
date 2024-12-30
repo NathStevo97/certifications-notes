@@ -1,5 +1,9 @@
 # 4.4 - Registering Variables and Varoiable Precedence
 
+- [4.4 - Registering Variables and Varoiable Precedence](#44---registering-variables-and-varoiable-precedence)
+  - [Variable Precedence](#variable-precedence)
+  - [Registering Vars](#registering-vars)
+
 ## Variable Precedence
 
 - If variables are defined in multiple places, the order of priority they are registered is variable precedence.

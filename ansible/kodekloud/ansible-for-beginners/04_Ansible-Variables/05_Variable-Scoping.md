@@ -1,5 +1,10 @@
 # 4.5 - Variable Scoping
 
+- [4.5 - Variable Scoping](#45---variable-scoping)
+  - [Introduction](#introduction)
+
+## Introduction
+
 - Scope = How accessible a variable's value is.
 - For example, if one host in a particular inventory file has an extra parameter set, that value is not available to the other hosts.
 - Multiple scopes are available in ansible to deal with varying scenarios.
@@ -12,4 +17,3 @@
 
 - **Global:**
   - Variables available across all plays, these are typically variables defined at CLI levels via `--extra-vars "<var name>=<var value>`
-  

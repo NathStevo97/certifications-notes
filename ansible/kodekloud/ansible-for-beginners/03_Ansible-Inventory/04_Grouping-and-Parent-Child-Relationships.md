@@ -1,5 +1,12 @@
 # 3.4 - Grouping and Parent-Child Relationshops
 
+- [3.4 - Grouping and Parent-Child Relationshops](#34---grouping-and-parent-child-relationshops)
+  - [Introduction](#introduction)
+  - [Ini Format](#ini-format)
+  - [YAML Format](#yaml-format)
+
+## Introduction
+
 - It's important to utilise grouping in inventory files for ease of life and reduction of human error.
 - Typically, servers are grouped based on aspects such as location and functionality.
 - In the event of sub-grouping, parent-child relationships can be utilised in Ansible.

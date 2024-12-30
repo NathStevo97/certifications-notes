@@ -1,5 +1,10 @@
 # 3.0 - File Separation
 
+- [3.0 - File Separation](#30---file-separation)
+  - [3.1 - Intro to File Separation](#31---intro-to-file-separation)
+    - [3.1.1 - Host\_Vars and Group\_Vars](#311---host_vars-and-group_vars)
+    - [3.1.2 - Include](#312---include)
+
 ## 3.1 - Intro to File Separation
 
 ### 3.1.1 - Host_Vars and Group_Vars

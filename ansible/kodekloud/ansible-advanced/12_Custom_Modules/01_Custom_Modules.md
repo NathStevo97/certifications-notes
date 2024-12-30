@@ -1,5 +1,11 @@
 # 12.0 - Custom Modules
 
+- [12.0 - Custom Modules](#120---custom-modules)
+  - [12.1 - Introdcution](#121---introdcution)
+  - [12.2 - Example: Custom Debug](#122---example-custom-debug)
+  - [12.3 - Best Practices](#123---best-practices)
+  - [Guidance](#guidance)
+
 ## 12.1 - Introdcution
 
 - Modules are each item in a task that carries out a particular command, this can be for anything such as:

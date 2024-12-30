@@ -1,5 +1,10 @@
 # 7.1 - Introduction to Handlers
 
+- [7.1 - Introduction to Handlers](#71---introduction-to-handlers)
+  - [Introduction](#introduction)
+
+## Introduction
+
 - In some cases, configuration applied by Ansible may not take effect until the target server or service is restarted.
 - Typically, one would then have to manually restart the server or service, Ansible Handlers aim to support this.
 - Handlers allow definition of an action to restart the service and associate it with the task that modifies the configuration file.

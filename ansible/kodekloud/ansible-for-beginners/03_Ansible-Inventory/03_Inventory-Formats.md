@@ -1,5 +1,12 @@
 # 3.3 - Inventory Format
 
+- [3.3 - Inventory Format](#33---inventory-format)
+  - [Introduction](#introduction)
+  - [Ini Format](#ini-format)
+  - [YAML Format](#yaml-format)
+
+## Introduction
+
 - Ansible inventory formats offer differ from scenario to scenario.
 - For small-scale projects, simpler formats are likely required as only a small number of servers are used.
 - For large-scale projects, there are likely resources spread worldwide carrying out a multitude of functions.

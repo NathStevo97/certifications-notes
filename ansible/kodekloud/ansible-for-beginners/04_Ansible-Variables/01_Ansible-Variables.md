@@ -1,6 +1,10 @@
 # 07.1 - Ansible Variables
 
-## Notes
+- [07.1 - Ansible Variables](#071---ansible-variables)
+  - [Introduction](#introduction)
+    - [Using Variables](#using-variables)
+
+## Introduction
 
 - Variables are used in a very similar manner to other programming / scripting languages.
 - Could be used to allow changeability of username / host details.

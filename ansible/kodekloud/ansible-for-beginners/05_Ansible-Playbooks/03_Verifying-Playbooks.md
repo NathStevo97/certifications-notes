@@ -1,7 +1,9 @@
 # 5.3 - Verifying Playbooks
 
-- It's highly important to verify playbooks prior to execution to try and catch unforseen issues and prevent service downtime.
-- Playbook verification can be achieved via two main methods, `check mode` and `diff mode`
+- [5.3 - Verifying Playbooks](#53---verifying-playbooks)
+  - [Check Mode](#check-mode)
+  - [Diff Mode](#diff-mode)
+  - [Syntax Check](#syntax-check)
 
 ## Check Mode
 

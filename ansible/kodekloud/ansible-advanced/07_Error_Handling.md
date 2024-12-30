@@ -1,5 +1,9 @@
 # 7.0 - Error Handling
 
+- [7.0 - Error Handling](#70---error-handling)
+  - [7.1 - Introduction](#71---introduction)
+    - [Ignore Errors, Failed\_When](#ignore-errors-failed_when)
+
 ## 7.1 - Introduction
 
 - As discussed in strategy, Ansible will execute each task sequentially until completion

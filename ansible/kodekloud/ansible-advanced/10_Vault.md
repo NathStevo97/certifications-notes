@@ -1,5 +1,8 @@
 # 10.0 - Vault
 
+- [10.0 - Vault](#100---vault)
+  - [10.1 - Introduction](#101---introduction)
+
 ## 10.1 - Introduction
 
 - In bad practice, credentials are stored in plaintext e.g. in inventory files.

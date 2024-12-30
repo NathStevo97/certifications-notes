@@ -1,5 +1,8 @@
 # 02.2 - Setup Lab: Clone VMs and Install Ansible
 
+- [02.2 - Setup Lab: Clone VMs and Install Ansible](#022---setup-lab-clone-vms-and-install-ansible)
+  - [Notes](#notes)
+
 ## Notes
 
 - Now that a base template VM has been created, we can create clone VMs from this for the purposes of the practice labs.

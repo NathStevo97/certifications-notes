@@ -1,5 +1,12 @@
 # 06.1 - Ansible Modules
 
+- [06.1 - Ansible Modules](#061---ansible-modules)
+  - [Notes](#notes)
+    - [Command](#command)
+    - [Script](#script)
+    - [Service](#service)
+    - [Lineinfile](#lineinfile)
+
 ## Notes
 
 - Modules are categorised based on functionalities e.g

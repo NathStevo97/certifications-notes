@@ -1,5 +1,10 @@
 # 07.2 - Coding Exercise: Ansible Variables
 
+- [07.2 - Coding Exercise: Ansible Variables](#072---coding-exercise-ansible-variables)
+  - [Q1](#q1)
+  - [Q2](#q2)
+  - [Q3](#q3)
+
 ## Q1
 
 The playbook is used to update name server entry into resolv.conf file on localhost. The name server information is also updated in the inventory file as a variable `nameserver_ip`. Refer to the inventory file.

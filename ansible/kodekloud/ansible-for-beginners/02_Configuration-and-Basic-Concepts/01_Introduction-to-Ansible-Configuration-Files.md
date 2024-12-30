@@ -1,7 +1,9 @@
 # 2.1 - Introduction to Ansible Configuration Files
 
-- Ansible creates a default configuration file at `/etc/ansible/ansible.cfg` - this governs the default behaviour of ansible by defining a set of parameters.
-- Config files like this are typically split into numerous sections, each with their own specific parameters, some examples follow, as well as an example configuration file:
+- [2.1 - Introduction to Ansible Configuration Files](#21---introduction-to-ansible-configuration-files)
+  - [Introduction](#introduction)
+
+## Introduction
 
 ```shell
 [defaults]

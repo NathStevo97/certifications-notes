@@ -1,6 +1,10 @@
 # 1.0 - Introduction
 
-Status: Done
+- [1.0 - Introduction](#10---introduction)
+  - [1.2 - Recap](#12---recap)
+  - [1.4 - Note on Enabling SSH in the VMs](#14---note-on-enabling-ssh-in-the-vms)
+  - [1.6 - Environment Setup: Virtualbox](#16---environment-setup-virtualbox)
+  - [1.7 - Environment Setup: Docker Containers](#17---environment-setup-docker-containers)
 
 ## 1.2 - Recap
 

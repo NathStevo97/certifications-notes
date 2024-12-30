@@ -1,6 +1,10 @@
 # 04.1 - Introduction to YAML
 
-## Notes
+- [04.1 - Introduction to YAML](#041---introduction-to-yaml)
+  - [Introduction](#introduction)
+  - [Exercises](#exercises)
+
+## Introduction
 
 - All Ansible Playbooks are written in YAML
 - Text or Configuration files
