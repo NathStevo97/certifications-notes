@@ -1,5 +1,17 @@
 # 3.0 - Deploying into EC2
 
+- [3.0 - Deploying into EC2](#30---deploying-into-ec2)
+  - [3.1 - Provisioning the VPC](#31---provisioning-the-vpc)
+    - [VPC Configuration](#vpc-configuration)
+    - [Creating the Internet Gateway](#creating-the-internet-gateway)
+    - [Creating the Subnet(s)](#creating-the-subnets)
+    - [Creating the Routing Table](#creating-the-routing-table)
+    - [Creating the Security gROUP](#creating-the-security-group)
+  - [3.2 - Provisioning EC2 Instances](#32---provisioning-ec2-instances)
+    - [Finding an Existing AMI](#finding-an-existing-ami)
+  - [Creating the SSH Key Pair for the EC2 Instance](#creating-the-ssh-key-pair-for-the-ec2-instance)
+    - [Create the EC2 Instance](#create-the-ec2-instance)
+
 ## 3.1 - Provisioning the VPC
 
 - VPC = logically isolated virtual network across an AWS region containing the whatever resources you want.

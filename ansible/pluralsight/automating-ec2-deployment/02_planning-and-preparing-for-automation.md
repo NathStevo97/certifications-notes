@@ -1,5 +1,13 @@
 # 2.0 - Planning and Preparing for Automation
 
+- [2.0 - Planning and Preparing for Automation](#20---planning-and-preparing-for-automation)
+  - [2.1 - Planning for the EC2 Deployment](#21---planning-for-the-ec2-deployment)
+    - [AWS Terminology](#aws-terminology)
+    - [Deployment Process Overview](#deployment-process-overview)
+    - [Planning the Deployment](#planning-the-deployment)
+  - [2.2 - Preparing the Ansible Control Node](#22---preparing-the-ansible-control-node)
+    - [Preparing the Control Node](#preparing-the-control-node)
+
 ## 2.1 - Planning for the EC2 Deployment
 
 - Prior to any deployment, one should always design and plan the resources / architecture required.

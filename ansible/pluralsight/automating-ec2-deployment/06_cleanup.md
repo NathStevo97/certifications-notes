@@ -1,5 +1,10 @@
 # 6.0 - Cleaning up Resources
 
+- [6.0 - Cleaning up Resources](#60---cleaning-up-resources)
+  - [Overview](#overview)
+
+## Overview
+
 - It's beyond recommended to cleanup cloud resources to avoid incurring charges for unused resources.
 
 - Typically in this scenario, resources should be removed in the order of creation, each will require modules used to create them. Most of the time will be the same, with `state: absent` added instead of `present`

@@ -1,5 +1,11 @@
 # 4.0 - Generating an Inventory of EC2 Instances
 
+- [4.0 - Generating an Inventory of EC2 Instances](#40---generating-an-inventory-of-ec2-instances)
+  - [4.1 - Using a Dynamic Inventory Script](#41---using-a-dynamic-inventory-script)
+    - [Using a Dynamic Inventory Script](#using-a-dynamic-inventory-script)
+  - [4.2 - Using the AWS EC2 Inventory Plugin](#42---using-the-aws-ec2-inventory-plugin)
+    - [Inventory Plugins](#inventory-plugins)
+
 ## 4.1 - Using a Dynamic Inventory Script
 
 - At small resource numbers, management is easy. In practice, one could be dealing with anywhere from  10,000 - 100,000 instances (or more).

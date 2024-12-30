@@ -1,5 +1,9 @@
 # 5.0 - Building Custom AMIs with Ansible
 
+- [5.0 - Building Custom AMIs with Ansible](#50---building-custom-amis-with-ansible)
+  - [Build AMIs](#build-amis)
+  - [Disclaimer](#disclaimer)
+
 ## Build AMIs
 
 - To gather info around the AMI suitable for usage within the region and deployment, use the `ec2_ami_info` module.
