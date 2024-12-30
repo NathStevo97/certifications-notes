@@ -1,6 +1,12 @@
 # 4.09 - Service Discovery
 
-Tags: Done
+- [4.09 - Service Discovery](#409---service-discovery)
+  - [Objectives](#objectives)
+  - [Service Discovery Overview](#service-discovery-overview)
+  - [External DNS Overview](#external-dns-overview)
+  - [DNS Servers Supported by External DNS](#dns-servers-supported-by-external-dns)
+  - [How External DNS Works](#how-external-dns-works)
+  - [External DNS Configuration for BIND Servers](#external-dns-configuration-for-bind-servers)
 
 ## Objectives
 

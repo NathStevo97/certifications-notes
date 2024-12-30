@@ -1,5 +1,10 @@
 # 4.08 - Lab 11
 
+- [4.08 - Lab 11](#408---lab-11)
+  - [Objectives](#objectives)
+  - [Configure Contour](#configure-contour)
+  - [Deploy Contour](#deploy-contour)
+
 ## Objectives
 
 - Configure Contour

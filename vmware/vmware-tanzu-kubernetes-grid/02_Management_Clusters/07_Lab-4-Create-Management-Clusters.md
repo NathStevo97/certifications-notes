@@ -1,6 +1,10 @@
 # 2.7 - Lab 4
 
-Tags: Done
+- [2.7 - Lab 4](#27---lab-4)
+  - [Objectives](#objectives)
+  - [Create a Management Cluster](#create-a-management-cluster)
+  - [Rename the Management Cluster Configuration File](#rename-the-management-cluster-configuration-file)
+  - [Examine the Management Cluster](#examine-the-management-cluster)
 
 ## Objectives
 

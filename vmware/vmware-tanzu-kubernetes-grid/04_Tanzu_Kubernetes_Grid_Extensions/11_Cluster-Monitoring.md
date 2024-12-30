@@ -1,6 +1,13 @@
 # 4.11 - Cluster Monitoring
 
-Tags: Done
+- [4.11 - Cluster Monitoring](#411---cluster-monitoring)
+  - [Objectives](#objectives)
+  - [Monitoring](#monitoring)
+  - [Architecture](#architecture)
+  - [Prometheus Components](#prometheus-components)
+  - [Prometheus Configuration Options](#prometheus-configuration-options)
+  - [Grafana](#grafana)
+  - [Grafana Configuration Options](#grafana-configuration-options)
 
 ## Objectives
 

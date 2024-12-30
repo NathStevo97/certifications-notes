@@ -1,5 +1,18 @@
 # 2.6 - Creating Management Clusters
 
+- [2.6 - Creating Management Clusters](#26---creating-management-clusters)
+  - [Objectives](#objectives)
+  - [Installing TKG Instances](#installing-tkg-instances)
+  - [Deploying Management Clusters - vSphere 7](#deploying-management-clusters---vsphere-7)
+  - [Deploying Management Clusters: Installer UI or CLI](#deploying-management-clusters-installer-ui-or-cli)
+  - [Tanzu CLI Management Cluster Plugin](#tanzu-cli-management-cluster-plugin)
+    - [Tanzu CLI Management Cluster Create](#tanzu-cli-management-cluster-create)
+  - [Tanzu Kubernetes Grid Installer](#tanzu-kubernetes-grid-installer)
+  - [Post-Installation](#post-installation)
+    - [Cluster API Configuration](#cluster-api-configuration)
+    - [Infrastructure Configuration](#infrastructure-configuration)
+  - [Management Cluster Deployment Workflow](#management-cluster-deployment-workflow)
+
 ## Objectives
 
 - List the steps involved in installing a TKG Management Cluster

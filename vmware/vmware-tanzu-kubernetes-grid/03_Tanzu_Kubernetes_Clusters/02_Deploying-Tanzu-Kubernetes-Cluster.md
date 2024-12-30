@@ -1,5 +1,16 @@
 # 3.2 - Deploying Tanzu Kubernetes Cluster
 
+- [3.2 - Deploying Tanzu Kubernetes Cluster](#32---deploying-tanzu-kubernetes-cluster)
+  - [Learner Objectives](#learner-objectives)
+  - [Tanzu CLI Cluster Plugin](#tanzu-cli-cluster-plugin)
+    - [Tanzu Cluster Create](#tanzu-cluster-create)
+  - [Creating Tanzu Kubernetes Clusters](#creating-tanzu-kubernetes-clusters)
+  - [Cluster Configuration Files](#cluster-configuration-files)
+  - [Deploying Clusters with a High Availability Control Plane](#deploying-clusters-with-a-high-availability-control-plane)
+  - [Previewing the YAML File for Tanzu Kubernetes Clusters](#previewing-the-yaml-file-for-tanzu-kubernetes-clusters)
+  - [Overriding Default Configuration Parameters](#overriding-default-configuration-parameters)
+  - [Deploying Clusters that Run a Specific Kubernetes Version](#deploying-clusters-that-run-a-specific-kubernetes-version)
+
 ## Learner Objectives
 
 - Describe the options for deploying Tanzu Kubernetes clusters

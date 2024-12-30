@@ -1,5 +1,13 @@
 # 5.1 - Tanzu Kubernetes Grid Logs
 
+- [5.1 - Tanzu Kubernetes Grid Logs](#51---tanzu-kubernetes-grid-logs)
+  - [Context](#context)
+  - [Objectives](#objectives)
+  - [Monitoring Tanzu Kubernetes Cluster  Deployments in Cluster API Logs](#monitoring-tanzu-kubernetes-cluster--deployments-in-cluster-api-logs)
+  - [Viewing Cluster API Resources](#viewing-cluster-api-resources)
+  - [Kubernetes Audit Logging](#kubernetes-audit-logging)
+  - [System Audit Logging](#system-audit-logging)
+
 ## Context
 
 - Understanding how to identify and resolve issues is vital to efficient operation of TKG.

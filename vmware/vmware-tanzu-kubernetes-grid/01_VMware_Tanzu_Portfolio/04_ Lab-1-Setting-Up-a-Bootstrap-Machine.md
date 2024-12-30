@@ -1,5 +1,14 @@
 # 1.4 - Lab 1 - Setting Up a Bootstrap Machine
 
+- [1.4 - Lab 1 - Setting Up a Bootstrap Machine](#14---lab-1---setting-up-a-bootstrap-machine)
+  - [Verify the Installation of Docker](#verify-the-installation-of-docker)
+  - [Install Kubectl CLI](#install-kubectl-cli)
+  - [Enable Kubernetes AutoComplete](#enable-kubernetes-autocomplete)
+  - [Install the Tanzu CLI](#install-the-tanzu-cli)
+  - [Install the Tanzu CLI Plugins](#install-the-tanzu-cli-plugins)
+  - [Enable Tanzu CLI Autocomplete](#enable-tanzu-cli-autocomplete)
+  - [Install the Carvel Tools](#install-the-carvel-tools)
+
 ## Verify the Installation of Docker
 
 - `sudo systemctl status docker` - Output should be `Active (running)`

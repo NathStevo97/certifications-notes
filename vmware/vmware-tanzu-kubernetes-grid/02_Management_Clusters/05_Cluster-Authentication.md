@@ -1,6 +1,13 @@
 # 2.5 - Cluster Authentication
 
-Tags: Done
+- [2.5 - Cluster Authentication](#25---cluster-authentication)
+  - [Objectives](#objectives)
+  - [External Authentication](#external-authentication)
+  - [User Authentication - Pinniped](#user-authentication---pinniped)
+  - [LDAP Authentication - Dex](#ldap-authentication---dex)
+  - [KubeConfig File Setup - Pinniped](#kubeconfig-file-setup---pinniped)
+  - [Pinniped Authentication Workflow](#pinniped-authentication-workflow)
+  - [Pinniped Session Cache](#pinniped-session-cache)
 
 ## Objectives
 

@@ -1,6 +1,9 @@
 # 2.2 - Lab 2
 
-Tags: Done
+- [2.2 - Lab 2](#22---lab-2)
+  - [Objectives](#objectives)
+  - [Create a Library in Harbor](#create-a-library-in-harbor)
+  - [Push Tanzu Kubernetes Grid Container Images to Harbor](#push-tanzu-kubernetes-grid-container-images-to-harbor)
 
 ## Objectives
 

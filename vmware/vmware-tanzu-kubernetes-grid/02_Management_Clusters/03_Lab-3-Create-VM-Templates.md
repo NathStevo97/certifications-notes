@@ -1,6 +1,12 @@
 # 2.3 - Lab 3
 
-Tags: Done
+- [2.3 - Lab 3](#23---lab-3)
+  - [Objectives](#objectives)
+  - [Login to the vSphere Client](#login-to-the-vsphere-client)
+  - [Create the Resource Pools](#create-the-resource-pools)
+  - [Create a VM Folder](#create-a-vm-folder)
+  - [Import the Base OS Template OVA Files](#import-the-base-os-template-ova-files)
+  - [Convert the VMs to Templates](#convert-the-vms-to-templates)
 
 ## Objectives
 

@@ -1,5 +1,11 @@
 # 4.06 - Lab 10
 
+- [4.06 - Lab 10](#406---lab-10)
+  - [Objectives](#objectives)
+  - [Configure Fluentbit](#configure-fluentbit)
+  - [Deploy FluentBit](#deploy-fluentbit)
+  - [Access VRealize Log Insight to View Logs](#access-vrealize-log-insight-to-view-logs)
+
 ## Objectives
 
 - Configure FluentBit

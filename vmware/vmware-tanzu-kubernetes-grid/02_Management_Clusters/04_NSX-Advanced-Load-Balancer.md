@@ -1,6 +1,13 @@
 # 2.4 - NSX Advanced Load Balancer
 
-Tags: Done
+- [2.4 - NSX Advanced Load Balancer](#24---nsx-advanced-load-balancer)
+  - [Objectives](#objectives)
+  - [Load Balancing Kubernetes Services](#load-balancing-kubernetes-services)
+  - [NSX Advanced Load Balancer](#nsx-advanced-load-balancer)
+    - [Components](#components)
+    - [Architecture](#architecture)
+  - [AKO Operator Functionality](#ako-operator-functionality)
+  - [AVI Kubernetes Operator Functionality](#avi-kubernetes-operator-functionality)
 
 ## Objectives
 

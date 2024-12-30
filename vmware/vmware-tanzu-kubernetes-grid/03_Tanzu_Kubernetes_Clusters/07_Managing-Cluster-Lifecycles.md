@@ -1,6 +1,14 @@
 # 3.7 - Managing Cluster Lifecycles
 
-Tags: Done
+- [3.7 - Managing Cluster Lifecycles](#37---managing-cluster-lifecycles)
+  - [Learner Objectives](#learner-objectives)
+  - [Tanzu Kubernetes Cluster VMs](#tanzu-kubernetes-cluster-vms)
+  - [Upstream Kubernetes Components](#upstream-kubernetes-components)
+  - [Kubernetes API High-Availability](#kubernetes-api-high-availability)
+  - [Authentication Core Addons](#authentication-core-addons)
+  - [Networking Core Addons](#networking-core-addons)
+  - [vSphere Core Addons](#vsphere-core-addons)
+  - [Metrics Core Addons](#metrics-core-addons)
 
 ## Learner Objectives
 

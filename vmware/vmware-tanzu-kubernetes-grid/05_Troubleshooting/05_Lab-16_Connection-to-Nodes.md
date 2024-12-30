@@ -1,5 +1,9 @@
 # 5.5 - Lab 16
 
+- [5.5 - Lab 16](#55---lab-16)
+  - [Objective](#objective)
+  - [Connect to a Node Using SSH](#connect-to-a-node-using-ssh)
+
 ## Objective
 
 - Connect to a Node using SSH

@@ -1,5 +1,17 @@
 # 1.5 - Cluster API
 
+- [1.5 - Cluster API](#15---cluster-api)
+  - [Objectives](#objectives)
+  - [Introduction](#introduction)
+  - [Cluster API Custom Resource Definitions (CRDs)](#cluster-api-custom-resource-definitions-crds)
+  - [Machine Health Checks](#machine-health-checks)
+  - [Cluster API Components](#cluster-api-components)
+    - [Bootstrap Provideers](#bootstrap-provideers)
+    - [Infrastructure Providers](#infrastructure-providers)
+  - [Cluster API Controllers](#cluster-api-controllers)
+    - [vSphere Cluster API Provider (CAPV)](#vsphere-cluster-api-provider-capv)
+  - [Summary](#summary)
+
 ## Objectives
 
 - Describe Cluster API

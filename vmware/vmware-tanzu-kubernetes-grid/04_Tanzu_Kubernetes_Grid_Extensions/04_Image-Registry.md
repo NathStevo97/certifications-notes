@@ -1,6 +1,11 @@
 # 4.04 - Image Registry
 
-Tags: Done
+- [4.04 - Image Registry](#404---image-registry)
+  - [About Harbor](#about-harbor)
+  - [Harbor Components](#harbor-components)
+  - [Vulnerability Scanning](#vulnerability-scanning)
+  - [Harbor Deployment Options](#harbor-deployment-options)
+  - [Harbor Authentication](#harbor-authentication)
 
 ## About Harbor
 

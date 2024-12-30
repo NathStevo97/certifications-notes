@@ -1,5 +1,14 @@
 # 3.1 - Building Custom Cluster Machine Images
 
+- [3.1 - Building Custom Cluster Machine Images](#31---building-custom-cluster-machine-images)
+  - [Overview](#overview)
+  - [Learner Objectives](#learner-objectives)
+  - [Deploying Clusters Using Custom Machine Images](#deploying-clusters-using-custom-machine-images)
+  - [Custom Machine Image Customizations](#custom-machine-image-customizations)
+  - [Building Custom Images - Requirements](#building-custom-images---requirements)
+  - [Steps to Create Custom Image](#steps-to-create-custom-image)
+  - [Using Custom Images](#using-custom-images)
+
 ## Overview
 
 - Tanzu Kubernetes clusters = Workload Clusters

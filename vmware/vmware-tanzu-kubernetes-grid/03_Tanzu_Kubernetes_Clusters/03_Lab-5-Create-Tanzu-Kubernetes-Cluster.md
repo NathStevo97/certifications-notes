@@ -1,6 +1,8 @@
 # 3.3 - Lab 5
 
-Tags: Done
+- [3.3 - Lab 5](#33---lab-5)
+  - [Create a Tanzu Kubernetes Cluster Configuration File](#create-a-tanzu-kubernetes-cluster-configuration-file)
+  - [Create a Tanzu Kubernetes Cluster](#create-a-tanzu-kubernetes-cluster)
 
 ## Create a Tanzu Kubernetes Cluster Configuration File
 

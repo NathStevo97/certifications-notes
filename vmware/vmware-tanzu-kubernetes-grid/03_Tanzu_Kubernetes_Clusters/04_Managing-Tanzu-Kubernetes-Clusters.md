@@ -1,6 +1,14 @@
 # 3.4 - Managing Tanzu Kubernetes Clusters
 
-Tags: Done
+- [3.4 - Managing Tanzu Kubernetes Clusters](#34---managing-tanzu-kubernetes-clusters)
+  - [Learning Objectives](#learning-objectives)
+  - [Granting Authenticated Access to a Cluster](#granting-authenticated-access-to-a-cluster)
+  - [Granting Access to Cluster Resources](#granting-access-to-cluster-resources)
+  - [Scaling Clusters](#scaling-clusters)
+  - [Scaling Management Clusters](#scaling-management-clusters)
+  - [Cluster Autoscaler](#cluster-autoscaler)
+  - [Machine Health Checks](#machine-health-checks)
+  - [Configuring Machine Health Checks](#configuring-machine-health-checks)
 
 ## Learning Objectives
 

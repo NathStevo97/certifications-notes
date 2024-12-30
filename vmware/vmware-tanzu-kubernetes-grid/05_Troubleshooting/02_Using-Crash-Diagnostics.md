@@ -1,5 +1,14 @@
 # 5.2 - Using Crash Diagnostics
 
+- [5.2 - Using Crash Diagnostics](#52---using-crash-diagnostics)
+  - [Objectives](#objectives)
+  - [Crash Diagnostics (Crashd)](#crash-diagnostics-crashd)
+  - [Diagnostic Scripts](#diagnostic-scripts)
+  - [Default Diagnostics Script](#default-diagnostics-script)
+  - [Passing Arguments to the Diagnostics Scripts](#passing-arguments-to-the-diagnostics-scripts)
+  - [Default Diagnostic Script Arguments](#default-diagnostic-script-arguments)
+  - [Running Crash Diagnostics](#running-crash-diagnostics)
+
 ## Objectives
 
 - Describe the purpose of Crash Diagnostics

@@ -1,5 +1,12 @@
 # 4.13 - Lab 14
 
+- [4.13 - Lab 14](#413---lab-14)
+  - [Objectives](#objectives)
+  - [Access the Cluster as a Developer](#access-the-cluster-as-a-developer)
+  - [Developer Workload](#developer-workload)
+  - [Inspect the NSX Advanced Load Balancer UI](#inspect-the-nsx-advanced-load-balancer-ui)
+  - [Inspect the Logs in Vrealize Log Insight](#inspect-the-logs-in-vrealize-log-insight)
+
 ## Objectives
 
 1. Access the cluster as a developer

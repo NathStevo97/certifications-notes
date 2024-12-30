@@ -1,5 +1,16 @@
 # 1.1 - The VMWare Tanzu Portfolio
 
+- [1.1 - The VMWare Tanzu Portfolio](#11---the-vmware-tanzu-portfolio)
+  - [Introduction and Background](#introduction-and-background)
+  - [Objectives](#objectives)
+  - [VMWare Tanzu Portfolio](#vmware-tanzu-portfolio)
+  - [Kubernetes Lifecycle Management](#kubernetes-lifecycle-management)
+    - [Tanzu Kubernetes Grid](#tanzu-kubernetes-grid)
+    - [vSphere with Tanzu](#vsphere-with-tanzu)
+    - [Tanzu Kubernetes Grid Integrated Edition](#tanzu-kubernetes-grid-integrated-edition)
+    - [VMware Tanzu Mission Control](#vmware-tanzu-mission-control)
+  - [VMware Tanzu Editions](#vmware-tanzu-editions)
+
 ## Introduction and Background
 
 - Kubernetes is a key technology in VMWare's Tanzu Portfolio

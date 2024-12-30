@@ -1,6 +1,9 @@
 # 4.02 - Lab 8
 
-Tags: Done
+- [4.02 - Lab 8](#402---lab-8)
+  - [Objectives](#objectives)
+  - [Unzip the TKG Extensions](#unzip-the-tkg-extensions)
+  - [Change the Image Registry Location](#change-the-image-registry-location)
 
 ## Objectives
 

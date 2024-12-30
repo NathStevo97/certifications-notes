@@ -1,5 +1,12 @@
 # 5.6 - Lab 17
 
+- [5.6 - Lab 17](#56---lab-17)
+  - [Objectives](#objectives)
+  - [Unzip the Tanzu Kubernetes Grid Image Builder Files](#unzip-the-tanzu-kubernetes-grid-image-builder-files)
+  - [Load the OVF tool into the Image Builder Container Image](#load-the-ovf-tool-into-the-image-builder-container-image)
+  - [Prepare the Image Builder Configuration](#prepare-the-image-builder-configuration)
+  - [Run Image Builder](#run-image-builder)
+
 ## Objectives
 
 - Unzip the Tanzu Kubernetes Grid Image Builder Files

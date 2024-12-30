@@ -1,6 +1,6 @@
 # 3.8 - End of Module Assessment
 
-Tags: Done
+- [3.8 - End of Module Assessment](#38---end-of-module-assessment)
 
 1. What's the parameter that needs to be set to enable autoscaling?
     1. `ENABLE_AUTOSCALER`

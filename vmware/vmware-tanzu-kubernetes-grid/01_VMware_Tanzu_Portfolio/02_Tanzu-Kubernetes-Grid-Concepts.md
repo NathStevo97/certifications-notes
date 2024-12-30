@@ -1,5 +1,17 @@
 # 1.2 - Tanzu Kubernetes Grid Concepts
 
+- [1.2 - Tanzu Kubernetes Grid Concepts](#12---tanzu-kubernetes-grid-concepts)
+  - [Goals](#goals)
+    - [Bootstrap Machine](#bootstrap-machine)
+    - [Tanzu CLI and Installer Interface](#tanzu-cli-and-installer-interface)
+  - [Tanzu Kubernetes Cluster Plans](#tanzu-kubernetes-cluster-plans)
+  - [Management Clusters](#management-clusters)
+  - [Tanzu Kubernetes Clusters](#tanzu-kubernetes-clusters)
+  - [Shared and In-Cluster Services](#shared-and-in-cluster-services)
+  - [Tanzu Kubernetes Grid Instances](#tanzu-kubernetes-grid-instances)
+  - [Bootstrapping Many Instances](#bootstrapping-many-instances)
+  - [Registering with Tanzu Mission Control](#registering-with-tanzu-mission-control)
+
 ## Goals
 
 - Describe the Tanzu Kubernetes Grid Concepts

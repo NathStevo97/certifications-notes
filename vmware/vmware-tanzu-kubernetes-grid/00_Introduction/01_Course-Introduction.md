@@ -1,5 +1,12 @@
 # 0.1 - Course Introduction
 
+- [0.1 - Course Introduction](#01---course-introduction)
+  - [Course Introduction](#course-introduction)
+  - [Course Goals](#course-goals)
+    - [Additional Notes](#additional-notes)
+    - [References](#references)
+    - [Additional Links](#additional-links)
+
 ## Course Introduction
 
 - Course aims to provide the understanding of how to use Tanzu Kubernetes Grid (TKG) in organizations to maximise the benefits of it in application deployment.

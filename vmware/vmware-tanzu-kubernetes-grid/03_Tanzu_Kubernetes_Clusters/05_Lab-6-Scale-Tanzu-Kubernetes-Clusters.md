@@ -1,6 +1,9 @@
 # 3.5 - Lab 6
 
-Tags: Done
+- [3.5 - Lab 6](#35---lab-6)
+  - [Objectives and Tasks](#objectives-and-tasks)
+  - [Examine the Tanzu Kubernetes Cluster](#examine-the-tanzu-kubernetes-cluster)
+  - [Scale the Cluster](#scale-the-cluster)
 
 ## Objectives and Tasks
 

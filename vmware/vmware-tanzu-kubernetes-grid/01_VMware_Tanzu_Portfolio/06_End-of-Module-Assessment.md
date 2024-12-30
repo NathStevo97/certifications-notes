@@ -1,5 +1,7 @@
 # 1.6 - End of Module Assessment
 
+- [1.6 - End of Module Assessment](#16---end-of-module-assessment)
+
 1. What component of TKG manages cluster lifecycle?
     1. Cluster API
 2. What's the purpose of the bootstrap machine?

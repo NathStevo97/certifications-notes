@@ -1,6 +1,11 @@
 # 4.12 - Lab 13
 
-Tags: Done
+- [4.12 - Lab 13](#412---lab-13)
+  - [Objectives](#objectives)
+  - [Deploy Prometheus](#deploy-prometheus)
+  - [Configure Grafana](#configure-grafana)
+  - [Deploy Grafana](#deploy-grafana)
+  - [Access the Grafana Web Interface](#access-the-grafana-web-interface)
 
 ## Objectives
 

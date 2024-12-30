@@ -1,6 +1,10 @@
 # 4.10 - Lab 12
 
-Tags: Done
+- [4.10 - Lab 12](#410---lab-12)
+  - [Objectives](#objectives)
+  - [Retrieve the Secret Key For DNS Updates](#retrieve-the-secret-key-for-dns-updates)
+  - [Configure External DNS](#configure-external-dns)
+  - [Deploy External DNS](#deploy-external-dns)
 
 ## Objectives
 

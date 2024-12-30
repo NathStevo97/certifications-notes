@@ -1,6 +1,13 @@
 # 2.1 - Overview of Management Clusters and Preparing the vSphere
 
-Tags: Done
+- [2.1 - Overview of Management Clusters and Preparing the vSphere](#21---overview-of-management-clusters-and-preparing-the-vsphere)
+  - [Importance](#importance)
+  - [vSphere Requirements](#vsphere-requirements)
+  - [Port Requirements](#port-requirements)
+  - [Dedicated vSphere SSO User](#dedicated-vsphere-sso-user)
+  - [SSH Key Pairs](#ssh-key-pairs)
+  - [OVA Templates](#ova-templates)
+  - [Deploying in Internet-Restricted Environments](#deploying-in-internet-restricted-environments)
 
 ## Importance
 

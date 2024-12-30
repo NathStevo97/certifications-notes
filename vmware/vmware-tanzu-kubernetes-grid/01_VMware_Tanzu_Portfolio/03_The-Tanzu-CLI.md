@@ -1,5 +1,16 @@
 # 1.3 - The Tanzu CLI
 
+- [1.3 - The Tanzu CLI](#13---the-tanzu-cli)
+  - [Objectives](#objectives)
+  - [Tanzu CLI](#tanzu-cli)
+  - [Tanzu CLI Plugins](#tanzu-cli-plugins)
+    - [Installing Plugins](#installing-plugins)
+  - [Tanzu CLI Syntax](#tanzu-cli-syntax)
+  - [CLI Configuration Files](#cli-configuration-files)
+  - [Bootstrap Machine Requirements](#bootstrap-machine-requirements)
+  - [Installer Interface](#installer-interface)
+  - [Carvel Tools](#carvel-tools)
+
 ## Objectives
 
 - Describe Tanzu CLI

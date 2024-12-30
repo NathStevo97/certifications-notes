@@ -1,6 +1,6 @@
 # 5.7 - End of Module Assessment
 
-Tags: Done
+- [5.7 - End of Module Assessment](#57---end-of-module-assessment)
 
 1. which two are clusterAPI resources?
     1. machinedeployment & cluster

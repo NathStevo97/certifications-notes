@@ -1,6 +1,9 @@
 # 2.8 - Managing Management Clusters
 
-Tags: Done
+- [2.8 - Managing Management Clusters](#28---managing-management-clusters)
+  - [Learner Objectives](#learner-objectives)
+  - [Working with Multiple Management Clusters](#working-with-multiple-management-clusters)
+  - [Adding Existing Management Clusters to Tanzu CLI](#adding-existing-management-clusters-to-tanzu-cli)
 
 ## Learner Objectives
 

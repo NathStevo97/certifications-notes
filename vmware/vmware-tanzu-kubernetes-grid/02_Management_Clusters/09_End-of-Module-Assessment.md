@@ -1,6 +1,6 @@
 # 2.9 - End of Module Assessment
 
-Tags: Done
+- [2.9 - End of Module Assessment](#29---end-of-module-assessment)
 
 1. What must be uploaded to vCenter Server before deploying TKG?
     1. Base Image Template OVA

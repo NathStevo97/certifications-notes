@@ -1,5 +1,10 @@
 # 5.3 - Lab 15
 
+- [5.3 - Lab 15](#53---lab-15)
+  - [Install the Crash Diagnostics CLI](#install-the-crash-diagnostics-cli)
+  - [Configure the Crash Diagnostics Arguments File](#configure-the-crash-diagnostics-arguments-file)
+  - [Run the Crash Diagnostics CLI](#run-the-crash-diagnostics-cli)
+
 ## Install the Crash Diagnostics CLI
 
 1. Using the terminal, navigate to the `Downloads` directory.

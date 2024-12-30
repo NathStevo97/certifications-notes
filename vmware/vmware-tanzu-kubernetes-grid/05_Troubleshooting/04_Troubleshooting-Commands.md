@@ -1,5 +1,11 @@
 # 5.4 - Troubleshooting Commands
 
+- [5.4 - Troubleshooting Commands](#54---troubleshooting-commands)
+  - [Objectives](#objectives)
+  - [Connecting to Cluster Nodes with SSH](#connecting-to-cluster-nodes-with-ssh)
+  - [Failure of Management Cluster Create Command](#failure-of-management-cluster-create-command)
+  - [Recovering Cluster Credentials](#recovering-cluster-credentials)
+
 ## Objectives
 
 - Describe how to use SSH to connect to a Tanzu Kubernetes VM

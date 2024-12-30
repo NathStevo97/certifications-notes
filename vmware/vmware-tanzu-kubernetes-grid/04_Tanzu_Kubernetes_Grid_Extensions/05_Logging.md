@@ -1,6 +1,11 @@
 # 4.05 - Logging
 
-Tags: Done
+- [4.05 - Logging](#405---logging)
+  - [Learner Objectives](#learner-objectives)
+  - [Fluentbit Overview](#fluentbit-overview)
+  - [Configuration and Deployment](#configuration-and-deployment)
+  - [Metadata Considered](#metadata-considered)
+  - [Fluentbit Syslog Output Configuration](#fluentbit-syslog-output-configuration)
 
 ## Learner Objectives
 

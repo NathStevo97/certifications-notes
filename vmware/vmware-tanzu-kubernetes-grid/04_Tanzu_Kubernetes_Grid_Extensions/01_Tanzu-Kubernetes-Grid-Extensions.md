@@ -1,6 +1,15 @@
 # 4.01 - Tanzu Kubernetes Grid Extensions
 
-Tags: Done
+- [4.01 - Tanzu Kubernetes Grid Extensions](#401---tanzu-kubernetes-grid-extensions)
+  - [Module Context](#module-context)
+  - [Learner Objectives](#learner-objectives)
+  - [About the TKG Extensions Bundle](#about-the-tkg-extensions-bundle)
+  - [Extensions Overview](#extensions-overview)
+  - [Container Images](#container-images)
+  - [Deployment with kapp-controller](#deployment-with-kapp-controller)
+  - [Configuring Extensions with Kubernetes Secrets](#configuring-extensions-with-kubernetes-secrets)
+  - [Cert-Manager](#cert-manager)
+  - [Deleting Extensions](#deleting-extensions)
 
 ## Module Context
 

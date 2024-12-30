@@ -1,6 +1,8 @@
 # 4.03 - Lab 9
 
-Tags: Done
+- [4.03 - Lab 9](#403---lab-9)
+  - [Objectives](#objectives)
+  - [Deploy Cert-Manager](#deploy-cert-manager)
 
 ## Objectives
 
