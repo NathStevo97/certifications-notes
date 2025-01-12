@@ -1,5 +1,37 @@
 # 2.0 - Core Concepts
 
+- [2.0 - Core Concepts](#20---core-concepts)
+  - [2.1 - Cluster Architecture](#21---cluster-architecture)
+  - [2.2 - ETCD For Beginners](#22---etcd-for-beginners)
+  - [2.3 - ETCD In Kubernetes](#23---etcd-in-kubernetes)
+  - [2.4 - Etcd Common Commands](#24---etcd-common-commands)
+  - [2.5 - Kube API Server](#25---kube-api-server)
+  - [2.6 - Kube-Controller Manager](#26---kube-controller-manager)
+  - [2.7 - Kube-Scheduler](#27---kube-scheduler)
+  - [2.8 - Kubelet](#28---kubelet)
+  - [2.9 - Kube-Proxy](#29---kube-proxy)
+  - [2.10 - Pods Recap](#210---pods-recap)
+    - [Multi-Container Pods](#multi-container-pods)
+    - [Example Kubectl Commands](#example-kubectl-commands)
+  - [2.11 - Pods with YAML Recap](#211---pods-with-yaml-recap)
+  - [2.12 - Replicasets Recap](#212---replicasets-recap)
+    - [Load Balancing and Scaling](#load-balancing-and-scaling)
+    - [Labels and Selectors](#labels-and-selectors)
+    - [Scaling](#scaling)
+    - [Command Summary](#command-summary)
+  - [2.13 - Deployments](#213---deployments)
+  - [2.14 - General Tips](#214---general-tips)
+  - [2.15 - Namespaces](#215---namespaces)
+    - [Domain Name Service - DNS](#domain-name-service---dns)
+    - [Resource Quota](#resource-quota)
+  - [2.16 - Services](#216---services)
+    - [Example](#example)
+    - [NodePort](#nodeport)
+  - [2.17 - ClusterIP Services](#217---clusterip-services)
+  - [2.18 - LoadBalancer Services](#218---loadbalancer-services)
+  - [2.19 - Imperative vs Declarative Commands](#219---imperative-vs-declarative-commands)
+  - [2.20 - Kubectl Apply](#220---kubectl-apply)
+
 ## 2.1 - Cluster Architecture
 
 Kubernetes exists to allow the hosting of containerized applications in an automated fashion, allowing communication between the different services associated, and facilitating the creation of however many instances you like.
@@ -504,3 +536,350 @@ spec:
 - Delete a replicaset and its underlying pods: `kubectl delete replicaset <replicaset name>`
 - Replace or update the replicaset: `kubectl replace -f <replicaset definition>.yaml`
 - Scale a replicaset: `kubectl scale --replicas=<number> -f <defintiion>.yaml`
+
+## 2.13 - Deployments
+
+- When deploying an application in a production environment, like a web server:
+  - Many instances of the web server could be needed
+  - Need to be able to upgrade the instances seamlessly one-after-another (rolling updates)
+  - Need to avoid simultaneous updates as this could impact user accessibility
+
+- In the event of update failure, one should be able to rollback upgrades to a previously working iteration
+
+- If wanting to make multiple changes to the environment, can pause each environment to make the changes, and resume when updates are in effect.
+
+- These capabilities are provided via Kubernetes Deployments.
+- These are objects higher in the hierarchy than a ReplicaSet
+  - Provides capabilities to:
+    - Upgrade underlying instances seamlessly
+    - Utilise rolling updates
+    - Rollback changes during failure
+    - Pause and resume environments to allow changes to take place.
+
+- As usual, Deployments can be defined by YAML definitions:
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-deployment
+  labels:
+    app: myapp
+    type: frontend
+spec:
+  template:
+    metadata:
+      name: myapp-prod
+      labels:
+        app: myapp
+        type: frontend
+    spec:
+      containers:
+      - name: nginx-controller
+        image: nginx
+  replicas: 3
+  selector:
+    matchLabels:
+      type: frontend
+```
+
+- To create deployment: `kubectl create -f <deployment>.yaml`
+- View deployments: `kubectl get deployments`
+
+- Other commands: `kubectl get all` -> Display all Kubernetes objects
+
+## 2.14 - General Tips
+
+- When using the CLI, it can become difficult to create and edit the YAML files
+associated with objects in Kubernetes
+- A quick alternative is to copy and paste a template file for the designated object and
+edit it as required, in Linux Distributions this can be done via:
+  - `CTRL+Insert = Copy`
+  - `SHIFT+Insert= = Paste`
+- Alternatively, the kubectl run command can be used to generate a YAML template
+which can be easily modified, though in some cases you can get away with using
+kubectl run without creating a new YAML file, such as the following examples.
+
+```shell
+# Creating an NGINX Pod
+
+kubectl run nginx --image=nginx
+
+# Creating an NGINX Deployment
+
+kubectl create deployment --image=nginx nginx
+```
+
+- In cases where a YAML file is needed, one can add the `--dry-run` flag to the kubectl
+run command and direct its output to a YAML file
+- The `--dry-run=client` flag signals to Kubernetes to not physically create the object
+described, only generate a YAML template that describes the specified object
+
+```shell
+# Create an NGINX Pod YAML without Deploying the Pod
+
+kubectl run nginx --image=nginx --dry-run=client -o yaml > nginx-pod.yaml
+
+# Create a deployment YAML
+
+kubectl create deployment --image=nginx nginx --dry-run=client -o yaml > nginx-deployment.yaml
+
+# Create a deployment YAML with specific replica numbers:
+
+kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o yaml > nginx-deployment.yaml
+```
+
+## 2.15 - Namespaces
+
+- A namespace is automatically created when a cluster is created
+- They serve to isolate the cluster resources such that they aren't accidentally maniuplated.
+
+- **Example:**
+  - When developing an application, one can create a `Dev` and `Prod` namespace to keep resources isolated
+
+- Each namespace can then have their own policies, detailing user access and controlm etc.
+- Resource limits may also be namespace-scoped.
+
+### Domain Name Service - DNS
+
+- For objects communicating in their namespace, they simply refer to the other object by their name.
+- Example, for a web application pod connecting to a database service titled `db-service`, you would specify: `mysql.connect("db-service")`.
+- For objects communicating outside of their namespace, need to append the name of the namespace to access and communicate.
+  - Example: `mysql.connect("db-service.dev.svc.cluster.local")`
+  - In general format followed: `<service name>.<namespace>.svc.cluster.local`
+- This can be done as when a service is created, a DNS entry is added automatically in this format.
+- `cluster.local` is the default cluster's domain name.
+- `svc` = subdomain for service.
+- List all pods in default namespace: `kubectl get pods`
+- List all pods in specific namespace: `kubectl get pods --namespace <namespace>`
+- When creating a pod via a definition file, it will automatically be added to the default namespace if no namespace is specified.
+- To add to a particular namespace: `kubectl create -f <definition>.yaml --namespace=<namespace name>`
+
+- To set default namespace of a pod, add `namespace: <namespace name>` to metadata in the definition file.
+
+- Namespaces can be created via YAML definitions:
+
+```yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: namespace-name
+```
+
+- To create: `kubectl create -f <namespace>.yaml`
+- Alternatively: `kubectl create namespace <namespace name>`
+- To switch context: `kubectl config set-context $(kubectl config current-context --namespace=<namespace>)`
+- To view all pods in each namespace add `--all-namespaces` to the `get pods` commands.
+
+### Resource Quota
+
+- Creates limitations on resources for namespaces
+- Created via definition file
+- Kind: ResourceQuota
+- Spec must specify variables such as:
+  - Pod numbers
+  - Memory limits
+  - CPU limits
+  - Minimum requested/required CPU and Memory
+
+- Example:
+
+```yaml
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: compute-quota
+  namespace: dev
+spec:
+  hard:
+    pods: "10"
+    requests.cpu: "4"
+    requests.memory: 5Gi
+    limits.cpu: "10"
+```
+
+## 2.16 - Services
+
+- Kubernetes services allows inter-component communication both within and outside Kubernetes.
+- Additionally, services allow connections of applications with users or other applications.
+
+### Example
+
+- Suppose an application has a group of pods running various aspects of the app
+  - One for serving frontend users
+  - Another for backend etc
+  - Another for connecting to an external data source
+
+- All these groups of pods are connected by use of services
+- Additionally, services allow frontend accessibility to users
+  - Allows front-to-back pod communication and external data source communication
+
+- One of the key services used in Kubernetes is the facilitation of external communication:
+  - Suppose a pod has been deployed and is running a web app:
+  - The Kubernetes node's IP address is in the same network as the local machine
+  - The pod's network is separate
+  - To access the container's contents, could either use a `curl` request to the IP or access via local browser
+  - In practice, wouldn't want to have to ssh into the node to access the container's content, you'd want to access it as an "external" user.
+  - Kubernetes service(s) cna be introduced to map the request from a local machine -> node -> pod
+  - Kubernetes services are treated as objects in Kubernetes like Pods, ReplicaSets, etc.
+  - To facilitate external communications, one can use NodePort:
+    - Listens to a port on the node
+    - Forwards requests to the required pods
+
+- Primary service types include:
+  - **NodePort:** Makes an internal pod accessible via a port on a node
+  - **ClusterIP:**
+    - Creates a virtual IP inside the cluster
+    - Enables communication between services e.g. frontend <--> backend
+  - **Load Balancer:**
+    - Provisions a load balancer for application support
+    - Typically cloud-provider only.
+
+---
+
+### NodePort
+
+- Maps a port on the clsuter node to a port on the pod to allow accessibility
+- On closer inspection, this service type can b e broken down into 3 parts:
+  1. The port of the application on the pod it's running from -> `targetPort`
+  1. The port on the service itself -> `port`
+  1. Port on the node used to access the application externally -> `NodePort`
+
+- **Note:** NodePort range only available for `30000 - 32767`
+
+- To create the service, create a definition file similar to the following:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: myapp-service
+spec:
+  type: NodePort
+  ports:
+  - targetPort: 80
+    port: 80
+    nodePort: 30080
+```
+
+- **Note:** The prior definition file is acceptable for using only one pod on the cluster.
+  - If there are multiple pods with a `targetPort` of say 80 in this case, this will cause issues, the service needs to only focus on certain pods
+  - This can be worked around via the use of selectors
+
+- Under `selector`, add any labels associated with the pod definition file e.g.:
+
+```yaml
+selector:
+  app: myapp
+  type: frontend
+```
+
+- The service can then be created using `kubectl create -f <filename>.yaml` as per usual.
+
+- To view services: `kubectl get services`
+
+- To access the web service: `curl <node IP>:<node Port>`
+
+- Suppose you're in a production environment:
+  - Multiple pods or instances running in the same application
+  - Allows high availability and load balancing
+
+- If all pods considered share the same labels, the selector will automatically assign the pods as the service endpoints -> no additional configuration is required.
+
+- If the pods are distributed across multiple nodes:
+  - Without any additional configuration Kubernetes automatically creates the service to span the entire set of nodes in the cluster.
+    - Maps the target port to the same node port for each node.
+    - The application can be accessed through the IP of any of the nodes in the cluster, but via the same port.
+
+- Regardless of the number of pods or nodes involved, the service creation method is exactly the same, no additional steps are required.
+
+- **Note:** When pods are removed or added, the service will automatically be updated => offering higher flexibility and adaptability.
+
+## 2.17 - ClusterIP Services
+
+- In general, a fill stack will comprise of groups of pods, hosting different parts of an application, such as:
+  - Frontend
+  - Backend
+  - Key-value store
+
+- Each of these groups of pods need to be able to interact with one another for the application to fully function.
+
+- Each pod will automatically be assigned its own IP address
+  - Not static
+  - Pods could be removed or added at any given point
+  - One cannot therefore rely on these IP addresses for inter-service communication
+
+- Kubernetes ClusterIP services can be used to group the pods together by functionality and provide a single interface to access them.
+  - Any requests to that group is assigned randomly to one of the pods within.
+
+- This provides an easy and effective deployment of a microservice-based application on a Kubernetes cluster.
+
+- Each layer or group gets assigned its own IP address and name within the cluster
+  - To be used by other pods to access the service.
+  - Each layer can scale up or down without impacting service-service communications
+
+- To create, write a definition file:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend
+spec:
+  type: ClusterIP
+  ports:
+  - targetPort: 80
+    port: 80
+  selector:
+    app: myapp
+    type: backend
+```
+
+- To create the service: `kubectl create -f <service file>.yaml` or `kubectl expose <deployment or pod name> --port=<port> --target-port=<port> --type=clusterIP`
+
+- View services via `kubectl get services`
+
+- From here, the services can be accessed via the ClusterIP or service name.
+
+## 2.18 - LoadBalancer Services
+
+- Kubernetes service type that helps balance traffic routing to underlying services and nodes within the cluster.
+- Only supported on separate cloud platforms such as GCP, Azure etc
+- Unsupported in environments such as Virtualbox, if still used, it basically has the same effect as a service of type NodePort.
+
+## 2.19 - Imperative vs Declarative Commands
+
+- Imperative: The use of statements to change a programs state, give a program
+step-by-step instructions on how to perform a task, specify the "how" to get to the
+"what"
+- Declarative: Writing a program describing an operation by specifying only the end
+goal, specify the "what" only
+- In Kubernetes, this split in programming language can be broken down as:
+  - Imperative - Using kubectl commands to perform CRUD operations like
+scaling and updating images, as well as operations with .yaml definition files.
+■ These commands specify the exact commands and how they should
+be performed.
+  - Declarative:
+■ Using kubectl apply commands with definition files, Kubernetes will
+consider the information provided and determine what changes need
+to be made
+- Imperative commands in kubernetes include:
+  - Creation
+■ Run
+■ Create
+■ Expose
+  - Update Objects
+■ Edit
+■ Scale
+■ Set (image)
+- It should be noted that Imperative commands are often "one-time-use" and are
+limited in functionality, for advanced operations it's better to work with definition
+files, and that's where using the `-f <filename>` commands are better-used.
+- Imperative commands can become taxing as they require prior knowledge of
+pre-existing configurations, which can result in extensive troubleshooting if
+unfamiliar.
+- For the declarative approach, it's more recommended to use this when making
+extensive changes or updates without having to worry about manual
+troubleshooting or management.
+
+## 2.20 - Kubectl Apply
