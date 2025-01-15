@@ -43,7 +43,7 @@
   - Performance has latency ranging from milliseconds to seconds
   - Analysis is typically displayed by simple response functions, aggregates, and rolling metrics.
 
-## 1.4 - Refining What Data Store to Use Based on Application Characteristics
+##  1.4 - Refining What Data Store to Use Based on Application Characteristics
 
 - Modern cloud applications have varying requirements, therefore it's important to make the correct decision regarding data store.
 - Traditional apps have 100s-1000s of users, whilst cloud apps have in excess of 1 million.

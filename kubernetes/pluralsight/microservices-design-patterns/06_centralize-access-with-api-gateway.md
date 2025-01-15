@@ -7,7 +7,6 @@
   - [6.4 - API Gateway Example](#64---api-gateway-example)
   - [6.5 - Kong API Gateway](#65---kong-api-gateway)
 
-
 ## 6.1 - Introduction
 
 - Centralizing access to microservices = central component to route to separate microservices

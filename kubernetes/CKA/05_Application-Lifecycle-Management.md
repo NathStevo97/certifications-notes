@@ -161,7 +161,6 @@ env:
   - Secrets: rather than `env`, replace with `valueFrom`, and add `secretKeyRef`
 underneath
 
-
 ## 5.5 - Configure ConfigMaps in Applications
 
 - When there are multiple pod definition files, it becomes difficult to manage
