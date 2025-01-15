@@ -1,4 +1,4 @@
-# 11.1 - Install Kubernetes the Kubeadm Way
+# 11.0 - Install Kubernetes the Kubeadm Way
 
 1. Decide on Configuration - Master vs Worker
 1. Install a container runtime (Docker, etc.)

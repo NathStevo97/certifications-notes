@@ -1,4 +1,4 @@
-# 13.1 - Troubleshooting Overview
+# 13.0 - Troubleshooting Overview
 
 ## Application Failure
 

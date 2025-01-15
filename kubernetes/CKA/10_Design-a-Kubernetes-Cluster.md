@@ -1,4 +1,4 @@
-# 10.1 - Design a Kubernetes Cluster
+# 10.0 - Design a Kubernetes Cluster
 
 - **Note:** The following is not required for the exam, it is merely good reference points.
 
