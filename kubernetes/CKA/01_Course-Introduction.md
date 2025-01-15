@@ -25,7 +25,7 @@
 
 ### Practice Tests
 
-As with the CKAD certificate, CKA is entirely practical, therefore it's ESSENTIAL that you take part in the practice labs to gain an understanding of the relevant skills to apply in production scenarios.
+As with the CKAD certificate, CKA is entirely practical, therefore it's ESSENTIAL that you take part in practice labs to gain an understanding of the relevant skills to apply in production scenarios.
 
 ### Certification Details
 

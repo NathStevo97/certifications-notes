@@ -1,4 +1,6 @@
-# 4.1 - Monitor Cluster Components
+# 4.0 - Logging and Monitoring
+
+## 4.1 - Monitor Cluster Components
 
 - Suppose we want to monitor performance metrics relating to resource consumption
 across a cluster or at a pod level, where we can analyse it
@@ -13,3 +15,11 @@ third-party options like Prometheus and Dynatrace are available
 - For all other kubernetes setups, the metrics server is enabled via downloading and applying the yaml files from the associated Github repository
 - To collect metrics about a particular object, run: `kubectl top <object>`
   - Objects that can be monitored include pods, nodes and more
+
+## 4.2 - Managing Application Logs
+
+- When running a docker container in the background, one can view the associated
+logs of a container by running `docker logs -f <container ID>`
+- For kubernetes, run `kubectl logs -f <pod name>` for a standalone container
+  - For a pod with multiple containers, you must specify the container name you
+want to view, append this to the end of the above command
