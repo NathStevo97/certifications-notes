@@ -1,5 +1,28 @@
 # 3.0 - Scheduling
 
+- [3.0 - Scheduling](#30---scheduling)
+  - [3.1 - Manual Scheduling](#31---manual-scheduling)
+  - [3.2 - Labels and Selectors](#32---labels-and-selectors)
+  - [3.3 - Taints and Tolerations](#33---taints-and-tolerations)
+    - [Taints - Node](#taints---node)
+    - [Tolerations - Pod](#tolerations---pod)
+    - [Taint - NoExecute](#taint---noexecute)
+  - [3.4 - Node Selectors](#34---node-selectors)
+    - [Limitations of NodeSelectors](#limitations-of-nodeselectors)
+  - [3.5 - Node Affinity](#35---node-affinity)
+    - [Node Affinity Types](#node-affinity-types)
+  - [3.6 - Taints and Tolerations vs Node Affinity](#36---taints-and-tolerations-vs-node-affinity)
+  - [3.7 - Resource Limits](#37---resource-limits)
+    - [Resource - CPU](#resource---cpu)
+    - [Resources - Memory](#resources---memory)
+    - [Default Resource Requirements and Limits](#default-resource-requirements-and-limits)
+    - [Pod / Deployment Editing](#pod--deployment-editing)
+  - [3.8 - DaemonSets](#38---daemonsets)
+  - [3.9 - Static Pods](#39---static-pods)
+    - [Static Pods vs Daemonsets](#static-pods-vs-daemonsets)
+  - [3.10 - Multiple Schedulers](#310---multiple-schedulers)
+  - [3.11 - Configuring Scheduler Profiles](#311---configuring-scheduler-profiles)
+
 ## 3.1 - Manual Scheduling
 
 - When a pod is made available for scheduling, the Scheduler looks at the PODs definition file for the value associated with the field NodeName

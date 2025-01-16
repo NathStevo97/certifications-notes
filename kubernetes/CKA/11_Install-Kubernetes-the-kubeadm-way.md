@@ -1,5 +1,10 @@
 # 11.0 - Install Kubernetes the Kubeadm Way
 
+- [11.0 - Install Kubernetes the Kubeadm Way](#110---install-kubernetes-the-kubeadm-way)
+  - [Resources](#resources)
+  - [Deploy with Kubeadm - Provision VMs with Vagrant](#deploy-with-kubeadm---provision-vms-with-vagrant)
+  - [Demo - Deploy with Kubeadm](#demo---deploy-with-kubeadm)
+
 1. Decide on Configuration - Master vs Worker
 1. Install a container runtime (Docker, etc.)
 1. Install Kubeadm

@@ -1,5 +1,28 @@
 # 5.0 - Application Lifecycle Management
 
+- [5.0 - Application Lifecycle Management](#50---application-lifecycle-management)
+  - [5.1 - Rolling Updates and Rollbacks](#51---rolling-updates-and-rollbacks)
+    - [Rollout and Versioning](#rollout-and-versioning)
+    - [Rollout Commands](#rollout-commands)
+    - [Deployment Strategy](#deployment-strategy)
+  - [5.2 - Commands and Arguments: Docker](#52---commands-and-arguments-docker)
+  - [5.3 - Commands and Arguments: Kubernetes](#53---commands-and-arguments-kubernetes)
+  - [5.4 - Configure Environment Variables in Applications](#54---configure-environment-variables-in-applications)
+  - [5.5 - Configure ConfigMaps in Applications](#55---configure-configmaps-in-applications)
+  - [5.6 - Configure Secrets in Applications](#56---configure-secrets-in-applications)
+    - [Imperative Secret Creation](#imperative-secret-creation)
+    - [Declarative Secret Creation](#declarative-secret-creation)
+    - [Secrets in Pods](#secrets-in-pods)
+    - [Secrets in Volumes](#secrets-in-volumes)
+  - [5.7 - Scale Applications](#57---scale-applications)
+  - [5.8 - Multi-Container Pods](#58---multi-container-pods)
+  - [5.9 - Multi-Container Pod Design Patterns](#59---multi-container-pod-design-patterns)
+    - [Sidecar](#sidecar)
+    - [Adapter](#adapter)
+    - [Ambassador](#ambassador)
+  - [5.10 - InitContainers](#510---initcontainers)
+  - [5.11 - Self-Healing Applications](#511---self-healing-applications)
+
 ## 5.1 - Rolling Updates and Rollbacks
 
 ### Rollout and Versioning

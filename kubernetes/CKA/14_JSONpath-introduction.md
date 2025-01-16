@@ -1,5 +1,12 @@
 # 14.1 - Introduction to JSONPath
 
+- [14.1 - Introduction to JSONPath](#141---introduction-to-jsonpath)
+  - [14.1.1 - Introduction to YAML](#1411---introduction-to-yaml)
+  - [14.1.2 - Introduction to JSONpath](#1412---introduction-to-jsonpath)
+  - [14.1.3 - JSONPath: Wildcard](#1413---jsonpath-wildcard)
+  - [14.1.4 - JSONPath: Advanced List Queries](#1414---jsonpath-advanced-list-queries)
+  - [14.1.5 - Advanced Kubectl Commands: Kubectl and JSONPath](#1415---advanced-kubectl-commands-kubectl-and-jsonpath)
+
 ## 14.1.1 - Introduction to YAML
 
 - Ansible playbooks format similar to XML and JSON
@@ -61,7 +68,7 @@ item:
 
 - Denoted by *, meaning "any", can be used to retrieve all/any properties of a
 particular dictionary
-- Can swap * as a value when referencing an array position i.e. [*]
+- Can swap *as a value when referencing an array position i.e. [*]
 
 ## 14.1.4 - JSONPath: Advanced List Queries
 
