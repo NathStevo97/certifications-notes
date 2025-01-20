@@ -1,10 +1,8 @@
 # Understanding AWS Core Services
 
-Tags: Done
+## Interacting with AWS
 
-# Interacting with AWS
-
-## Methods of Interacting with AWS
+### Methods of Interacting with AWS
 
 - AWS Console - Browser-based web app for interacting with most or all of the services.
   - Typically used for testing out AWS services.
@@ -14,7 +12,7 @@ Tags: Done
 - Repeating tasks typically automated via the CLI and or SDK.
 - SDK allows automation of AWS tasks within custom applications.
 
-## Using the AWS Console
+### Using the AWS Console
 
 - User sign in available
   - Root user == Admin - can do anything
@@ -23,7 +21,7 @@ Tags: Done
 - Services dropdown shows most of available services along with search bar.
 - Certain regions will be shown to not be region-specific.
 
-## Using the AWS CLI
+### Using the AWS CLI
 
 - AWS Console → Security Credentials → Access Keys → Create New Access Keys
   - Advised to create access keys for IAM users only, not root.
@@ -35,22 +33,22 @@ Tags: Done
     - Add access key, secret access key, default region and output format
   - Verify with sample command e.g. `aws s3 ls --profile <profile name>`
 
-## Scenarios
+### Interacting with AWS Scenarios
 
-### Scenario 1
+#### Interacting with AWS Scenario 1
 
 - Several production workloads
 - New web application that manages digital assets
 - Automatically need to create a user account in AWS Cognito on signup
 - What interaction method? SDK - tailored to the application SDK.
 
-### Scenario 2
+#### Interacting with AWS Scenario 2
 
 - Company considering AWS
 - Want to use AWS Relational Database Service and test a single database
 - What interaction method? Console
 
-### Scenario 3
+#### Interacting with AWS Scenario 3
 
 - Startup company with web and mobile app
 - Set of repeatable tasks for generating reports.
@@ -58,11 +56,11 @@ Tags: Done
 
 ---
 
-# Compute Services
+## Compute Services
 
 - Any service that allows leveraging of cloud-based virtual machines.
 
-## EC2 Overview
+### EC2 Overview
 
 - A web service that provides resizable compute capacity in the cloud.
 - Use cases include:
@@ -71,7 +69,7 @@ Tags: Done
   - Web services endpoint
   - Desktop in the cloud
 
-### EC2 Instance Types
+#### EC2 Instance Types
 
 - Determines the processor, memory and storage type
 - Cannot be changed without downtime
@@ -84,14 +82,14 @@ Tags: Done
 
 ![Instance Resource Sizing](./img/Resource_Sizing.png)
 
-### Root Device Type
+#### Root Device Type
 
 - 2 Primary Types:
   - **Instance store** - Ephemeral storage physicall attached to the host the virtual server is running on.
   - **Elastic Block Store (EBS)** - Persistent storage that exists seperately from the host the virtual server is running on.
     - Generally more commonly used than instance store.
 
-### Amazon Machine Image (AMI)
+#### Amazon Machine Image (AMI)
 
 - A template for an EC2 instance, including configuration, OS and data
 - AWS by default provides many AMIs
@@ -99,7 +97,7 @@ Tags: Done
 - Custom AMIs can be created based on configuration.
 - Commercial AMIs are available in the AWS marketplace.
 
-## EC2 Purchase Types
+### EC2 Purchase Types
 
 - Options available:
   - **On-demand**
@@ -137,7 +135,7 @@ Tags: Done
 
 ![Instance Pricing Comparison](./img/Resource_Pricing.png)
 
-## Launching an EC2 Instance
+### Launching an EC2 Instance
 
 - AWS Console → EC2 → Launch instance
 - Select AMI → Custom / Marketplace / Community / Free
@@ -156,7 +154,7 @@ Tags: Done
 - Once launch, find public dns and access via browser to validate.
 - To terminate - select instance, then under actions → instance state → terminate
 
-## Elastic Beanstalk Overview
+### Elastic Beanstalk Overview
 
 - Automates deployment and scaling of EC2 Workloads (PaaS rather than IaaS)
 - Supports only a specific set of technologies
@@ -164,7 +162,7 @@ Tags: Done
 - Only pay for other services leveraged.
 - Handles provisioning, load balancing, scaling and monitoring.
 
-### Supported Application Platforms
+#### Supported Application Platforms
 
 - Includes:
   - Docker
@@ -173,20 +171,20 @@ Tags: Done
   - Python
   - GO
 
-### Features
+#### Features
 
 - Monitoring
 - Deployment
 - Scaling
 - EC2 Customizations
 
-### Use Cases
+#### Use Cases
 
 - Deploy an application with minimal knowledge of other services
 - Reduce overall maintenance needed for application
 - Few customizations needed.
 
-## Launching an App on Elastic Beanstalk
+### Launching an App on Elastic Beanstalk
 
 - Tutorials provided depending on the applications to be deployed, along with sample applications for deployment.
 - AWS Console → Elastic Beanstalk → Get Started
@@ -203,7 +201,7 @@ Tags: Done
   - Events
 - To terminate, Actions → Terminate
 
-## AWS Lambda Overview
+### AWS Lambda Overview
 
 - Allows running of code without provisioning or managing servers.
 - Only pay for the compute time consumed.
@@ -218,9 +216,9 @@ Tags: Done
   - Scales based ond emand
   - Pricing based on usage only.
 
-## Scenarios
+### Compute Services Scenarios
 
-### Scenario 1
+#### Compute Services Scenario 1
 
 - Moving multiple workloads into AWS
 - One workload to be leveraged for at least 5 years
@@ -228,7 +226,7 @@ Tags: Done
 - Answer:
   - All upfront reserved - 3 years
 
-### Scenario 2
+#### Compute Services Scenario 2
 
 - PHP app to be deployed to virtual server
 - Minimal experience managing EC2 Instances
@@ -236,7 +234,7 @@ Tags: Done
 - Answer:
   - AWS Elastic Beanstalk
 
-### Scenario 3
+#### Compute Services Scenario 3
 
 - Data processing workloads
 - Workloads happen daily and can start or stop without issue
@@ -246,11 +244,11 @@ Tags: Done
 
 ---
 
-# Content and Network Delivery Services
+## Content and Network Delivery Services
 
-## Amazon VPC and Direct Connect
+### Amazon VPC and Direct Connect
 
-### VPC
+#### VPC
 
 - **VPC = Virtual Private Cloud**
   - Isolated section of AWS Cloud where resources can be launched into a user-defined virtual network
@@ -336,9 +334,9 @@ Tags: Done
   - Static IP required.
   - Instant Failover required.
 
-## Scenarios
+## AWS Global Accelerator Scenarios
 
-### Scenario 1
+### AWS Global Accelerator Scenario 1
 
 - 2 Corporate Data centres
 - Want their data centres to work alongside AWS for specific workloads
@@ -346,7 +344,7 @@ Tags: Done
 - What Service?
 - Answer:  AWS Direct Connect
 
-### Scenario 2
+### AWS Global Accelerator Scenario 2
 
 - Company serves content through their site to users around the globe
 - Looking to optimize performance to users around the world.
@@ -354,7 +352,7 @@ Tags: Done
 - What service?
 - Answer: Amazon CloudFront
 
-### Scenario 3
+### AWS Global Accelerator Scenario 3
 
 - Internal application on EC2 Server
 - Downtime currently as demand > capacity
@@ -364,9 +362,9 @@ Tags: Done
 
 ---
 
-# File Storage Services
+## File Storage Services
 
-## Amazon S3 Overview
+### Amazon S3 Overview
 
 - Files stored as objects in "buckets"
 - Provides different storage classes per use case
@@ -375,31 +373,31 @@ Tags: Done
 - Offers configurable rules for data lifecycle
 - Can serve as a static website host
 
-### Non-Archival Storage Class
+#### Non-Archival Storage Class
 
 - S3 Standard - default, for frequently accessed data
 - S3 Intelligent Tiering - Moves data to the correct storage class based on usage
 - S3 Standard-IA - For infrequently accessed data with standard resilience
 - S3 One-Zone-IA - For infrequently accessed data only stored in 1 availability zone.
 
-### S3 Intelligent Tiering
+#### S3 Intelligent Tiering
 
 - Automatically moves files based on access
 - Moves between frequent and infrequent access (like hot/cold blobs in Azure)
 
-### S3 Lifecycle Policies
+#### S3 Lifecycle Policies
 
 - Objects in a bucket can transition or expire based on criteria
 - Transitions enable objects to move to another storage class based on time
 - Expiration can delete objects based on age
 - Policies can also factor in versions of a specific object in the bucket.
 
-### S3 Transfer Acceleration
+#### S3 Transfer Acceleration
 
 - Enabled per bucket
 - Allows for optimized uploading of data using Edge locations
 
-## Hosting a Website on Amazon S3
+### Hosting a Website on Amazon S3
 
 - AWS Console → S3
 - Create Bucket
@@ -421,7 +419,7 @@ Tags: Done
   - Redirect rules are optional.
 - Once enabled, URL endpoint provided - permissions must be set to allow access
 
-## Glacier and Glacier Deep Architecture
+### Glacier and Glacier Deep Architecture
 
 - S3 Glacier
   - Designed for archiving of data in S3 as a separate storage class
@@ -442,7 +440,7 @@ Tags: Done
       - Over 23x less expensive than S3 Standard storage class.
   - Typically, the management console is used to quickly set up S3 glacier, the data can then be uploaded and retrieved programatically
 
-## Elastic Block Store (EBS)
+### Elastic Block Store (EBS)
 
 - EBS = Persistent block storage for use in EC2 storage
   - Can scale to support petabytes of data per workload
@@ -455,7 +453,7 @@ Tags: Done
     - Cold HDD - Less frequently accessed data
     - Throughput optimized HDD - Frequently accessed data
 
-## Elastic File System
+### Elastic File System
 
 - Elastic File System
 - Fully managed NFS File System
@@ -470,7 +468,7 @@ Tags: Done
   - Fully managed windows file system
   - Includes native windows features like Windows NTFS, Active Directory Integration, and SMB Support
 
-## Data Transfer with AWS Snowball
+### Data Transfer with AWS Snowball
 
 - Service to phyically migrate petabyte scale data to AWS
 - AWS snowmobille - "" for exobyte scale data
@@ -489,9 +487,9 @@ Tags: Done
   - Data loaded onto snowmobile
   - AWS loads data into S3 when container received by AWS.
 
-## Scenarios
+### File Storage Scenarios
 
-### Scenario 1
+#### File Storage Scenario 1
 
 - Site offering daily developer tutorials
 - S3 stores assets needed per tutorials
@@ -500,14 +498,14 @@ Tags: Done
 - What's the most cost-effective solution whilst maintaining durability?
   - S3 Lifecycle rules with S3 Standard IA storage class
 
-### Scenario 2
+#### File Storage Scenario 2
 
 - Social media company
 - 2Pb of user-generated content to be migrated
 - Is there a faster method than uploading over the internet?
   - AWS Snowball
 
-### Scenario 3
+#### File Storage Scenario 3
 
 - Messaging app
 - Looking for shared file system between 8 different Linux EC2 Instances
@@ -517,11 +515,11 @@ Tags: Done
 
 ---
 
-# Database Services and Utilities
+## Database Services and Utilities
 
 - As with other services on AWS, you can utilise IaaS, PaaS or SaaS for database services and utilities. IaaS can be leveraged by EC2 Instances, however, PaaS and SaaS options are also available.
 
-## Amazon Relational Database System (RDS)
+### Amazon Relational Database System (RDS)
 
 - PaaS for databases
 - Fully managed service for relational database
@@ -540,14 +538,14 @@ Tags: Done
     - A MySQL and PostgreSQL-compatible relational database built for the cloud.
     - Aims to optimize performance, simplicity and costs.
 
-### Amazon Database Migration Service (DMS)
+#### Amazon Database Migration Service (DMS)
 
 - Allows moving of data into AWS from existing databases.
 - Supports both one-time and continuous migration.
 - Supports many popular database types.
 - Only pay for compute leveraged by process.
 
-## Amazon DynamoDB Overview
+### Amazon DynamoDB Overview
 
 - Fully managed NoSQL database service - SaaS
 - Provides key-value and document database functionality
@@ -560,9 +558,9 @@ Tags: Done
   - Implementations where low latency is key
   - Data models without blob storage
 
-## Amazon Elasticache and Redshift
+### Amazon Elasticache and Redshift
 
-### Elasticache
+#### Elasticache
 
 - Fully-managed in-memory data stores
 - Supports Memcached and Redis
@@ -572,7 +570,7 @@ Tags: Done
   - Database layer caching
   - Session storage
 
-### Redshift
+#### Redshift
 
 - Scalable data warehouse service
 - Supports petabyte scale warehousing of data
@@ -581,9 +579,9 @@ Tags: Done
 - Isolation via a VPC
 - Querying of exabytes-worth of data can be done by AWS Redshift Spectrum
 
-## Scenarios
+### Database Services Scenarios
 
-### Scenario 1
+#### Database Services Scenario 1
 
 - Financial services
 - Data warehouse getting transitioned up to AWS for analysis
@@ -591,13 +589,13 @@ Tags: Done
 - What approach?
   - Utilise AWS Redshift
 
-### Scenario 2
+#### Database Services Scenario 2
 
 - MySQL DB to be launched for new web application
 - Need direct access to the virtual server running it
 - Answer: Use an EC2 instance
 
-### Scenario 3
+#### Database Services Scenario 3
 
 - Store realtime analytics
 - Low latency and high scaling
@@ -606,11 +604,11 @@ Tags: Done
 
 ---
 
-# App Integration Services
+## App Integration Services
 
-## AWS Messaging Services
+### AWS Messaging Services
 
-### Simple Notification Service (SNS)
+#### Simple Notification Service (SNS)
 
 - Fully managed pub/sub messaging service
 - Enables creation of decoupled applications
@@ -621,7 +619,7 @@ Tags: Done
   - User signup is set up on a SNS Topic
   - Lambda function, SQS Queue and email notifications could all be triggered based on the topic event.
 
-### Amazon Simple Queue Service (SQS)
+#### Amazon Simple Queue Service (SQS)
 
 - Fully managed message queue service
 - enables building decoupled and fault-tolerant applications
@@ -631,7 +629,7 @@ Tags: Done
   - Standard
   - First-in-first out (FIFO)
 
-### Sample Architecture
+#### Sample Architecture
 
 - SNS and SQS could be leveraged in many ways together, in a similar manner to below:
 
@@ -640,7 +638,7 @@ Tags: Done
 - If the Analytics service fails - no problem! the data will remain in the queue and then get processed once the services are back up and running.
 - SQS Leads to fault tolerance.
 
-## AWS Step Functions
+### AWS Step Functions
 
 - Enables orchestration of workflows through a fully managed service
 - Supports serverless architectures
@@ -652,9 +650,9 @@ Tags: Done
 
 - Step functions can integrate with many AWS services including compute, database, and messaging services.
 
-## Scenarios
+### App Integration Services Scenarios
 
-### Scenario 1
+#### App Integration Services Scenario 1
 
 - Non-profit org
 - Database server going down prevented signup
@@ -662,13 +660,13 @@ Tags: Done
 - AWS Service needed to prevent lost signups
 - Recommended service: Simple Queue Services (SQS)
 
-### Scenario 2
+#### App Integration Services Scenario 2
 
 - Onboarding steps for new customers
 - Steps include integrations with CRM, emails, analytics
 - Recommended service: Step Functions
 
-### Scenario 3
+#### App Integration Services Scenario 3
 
 - Ecommerce building a custom platform
 - New functionality getting added
@@ -678,9 +676,9 @@ Tags: Done
 
 ---
 
-# Management and Governance Services
+## Management and Governance Services
 
-## AWS CloudTrail
+### AWS CloudTrail
 
 - Allows logging and continuous monitoring of account activity for actions across AWS Infrastructure.
 - Provides event history of AWS account activity.
@@ -695,9 +693,9 @@ Tags: Done
   - Operational analysis.
   - Troubleshooting
 
-## AWS CloudWatch and AWS Config
+### AWS CloudWatch and AWS Config
 
-### Cloudwatch
+#### Cloudwatch
 
 - Provides metrics, logs and alarms for infrastructure.
 - Monitoring and management service.
@@ -706,7 +704,7 @@ Tags: Done
 - Provides visualization capabilities for metrics.
 - Allows for custom dashboards for metrics.
 
-### AWS Config
+#### AWS Config
 
 - Continually evaluates infrastructure against a set of rules.
 - Provides configuration history for infrastructure
@@ -715,7 +713,7 @@ Tags: Done
 - Can work with AWS Organizations for both cross-region and cross-account setups
 - Provides remediation steps for any checks not passed.
 
-## AWS Systems Manager
+### AWS Systems Manager
 
 - Provides a unified user interface to view operational data from multiple AWS services.
 - Provides multiple tools to make it easier to manage AWS Infrastructure
@@ -723,7 +721,7 @@ Tags: Done
 - Provides a secure way of accessing servers with only AWS credentials.
 - Stores commonly used parameters securely for operational use.
 
-## AWS CloudFormation
+### AWS CloudFormation
 
 - Managed service for provisioning infrastructure based on templates e.g. provision 3 EC2 instances for dev environment, 1 for prod.
 - Only pay for the resources provisioned.
@@ -741,7 +739,7 @@ Resources:
       BucketName: <bucket name>
 ```
 
-## AWS OpsWorks
+### AWS OpsWorks
 
 - Configuration management service
 - Provides managed instances of Chef and Puppet
@@ -753,24 +751,24 @@ Resources:
   - AWS OpsWork for Puppet Enterprise
   - AWS OpsWork Stacks - Can define application in "layers" to then be managed by Chef/Puppet as appropriate.
 
-## AWS Organizations and Control Tower
+### AWS Organizations and Control Tower
 
-### AWS Organizations
+#### AWS Organizations
 
 - Allows organisations the ability to manage multiple accounts from a master account
 - Provides organizations with the ability to leverage consolidated billing for all accounts.
 - Allows centralized logging and security standard enforcement.
 
-### AWS Control Tower
+#### AWS Control Tower
 
 - Centralises users across all AWS accounts
 - Provides a way to create new AWS accounts based on templates.
 - Integrates guardrails for accounts.
 - Includes a dashboard to gain operational insight from a single view.
 
-## Scenarios
+### Management and Governance Scenarios
 
-### Scenario 1
+#### Management and Governance Scenario 1
 
 - Financial services.
 - Discovered a security setting was disabled on a server
@@ -778,14 +776,14 @@ Resources:
 - What service?
   - AWS Config
 
-### Scenario 2
+#### Management and Governance Scenario 2
 
 - SaaS company
 - New application including several components.
 - Wanting to minimise manual work required when creating infrastructure.
 - What service? CloudFormation
 
-### Scenario 3
+#### Management and Governance Scenario 3
 
 - Cloud Server needed to support manufacturing process was deleted
 - Want to follow up with the person

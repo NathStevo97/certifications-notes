@@ -2,7 +2,7 @@
 
 Tags: Done
 
-# Course Overview
+## Course Overview
 
 - AWS Certs add value for technical and non-technical resources.
 - Covers:
@@ -11,9 +11,9 @@ Tags: Done
   - Economics of Cloud Computing
   - Tools and Services
 
-# Understanding Cloud Computing
+## Understanding Cloud Computing
 
-## Setting up an AWS Account
+### Setting up an AWS Account
 
 - [aws.amazon.com](http://aws.amazon.com) → Create AWS Account
   - Add root email address and account name
@@ -25,13 +25,13 @@ Tags: Done
 - Select support option (free will suffice)
 - Go to AWS Management Console → Root User → Login
 
-### Set Up Billing Alerts
+#### Set Up Billing Alerts
 
 - Account dropdown → Billing management
 - Budgets → Create budget → Create from template (if desired)
   - Fill out fields as appropriate.
 
-## Traditional Data Centres
+### Traditional Data Centres
 
 - Consider a company not on the cloud:
   - They focus their application release in the US first, in US-based datacentres
@@ -49,7 +49,7 @@ Tags: Done
   - Lower maintenance costs
   - Security and compliance burden is alleviated from the organization.
 
-## Benefits of Cloud Computing
+### Benefits of Cloud Computing
 
 - Trade capital expense for variable expense
   - No need for initial investment to build out a datacentre
@@ -64,27 +64,14 @@ Tags: Done
 - No more cost for maintaining data centres - more focus on the employees and other resources
 - Data can be easily switched to different regions.
 
-<aside>
-💡 **Elasticity:**
+- **Elasticity:** The ability to acquire resources as needed and release when no longer required.
+- **Reliability:** A solution's ability to provide functionality for its users when needed.
 
-The ability to acquire resources as needed and release when no longer required.
+### Types of Cloud Computing
 
-**Reliability:**
+Cloud Computing: The on-demand delivery of compute power, database storage, applications, and other IT resources through a cloud services platform via the internet with pay-as-you-go pricing.
 
-A solution's ability to provide functionality for its users when needed.
-
-</aside>
-
-## Types of Cloud Computing
-
-<aside>
-💡 Cloud Computing:
-
-The on-demand delivery of compute power, database storage, applications, and other IT resources through a cloud services platform via the internet with pay-as-you-go pricing.
-
-</aside>
-
-### Cloud Computing Models
+#### Cloud Computing Models
 
 - Models vary based on the control users want to have over the resources
 - Infrastructure as a Service (IaaS)
@@ -97,15 +84,15 @@ The on-demand delivery of compute power, database storage, applications, and oth
   - Any software users have access to and can use
   - Users do not need to consider or maintain the infrastructure.
 
-### Cloud Deployment Models
+#### Cloud Deployment Models
 
 - Public Cloud: Deployment to a provider like AWS
 - On-Premises Private Cloud: Deployment to a cloud-like platform in a private datacenter (VMware is a common example)
 - Hybrid: A combination of both e.g. cloud applications connected to a private data center.
 
-## Cloud Computing Scenarios
+### Cloud Computing Scenarios
 
-## Scenario 1
+### Scenario 1
 
 - Several production workloads in its datacentre
 - VMware to manage infrastructure in their data centre
@@ -113,7 +100,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
 - What would they be following?
   - Hybrid - Both public and private cloud used.
 
-## Scenario 2
+### Scenario 2
 
 - Company determining whether to fund a new line of business
 - Team looking to monetize a new emerging technology
@@ -122,7 +109,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
   - Increased agility and elasticity
   - Pay-as-you-go
 
-## Scenario 3
+### Scenario 3
 
 - Insurance company
 - Moving to cloud instead of colocating servers
@@ -132,9 +119,9 @@ The on-demand delivery of compute power, database storage, applications, and oth
 
 ---
 
-# AWS Global Infrastructure
+## AWS Global Infrastructure
 
-## AWS Regions and Availability Zones
+### AWS Regions and Availability Zones
 
 - AWS Regions
   - Resource / Service deployment location as geographic regions
@@ -147,14 +134,14 @@ The on-demand delivery of compute power, database storage, applications, and oth
 - Example - US has 6 regions, each with at least 3 availability zones
 - **Availability:** The extent to which an application is fulfilling its intended purpose. Applications that are highly-available are built in a manner where a single failure won't lessen its ability to be fully operational.
 
-### Region and Availability Zone Naming
+#### Region and Availability Zone Naming
 
 - Example: us-east-2a
-- **Format:** <AREA>-<SUB-AREA>-<NUMBER><Availability Zone Letter>
+- **Format:** `<AREA>-<SUB-AREA>-<NUMBER><Availability Zone Letter>`
 
-## Local and Wavelength Zones
+### Local and Wavelength Zones
 
-### **Local Zone**
+#### **Local Zone**
 
 - Aim to place compute, storage, database, and other AWS services closer to end-users
 - An extension of a particular AWS region
@@ -163,14 +150,14 @@ The on-demand delivery of compute power, database storage, applications, and oth
 
 ![Local Zone Example](./img/Local_Zone_Example.png)
 
-### Wavelength Zones
+#### Wavelength Zones
 
 - AWS infrastructure deployments that embed AWS compute and storage services within communication service providers 5G networks.
 - Allows application traffic from 5G devices to reach application servers without leaving the telecommunication networks.
 
-## AWS Edge Locations
+### AWS Edge Locations
 
-### **Points of Prescence:**
+#### **Points of Prescence:**
 
 - Elements of AWS global infrastructure that exist outside of AWS regions.
 - Located in or around populated areas - specific AWS services use them to deliver content to end users as quickly as possible.
@@ -178,27 +165,27 @@ The on-demand delivery of compute power, database storage, applications, and oth
   - Edge locations
   - Regional edge caches
 
-### Edge Locations
+#### Edge Locations
 
 - Used as nodes of a global content delivery network
 - Primarily used by Amazon CloudFront and AWS Route 53
 - Allows AWS to serve content from locations closest to users.
 
-## Visualizing AWS Global Infrastructure
+### Visualizing AWS Global Infrastructure
 
 - **[Global infrastructure](https://aws.amazon.com/about-aws/global-infrastructure)**
 - Edge locations listed per region amongst other information
 
-## Scenarios
+### Global Infrastructure Scenarios
 
-### Scenario 1
+#### Global Infrastructure Scenario 1
 
 - Looking to transfer to AWS with a few workloads
 - Requirement to store backup data in multiple geographic areas
 - What element of AWS Global Infrastructure will help best?
   - AWS Regions - Regions are geographical areas e.g. could store data in one and run the applications in another.
 
-### Scenario 2
+#### Global Infrastructure Scenario 2
 
 - Content served across the world
 - Wanting to optimize performance to users worldwide
@@ -206,7 +193,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
 - What element is best suited to help this from AWS infrastructure?
   - Edge Locations
 
-### Scenario 3
+#### Global Infrastructure Scenario 3
 
 - Legacy applications transitioning to AWS
 - 99.5% uptime required
@@ -214,9 +201,9 @@ The on-demand delivery of compute power, database storage, applications, and oth
 - What element of the global infrastructure will help?
   - Availability zones
 
-# Understanding Cloud Economics
+## Understanding Cloud Economics
 
-## Economics of the Cloud
+### Economics of the Cloud
 
 - **Capitalized Expenditure (CapEx):**
   - Upfront costs or investments to attain a fixed asset
@@ -225,7 +212,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
   - Day-to-day business activities
   - Example being maintenance costs
 
-### Handling Demand in Data Centre
+#### Handling Demand in Data Centre
 
 - As application usage grows, data centres need to grow with it in capacity
 - When first launched, there would be a lot of unused capacity
@@ -242,7 +229,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
 - Companies in the cloud can ensure the capacity is always "just enough" to ensure the demand is met
 - As the cloud resources are being leveraged, there is no CapEx costs, instead, the OpEx costs vary depending on the application usage adn the demand.
 
-### Financial Implications
+#### Financial Implications
 
 | Own Data Centre                                                  | Cloud Infrastructure                                                    |
 | ---------------------------------------------------------------- | ----------------------------------------------------------------------- |
@@ -251,7 +238,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
 | Increasing capacity takes time and additional investment (CapEx) | Capacity scales to meet user demand and can be immediately provisioned  |
 | Monthly costs will map to predicted infrastructure needs         | Costs mirror usage levels - use more, pay more, use less, pay less etc. |
 
-## Organizing and Optimizing AWS Costs
+### Organizing and Optimizing AWS Costs
 
 - **AWS Cost Explorer**
   - User Interface for AWS Cost Analysis
@@ -282,7 +269,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
   - Offers consolidated billing for all accounts.
   - Facilitates centralized logging and security standard implementation.
 
-## Building a Business Case for the Cloud
+### Building a Business Case for the Cloud
 
 - Steps to build a business case:
   - Analyze the current workloads
@@ -292,7 +279,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
   - **AWS Migration Hub** - Gathers information from multiple services and tools in AWS to forecast required infrastructure.
   - **Migration Evaluator** - Similar to the migration hub but provides a more in-depth analysis.
 
-## AWS Pricing Calculator
+### AWS Pricing Calculator
 
 - Used to estimate future workloads
 - Accessible at calculator.aws
@@ -309,7 +296,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
 - The estimate can then be exported or shared.
 - Additionally estimates can be grouped within the estimate e.g. group based on "application" or "function".
 
-## Reviewing Costs - Costs Explorer
+### Reviewing Costs - Costs Explorer
 
 - AWS Accounts → Profile Dropdown → Billing Dashboard → Cost Explorer → Launch Cost Explorer
 - Provides initial overviews such as:
@@ -322,9 +309,9 @@ The on-demand delivery of compute power, database storage, applications, and oth
     - Monthly costs per account
     - Daily costs
 
-## Applying Cloud Economics
+### Applying Cloud Economics
 
-### Scenario 1
+#### Cloud Economics Scenario 1
 
 - Multiple departments within AWS
 - FInance requesting clean separation of AWS costs within departments
@@ -332,7 +319,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
 - What approach would meet this need for future costs with minimal effort?
   - Resource tags
 
-### Scenario 2
+#### Cloud Economics Scenario 2
 
 - Company considering transition to the cloud
 - 2 physical data centres
@@ -340,7 +327,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
 - Which approach to make a business case?
   - Use the migration hub or migration evaluator
 
-### Scenario 3
+#### Cloud Economics Scenario 3
 
 - Web developer
 - Looking to move site to cloud.
@@ -348,9 +335,9 @@ The on-demand delivery of compute power, database storage, applications, and oth
 - What approach?
   - Use the pricing calculator.
 
-# Supporting AWS Infrastructure
+## Supporting AWS Infrastructure
 
-## Support Resources
+### Support Resources
 
 - AWS support → Allows support tickets to be submitted
   - Includes Personal Health Dashboard. and Trusted Advisor
@@ -371,7 +358,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
     - Fault Tolerance
     - Service Limits
 
-## AWS Support Plan Tiers
+### AWS Support Plan Tiers
 
 - Support plan tiers are based on:
   - Communication method
@@ -410,7 +397,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
 
 ![Support Plan Comparison](img/Support_Plans.png)
 
-## AWS Support Tools
+### AWS Support Tools
 
 - AWS Console → Health View and Trusted Advisor are automatically included as widgets
   - Also accessible from search bar
@@ -425,23 +412,23 @@ The on-demand delivery of compute power, database storage, applications, and oth
   - Issue and events logs
   - Service history.
 
-## When You Need Help
+### When You Need Help
 
 - Resources available for help:
   - AWS Quickstart - Provides steps for standard platform deployments
   - AWS Partner Network Consulting Partners - 3rd Party Consultants that are Partners with AWS
   - AWS Professional Services
 
-## Infrastructure Support Scenarios
+### Infrastructure Support Scenarios
 
-### Scenario 1
+#### Infrastructure Support Scenario 1
 
 - Moving multiple workloads into AWS
 - One workload is mission-critical
 - 24/7 support needed
 - What support level? - Business Support
 
-### Scenario 2
+#### Infrastructure Support Scenario 2
 
 - Evaluating AWS for future or workloads
 - Workloads supports multiple offices globally
@@ -449,7 +436,7 @@ The on-demand delivery of compute power, database storage, applications, and oth
 - Response within 15 mins needed.
 - What support plan? Enterprise
 
-### Scenario 3
+#### Infrastructure Support Scenario 3
 
 - Account for a personal project
 - No Technical Guidance needed

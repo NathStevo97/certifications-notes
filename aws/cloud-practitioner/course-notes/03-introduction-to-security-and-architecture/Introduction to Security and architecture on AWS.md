@@ -1,10 +1,8 @@
 # Introduction to Security and architecture on AWS
 
-Tags: Done
+## AWS Architecture Core Concepts
 
-# AWS Architecture Core Concepts
-
-## Security and Architecture overview
+### Security and Architecture overview
 
 - All AWS users must remain in line with AWS's Acceptable Use Policy - determines acceptable / unacceptable usage.
 - Unacceptable usage includes:
@@ -12,12 +10,12 @@ Tags: Done
   - Hosting or distributing harmful content
 - Details penetration testing for specific services.
 
-### Least Privilege Access
+#### Least Privilege Access
 
 - When granting access to a service, grant only the minimum privileges required to complete the task
 - Also suggests not to use root accounts for daily account activities.
 
-## Shared Responsibility Model
+### Shared Responsibility Model
 
 - When working in the cloud, security and compliance is a shared responsibility between AWS and the customer.
 - **AWS Responsibility - Security of the cloud**
@@ -33,7 +31,7 @@ Tags: Done
   - Code deployed onto cloud infrastructure.
   - Patching guest OS and custom applications
 
-## AWS Well-Architected Framework
+### AWS Well-Architected Framework
 
 - A collection of best practices across 5 key areas to create systems that add business value on AWS
 - Key Pillars:
@@ -44,7 +42,7 @@ Tags: Done
   - Cost optimizations - Minimize costs for desired value
 - Available at [https://aws.amazon.com/architecture/well-architected](https://aws.amazon.com/architecture/well-architected)
 
-## High-Availability and Fault Tolerance
+### High-Availability and Fault Tolerance
 
 - Under the reliability pillar of the well-architected framework.
 - 2 main categories of reliability:
@@ -58,7 +56,7 @@ Tags: Done
     - Simple Queue Service (SQS)
     - Route 53
 
-## Compliance
+### Compliance
 
 - Standards to note include:
   - PCI-DSS: For processing credit cards
@@ -75,31 +73,31 @@ Tags: Done
 - AWS Artifact → Find desired compliance standard for review.
   - May need to sign NDA with AWS to allow access
 
-## Scenarios
+### Scenarios
 
-### Scenario 1
+#### Scenario 1
 
 - Application processing credit cards
 - Processing done directly not through a service
 - PCI DSS compliance report needed for AWS
 - Where to get this info? AWS Artifact to get the reports.
 
-### Scenario 2
+#### Scenario 2
 
 - Personal information stored in their system
 - What's the responsibility for security
 - What's their responsibility? Review the Shared responsibility model - Shared with AWS - the company is responsible for the security and compliance of anything they do on AWS with services and resources.
 
-### Scenario 3
+#### Scenario 3
 
 - New tool for digital asset management
 - How best to leverage the capabilities? Review the well-architected framework
 
 ---
 
-# AWS Identities and User Management
+## AWS Identities and User Management
 
-## Introduction to AWS IAM
+### Introduction to AWS IAM
 
 - Identity and Access Management (IAM)
 - Controls access to AWS resources
@@ -121,7 +119,7 @@ Tags: Done
   - Set up multi-factor authentication → provides additional security
   - Least privilege access → only grant the minimal permissions required for their current tasks
 
-## Creating and Managing IAM Users
+### Creating and Managing IAM Users
 
 - AWS Console → IAM → Users → Add User
 - Provide relevant details:
@@ -138,13 +136,13 @@ Tags: Done
   - Create group
 - Users → User → Groups Tab → Add user to group
 
-## Enabling Multi-Factor Authentication
+### Enabling Multi-Factor Authentication
 
 - MFA for root user can only be managed for root user
 - Account → IAM → Security → Enable MFA → Virtual MFA (Recommended) and setup accordingly
 - Repeat for any IAM users.
 
-## Amazon Cognito
+### Amazon Cognito
 
 - A managed service that facilitates user directory service for custom applications.
 - Like IAM but for custom applications
@@ -158,22 +156,22 @@ Tags: Done
   - MS Active Directory
   - SAML 2.0
 
-## Scenarios
+### IAM Scenarios
 
-### Scenario 1
+#### IAM Scenario 1
 
 - Team needing access (same level to cloud systems)
 - Wants to do it quicker than managing each individual user
 - What approach? Utilise group permissions
 
-### Scenario 2
+#### IAM Scenario 2
 
 - EC2 Servers need access to data within S3 Buckets
 - Created a user in IAM for servers and uploaded keys to the server.
 - Is this best practice? If not what should be done?
 - Use an IAM Role within EC2 - Mitigates a lot of security risks → Gives the services the permissions required.
 
-### Scenario 3
+#### IAM Scenario 3
 
 - Transitioning to cloud
 - Concerns about securing access to AWS resources with a password
@@ -182,9 +180,9 @@ Tags: Done
 
 ---
 
-# Data Architecture on AWS
+## Data Architecture on AWS
 
-## Integrating On-Premise Data
+### Integrating On-Premise Data
 
 - Solutions available:
   - AWS Storage Gateway - A Hybrid Cloud Storage Service
@@ -203,20 +201,20 @@ Tags: Done
   - Offers greatly improved transfer speed via custom protocols
   - Charged per GB Transferred
 
-## Processing Data
+### Processing Data
 
 - Services:
   - AWS Glue - Managed Extract, Transform and Load Service (ETL)
   - Amazon EMR - Big Data cloud processing using popular tools
   - AWS Data Pipeline - Data workflow orchestration service across AWS services
 
-### AWS Glue
+#### AWS Glue
 
 - Fully managed ETL service on aws
 - Supports data in Amazon RDS, DynamoDB, Redshift and S3
 - Supports serverless model of execution
 
-### Amazon EMR
+#### Amazon EMR
 
 - Enables big data processing on Amazon EC2 and S3
 - Supports popular open source frameworks and tools
@@ -231,47 +229,47 @@ Tags: Done
     - Hudi
   - Presto
 
-### AWS Data Pipeline
+#### AWS Data Pipeline
 
 - Managed ETL service on AWS
 - Manages data workflow through AWS services
 - Supports S3, EMR, Redshift, DynamoDB and RDS
 
-## Analysing Data
+### Analysing Data
 
 - Services:
   - Amazon Athena - Service that enables querying of data stored in Amazon S3
   - Amazon Quicksight - Business intelligence service enabling data dashboards
   - Amazon CloudSearch - Managed search service for custom applications
 
-### Athena
+#### Athena
 
 - Fully managed serverless service
 - Enables querying of large-scale data stored within Amazon S3
 - Queries written using standard SQL
 - Charges based on data scanned per query (amount, time taken, etc)
 
-### Quicksight
+#### Quicksight
 
 - Fully managed business intelligence service
 - Enables dynamic data dashboard based on data stored in AWS
 - Charged on per user and per-session pricing model
 - Multiple versions provided based on needs
 
-### CloudSearch
+#### CloudSearch
 
 - Fully managed search service on AWSSupports scaling of search infrastructure to meet demand
 - Charged per hour and instance type of search infrastructure
 - Enables developers to integrate search into custom applications.
 
-## Integrating AI and Machine Learning
+### Integrating AI and Machine Learning
 
 - Many services available - only focusing on the following:
 - Amazon Rekognition - Computer vision service powered by machine Learning
 - Amazon Translate - Text translation service powered by machine learning
 - Amazon Transcribe - Speech to Text solution using machine learning
 
-### Rekognition
+#### Rekognition
 
 - Fully managed image and video recognition deep learning service
 - Identifies objects in image
@@ -279,37 +277,37 @@ Tags: Done
 - Can detect people using facial analysis
 - Supports custom labels for business objects
 
-### Translate
+#### Translate
 
 - Fully managed service for translation of text
 - 54 (at least) languages supported
 - Can perform language identification
 - Can work in batch and real-time
 
-### Transcribe
+#### Transcribe
 
 - Speech to text translation - fully managed
 - Recorded speech converted into text in custom applications
 - Includes specific sub service for medical use
 - Supports 31 different languages and works in batch and real-time.
 
-## Scenarios
+### Data Architecture Scenarios
 
-### Scenario 1
+#### Data Architecture Scenario 1
 
 - Financial company
 - Large scale data set needs to be processed
 - Not wanting to manage servers, just the processing
 - Recommended Service: **AWS Glue**
 
-### Scenario 2
+#### Data Architecture Scenario 2
 
 - Biotech company
 - Wanting to identify an approach for controlled lab access
 - Wanting to use AI to determine access level via facial recognition
 - Recommended Service: **AWS Rekognition**
 
-### Scenario 3
+#### Data Architecture Scenario 3
 
 - Custom services around machine learning
 - Wanting visualisation of sales data
@@ -318,12 +316,12 @@ Tags: Done
 
 ---
 
-# Disaster Recovery on AWS
+## Disaster Recovery on AWS
 
 - Disaster Recovery = Any critical situation that has a negative impact on a business continuity or finances.
   - Examples include hardware/software failure, network outage, data centre destruction, human error, etc.
 
-## Disaster Recovery Architecture
+### Disaster Recovery Architecture
 
 - Architectures vary in cost, complexity, and time to restore:
   - **Backup and Restore**
@@ -348,7 +346,7 @@ Tags: Done
     - Provides near seamless recovery process
     - Incurs most cost over the other approaches
 
-## Selecting a Disaster Recovery Architecture
+### Selecting a Disaster Recovery Architecture
 
 - Need to consider:
   - Recovery Time Objective (RTO) - How long for the system to get back up and running to ideal business state
@@ -356,23 +354,23 @@ Tags: Done
 - Generally RTO and RPO decrease with increased cost
 - Pilot Light and Warm standby can have variable RTO and RPOs depending on the resources and services leveraged.
 
-## Scenarios
+### Disaster Recovery Scenarios
 
-### Scenario 1
+#### Disaster Recovery Scenario 1
 
 - Several production workloads
 - Disaster recovery approach needed
 - Seamless transition needed
 - Recommended approach: Multi Site
 
-### Scenario 2
+#### Disaster Recovery Scenario 2
 
 - Startup
 - No DR in place
 - Minimizing costs more important than RTO
 - Recommended approach: Backup and Restore
 
-### Scenario 3
+#### Disaster Recovery Scenario 3
 
 - Disaster Recovery Approach
 - Few key servers up and running in the event of an event
@@ -381,9 +379,9 @@ Tags: Done
 
 ---
 
-# Architecting Applications on Amazon EC2
+## Architecting Applications on Amazon EC2
 
-## Scaling EC2 Infrastructure
+### Scaling EC2 Infrastructure
 
 - Scaling methods available:
   - Vertical scaling → make servers bigger and use more resources
@@ -403,14 +401,14 @@ Tags: Done
   - Can auto-rotate credentials with integrated services
   - Enables fine-grained access control to secrets
 
-## Controlling Access to EC2 Instances
+### Controlling Access to EC2 Instances
 
 - Security in Amazon VPC
   - Security groups - enables firewall-like controls for resources within VPCs
   - Network ACLs - controls inbound and outbound traffic with subnets for VPCs
   - AWS VPN - Secure access to an entire VPC using an encrypted tunnel
 
-## Security Groups
+### Security Groups
 
 - Serve as firewall for your EC2 instances
 - Control inbound and outbound traffic
@@ -419,14 +417,14 @@ Tags: Done
 - VPCs have default security groups
 - All outbound traffic allowed by default
 
-## Network ACLs
+### Network ACLs
 
 - Works at a subnet level with a VPC
 - Enables you to allow and deny traffic
 - Each VPC has a default ACL that allows all inbound and outbound traffic
 - Custom ACLs deny all traffic by default
 
-## AWS VPN
+### AWS VPN
 
 - Creates an encrypted tunnel into your VPC
 - Can be used to connect data centre or even individual client machines
@@ -434,7 +432,7 @@ Tags: Done
   - site to site VPN - e.g. AWS and on-prem data centre interaction
   - Client VPN
 
-## Protecting Infrastructure from Attacks
+### Protecting Infrastructure from Attacks
 
 - Recommended services:
   - AWS Shield - Managed DDoS protection service
@@ -443,7 +441,7 @@ Tags: Done
 - **DDoS = Distributed Denial of Service**
   - An attack where a server or group of servers are flooded with more traffic than they can handle in a coordinated effort to bring the system down.
 
-### AWS Shield
+#### AWS Shield
 
 - Provides protection against DDoS attacks for apps on AWS
 - Enables ongoing threat detection and mitigation
@@ -451,14 +449,14 @@ Tags: Done
   - Standard
   - Advanced
 
-### Amazon Macie
+#### Amazon Macie
 
 - Utilizes machine learning to analyze data stored in S3
 - Can detect personal information and intellectual property in S3
 - Provides dashboards that show how the data is being stored and accessed
 - Enables alerts if it detects anything unusual about data access
 
-### Amazon Inspector
+#### Amazon Inspector
 
 - Enables scanning of EC2 instances for security vulnerabilities
 - Charged by instance per assessment run
@@ -466,7 +464,7 @@ Tags: Done
   - Network reachability assessment
   - Host assessment - tests for host configuration vulnerabilities
 
-## Deploying Predefined Solutions
+### Deploying Predefined Solutions
 
 - Multiple solutions available:
   - Service Catalog - Managed catalog of IT services for an organization
@@ -482,7 +480,7 @@ Tags: Done
   - Enables different pricing options to overcome licensing in the cloud
   - Charges noted in bill
 
-## Developer Tools
+### Developer Tools
 
 - **AWS CodeCommit - Basically GitHub**
   - Managed source control service
@@ -507,22 +505,22 @@ Tags: Done
   - Provides custom dashboards and configurations in the AWS console
   - Only charged for the other services leveraged
 
-## Scenarios
+### Application Architecture Scenarios
 
-### Scenario 1
+#### Application Architecture Scenario 1
 
 - Financial service recently transitioned to AWS
 - Want to create compliant IT services that other depts can use
 - Recommended: Service Catalog
 
-### Scenario 2
+#### Application Architecture Scenario 2
 
 - Leverages AWS for multiple production workloads
 - Recently experienced downtime due to a app failing on EC2
 - Wanting to minimise downtime
 - Recommended: Scale out / use an auto scaling group and load balancer
 
-### Scenario 3
+#### Application Architecture Scenario 3
 
 - Company deals with sensitive information
 - Put policies for data stored in S3
@@ -531,7 +529,7 @@ Tags: Done
 
 ---
 
-# Exam Prep
+## Exam Prep
 
 - Multiple choice or multiple answer questions
 - Score 100-1000
@@ -542,13 +540,13 @@ Tags: Done
   - Security and Compliance - 25% (shared responsibility, compliance reports etc)
   - Billing and Pricing - 15% (TCO Calculator, etc and the value provided)
 
-## Registering
+### Registering
 
 - Cloud practitioner cert page → portal
 - Create account if required (if have a partner account, sign in accordingly)
 - Select the exam required
 
-## Recommended Studying Steps
+### Recommended Studying Steps
 
 - **Cloud Concepts:**
   - How do cloud platforms differ from traditional data centres
@@ -577,4 +575,4 @@ Tags: Done
 - Can always come back to questions if required.
 - Guess if don't know - better than nothing
 
-## Important Next Steps
+### Important Next Steps
