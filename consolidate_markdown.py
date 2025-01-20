@@ -21,8 +21,8 @@ def consolidate_markdown(input_dir, output_file):
                 outfile.write("\n")  # Add a newline between files for separation
 
 # Directory containing markdown files and output file
-input_directory = "./kubernetes/CKS/01_Introduction"
-output_markdown = "./kubernetes/CKS/01_Introduction.md"
+input_directory = "./kubernetes/CKS/07_Monitoring-Logging-and-Runtime-Security"
+output_markdown = "./kubernetes/CKS/07_Monitoring-Logging-and-Runtime-Security.md"
 
 consolidate_markdown(input_directory, output_markdown)
 print(f"Markdown files consolidated into {output_markdown}")

@@ -1,6 +1,8 @@
-# 2.1 - The Attack
+# 2.0 - Understanding the Kubernetes Attack Surface
 
-## Demonstration of attacks on a Kubernetes environments
+## 2.1 - The Attack
+
+### Demonstration of attacks on a Kubernetes environments
 
 - Consider a Kubernetes application set running online, with two applications running in a domain each
 - Suppose someone wanted to mess with these applications, the only initial
@@ -40,3 +42,29 @@ and security controls setup
   - Using this, information can be identified for the database container such as the authentication parameters, in this case they're listed as environment variables
   - From here the database container can be accessed and manipulated to the hacker's desire
 - ALL OF THIS can be resolved via implementation of Kubernetes security measures discussed within this course.
+
+## 2.2 - The 4C's of Cloud Native Security
+
+- The 4C's of Cloud Native Security were all exploited in the previous demo:
+  - Cloud:
+    - The infrastructure hosting the kubernetes cluster
+    - Not properly secured, allowed access to the pods on the cluster
+    - Could have been resolved by introducing network firewalls
+  - Cluster
+    - Relates to security via the Docker Daemon, Kubernetes API, etc
+    - Relates to security aspects such as:
+      - Authentication
+      - Authorization
+      - Admission
+      - Network Policy
+  - Container
+    - Relating to security at a container-level, restrictions can be put in place to secure containers from particular repos, user privileges, etc.
+    - Aspects covered include:
+      - Image restriction - Only able to run images from a particular repository
+      - Supply Chain
+      - Sandboxing
+      - Privileged - Certain activities should require escalated privileges
+  - Code
+    - The application code itself
+    - Sensitive data should not be exposed directly in the code
+    - Not covered directly in the course, though some practices such as utilising environment variables, key vaults such as Azure and HashiCorp vault, are touched on.
