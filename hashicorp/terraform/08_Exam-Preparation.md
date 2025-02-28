@@ -1,79 +1,82 @@
-# 8.1 - Important Pointers
+# 8.0 - Exam Preparation
 
-- [8.1 - Important Pointers](#81---important-pointers)
-  - [8.1.1 - Overview](#811---overview)
-  - [8.1.2 - Question Types](#812---question-types)
-  - [8.1.3 - Example Questions](#813---example-questions)
-  - [8.1.4 - Important Pointers](#814---important-pointers)
-    - [Providers](#providers)
-    - [Provider Architecture](#provider-architecture)
-    - [Terraform Init](#terraform-init)
-    - [Terraform Plan](#terraform-plan)
-    - [Terraform Apply](#terraform-apply)
-    - [Terraform Refresh](#terraform-refresh)
-    - [Terraform Destroy](#terraform-destroy)
-    - [Terraform Format](#terraform-format)
-    - [Terraform Validate](#terraform-validate)
-    - [Terraform Provisioners](#terraform-provisioners)
-    - [Debugging Terraform](#debugging-terraform)
-    - [Terraform Import](#terraform-import)
-    - [Local Values](#local-values)
-    - [Data Types](#data-types)
-    - [Terraform Modules](#terraform-modules)
-      - [Terraform Modules - Root and Child](#terraform-modules---root-and-child)
-      - [Modules - Accessing Output Values](#modules---accessing-output-values)
-    - [Suppressing Values in CLI Output](#suppressing-values-in-cli-output)
-    - [Module Versions](#module-versions)
-    - [Terraform Registry](#terraform-registry)
-    - [Private Registry for Module Sources](#private-registry-for-module-sources)
-    - [Functions](#functions)
-    - [Count and Count Index](#count-and-count-index)
-    - [Use Case: Find the Issue](#use-case-find-the-issue)
-    - [Terraform Lock](#terraform-lock)
-    - [Use Case: Resources Deleted Out of Terraform](#use-case-resources-deleted-out-of-terraform)
-    - [Resource Block](#resource-block)
-    - [Sentinel](#sentinel)
-    - [Sensitive Data in State File](#sensitive-data-in-state-file)
-    - [Dealing with Credentials in Config](#dealing-with-credentials-in-config)
-    - [Remote Backend - Terraform Cloud](#remote-backend---terraform-cloud)
-    - [Miscellaneous](#miscellaneous)
-    - [Terraform Graph](#terraform-graph)
-    - [Splat Expressions](#splat-expressions)
-    - [Terraform Technologies](#terraform-technologies)
-    - [Provider Configuration](#provider-configuration)
-    - [Terraform Unlock](#terraform-unlock)
-    - [Miscellaneous Pointers - 01](#miscellaneous-pointers---01)
-    - [Miscellaneous Pointers - 02](#miscellaneous-pointers---02)
-    - [Miscellaneous Pointers - 03](#miscellaneous-pointers---03)
-    - [Terraform Enterprise and Cloud](#terraform-enterprise-and-cloud)
-    - [Variables with Undefined Values](#variables-with-undefined-values)
-    - [Environment Variables](#environment-variables)
-    - [Structural Data Types](#structural-data-types)
-    - [Backend Configuration](#backend-configuration)
-      - [Backend Configuration Types](#backend-configuration-types)
-    - [Terraform Taint](#terraform-taint)
-    - [Local Provisioner](#local-provisioner)
-    - [Remote-Exec Provisioner](#remote-exec-provisioner)
-    - [Provisioner Failure Behaviour](#provisioner-failure-behaviour)
-    - [Provisioner Types](#provisioner-types)
-    - [Input Variables](#input-variables)
-    - [Variable Definition Precedence](#variable-definition-precedence)
-    - [Local Backend](#local-backend)
-    - [Required Providers](#required-providers)
-    - [Required Version](#required-version)
-      - [Version Arguments](#version-arguments)
-    - [Fetching Values from a Map](#fetching-values-from-a-map)
-    - [Terraform and GIT](#terraform-and-git)
-    - [Dependency Types - Implicit](#dependency-types---implicit)
-    - [Dependency Types - Explicit](#dependency-types---explicit)
-    - [State Command](#state-command)
-    - [Data Source Code](#data-source-code)
-    - [Terraform Plan Destroy](#terraform-plan-destroy)
-    - [Terraform Module Sources](#terraform-module-sources)
-    - [Larger Infrastructure](#larger-infrastructure)
-    - [Miscellaneous Pointers](#miscellaneous-pointers)
+## 8.1 - Important Pointers
 
-## 8.1.1 - Overview
+- [8.0 - Exam Preparation](#80---exam-preparation)
+  - [8.1 - Important Pointers](#81---important-pointers)
+    - [8.1.1 - Overview](#811---overview)
+    - [8.1.2 - Question Types](#812---question-types)
+    - [8.1.3 - Example Questions](#813---example-questions)
+    - [8.1.4 - Important Pointers](#814---important-pointers)
+      - [Providers](#providers)
+      - [Provider Architecture](#provider-architecture)
+      - [Terraform Init](#terraform-init)
+      - [Terraform Plan](#terraform-plan)
+      - [Terraform Apply](#terraform-apply)
+      - [Terraform Refresh](#terraform-refresh)
+      - [Terraform Destroy](#terraform-destroy)
+      - [Terraform Format](#terraform-format)
+      - [Terraform Validate](#terraform-validate)
+      - [Terraform Provisioners](#terraform-provisioners)
+      - [Debugging Terraform](#debugging-terraform)
+      - [Terraform Import](#terraform-import)
+      - [Local Values](#local-values)
+      - [Data Types](#data-types)
+      - [Terraform Modules](#terraform-modules)
+        - [Terraform Modules - Root and Child](#terraform-modules---root-and-child)
+        - [Modules - Accessing Output Values](#modules---accessing-output-values)
+      - [Suppressing Values in CLI Output](#suppressing-values-in-cli-output)
+      - [Module Versions](#module-versions)
+      - [Terraform Registry](#terraform-registry)
+      - [Private Registry for Module Sources](#private-registry-for-module-sources)
+      - [Functions](#functions)
+      - [Count and Count Index](#count-and-count-index)
+      - [Use Case: Find the Issue](#use-case-find-the-issue)
+      - [Terraform Lock](#terraform-lock)
+      - [Use Case: Resources Deleted Out of Terraform](#use-case-resources-deleted-out-of-terraform)
+      - [Resource Block](#resource-block)
+      - [Sentinel](#sentinel)
+      - [Sensitive Data in State File](#sensitive-data-in-state-file)
+      - [Dealing with Credentials in Config](#dealing-with-credentials-in-config)
+      - [Remote Backend - Terraform Cloud](#remote-backend---terraform-cloud)
+      - [Miscellaneous](#miscellaneous)
+      - [Terraform Graph](#terraform-graph)
+      - [Splat Expressions](#splat-expressions)
+      - [Terraform Technologies](#terraform-technologies)
+      - [Provider Configuration](#provider-configuration)
+      - [Terraform Unlock](#terraform-unlock)
+      - [Miscellaneous Pointers - 01](#miscellaneous-pointers---01)
+      - [Miscellaneous Pointers - 02](#miscellaneous-pointers---02)
+      - [Miscellaneous Pointers - 03](#miscellaneous-pointers---03)
+      - [Terraform Enterprise and Cloud](#terraform-enterprise-and-cloud)
+      - [Variables with Undefined Values](#variables-with-undefined-values)
+      - [Environment Variables](#environment-variables)
+      - [Structural Data Types](#structural-data-types)
+      - [Backend Configuration](#backend-configuration)
+        - [Backend Configuration Types](#backend-configuration-types)
+      - [Terraform Taint](#terraform-taint)
+      - [Local Provisioner](#local-provisioner)
+      - [Remote-Exec Provisioner](#remote-exec-provisioner)
+      - [Provisioner Failure Behaviour](#provisioner-failure-behaviour)
+      - [Provisioner Types](#provisioner-types)
+      - [Input Variables](#input-variables)
+      - [Variable Definition Precedence](#variable-definition-precedence)
+      - [Local Backend](#local-backend)
+      - [Required Providers](#required-providers)
+      - [Required Version](#required-version)
+        - [Version Arguments](#version-arguments)
+      - [Fetching Values from a Map](#fetching-values-from-a-map)
+      - [Terraform and GIT](#terraform-and-git)
+      - [Dependency Types - Implicit](#dependency-types---implicit)
+      - [Dependency Types - Explicit](#dependency-types---explicit)
+      - [State Command](#state-command)
+      - [Data Source Code](#data-source-code)
+      - [Terraform Plan Destroy](#terraform-plan-destroy)
+      - [Terraform Module Sources](#terraform-module-sources)
+      - [Larger Infrastructure](#larger-infrastructure)
+      - [Miscellaneous Pointers](#miscellaneous-pointers)
+
+### 8.1.1 - Overview
 
 | Exam Property             | Description      |
 |---------------------------|------------------|
@@ -85,13 +88,13 @@
 | Language                  | English          |
 | Expiration Time           | 2 Years          |
 
-## 8.1.2 - Question Types
+### 8.1.2 - Question Types
 
 - True/False: Based on statement provided.
 - Multiple-Choice: Select correct answer(s) from options.
 - Text-Match: Given a text box or code extract, what should be added?
 
-## 8.1.3 - Example Questions
+### 8.1.3 - Example Questions
 
 <details>
 <summary>What is the Name of the file that stores state information?</summary>
@@ -111,56 +114,56 @@ file("path/to/file")
 This would likely be a multiple-choice question, choose all applicable.
 </details>
 
-## 8.1.4 - Important Pointers
+### 8.1.4 - Important Pointers
 
-### Providers
+#### Providers
 
 - Responsivle for understandign API interactions adn exposing resources
 - Most providers correspond to one cloud or on-prem platform, offering resource types corresponding to each of the platform's features.
 - Provider(s) used are specified by the `provider {}` block.
 - One can automatically upgrade to the latest version of the designated provider by using `terraform init -upgrade`
 
-### Provider Architecture
+#### Provider Architecture
 
 - Providers act as the link between cloud providers and Terraform Configurations.
 - They handle the underlying API interactions and authentication between host and provider.
 - Multiple instances of the same provider can be used via the `alias` property.
 
-### Terraform Init
+#### Terraform Init
 
 - Run `terraform init` to initialize the working directory where the Terraform config files are stored.
 - Configuration is searched for module blocks and the required source code is retrieved from the specified sources
 - Any providers specified have to be initialised via Terraform before use.
 - No additional files are created with `terraform init`.
 
-### Terraform Plan
+#### Terraform Plan
 
 - `terraform plan` creates an execution of the infrastructure described in the configuration files.
 - Unless told otherwise, will perform a refresh of the terraform state to determine the exact changes required to meet the desired state.
 - Typically used to check the changes match expectations without applying changes.
 
-### Terraform Apply
+#### Terraform Apply
 
 - `terraform apply` applies the changes specified to reach the desired state of the configuration
 - Changes detailed in `terraform.tfstate` file
 
-### Terraform Refresh
+#### Terraform Refresh
 
 - Used to refresh the state file of the configuration to account for any changes made not via Terraform
 - Only updates the state file, any configuration files are unchanged
 - `terraform refresh`
 
-### Terraform Destroy
+#### Terraform Destroy
 
 - `terraform destroy` will tear down all or specific parts of the infrastructure defined in the configuration.
 - Not the only way of destruction, one could simply remove the configuration of the resource(s)
 
-### Terraform Format
+#### Terraform Format
 
 - `terraform fmt` rewrites terraform configuration files in a canonical format and style.
 - Recommended for use in projects to maintain readability
 
-### Terraform Validate
+#### Terraform Validate
 
 - `terraform validate` validates the configuration files in a directory
 - Checks whether a configuration is syntactically valid or not.
@@ -168,7 +171,7 @@ This would likely be a multiple-choice question, choose all applicable.
 - Generally runs automatically as a test step or post-save check for a reusable module in a CI system prior to execution.
 - Cannot be run until `terraform init` has been executed.
 
-### Terraform Provisioners
+#### Terraform Provisioners
 
 - Used to specify model-specific actions on a local or remote machine to carry out configuration / setup tasks.
 - Should only be used as a last resort, typically one would use Packer in conjunction with Terraform.
@@ -179,7 +182,7 @@ This would likely be a multiple-choice question, choose all applicable.
 provisioner "remote-exec" {
     inline = [
         "sudo amazon-linux-extras install -y nginx1.12", #install nginx
-        "sudo systemctl start nginx" # start nginx
+        "sudo systemctl start nginx" ## start nginx
     ]
     connection {
         #connection method
@@ -194,7 +197,7 @@ provisioner "remote-exec" {
 
 - For local-exec, similar to the above, but without the `connection {}` block.
 
-### Debugging Terraform
+#### Debugging Terraform
 
 - Terraform has logs that can be enabled by setting the `TF_LOG` environment variable to one of the following, depending on desired verbosity:
   - TRACE
@@ -205,20 +208,20 @@ provisioner "remote-exec" {
 - To persist log output, set `TF_LOG_PATH="/path/to/file"`
 - Logs should be saved as a `.log` format.
 
-### Terraform Import
+#### Terraform Import
 
 - `terraform import` allows one to import existing infrastructure and bring it under Terraform's management
 - Current implementation can only import resources into the state, it doesn't generate the configuration, which must be written manually.
 - Prior to command execution, write a resource configuration block for the resource, which the live resource will be mapped to.
 - Usage Example: `terraform import aws_instance.myec2 <instance ID>`
 
-### Local Values
+#### Local Values
 
 - Assigns a name to an expression, allowing easy reuse within a module without having to manually type it each time
 - Locals can refer to other locals, but as standard practice, reference cycles aren't allowed i.e. a local cannot refer to itself or a variable that refers backt to it.
 - It's advised to group together logically-related local values to a single block, particularly if the values are dependent upon one another.
 
-### Data Types
+#### Data Types
 
 - There are 4 maind ata types in Terraform:
   - **String** - Unicode characters representing text
@@ -226,11 +229,11 @@ provisioner "remote-exec" {
   - **Map** - A group of values identified by named labels/keys e.g. age=52
   - **Number** - Numerical values
 
-### Terraform Modules
+#### Terraform Modules
 
 - Resources can be centralised and called out from TF modules when required.
 
-#### Terraform Modules - Root and Child
+##### Terraform Modules - Root and Child
 
 - Each terraform configuration has at least one module, the root module, which consists of the resources in `.tf` files in the main directory.
 - Modules can call other modules, which allos the inclusion of the child module's resources into the configuration in a concise manner.
@@ -242,7 +245,7 @@ module "ec2" {
 }
 ```
 
-#### Modules - Accessing Output Values
+##### Modules - Accessing Output Values
 
 - Resources defined in a module are encapsulated, the calling module cannot access their attributes directly
 - The child module can declare output values to selectively export certain values to be accessed by the calling module in a similar manner to
@@ -253,7 +256,7 @@ output "mys3bucket" {
 }
 ```
 
-### Suppressing Values in CLI Output
+#### Suppressing Values in CLI Output
 
 - An output can be marked as sensitive information using the `sensitive` argument in a similar manner to:
 
@@ -268,7 +271,7 @@ output "db_password" {
 - Setting an output value in the root module as sensitive prevents Terraform from showing its value when outputs are generated during `terraform apply`.
 - Sensitive outputs are still recorded in the state as fully accessible values, anyone who can access the state file can therefore view the sensitive information.
 
-### Module Versions
+#### Module Versions
 
 - It's recommended to constrain the acceptable version numbers for each external module to avoid unexpected changes.
 - Version constraints are supported for modules installed from a module registry e.g. Terraform Registry in a similar manner to the following:
@@ -289,17 +292,17 @@ module "ec2_cluster" {
 }
 ```
 
-### Terraform Registry
+#### Terraform Registry
 
 - A registry directly integrated into Terraform, containing modules submitted by the Terraform community, including third-party providers.
 - General syntax for referencing a registry module: `<NAMESPACE>/<NAME>/<PROVIDER>`
 
-### Private Registry for Module Sources
+#### Private Registry for Module Sources
 
 - To use a module from a private registry, such as those provided by Terraform cloud, use the general syntax `<HOSTNAME><NAMESPACE>/<NAME>/<PROVIDER>`
 - When fetching a private registry module, a version must be specified.
 
-### Functions
+#### Functions
 
 - Terraform includes a number of built-in functions to transform and combine values.
 - No user-defined functions are supported.
@@ -309,7 +312,7 @@ module "ec2_cluster" {
   - Element
   - Lookup
 
-### Count and Count Index
+#### Count and Count Index
 
 - The count parameter on resources can simplify configurations and allow scaling resources by incremental values.
 - In resource blolocks where the `count` value is set, an additional count object `count.index` is available in expressions to be applied to other parameters associated with the resource.
@@ -344,7 +347,7 @@ resource "aws_iam_user" "lb" {
 }
 ```
 
-### Use Case: Find the Issue
+#### Use Case: Find the Issue
 
 - Some exam questions require one to find an issue with a sample piece of configuration to ensure it is aligned to best practice. An example follows:
 
@@ -362,12 +365,12 @@ terraform {
 
 - For the above, tje ossie jere os tjat `access_key` and `secret_key` are not required as `key` is already specified.
 
-### Terraform Lock
+#### Terraform Lock
 
 - If supported by the backend, Terraform will lock the state file for all operations that affect it.
 - There is a force-unlock command to manually unlock the state file in the event of any issues: <br> `terraform force-unlock <lock id>`
 
-### Use Case: Resources Deleted Out of Terraform
+#### Use Case: Resources Deleted Out of Terraform
 
 - Scenario-based questions are also a possibility.
 - "You have created an EC2 instance. Someone has modified it manually, what
@@ -377,12 +380,12 @@ happens when terraform plan is ran?"
   - Terraform will attempt to rever the instance type to that of the desired type
   - Terraform will look to create the resource once again.
 
-### Resource Block
+#### Resource Block
 
 - Resource blocks describe one or more infrastructure objects, such as virtual networks, compute instances, etc.
 - Each resource block declares a resource of a given type e.g. `aws_instance` along with a local identifiacation name e.g `web`.
 
-### Sentinel
+#### Sentinel
 
 - An embedded policy-as-code framework integrated with the Hashicorp Enterprise products.
 - Use cases include:
@@ -390,37 +393,37 @@ happens when terraform plan is ran?"
   - Verification of encryption methods.
 - In general for Terraform Enterprise, the workload follows plan -> sentinel checks -> apply
 
-### Sensitive Data in State File
+#### Sensitive Data in State File
 
 - When managing any  sensitive data in Terraform, it's good practice to treat the state file as a whole, as sensitive data.
 - Terraform Cloud always encrypts the state at rest and protects it with TLS in transit.
 - Terraform Cloud is capable of tracking the identity of the user requesting the state file and logging any changes made to it.
 - If using a backend like S3, encryption at rest is supported when encryption is active.
 
-### Dealing with Credentials in Config
+#### Dealing with Credentials in Config
 
 - Hardcoding credentials is never good practice as it poses significant security risks.
 - Credentials can be stored outside of the terraform configuration.
 - Storing credentials as environment variables is generally considered as best practice as they aren't committed.
 - One could also use secret managers or external tools like Hashicorp Vault.
 
-### Remote Backend - Terraform Cloud
+#### Remote Backend - Terraform Cloud
 
 - Stores Terraform state and may be used to run operations in Terraform Cloud
 - When using for remote operations tasks, tasks like `terraform apply` can be executed in Terraform Cloud's runtime environment; output logs are then viewable on the local machine.
 
-### Miscellaneous
+#### Miscellaneous
 
 - Terraform doesn't require GO as a prerequisite.
 - Terraform works well with Linux, Windows and MAC
 - Windows Server isn't required for usage.
 
-### Terraform Graph
+#### Terraform Graph
 
 - A command used to generate a visual representation of either a configuration or execution format.
 - The output format of Terraform graph is in the DOT format, which can be converted to SVG, PNG, etc for visutalization.
 
-### Splat Expressions
+#### Splat Expressions
 
 - Allows quick access to a list of all attributes
 - Will output all possible values within the configuration where applicable.
@@ -446,7 +449,7 @@ resource "aws_instance" "example" {
 - Example usage to obtain all device name values: `aws_instance.example.ebs_block_device[*].device_name`
 - The nested blocks in this particular resource type don't have any exported attributes, but if `ebs_block device` were to have a documented `id` attribute, then a list of them could be accessed via `aws_instance.example.ebs_block_device[*].id`
 
-### Terraform Technologies
+#### Terraform Technologies
 
 - In any given terraform resource block, there are 4 main term types used:
   - Resource Type: Specifies what resource is being defined in the resource block
@@ -454,19 +457,19 @@ resource "aws_instance" "example" {
   - Attributes e.g. `AMI`, `ACCESS_KEY`, etc.
   - Attribute values.
 
-### Provider Configuration
+#### Provider Configuration
 
 - A block for provider configuration isn't mandatory for all terraform configurations.
 - When no resources are to be created, no provider needs to be specified.
 
-### Terraform Unlock
+#### Terraform Unlock
 
 - If supported by the backend, terraform will lock the state file for all the operations that could write to the state file
 - Not all backends have locking unctionality
 - Terraform has a `force-unlock` command if unlocking failed
 - Example usage: `terraform force-unlock <lock id>`
 
-### Miscellaneous Pointers - 01
+#### Miscellaneous Pointers - 01
 
 - Primary benefits of Infrastructure as Code tools:
   - Automation
@@ -478,19 +481,19 @@ resource "aws_instance" "example" {
   - Azure Resource Formation
   - Google Cloud Deployment Manager
 
-### Miscellaneous Pointers - 02
+#### Miscellaneous Pointers - 02
 
 - Sentinel is a proactive service
 - Terraform doesn't modify the infrastructure, only the state file
 - Slice function is not a function to be used with strings, unlike join and split.
 - It is not necessary to include the module version when pulling code from Terraform registry.
 
-### Miscellaneous Pointers - 03
+#### Miscellaneous Pointers - 03
 
 - Overuse of dynamic blocks can make configurations unreadable
 - Terraform apply can change, destroy and provision resources, but not import configuration directly.
 
-### Terraform Enterprise and Cloud
+#### Terraform Enterprise and Cloud
 
 - Terraform Enterprise allows several additional features not included in cloud, such as:
   - Single-Sign On (SSO)
@@ -499,19 +502,19 @@ resource "aws_instance" "example" {
   - Clustering
 - It should also be noted that Team and Governance features are not available for free on Terraform Cloud.
 
-### Variables with Undefined Values
+#### Variables with Undefined Values
 
 - If a variable is included with an undefined value, an error will not immediately occur.
 - Terraform will ask for the user to supply a value to be associated with the undefined variable.
 
-### Environment Variables
+#### Environment Variables
 
 - Can be used to set variables
 - Environment variables must be fof the format `TF_VAR_<variable name>` e.g.
   - `export TF_VAR_region=us-west-1`
   - `export TF_VAR_alist='[1,2,3]'`
 
-### Structural Data Types
+#### Structural Data Types
 
 - A structural type allows multiple values of several distinct types to be grouped together as a single value.
 - List contains multiple values of the same type while object can contain multiple values of different types:
@@ -521,7 +524,7 @@ resource "aws_instance" "example" {
 | Object          | A collection of named attributes that each have their own type e.g. <br> `object({<Attribute Name> = <Type>, ... })` |
 | Tuple           | `tuple ([<TYPE>, ... ])`                                                                                             |
 
-### Backend Configuration
+#### Backend Configuration
 
 - Backends are configured directly in Terraform files via the `terraform {}` block.
 - Once configured, any remote backends must be initialized.
@@ -540,7 +543,7 @@ terraform {
 }
 ```
 
-#### Backend Configuration Types
+##### Backend Configuration Types
 
 - First-Time Configuration:
   - When Cconfiguring a backend for the first time (moving from no defined backend to an explictly configured one), Terraform will give an option to migrate the currently-existing state to the new backend.
@@ -561,7 +564,7 @@ terraform {
 - The arguments are then supplied via the `terraform init` command i.e. <br>
 `terraform init -backend-config=<parameter 1>=<value 1> -backend-config=<parameter 2>=<value 2> ...`
 
-### Terraform Taint
+#### Terraform Taint
 
 - Manually marks a Terraform-managed resource as tainted, forcing it to be destroyed and recreated on the next execution of `apply`.
 - Once tainted, the next `plan` will show the resource tainted will be destroyed and recreated.
@@ -570,7 +573,7 @@ terraform {
 - Usage: `terraform taint [options] <resource type>.<resource id>`
 - For multiple submodules, apply: `module.foo.module.bar.<resource_type>.<resource_id>`
 
-### Local Provisioner
+#### Local Provisioner
 
 - The local-exec provisioner invokes commands to be ran on your local machine after a resource is created.
 - Defined in a similar manner to:
@@ -585,7 +588,7 @@ resource "aws_instance" "myec2" {
 }
 ```
 
-### Remote-Exec Provisioner
+#### Remote-Exec Provisioner
 
 - Invokes commands on a remote resource after it's created.
 - Supports multiple connection types including SSH and WinRM
@@ -597,7 +600,7 @@ resource "resource type" "local ID" {
     provisioner "remote-exec" {
         inline = [
             "sudo amazon-linux-extras install -y nginx1.12", #install nginx
-            "sudo systemctl start nginx" # start nginx
+            "sudo systemctl start nginx" ## start nginx
         ]
         connection {
             #connection method
@@ -611,14 +614,14 @@ resource "resource type" "local ID" {
 }
 ```
 
-### Provisioner Failure Behaviour
+#### Provisioner Failure Behaviour
 
 - By default, provisioners that fail will cause the `apply` command to fail.
 - This behaviour can be altered by changing the `on_failure` setting to 1 of 2 values:
   - **Continue:** Ignore the error and continue with the resource creation
   - **Fail:** Raise an error and stop the apply (default behaviour).
 
-### Provisioner Types
+#### Provisioner Types
 
 - Two types of provisioners:
   - **Creation-Time**
@@ -627,13 +630,13 @@ resource "resource type" "local ID" {
   - **Destroy-Time**
     - Ran before the resource is destroyed.
 
-### Input Variables
+#### Input Variables
 
 - The value associated with a variable can be assigned via multiple methods
 - Value associated can be defined either by the CLI or TFVars file.
 - To load a custom tfvars file: `terraform apply -var-file="filename.tfvars"`
 
-### Variable Definition Precedence
+#### Variable Definition Precedence
 
 - Terraform loads variables in the following order, with the importance increasing as the list progresses:
   1. Environment Variables
@@ -643,7 +646,7 @@ resource "resource type" "local ID" {
   1. Any `-var` or `-var-file` CLI arguments provided.
 - If a variable is defined multiple times with different values, the last definition will be the applied value.
 
-### Local Backend
+#### Local Backend
 
 - Stores the state on the local file system
 - Locks the state using system APIs
@@ -651,7 +654,7 @@ resource "resource type" "local ID" {
 - The default backend used by Terraform
 - Path should be specified where appropriate
 
-### Required Providers
+#### Required Providers
 
 - Each Terraform module must declare which providers it needs so Terraform can install and use them
 - Provider requirements are declared in a `required_providers` block in a similar manner to:
@@ -667,12 +670,12 @@ terraform {
 }
 ```
 
-### Required Version
+#### Required Version
 
 - The `required_version` setting accepts a version constraint string, specifying the version of Terraform to be used with your configuration.
 - If the running of Terraform doesn't match the specified constraints, Terraform will produce an error and exit without applying any more changes.
 
-#### Version Arguments
+##### Version Arguments
 
 | Version Argument | Description                        |
 |------------------|------------------------------------|
@@ -681,11 +684,11 @@ terraform {
 | ~>x.y            | Any version in the range x.y       |
 | >=X.Y,<=A.B      | Any version in the range X.Y - A.B |
 
-### Fetching Values from a Map
+#### Fetching Values from a Map
 
 - Reference a value from a map variable via `var.<variable name>["<key>"]`
 
-### Terraform and GIT
+#### Terraform and GIT
 
 - In practice, careful consideration should be taken when committing Terraform code.
 - The `.gitignore` should be configured to ignore files which may contain sensitive information such as:
@@ -704,18 +707,18 @@ module "vpc" {
 
 - The value of the `ref` argument can be any reference that would be accepted by the `git checkout` command, including branch and tag names.
 
-### Dependency Types - Implicit
+#### Dependency Types - Implicit
 
 - With implicity dependencies, terraform automatically finds references of the object and creates an implicit ordering requirement between the two resources.
 - A common example is creating an Elastic IP address to be associated with an EC2 instance's Public IP, which can be specified as `aws_eip.my-eip.private_ip`
   - This defines an implicit dependency that will inform Terraform to create the EIP first before creating the EC2 instance.
 
-### Dependency Types - Explicit
+#### Dependency Types - Explicit
 
 - Explicitly specifying a dependency is only required when a resource relies on another's behaviour but doesn't access any of that resource's data.
 - One can add `depends_on = [<resource_type.<resource_id>]` to specify an explicit dependency
 
-### State Command
+#### State Command
 
 - List resources in the state: `terraform state list`
 - Move or rename items within the state: `terraform state mv`
@@ -723,29 +726,29 @@ module "vpc" {
 - Remove items from the state file: `terraform state rm`
 - Show the attributes of a resource in the state file: `terraform state show`
 
-### Data Source Code
+#### Data Source Code
 
 - Data sources allow data to be fetched or computed for use elswhere within the configuration.
 - Reads from a specific data source and exports the results under a particular value.
 - Common example is AWS AMIs as these vary from region to region.
 
-### Terraform Plan Destroy
+#### Terraform Plan Destroy
 
 - The behaviour of `terraform destroy` can be previewed by `terraform plan -destroy`
 
-### Terraform Module Sources
+#### Terraform Module Sources
 
 - The module installer supports installation from a number of different source types, such as local paths, terraform registry, etc.
 - Local path references allow for factoring out portions of configuration within a single source repository.
 - A local path must begin with either a `./` or `../` to indicate it's a local path.
 
-### Larger Infrastructure
+#### Larger Infrastructure
 
 - Cloud providers have certain amounts of rate limiting, meaning only a certain number of resources can be reqiested over a period of time.
 - It's recommended that larger configurations are broken into multiple smaller sets that can be independently applied.
 - Alternatively, can use the `-refresh=false` and target flags, though this is not recommended.
 
-### Miscellaneous Pointers
+#### Miscellaneous Pointers
 
 - Lookup retrieves the value of a single element from a map `lookup(map, key, default)`
 - Various commands refresh the state implicitly, such as `plan`, `apply`, and `destroy`, `init` and `import` do not.
