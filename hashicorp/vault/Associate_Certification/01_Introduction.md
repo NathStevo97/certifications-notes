@@ -1,4 +1,4 @@
-# 1.1 - Introduction to the Course and Certification
+## 1.1 - Introduction to the Course and Certification
 
 - [1.1 - Introduction to the Course and Certification](#11---introduction-to-the-course-and-certification)
   - [Notes](#notes)
@@ -6,9 +6,9 @@
     - [Dynamic Secrets - High-Level View](#dynamic-secrets---high-level-view)
     - [Course Disclaimers](#course-disclaimers)
 
-## Notes
+### Notes
 
-### Introduction
+#### Introduction
 
 - Organisations can have security breaches due to any of, amongst other use cases:
   - Database credentials or access/secret keys being stored in notepad
@@ -22,11 +22,11 @@
 
 ---
 
-### Dynamic Secrets - High-Level View
+#### Dynamic Secrets - High-Level View
 
 - Consider a developer wanting to authenticate to a database for testing in a system where Vault has been implemented.
 
-![Untitled](img/Untitled.png)
+![Untitled](img/01_Introduction/example-data-flow.png)
 
 - Credential request is sent to Vault
 - Vault immediately generates the credentials for the user
@@ -35,7 +35,7 @@
 
 ---
 
-### Course Disclaimers
+#### Course Disclaimers
 
 - Course structure &ne; HashiCorp Exam structure - all relevant content is included.
 - Exam:
@@ -45,3 +45,4 @@
 - Course is aimed to start from scratch with Vault - the notes should work towards exam readiness.
 - Course Notes and Code can be found here:
 <https://github.com/zealvora/hashicorp-certified-vault-associate>
+
