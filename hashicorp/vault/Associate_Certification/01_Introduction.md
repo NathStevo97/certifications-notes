@@ -1,10 +1,13 @@
+# 1.0 - Introduction
+
 ## 1.1 - Introduction to the Course and Certification
 
-- [1.1 - Introduction to the Course and Certification](#11---introduction-to-the-course-and-certification)
-  - [Notes](#notes)
-    - [Introduction](#introduction)
-    - [Dynamic Secrets - High-Level View](#dynamic-secrets---high-level-view)
-    - [Course Disclaimers](#course-disclaimers)
+- [1.0 - Introduction](#10---introduction)
+  - [1.1 - Introduction to the Course and Certification](#11---introduction-to-the-course-and-certification)
+    - [Notes](#notes)
+      - [Introduction](#introduction)
+      - [Dynamic Secrets - High-Level View](#dynamic-secrets---high-level-view)
+      - [Course Disclaimers](#course-disclaimers)
 
 ### Notes
 
@@ -45,4 +48,3 @@
 - Course is aimed to start from scratch with Vault - the notes should work towards exam readiness.
 - Course Notes and Code can be found here:
 <https://github.com/zealvora/hashicorp-certified-vault-associate>
-

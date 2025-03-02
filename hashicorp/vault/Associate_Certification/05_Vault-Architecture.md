@@ -89,11 +89,6 @@ listener "tcp" {
 
 ## 5.02 - Vault UI for Production
 
-- [5.02 - Vault UI for Production](#502---vault-ui-for-production)
-  - [Overview](#overview)
-
-### Overview
-
 - By default, the Vault GUI is disabled for production. It can be enabled via the Vault config file however.
 - All that is needed is adding the following to the config file:
 
@@ -147,7 +142,7 @@ The Vault agent works as follows:
 - Upon successful authentication, the token is written to the sink locations.
 - Whenever the current token's value changes; the agent writes to the sinks.
 
-### Practical Example
+### Vault Agent Example
 
 - Various Auth methods are available, including AppRole, Azure, and AWS.
 - Ensure the AppRole Auth method is enabled either via the CLI or UI
@@ -244,13 +239,6 @@ listener "tcp" {
 
 ## 5.05 - Shamirs Secret for Unsealing Process
 
-- [5.05 - Shamirs Secret for Unsealing Process](#505---shamirs-secret-for-unsealing-process)
-  - [Overview](#overview)
-  - [Notes](#notes)
-  - [Seal Stanza](#seal-stanza)
-
-### Overview
-
 - Storage backend in Vault is considered to be untrusted.
 - Any data stored is within the encrypted state.
 - When vault is initialized, it generates an encryption key to protect all data stored within.
@@ -342,13 +330,6 @@ seal "awskms" {
 
 ## 5.08 - Vault Plugin Mechanism
 
-- [5.08 - Vault Plugin Mechanism](#508---vault-plugin-mechanism)
-  - [Overview](#overview)
-  - [In Practice](#in-practice)
-  - [Production](#production)
-
-### Overview
-
 - Plugins are the building blocks of Vault. All auth and secret backends are considered plugins.
 - This allows Vault to extensible to suit user needs.
 - This doesn't just apply to pre-existing plugins, custom plugins can also be developed.
@@ -379,18 +360,11 @@ seal "awskms" {
 
 ## 5.09 - Audit Devices
 
-- [5.09 - Audit Devices](#509---audit-devices)
-  - [Overview](#overview)
-  - [In Practice](#in-practice)
-  - [Important Pointers](#important-pointers)
-
-### Overview
-
 - Components in Vault that log requests and responses to Vault.
 - As each operation is an API request/response - the audit log includes every authenticated interaction with Vault; including errors.
 - By default, auditing is not enabled. It must be enabled by a root user using `vault audit enable`.
 
-### In Practice
+### Audit Devices Example
 
 - To enable file audit: `vault audit enable file file_path=path/to/file.log`
 - Audit mechanisms in place can be viewed by `vault audit list`
@@ -424,8 +398,6 @@ seal "awskms" {
 
 ## 5.11 - Vault Enterprise Overview
 
-### Overview
-
 - Includes a number of features benefitting organizational workflows.
 - Features include:
   - Disaster Recovery
@@ -450,19 +422,12 @@ seal "awskms" {
   - Tokens
   - Identity entities and groups.
 
-### In Practice
+### Namespaces Example
 
 - When logging into Vault, you can specify the namespace to log into if desired.
 - Namespaces are created under `Access` in the Vault GUI.
 
 ## 5.13 - Vault Replication
-
-- [5.13 - Vault Replication](#513---vault-replication)
-  - [Background Context](#background-context)
-  - [Performance Replication](#performance-replication)
-  - [Disaster Recovery Replication](#disaster-recovery-replication)
-
-### Background Context
 
 - Having a single Vault cluster can impose various challenges, such as:
   - High latency
@@ -482,13 +447,6 @@ seal "awskms" {
 - The secondary cluster does not handle any client requests, and can be promoted to the new primary in the event of disaster.
 
 ## 5.14 - Monitoring Telemetry in Vault
-
-- [5.14 - Monitoring Telemetry in Vault](#514---monitoring-telemetry-in-vault)
-  - [Overview](#overview)
-  - [Metrics Output](#metrics-output)
-  - [Configuration](#configuration)
-
-### Overview
 
 - Telemetry covers any data being output by a particular device.
 - Analysis of this can be useful for areas such as:
@@ -549,7 +507,7 @@ storage "raft" {
 cluster_addr = "http://127.0.0.1:8201"
 ```
 
-### In Practice
+### High Availability Example
 
 - Start three separate instances of Vault with the above config: `vault server -config=/path/to/config.hcl`
 - List the raft peers: `vault operator raft list-peers`
@@ -589,8 +547,6 @@ cluster_addr = "http://127.0.0.1:8201"
   - On another node: `vault kv get secret/creds` - should return the secret.
 - Test the replication and leadership transfer by restarting the leader node and running `vault operator raft list-peers`
 
-### Important Pointers
-
 - To be highly available, one of the Vault server nodes grabs a lock within the data store.
 - The successful server node becomes the "active" node - all others become standby nodes.
 - At this point, if the standby nodes receive a request, they will either forward the request or redirect the client depending on the configuration.
@@ -598,14 +554,8 @@ cluster_addr = "http://127.0.0.1:8201"
 
 ## 5.16 - Raft Storage - Snapshot and Restore
 
-- [5.16 - Raft Storage - Snapshot and Restore](#516---raft-storage---snapshot-and-restore)
-  - [Overview](#overview)
-
-### Overview
-
 Snapshot and restore operations can be carried out via raft for the following commands:
 
 `vault operator raft snapshot save <file>.snap`
 
 `vault operator raft snapshot restore <file>.snap`
-

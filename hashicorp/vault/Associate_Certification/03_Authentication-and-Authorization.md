@@ -55,12 +55,9 @@ vault login -method=<method path> <parameters>
       - [Reading Secret Metadata](#reading-secret-metadata)
       - [Summary](#summary)
   - [3.03 - AppRole Authentication Method](#303---approle-authentication-method)
-    - [Notes](#notes-1)
-      - [Configuring AppRole Authentication Method](#configuring-approle-authentication-method)
+    - [Configuring AppRole Authentication Method](#configuring-approle-authentication-method)
   - [3.04 - HTTP APIs in Vault](#304---http-apis-in-vault)
-    - [Notes](#notes-2)
   - [3.05 - Token Capabilities](#305---token-capabilities)
-    - [Notes](#notes-3)
   - [3.06 - Entities and Aliases](#306---entities-and-aliases)
     - [Authentication for Multiple Users](#authentication-for-multiple-users)
     - [The Identity Secret Engine](#the-identity-secret-engine)
@@ -279,12 +276,6 @@ Examples for the latter two:
 
 ## 3.03 - AppRole Authentication Method
 
-- [3.03 - AppRole Authentication Method](#303---approle-authentication-method)
-  - [Notes](#notes)
-    - [Configuring AppRole Authentication Method](#configuring-approle-authentication-method)
-
-### Notes
-
 - Before a client can interact with Vault, it must authenticate against a particular auth method as outlined previously.
 - Auth methods are generally targeted for one of two types of users:
   - Human users e.g. userpass
@@ -296,7 +287,7 @@ Examples for the latter two:
   - Role ID
   - Secret ID
 
-#### Configuring AppRole Authentication Method
+### Configuring AppRole Authentication Method
 
 1. Create policy for role and apps
 2. Get Role ID
@@ -323,8 +314,6 @@ Examples for the latter two:
 
 ## 3.04 - HTTP APIs in Vault
 
-### Notes
-
 - All of Vault's capabilities are accessible via the HTTP API.
 - Most CLI commands invoke the HTTP API, however, some Vault features can only be accessed via the HTTP API.
 - Tools such as `cURL` can be used to make calls to the HTTP API. This requires the use of a client token, settable via the X-Vault-Token HTTP Header.
@@ -347,8 +336,6 @@ Examples for the latter two:
 - Sample requests are well-documented for multiple secret types at the following [link](https://vaultproject.io/api-docs/)
 
 ## 3.05 - Token Capabilities
-
-### Notes
 
 - Users can check the capabilities of a token for a particular path using the `token capabilities` command
 - Example:
@@ -561,4 +548,3 @@ path "transit/decrypt/<key_name>" {
 - Upon signing out and signing in, the sample user should now see the transit/ secret path
   - The secrets won't be listable however, add a rule with the `list` capability to the path `transit/keys`
 - Still not done..... add another rule with the `read` capability to the path `/transit/keys/<key-name>`
-

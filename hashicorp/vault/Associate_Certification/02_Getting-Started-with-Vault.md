@@ -33,18 +33,9 @@ vault read database/creds/readonly
 
 ## 2.02 - Installation of HashiCorp Vault
 
-- [2.02 - Installation of HashiCorp Vault](#202---installation-of-hashicorp-vault)
-  - [Notes](#notes)
-    - [Windows](#windows)
-    - [Linux](#linux)
-      - [Ubuntu](#ubuntu)
-    - [MacOS](#macos)
-
-### Notes
-
 - Vault is available on all major operating systems and can also be installed on platforms such as Kubernetes clusters.
 
-#### Windows
+### Windows
 
 - Download and extract binary file from [https://www.vaultproject.io/downloads](https://www.vaultproject.io/downloads)
 - Or use package managers such as Chocolatey:
@@ -101,11 +92,6 @@ mv <vault binary> $PATH
 [https://learn.hashicorp.com/tutorials/vault/getting-started-install?in=vault/getting-started](https://learn.hashicorp.com/tutorials/vault/getting-started-install?in=vault/getting-started)
 
 ## 2.03 - Initializing Vault with Dev Server Mode
-
-- [2.03 - Initializing Vault with Dev Server Mode](#203---initializing-vault-with-dev-server-mode)
-  - [Notes](#notes)
-
-### Notes
 
 - Vault has two modes for operation:
   - Dev
@@ -165,21 +151,13 @@ vault status --address=$VAULT_ADDR
 
 ## 2.04 - Creating a Secret
 
-- [2.04 - Creating a Secret](#204---creating-a-secret)
-  - [Notes](#notes)
-    - [Example](#example)
-      - [GUI Secret Generation - KeyValue](#gui-secret-generation---keyvalue)
-      - [CLI Creation](#cli-creation)
-
-### Notes
-
 - One of Vault's key features is to read and write arbitrary secrets securely.
 - It does so utilising Secrets engines - these are components responsible for the storage, generation, or encryption of data.
 - Secrets can be stored based on a specific secret engine - each engine offers particular features.
 
 ---
 
-#### Example
+### Secret Example
 
 - When starting Vault in dev server mode, two secret engines exist as part of the standard setup:
   - Cubbyhole
@@ -187,7 +165,7 @@ vault status --address=$VAULT_ADDR
 
 ![Untitled](img/02_Getting-Started-with-Vault//standard-secrets.png)
 
-##### GUI Secret Generation - KeyValue
+#### GUI Secret Generation - KeyValue
 
 - To create a secret, navigate to the secret engine of choice and select `create secret`
 
@@ -275,9 +253,7 @@ vault kv metadata delete path/to/secret
       - [Enabling a Secrets Engine - CLI](#enabling-a-secrets-engine---cli)
     - [Disabling a Secret Engine](#disabling-a-secret-engine)
 
-### Notes
-
-#### Secret Engine Overview
+### Secret Engine Overview
 
 - Secrets engines are components that **store**, **generate** or **encrypt** data.
 - Secrets can be stored based on specific secret engines, each offer particular features.
@@ -553,8 +529,6 @@ vault lease renew -increment=<time in seconds> path/to/lease
 
 ## 2.11 - TOTP Secrets Engine
 
-### Notes
-
 - TOTP = Time-Based One-Time-Passwords
 - These are passwords that typically expire within 30, 60 seconds, etc.
 - An example of this is Google Authenticator.
@@ -579,12 +553,6 @@ vault lease renew -increment=<time in seconds> path/to/lease
     ![Untitled](./img/02_Getting-Started-with-Vault//totp-secret-read.png)
 
 ## 2.12 - PKI Secrets Engine
-
-- [2.12 - PKI Secrets Engine](#212---pki-secrets-engine)
-  - [Notes](#notes)
-    - [Benefits of PKI In Vault](#benefits-of-pki-in-vault)
-
-### Notes
 
 - Disclaimer - PKI is a huge topic in itself, however for the purposes of the certification, you can only consider it at a high level.
 - Certificate Authority:
@@ -617,9 +585,8 @@ openssl x509 -req -in ca.csr -signkey ca.key -CAcreateserial -out ca.crt -days 1
   - This removes the need for manual generation of certificates as outlined in the steps above - Vault acts as the CA.
 - PKI Secrets Engines can be implemented easily enough via the Vault UI. Once done, selecting "issue certificate" and the common name will allow generation of the certificate.
 
-#### Benefits of PKI In Vault
+### Benefits of PKI In Vault
 
 - Vault can act as an Intermediate CA i.e. a liaising certificate authority between the identity certificate authority and a third-party root CA.
 - It reduces or eliminates certificate revocations
 - Reduces time to get certificate by eliminating the need to generate a private key and a CSR.
-
