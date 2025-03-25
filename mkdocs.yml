@@ -1,3 +1,32 @@
 site_name: My Docs
 theme:
   name: material
+
+plugins:
+  # plugin used to add search capability to site
+  - search
+  - glightbox
+
+  # allow clickable sections that lead to an index page - https://oprypin.github.io/mkdocs-section-index/
+  - section-index
+  - literate-nav
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Certifications:
+    - certifications/certifications.md
+    - Certified Kubernetes Administrator (CKA):
+      - certifications/CKA/01_Course-Introduction.md
+      - certifications/CKA/02_Core-Concepts.md
+      - certifications/CKA/03_Scheduling.md
+      - certifications/CKA/04_Logging-and-Monitoring.md
+      - certifications/CKA/05_Application-Lifecycle-Management.md
+      - certifications/CKA/06_Cluster-Maintenance.md
+      - certifications/CKA/07_Security.md
+      - certifications/CKA/08_Storage.md
+      - certifications/CKA/09_Networking.md
+      - certifications/CKA/10_Design-a-Kubernetes-Cluster.md
+      - certifications/CKA/11_Install-Kubernetes-the-kubeadm-way.md
+      - certifications/CKA/13_Troubleshooting.md
+      - certifications/CKA/14_JSONpath-introduction.md
