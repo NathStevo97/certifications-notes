@@ -1,37 +1,5 @@
 # 2.0 - Core Concepts
 
-- [2.0 - Core Concepts](#20---core-concepts)
-  - [2.1 - Cluster Architecture](#21---cluster-architecture)
-  - [2.2 - ETCD For Beginners](#22---etcd-for-beginners)
-  - [2.3 - ETCD In Kubernetes](#23---etcd-in-kubernetes)
-  - [2.4 - Etcd Common Commands](#24---etcd-common-commands)
-  - [2.5 - Kube API Server](#25---kube-api-server)
-  - [2.6 - Kube-Controller Manager](#26---kube-controller-manager)
-  - [2.7 - Kube-Scheduler](#27---kube-scheduler)
-  - [2.8 - Kubelet](#28---kubelet)
-  - [2.9 - Kube-Proxy](#29---kube-proxy)
-  - [2.10 - Pods Recap](#210---pods-recap)
-    - [Multi-Container Pods](#multi-container-pods)
-    - [Example Kubectl Commands](#example-kubectl-commands)
-  - [2.11 - Pods with YAML Recap](#211---pods-with-yaml-recap)
-  - [2.12 - Replicasets Recap](#212---replicasets-recap)
-    - [Load Balancing and Scaling](#load-balancing-and-scaling)
-    - [Labels and Selectors](#labels-and-selectors)
-    - [Scaling](#scaling)
-    - [Command Summary](#command-summary)
-  - [2.13 - Deployments](#213---deployments)
-  - [2.14 - General Tips](#214---general-tips)
-  - [2.15 - Namespaces](#215---namespaces)
-    - [Domain Name Service - DNS](#domain-name-service---dns)
-    - [Resource Quota](#resource-quota)
-  - [2.16 - Services](#216---services)
-    - [Example](#example)
-    - [NodePort](#nodeport)
-  - [2.17 - ClusterIP Services](#217---clusterip-services)
-  - [2.18 - LoadBalancer Services](#218---loadbalancer-services)
-  - [2.19 - Imperative vs Declarative Commands](#219---imperative-vs-declarative-commands)
-  - [2.20 - Kubectl Apply](#220---kubectl-apply)
-
 ## 2.1 - Cluster Architecture
 
 Kubernetes exists to allow the hosting of containerized applications in an automated fashion, allowing communication between the different services associated, and facilitating the creation of however many instances you like.

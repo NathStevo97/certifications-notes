@@ -1,12 +1,5 @@
 # 01 - Introduction
 
-- [01 - Introduction](#01---introduction)
-  - [Course Introduction](#course-introduction)
-    - [Structure](#structure)
-    - [Prerequisites](#prerequisites)
-    - [Practice Tests](#practice-tests)
-    - [Certification Details](#certification-details)
-
 ## Course Introduction
 
 ### Structure

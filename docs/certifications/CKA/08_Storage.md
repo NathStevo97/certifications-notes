@@ -1,16 +1,5 @@
 # 8.0 - Storage
 
-- [8.0 - Storage](#80---storage)
-  - [8.1 - Storage in Docker](#81---storage-in-docker)
-  - [8.2 - Volume Driver Plugins in Docker](#82---volume-driver-plugins-in-docker)
-  - [8.3 - Container Storage Interface (CSI)](#83---container-storage-interface-csi)
-  - [8.4 - Volumes](#84---volumes)
-    - [Example Pod-Volume Integration](#example-pod-volume-integration)
-  - [8.5 - PersistentVolumes](#85---persistentvolumes)
-    - [Persistent Volumes](#persistent-volumes)
-  - [8.6 - PersistentVolumeClaims](#86---persistentvolumeclaims)
-  - [8.7 - Storage Class](#87---storage-class)
-
 For the following topics, please refer to the linked section of the CKAD course:
 
 - Volumes (CKAD 8.1)

@@ -1,9 +1,5 @@
 # 4.0 - Logging and Monitoring
 
-- [4.0 - Logging and Monitoring](#40---logging-and-monitoring)
-  - [4.1 - Monitor Cluster Components](#41---monitor-cluster-components)
-  - [4.2 - Managing Application Logs](#42---managing-application-logs)
-
 ## 4.1 - Monitor Cluster Components
 
 - Suppose we want to monitor performance metrics relating to resource consumption

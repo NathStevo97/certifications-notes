@@ -1,15 +1,5 @@
 # 5.0 - Remote State Management
 
-- [5.0 - Remote State Management](#50---remote-state-management)
-  - [5.1 - Integrating with Git for Team Management](#51---integrating-with-git-for-team-management)
-  - [5.2 - Security Challenges](#52---security-challenges)
-  - [5.3 - Remote State Management](#53---remote-state-management)
-  - [5.4 - Implementing S3 Backend](#54---implementing-s3-backend)
-  - [5.5 - State File Locking](#55---state-file-locking)
-  - [5.6 - Integrating DynamoDB with S3 for State Locking](#56---integrating-dynamodb-with-s3-for-state-locking)
-  - [5.7 - Terraform State Management](#57---terraform-state-management)
-  - [5.8 - Importing Existing Resources with Terraform Import](#58---importing-existing-resources-with-terraform-import)
-
 ## 5.1 - Integrating with Git for Team Management
 
 - For personal projects and testing, local terraform state will suffice.

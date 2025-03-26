@@ -1,13 +1,5 @@
 # 4.0 - Modules and Workspaces
 
-- [4.0 - Modules and Workspaces](#40---modules-and-workspaces)
-  - [4.1 - DRY Principle](#41---dry-principle)
-  - [4.2 - Module Implementation: EC2 Instance](#42---module-implementation-ec2-instance)
-  - [4.3 - Variables and Terraform Modules](#43---variables-and-terraform-modules)
-  - [4.4 - Terraform Registry](#44---terraform-registry)
-  - [4.5 - Terraform Workspace](#45---terraform-workspace)
-  - [4.6 - Implementing Terraform Workspace](#46---implementing-terraform-workspace)
-
 ## 4.1 - DRY Principle
 
 - Focused on the aspect of software engineering - **Don't Repeat Yourself**

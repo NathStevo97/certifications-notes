@@ -1,11 +1,5 @@
 # 10.0 - Design a Kubernetes Cluster
 
-- [10.0 - Design a Kubernetes Cluster](#100---design-a-kubernetes-cluster)
-  - [Design a Kubernetes Cluster](#design-a-kubernetes-cluster)
-  - [Choosing Kubernetes Infrastructure](#choosing-kubernetes-infrastructure)
-  - [Configure High-Availability](#configure-high-availability)
-  - [ETCD In High-Availability](#etcd-in-high-availability)
-
 ## Design a Kubernetes Cluster
 
 - Considerations must be made when designing a cluster, such as:

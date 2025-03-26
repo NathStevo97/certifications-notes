@@ -1,4 +1,5 @@
 site_name: DevOps Learning and Research
+use_directory_urls: false
 theme:
   name: material
 

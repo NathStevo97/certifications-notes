@@ -1,16 +1,11 @@
 # 11.0 - Install Kubernetes the Kubeadm Way
 
-- [11.0 - Install Kubernetes the Kubeadm Way](#110---install-kubernetes-the-kubeadm-way)
-  - [Resources](#resources)
-  - [Deploy with Kubeadm - Provision VMs with Vagrant](#deploy-with-kubeadm---provision-vms-with-vagrant)
-  - [Demo - Deploy with Kubeadm](#demo---deploy-with-kubeadm)
-
 1. Decide on Configuration - Master vs Worker
-1. Install a container runtime (Docker, etc.)
-1. Install Kubeadm
-1. Initialise the Master Node
-1. Pod Network Setup
-1. Join worker nodes to the master node
+2. Install a container runtime (Docker, etc.)
+3. Install Kubeadm
+4. Initialise the Master Node
+5. Pod Network Setup
+6. Join worker nodes to the master node
 
 ---
 

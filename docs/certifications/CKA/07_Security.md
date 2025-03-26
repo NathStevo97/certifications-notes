@@ -1,25 +1,5 @@
 # 7.0 - Security
 
-- [7.0 - Security](#70---security)
-  - [7.1 - Kubernetes Security Primitives](#71---kubernetes-security-primitives)
-  - [7.2 - Authentication](#72---authentication)
-  - [7.3 - TLS Basics](#73---tls-basics)
-  - [7.4 - TLS In Kubernetes](#74---tls-in-kubernetes)
-    - [Server Components](#server-components)
-  - [7.5 - TLS in Kubernetes: Certificate Creation](#75---tls-in-kubernetes-certificate-creation)
-  - [7.6 - View Certificate Details](#76---view-certificate-details)
-  - [7.7 - Certificates API](#77---certificates-api)
-  - [7.8 - KubeConfig](#78---kubeconfig)
-  - [7.9 - API Groups](#79---api-groups)
-  - [7.10 - Authorization](#710---authorization)
-  - [7.11 - RBAC](#711---rbac)
-  - [7.12 - ClusterRoles and Rolebindings](#712---clusterroles-and-rolebindings)
-  - [7.13 - Image Security](#713---image-security)
-  - [7.14 - SecurityContext](#714---securitycontext)
-  - [7.15 - Network Policy](#715---network-policy)
-    - [Traffic Example](#traffic-example)
-  - [7.16 - Developing Network Policies](#716---developing-network-policies)
-
 ## 7.1 - Kubernetes Security Primitives
 
 - Controlling access to API Server is the top priority

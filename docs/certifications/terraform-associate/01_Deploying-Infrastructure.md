@@ -1,21 +1,5 @@
 # 1.0 - Deploying Infrastructure
 
-- [1.0 - Deploying Infrastructure](#10---deploying-infrastructure)
-  - [1.1 - EC2 Instance Creation](#11---ec2-instance-creation)
-  - [1.2 - Providers and Resources](#12---providers-and-resources)
-    - [Introduction](#introduction)
-    - [Provider Maintainers](#provider-maintainers)
-    - [Required Providers](#required-providers)
-  - [1.3 - Destroying Infrastructure](#13---destroying-infrastructure)
-  - [1.4 - Terraform State Files](#14---terraform-state-files)
-  - [1.5 - Desired and Current States](#15---desired-and-current-states)
-    - [1.5.1 - Desired State](#151---desired-state)
-    - [1.5.2 - Current State](#152---current-state)
-    - [1.5.3 - Updating Current State](#153---updating-current-state)
-  - [1.6 - Challenges of Current State and Computed Values](#16---challenges-of-current-state-and-computed-values)
-  - [1.7 - Provider Versioning](#17---provider-versioning)
-  - [1.8 - Provider Versioning](#18---provider-versioning)
-
 ## 1.1 - EC2 Instance Creation
 
 - Terraform supports a significant number of providers, this becomes an important consideration for organisations when working with terraform.
@@ -56,11 +40,6 @@ a particular ami and instance type:
 - To destroy: `terraform destroy`
 
 ## 1.2 - Providers and Resources
-
-- [1.2 - Providers and Resources](#12---providers-and-resources)
-  - [Introduction](#introduction)
-  - [Provider Maintainers](#provider-maintainers)
-  - [Required Providers](#required-providers)
 
 ### Introduction
 
@@ -145,11 +124,6 @@ provider "digitalocean" {
 - To destroy a specific resource: `terraform destroy -target <resource_type>.<local_name>`
 
 ## 1.5 - Desired and Current States
-
-- [1.5 - Desired and Current States](#15---desired-and-current-states)
-  - [1.5.1 - Desired State](#151---desired-state)
-  - [1.5.2 - Current State](#152---current-state)
-  - [1.5.3 - Updating Current State](#153---updating-current-state)
 
 ### 1.5.1 - Desired State
 

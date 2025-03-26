@@ -1,24 +1,5 @@
 # 9.0 - Networking
 
-- [9.0 - Networking](#90---networking)
-  - [9.1 - Prerequisite: Switching Routing](#91---prerequisite-switching-routing)
-  - [9.2 - Prerequisite: DNS](#92---prerequisite-dns)
-  - [9.3 - Prerequisite: CoreDNS](#93---prerequisite-coredns)
-  - [9.4 - Prerequisite: Network Namespaces](#94---prerequisite-network-namespaces)
-  - [9.5 - Prerequisite: Docker Networking](#95---prerequisite-docker-networking)
-  - [3.6 - Prerequisite: CNI](#36---prerequisite-cni)
-  - [3.7 - Cluster Networking](#37---cluster-networking)
-    - [Note on CNI and the CKA Exam](#note-on-cni-and-the-cka-exam)
-  - [3.8 - Pod Networking](#38---pod-networking)
-    - [Example - Configuring Pod Networking](#example---configuring-pod-networking)
-  - [3.9 - CNI in Kubernetes](#39---cni-in-kubernetes)
-  - [3.10 - CNI Weave](#310---cni-weave)
-  - [9.11 - IP Address Management - Weave](#911---ip-address-management---weave)
-  - [9.12 - Service Networking](#912---service-networking)
-  - [9.13 - DNS in Kubernetes](#913---dns-in-kubernetes)
-  - [9.14 - CoreDNS in Kubernetes](#914---coredns-in-kubernetes)
-  - [9.15 - Ingress](#915---ingress)
-
 ## 9.1 - Prerequisite: Switching Routing
 
 - To connect two hosts to one another, need to connect them to a switch, which

@@ -1,12 +1,5 @@
 # 6.0 - Security
 
-- [6.0 - Security](#60---security)
-  - [6.1 - Handling Access and Secret Keys](#61---handling-access-and-secret-keys)
-  - [6.2 - Provider Use-Case: Multiple Regions](#62---provider-use-case-multiple-regions)
-  - [6.3 - Handling Multiple AWS Profiles with Providers](#63---handling-multiple-aws-profiles-with-providers)
-  - [6.4 - Terraform and Assume-Role with AWS STS](#64---terraform-and-assume-role-with-aws-sts)
-  - [6.5 - The Sensitive Parameter](#65---the-sensitive-parameter)
-
 ## 6.1 - Handling Access and Secret Keys
 
 - Any credentials should NEVER be stored in a `.tf` file or associated project.

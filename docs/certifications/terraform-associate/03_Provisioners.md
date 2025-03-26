@@ -1,11 +1,5 @@
 # 3.0 - Provisioners
 
-- [3.0 - Provisioners](#30---provisioners)
-  - [3.1 - Introduction to Provisioners](#31---introduction-to-provisioners)
-  - [3.2 - Provisioner Types](#32---provisioner-types)
-  - [3.3 - Remote-Exec Implementation](#33---remote-exec-implementation)
-  - [3.4 - Local-Exec Implementation](#34---local-exec-implementation)
-
 ## 3.1 - Introduction to Provisioners
 
 - Provisioners are used to execute scripts or commands locally or on a remote instance during resource creation. A classic example is installing NGINX on a web-server.

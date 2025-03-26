@@ -1,13 +1,5 @@
 # 6.0 - Cluster Maintenance
 
-- [6.0 - Cluster Maintenance](#60---cluster-maintenance)
-  - [6.1 - OS Upgrades](#61---os-upgrades)
-  - [6.2 - Kubernetes Software Versions](#62---kubernetes-software-versions)
-  - [6.3 - Cluster Upgrade Process](#63---cluster-upgrade-process)
-  - [6.4 - Backup and Restore Methods](#64---backup-and-restore-methods)
-    - [Disaster Recovery with ETCD in Kubernetes](#disaster-recovery-with-etcd-in-kubernetes)
-    - [Working with ETCDCTL](#working-with-etcdctl)
-
 ## 6.1 - OS Upgrades
 
 - Suppose you have a cluster with a few nodes and pods serving applications; what

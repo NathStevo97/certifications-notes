@@ -1,42 +1,5 @@
 # 2.0 - Working with Configurations
 
-- [2.0 - Working with Configurations](#20---working-with-configurations)
-  - [2.1 - Attributes and Output Values](#21---attributes-and-output-values)
-  - [2.2 - Referencing Cross-Account Resource Attributes](#22---referencing-cross-account-resource-attributes)
-    - [Introduction](#introduction)
-    - [2.2.1 - EIP Association to EC2 Instance](#221---eip-association-to-ec2-instance)
-    - [2.2.2 - EIP Association with Security Group](#222---eip-association-with-security-group)
-  - [2.3 - Terraform Variables](#23---terraform-variables)
-  - [2.4 - Variable Assignment](#24---variable-assignment)
-  - [2.5 - Data Types](#25---data-types)
-    - [2.5.1 - Example](#251---example)
-    - [2.5.2 - Data Types Overview](#252---data-types-overview)
-  - [2.6 - Fetching Data from Maps and Lists in Variables](#26---fetching-data-from-maps-and-lists-in-variables)
-  - [2.7 - Count and Count Index](#27---count-and-count-index)
-  - [2.8 - Conditional Expressions](#28---conditional-expressions)
-  - [2.9 - Local Values](#29---local-values)
-  - [2.10 - Functions](#210---functions)
-  - [2.11 - Data Sources](#211---data-sources)
-  - [2.12 - Terraform Debugging](#212---terraform-debugging)
-  - [2.13 - Terraform Format](#213---terraform-format)
-  - [2.14 - Validate Config Files](#214---validate-config-files)
-  - [4.15 - Load Order and Semantics](#415---load-order-and-semantics)
-  - [2.16 - Dynamic Blocks](#216---dynamic-blocks)
-  - [2.17 - Tainting Resources](#217---tainting-resources)
-  - [2.18 - Splat Expressions](#218---splat-expressions)
-  - [2.19 - Terraform Graph](#219---terraform-graph)
-  - [2.20 - Saving Terraform Plan to a File](#220---saving-terraform-plan-to-a-file)
-  - [2.21 - Terraform Output](#221---terraform-output)
-  - [2.22 - Terraform Settings](#222---terraform-settings)
-  - [2.23 - Challenges with Large Infrastructure](#223---challenges-with-large-infrastructure)
-  - [2.24 - ZipMap Function](#224---zipmap-function)
-  - [2.25 - Comments in Terraform](#225---comments-in-terraform)
-  - [2.26 - Resource Behavior and Meta Arguments](#226---resource-behavior-and-meta-arguments)
-  - [2.27 - Meta Arguments: Lifecycle](#227---meta-arguments-lifecycle)
-  - [2.28 - Challenges with Count](#228---challenges-with-count)
-  - [2.29 - Set Data Type](#229---set-data-type)
-  - [2.30 - For\_Each](#230---for_each)
-
 ## 2.1 - Attributes and Output Values
 
 - Terraform can output the values of certain attributes of a resource.
@@ -73,11 +36,6 @@ output "public_ip" {
 - Note: Outputs can also be used by other projects to reference specific values e.g. if project B needs to refer to the IP address output by project A - this is done by referring to the terraform state outputs of the source project.
 
 ## 2.2 - Referencing Cross-Account Resource Attributes
-
-- [2.2 - Referencing Cross-Account Resource Attributes](#22---referencing-cross-account-resource-attributes)
-  - [Introduction](#introduction)
-  - [2.2.1 - EIP Association to EC2 Instance](#221---eip-association-to-ec2-instance)
-  - [2.2.2 - EIP Association with Security Group](#222---eip-association-with-security-group)
 
 ### Introduction
 
@@ -168,10 +126,6 @@ variable "<variable id>" {
 - Any variables entered at CLI level will take precedence over defaults and environment variables.
 
 ## 2.5 - Data Types
-
-- [2.5 - Data Types](#25---data-types)
-  - [2.5.1 - Example](#251---example)
-  - [2.5.2 - Data Types Overview](#252---data-types-overview)
 
 ### 2.5.1 - Example
 

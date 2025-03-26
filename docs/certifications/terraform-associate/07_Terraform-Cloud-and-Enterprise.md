@@ -1,13 +1,5 @@
 # 7.0 - Terraform Cloud and Enterprise
 
-- [7.0 - Terraform Cloud and Enterprise](#70---terraform-cloud-and-enterprise)
-  - [7.1 - Terraform Cloud Overview](#71---terraform-cloud-overview)
-  - [7.2 - Creating Infrastructure with Terraform Cloud](#72---creating-infrastructure-with-terraform-cloud)
-  - [7.3 - Sentinel](#73---sentinel)
-  - [7.4 - Remote Backend](#74---remote-backend)
-    - [7.4.1 - Remote Operations](#741---remote-operations)
-  - [7.5 - Implementing Remote Backend](#75---implementing-remote-backend)
-
 ## 7.1 - Terraform Cloud Overview
 
 - Terraform Cloud manages Terraform runs in a consistent and reliable environment. It provides various features such as:
