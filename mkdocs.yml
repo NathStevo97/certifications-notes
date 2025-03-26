@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: DevOps Learning and Research
 theme:
   name: material
 
@@ -17,6 +17,7 @@ nav:
   - Certifications:
     - certifications/certifications.md
     - Certified Kubernetes Administrator (CKA):
+      - certifications/CKA.md
       - certifications/CKA/01_Course-Introduction.md
       - certifications/CKA/02_Core-Concepts.md
       - certifications/CKA/03_Scheduling.md
@@ -30,3 +31,22 @@ nav:
       - certifications/CKA/11_Install-Kubernetes-the-kubeadm-way.md
       - certifications/CKA/13_Troubleshooting.md
       - certifications/CKA/14_JSONpath-introduction.md
+    - Certified Kubernetes Security Specialist (CKS):
+      - certifications/CKS.md
+      - certifications/CKS/01_Introduction.md
+      - certifications/CKS/02_The-Kubernetes-Attack-Surface.md
+      - certifications/CKS/03_Cluster-Setup-and-Hardening.md
+      - certifications/CKS/04_System-Hardening.md
+      - certifications/CKS/05_Minimize-Microservice-Vulnerabilities.md
+      - certifications/CKS/06_Supply-Chain-Security.md
+      - certifications/CKS/07_Monitoring-Logging-and-Runtime-Security.md
+    - HashiCorp Certified - Terraform Associate:
+      - certifications/terraform-associate.md
+      - certifications/terraform-associate/01_Deploying-Infrastructure.md
+      - certifications/terraform-associate/02_Working-With-Configurations.md
+      - certifications/terraform-associate/03_Provisioners.md
+      - certifications/terraform-associate/04_Modules-and-Workspaces.md
+      - certifications/terraform-associate/05_Remote-State-Management.md
+      - certifications/terraform-associate/06_Security.md
+      - certifications/terraform-associate/07_Terraform-Cloud-and-Enterprise.md
+      - certifications/terraform-associate/08_Exam-Preparation.md
