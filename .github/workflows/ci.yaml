@@ -74,3 +74,17 @@ jobs:
       with:
         config: .markdownlint.json
         files: 'green-software-for-practitioners/**/**/*.md'
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - run: pip install mkdocs-material
+      - run: pip install pymdown-extensions
+      - run: pip install mkdocs-glightbox
+      - run: pip install mkdocs-section-index
+      - run: pip install mkdocs-literate-nav
+      - run: mkdocs gh-deploy --force
