@@ -2,12 +2,6 @@
 
 ## 4.01 - Overview of Vault Tokens
 
-- [4.01 - Overview of Vault Tokens](#401---overview-of-vault-tokens)
-  - [Tokens Overview](#tokens-overview)
-  - [Mapping of Tokens to Policies](#mapping-of-tokens-to-policies)
-  - [Practical](#practical)
-  - [Lookup Token Information](#lookup-token-information)
-
 ### Tokens Overview
 
 - Tokens are the core method for authentication within Vault
@@ -41,9 +35,6 @@
 
 ## 4.02 - Token Helper
 
-- [4.02 - Token Helper](#402---token-helper)
-  - [Token Helper](#token-helper)
-
 ### Token Helper
 
 - By default, Vault CLI uses a "token helper" to cache any tokens used in authentication
@@ -51,12 +42,6 @@
   - This can be deleted at any time to force-logout of Vault
 
 ## 4.03 - Tokens Time-to-Live
-
-- [4.03 - Tokens Time-to-Live](#403---tokens-time-to-live)
-  - [Overview](#overview)
-  - [TTL For Tokens](#ttl-for-tokens)
-  - [Token Renewal](#token-renewal)
-  - [Token Defaults](#token-defaults)
 
 ### Overview
 
@@ -181,20 +166,20 @@
 
 ### Analysis
 
-| Feature | Service Token | Batch Token |
-| --- | --- | --- |
-| Can be root tokens | Yes | No |
-| Can create child tokens | Yes | No |
-| Renewable | Yes | No |
-| Periodic | Yes | No |
-| Can have particular max TTL | Yes | No (fixed TTL always) |
-| Has Accessors | Yes | No |
-| Has CubbyHole | Yes | No |
-| Revoked with Parent if not orphan | Yes | Stops Working |
-| Dynamic Secrets Lease Assignment | Self | Parent (if not orphan) |
-| Can be used across performance replication clusters | No | Yes (if orphan) |
-| Creation scales with performance standby node count | No | Yes |
-| Cost | Heavy Weight - Multiple Storage Writes per token creation | Lightweight - No storage cost for token creation |
+| Feature                                             | Service Token                                             | Batch Token                                      |
+|-----------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------|
+| Can be root tokens                                  | Yes                                                       | No                                               |
+| Can create child tokens                             | Yes                                                       | No                                               |
+| Renewable                                           | Yes                                                       | No                                               |
+| Periodic                                            | Yes                                                       | No                                               |
+| Can have particular max TTL                         | Yes                                                       | No (fixed TTL always)                            |
+| Has Accessors                                       | Yes                                                       | No                                               |
+| Has CubbyHole                                       | Yes                                                       | No                                               |
+| Revoked with Parent if not orphan                   | Yes                                                       | Stops Working                                    |
+| Dynamic Secrets Lease Assignment                    | Self                                                      | Parent (if not orphan)                           |
+| Can be used across performance replication clusters | No                                                        | Yes (if orphan)                                  |
+| Creation scales with performance standby node count | No                                                        | Yes                                              |
+| Cost                                                | Heavy Weight - Multiple Storage Writes per token creation | Lightweight - No storage cost for token creation |
 
 ### Batch Token Example
 

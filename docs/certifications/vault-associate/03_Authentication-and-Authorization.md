@@ -36,48 +36,6 @@ vault login -method=<method path> <parameters>
 
 ## 3.02 - Overview of Vault Policies
 
-- [3.0 - Authentication and Authorization](#30---authentication-and-authorization)
-  - [3.01 - Authentication in Vault](#301---authentication-in-vault)
-    - [Notes](#notes)
-  - [3.02 - Overview of Vault Policies](#302---overview-of-vault-policies)
-    - [Vault Policies 01](#vault-policies-01)
-      - [Introduction](#introduction)
-      - [Predefined Policies](#predefined-policies)
-      - [Basics of Policy Writing](#basics-of-policy-writing)
-      - [Primary Capabilities](#primary-capabilities)
-      - [Example](#example)
-      - [Root-Protected API Endpoints](#root-protected-api-endpoints)
-    - [Vault Policies 02](#vault-policies-02)
-      - [ACL Rules Format - KV Secret Engine Version 2](#acl-rules-format---kv-secret-engine-version-2)
-        - [Practical Example - ACL Policies](#practical-example---acl-policies)
-      - [Listing Secrets](#listing-secrets)
-        - [Practical Example - Listing Secrets](#practical-example---listing-secrets)
-      - [Reading Secret Metadata](#reading-secret-metadata)
-      - [Summary](#summary)
-  - [3.03 - AppRole Authentication Method](#303---approle-authentication-method)
-    - [Configuring AppRole Authentication Method](#configuring-approle-authentication-method)
-  - [3.04 - HTTP APIs in Vault](#304---http-apis-in-vault)
-  - [3.05 - Token Capabilities](#305---token-capabilities)
-  - [3.06 - Entities and Aliases](#306---entities-and-aliases)
-    - [Authentication for Multiple Users](#authentication-for-multiple-users)
-    - [The Identity Secret Engine](#the-identity-secret-engine)
-  - [3.07 - Identity Groups](#307---identity-groups)
-    - [Identity Groups](#identity-groups)
-      - [Demonstration](#demonstration)
-      - [Internal and External Groups](#internal-and-external-groups)
-  - [3.08 - Tools in Vault](#308---tools-in-vault)
-    - [Vault Tools](#vault-tools)
-  - [3.09 - Vault Auto-Complete](#309---vault-auto-complete)
-    - [Auto-Completion Overview](#auto-completion-overview)
-  - [3.10 - ACL Policy Path Templating](#310---acl-policy-path-templating)
-    - [Contexts](#contexts)
-    - [Path Templating Overview](#path-templating-overview)
-    - [Practical Example](#practical-example)
-    - [Supported Parameters](#supported-parameters)
-  - [3.11 - Vault Policy - Transit Secret Engine](#311---vault-policy---transit-secret-engine)
-    - [Vault Policy Rules - Transit Engine](#vault-policy-rules---transit-engine)
-    - [Practical Demo](#practical-demo)
-
 ### Vault Policies 01
 
 #### Introduction
@@ -348,10 +306,6 @@ Examples for the latter two:
 
 ## 3.06 - Entities and Aliases
 
-- [3.06 - Entities and Aliases](#306---entities-and-aliases)
-  - [Authentication for Multiple Users](#authentication-for-multiple-users)
-  - [The Identity Secret Engine](#the-identity-secret-engine)
-
 ### Authentication for Multiple Users
 
 - Vault supports multiple authentication methods, as well as allowing the same type of authentication method for different mount paths.
@@ -385,11 +339,6 @@ Examples for the latter two:
 
 ## 3.07 - Identity Groups
 
-- [3.07 - Identity Groups](#307---identity-groups)
-  - [Identity Groups](#identity-groups)
-    - [Demonstration](#demonstration)
-    - [Internal and External Groups](#internal-and-external-groups)
-
 ### Identity Groups
 
 - Groups can contain multiple entities as members
@@ -416,9 +365,6 @@ Examples for the latter two:
 
 ## 3.08 - Tools in Vault
 
-- [3.08 - Tools in Vault](#308---tools-in-vault)
-  - [Vault Tools](#vault-tools)
-
 ### Vault Tools
 
 - Vault contains tools allowing specific functions
@@ -440,9 +386,6 @@ Examples for the latter two:
 
 ## 3.09 - Vault Auto-Complete
 
-- [3.09 - Vault Auto-Complete](#309---vault-auto-complete)
-  - [Auto-Completion Overview](#auto-completion-overview)
-
 ### Auto-Completion Overview
 
 - Vault auto-complete allows automatic completion for input flags, subcommands and arguments in the vault CLI
@@ -452,12 +395,6 @@ Examples for the latter two:
 - Note: When a command hasn't been written following `vault <x>`, the autocomplete would provide options for the command.
 
 ## 3.10 - ACL Policy Path Templating
-
-- [3.10 - ACL Policy Path Templating](#310---acl-policy-path-templating)
-  - [Contexts](#contexts)
-  - [Path Templating Overview](#path-templating-overview)
-  - [Practical Example](#practical-example)
-  - [Supported Parameters](#supported-parameters)
 
 ### Contexts
 
@@ -518,10 +455,6 @@ path "secret/data/{{identity.entity.name}}/*" {
 | `identity.groups.names.<group name>.metadata.<metadata key>` | Metadata associated with a particular group name for a particular metadata key |
 
 ## 3.11 - Vault Policy - Transit Secret Engine
-
-- [3.11 - Vault Policy - Transit Secret Engine](#311---vault-policy---transit-secret-engine)
-  - [Vault Policy Rules - Transit Engine](#vault-policy-rules---transit-engine)
-  - [Practical Demo](#practical-demo)
 
 ### Vault Policy Rules - Transit Engine
 

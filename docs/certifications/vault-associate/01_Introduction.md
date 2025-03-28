@@ -2,13 +2,6 @@
 
 ## 1.1 - Introduction to the Course and Certification
 
-- [1.0 - Introduction](#10---introduction)
-  - [1.1 - Introduction to the Course and Certification](#11---introduction-to-the-course-and-certification)
-    - [Notes](#notes)
-      - [Introduction](#introduction)
-      - [Dynamic Secrets - High-Level View](#dynamic-secrets---high-level-view)
-      - [Course Disclaimers](#course-disclaimers)
-
 ### Notes
 
 #### Introduction

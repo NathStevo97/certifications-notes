@@ -2,11 +2,6 @@
 
 ## 2.01 - Overview of HashiCorp Vault
 
-- [2.01 - Overview of HashiCorp Vault](#201---overview-of-hashicorp-vault)
-  - [Notes](#notes)
-    - [Getting Started](#getting-started)
-    - [Dynamic Secrets and Vault Console](#dynamic-secrets-and-vault-console)
-
 ### Notes
 
 #### Getting Started
@@ -242,17 +237,6 @@ vault kv metadata delete path/to/secret
 
 ## 2.05 - Overview of Secrets Engine
 
-- [2.05 - Overview of Secrets Engine](#205---overview-of-secrets-engine)
-  - [Notes](#notes)
-    - [Secret Engine Overview](#secret-engine-overview)
-    - [Secret Engine Types](#secret-engine-types)
-    - [Secret Engine Paths](#secret-engine-paths)
-    - [Secret Engine Lifecycle](#secret-engine-lifecycle)
-    - [Example - Key/Value Secret Engine](#example---keyvalue-secret-engine)
-      - [Enabling a Secrets Engine - UI](#enabling-a-secrets-engine---ui)
-      - [Enabling a Secrets Engine - CLI](#enabling-a-secrets-engine---cli)
-    - [Disabling a Secret Engine](#disabling-a-secret-engine)
-
 ### Secret Engine Overview
 
 - Secrets engines are components that **store**, **generate** or **encrypt** data.
@@ -335,10 +319,6 @@ vault kv put <secret engine path>/<secret name> mykey=myvalue
 
 ## 2.06 - Overview of Dynamic Secrets
 
-- [2.06 - Overview of Dynamic Secrets](#206---overview-of-dynamic-secrets)
-  - [Dynamic Secrets Overview](#dynamic-secrets-overview)
-    - [Example - AWS Secret Engine](#example---aws-secret-engine)
-
 ### Dynamic Secrets Overview
 
 - In the KV secret engine, data had to be stored manually.
@@ -363,9 +343,6 @@ vault kv put <secret engine path>/<secret name> mykey=myvalue
 - Vault will automatically revoke the dynamic credentials upon the completion of the lease duration - alternatively it can be revoked manually by the UI under Access → Leases.
 
 ## 2.07 - Generating AWS Credentials Dynamically
-
-- [2.07 - Generating AWS Credentials Dynamically](#207---generating-aws-credentials-dynamically)
-  - [Example - Generating AWS Credentials Dynamically from Scratch](#example---generating-aws-credentials-dynamically-from-scratch)
 
 ### Example - Generating AWS Credentials Dynamically from Scratch
 
@@ -396,9 +373,6 @@ vault kv put <secret engine path>/<secret name> mykey=myvalue
     ![Untitled](./img/02_Getting-Started-with-Vault//vault-aws-user-account.png)
 
 ## 2.08 - Managing Leases
-
-- [2.08 - Managing Leases](#208---managing-leases)
-  - [Overview of Lease](#overview-of-lease)
 
 ### Overview of Lease
 
@@ -439,14 +413,6 @@ vault lease renew -increment=<time in seconds> path/to/lease
 - Lease IDs are structured in a way such that their prefix is always the path where the secret was requested from - this allows trees of secrets to be revoked by prefixes.
 
 ## 2.10 - Transit Secret Engine
-
-- [2.10 - Transit Secret Engine](#210---transit-secret-engine)
-  - [Overview](#overview)
-  - [Dealing with larger Data Blobs](#dealing-with-larger-data-blobs)
-  - [Important Features](#important-features)
-    - [Key Rotation](#key-rotation)
-    - [Minimum Decrypt Version](#minimum-decrypt-version)
-    - [Rewrapping Data](#rewrapping-data)
 
 ### Overview
 

@@ -1,11 +1,5 @@
 # 15.2 - Mock Exam 3
 
-- [15.2 - Mock Exam 3](#152---mock-exam-3)
-  - [PVViewer](#pvviewer)
-  - [Multi-Pod](#multi-pod)
-  - [Kubeconfig](#kubeconfig)
-  - [Replicas](#replicas)
-
 ## PVViewer
 
 - `kubectl create serviceaccount`

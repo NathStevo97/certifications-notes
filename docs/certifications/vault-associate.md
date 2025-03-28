@@ -1,4 +1,4 @@
-# Hashicorp Vault Practice
+# Hashicorp Vault Associate
 
 ## Additional Resources
 

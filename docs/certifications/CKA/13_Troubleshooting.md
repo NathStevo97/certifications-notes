@@ -1,10 +1,5 @@
 # 13.0 - Troubleshooting Overview
 
-- [13.0 - Troubleshooting Overview](#130---troubleshooting-overview)
-  - [Application Failure](#application-failure)
-  - [Control Plane Failure](#control-plane-failure)
-  - [Worker Node Failure](#worker-node-failure)
-
 ## Application Failure
 
 - Consider a 2-tier application, composed of a database and web server

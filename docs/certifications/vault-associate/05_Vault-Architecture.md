@@ -2,12 +2,6 @@
 
 ## 5.01 - Vault for Production Environments
 
-- [5.01 - Vault for Production Environments](#501---vault-for-production-environments)
-  - [Overview](#overview)
-    - [Deploying in Production Mode](#deploying-in-production-mode)
-    - [Practical Example](#practical-example)
-    - [Verifying Storage Persistence](#verifying-storage-persistence)
-
 ### Overview
 
 - Up until this point, Vault has been used in development mode only.
@@ -104,13 +98,6 @@ ui = true # boolean
 
 ## 5.03 - Understanding Vault Agent
 
-- [5.03 - Understanding Vault Agent](#503---understanding-vault-agent)
-  - [Challenges](#challenges)
-  - [Vault Agent Overview](#vault-agent-overview)
-  - [Running Vault Agent](#running-vault-agent)
-  - [Working of Vault Agent](#working-of-vault-agent)
-  - [Practical Example](#practical-example)
-
 ### Challenges
 
 - For applications needing to interact with Vault, they must first authenticate to Vault and then use the tokens for their required tasks.
@@ -192,11 +179,6 @@ vault {
 
 ## 5.04 - Vault Agent Caching
 
-- [5.04 - Vault Agent Caching](#504---vault-agent-caching)
-  - [Primary Functionalities of Vault Agent](#primary-functionalities-of-vault-agent)
-  - [Overview of Caching](#overview-of-caching)
-  - [In-Practice](#in-practice)
-
 ### Primary Functionalities of Vault Agent
 
 - Auto-Auth
@@ -268,10 +250,6 @@ seal [name] {
 
 ## 5.06 - Vault Auto-Unseal Overview
 
-- [5.06 - Vault Auto-Unseal Overview](#506---vault-auto-unseal-overview)
-  - [Background](#background)
-  - [Auto-Unseal Overview](#auto-unseal-overview)
-
 ### Background
 
 - During Vault Unseal process, users must enter they key(s) required.
@@ -295,9 +273,6 @@ seal [name] {
   - GCP Cloud KMS
 
 ## 5.07 - Auto-Unseal with AWS KMS
-
-- [5.07 - Auto-Unseal with AWS KMS](#507---auto-unseal-with-aws-kms)
-  - [Setting up AWS Auto-Unseal From Scratch](#setting-up-aws-auto-unseal-from-scratch)
 
 ### Setting up AWS Auto-Unseal From Scratch
 
@@ -481,12 +456,6 @@ telemetry {
 - Additional documentation is available for configuring Vault with various monitoring integrations; including Splunk.
 
 ## 5.15 - High-Availability Setup & Implementation in Vault
-
-- [5.15 - High-Availability Setup \& Implementation in Vault](#515---high-availability-setup--implementation-in-vault)
-  - [Overview of HA](#overview-of-ha)
-  - [In Practice](#in-practice)
-  - [Implementing Vault HA](#implementing-vault-ha)
-  - [Important Pointers](#important-pointers)
 
 ### Overview of HA
 

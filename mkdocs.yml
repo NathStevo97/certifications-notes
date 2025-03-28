@@ -3,6 +3,10 @@ use_directory_urls: false
 theme:
   name: material
 
+markdown_extensions:
+  - toc:
+      permalink: true
+
 plugins:
   # plugin used to add search capability to site
   - search
@@ -51,3 +55,11 @@ nav:
       - certifications/terraform-associate/06_Security.md
       - certifications/terraform-associate/07_Terraform-Cloud-and-Enterprise.md
       - certifications/terraform-associate/08_Exam-Preparation.md
+    - HashiCorp Certified - Vault Associate:
+      - certifications/vault-associate.md
+      - certifications/vault-associate/01_Introduction.md
+      - certifications/vault-associate/02_Getting-Started-with-Vault.md
+      - certifications/vault-associate/03_Authentication-and-Authorization.md
+      - certifications/vault-associate/04_Vault-Tokens.md
+      - certifications/vault-associate/05_Vault-Architecture.md
+      - certifications/vault-associate/06_Exam-Preparation.md
