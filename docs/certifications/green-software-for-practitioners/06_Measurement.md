@@ -1,20 +1,20 @@
-# 6.2 - Measurement
+# 6.0 - Measurement
 
-- [6.2 - Measurement](#62---measurement)
-  - [The GHG Protocol](#the-ghg-protocol)
-  - [What Scope Does my Application Fall Into?](#what-scope-does-my-application-fall-into)
-  - [Calculating a Total for Software Carbon Emissions](#calculating-a-total-for-software-carbon-emissions)
-  - [Do Totals Tell the Whole Story?](#do-totals-tell-the-whole-story)
-  - [Software Carbon Intensity Specification](#software-carbon-intensity-specification)
-  - [The SCI Equation](#the-sci-equation)
-  - [Calculating the SCI Score](#calculating-the-sci-score)
-    - [Decide what to Include](#decide-what-to-include)
-    - [Choose the Functional Unit](#choose-the-functional-unit)
-    - [Decide how to Measure Your Emissions](#decide-how-to-measure-your-emissions)
-    - [Quantify](#quantify)
-  - [Summary](#summary)
+## 6.1 - Introduction
 
-## The GHG Protocol
+- The measurement principle: what you cannot measure, you cannot improve
+
+- The Greenhouse Gas (GHG) protocol is the most commonly-used method for organizations to measure their total carbon emissions.
+- Understanding GHG scopes and how to measure your software against industry standards will help you see to what extent you are applying Green Software principles and how far you have to go to improve.
+
+- To complement the GHG protocol, you can also use the Software Carbon Intensity (SCI) specification.
+- While the GHG is a more generic measurement suitable for all types of organizations, the SCI is specifically for measuring a rate of software emissions and designed to incentivize the elimination of those emissions.
+
+- The GHG is a protocol to measure total emissions, the SCI is a tool to enable the elimination of software driven emissions.
+
+## 6.2 - Measurement
+
+### The GHG Protocol
 
 - The **Greenhouse Gas protocol** is the most widely used and internationally recognized greenhouse gas accounting standard. 92% of Fortune 500 companies use the GHG protocol when calculating and disclosing their carbon emissions.
 - The GHG protocol divides emissions into three scopes:
@@ -30,7 +30,7 @@
 
 - Through this approach, it's possible to sum up all the GHG emissions from every organization and person in the world and reach a global total.
 
-## What Scope Does my Application Fall Into?
+### What Scope Does my Application Fall Into?
 
 - We have already seen how the GHG protocol asks us to bucket software emissions according to scopes 1-3. But how does this work when it comes to software?
 - Most organizations have many applications running with different architectures and in different environments.
@@ -44,7 +44,7 @@
   - **How clean or dirty that electricity is**
   - **How much hardware it needs to function**
 
-## Calculating a Total for Software Carbon Emissions
+### Calculating a Total for Software Carbon Emissions
 
 - To calculate a total for software carbon emissions, you need access to detailed data regarding the energy consumption, carbon intensity, and hardware that your software is running on.
   - This is challenging data to gather, even in the case of an organization's own closed-source software products where they can track its usage with telemetry or logs.
@@ -52,7 +52,7 @@
 - Open-source projects typically have multiple contributors from multiple organizations. As a result, it's unclear who should be responsible for calculating the emissions as well as who is accountable for eliminating them.
   - When you also consider that open-source software makes up 90% of a typical enterprise stack, it is clear that there is going to be a large amount of carbon emissions that are not accounted for.
 
-## Do Totals Tell the Whole Story?
+### Do Totals Tell the Whole Story?
 
 - A total is only one metric that describes the state of something. To make the right decisions, you need to look at many different metrics.
 - Imagine a scenario where you are the leader of an organization and charged with reducing the emissions of your software. You measure the emissions in Q1 and come out with a total of 34 tonnes.
@@ -62,7 +62,7 @@
   - In the same project, if the carbon intensity was 3.3g CO2eq/user in Q1, and 2.9g CO2eq/user in Q2, you might consider the project a success and continue to invest further.
 - While the total informed you that your organization's carbon emissions had increased overall, the intensity gave a more complete perspective that would help you to make a more informed decision on how to proceed.
 
-## Software Carbon Intensity Specification
+### Software Carbon Intensity Specification
 
 - The **Software Carbon Intensity (SCI)** specification is a methodology developed by the Standards Working Group in the Green Software Foundation, designed to score a software application along a dimension of sustainability and to encourage action towards eliminating emissions.
 - It's not a replacement for the GHG protocol, but an additional metric that helps software teams understand how their software behaves in terms of carbon emissions so they can make more informed decisions.
@@ -81,7 +81,7 @@
 - The only way to reduce your SCI score is to invest time or resources into one of those three principles.
   - As such, adopting the SCI as a metric for your software application along with the GHG protocol, will drive investment into one of the three pillars of green software.
 
-## The SCI Equation
+### The SCI Equation
 
 - The SCI is a method of scoring any software application, not limited to just cloud or not just end-user applications, but all types of applications in between.
   - It provides a common language to describe how software behaves with respect to carbon emissions and how a proposed change might eliminate some of them.
@@ -105,9 +105,9 @@ SCI = C per R (Carbon per R)
 
 - **R** is the core characteristic of the SCI and turns it into an intensity rather than a total. This is what we call a functional unit.
 
-## Calculating the SCI Score
+### Calculating the SCI Score
 
-### Decide what to Include
+#### Decide what to Include
 
 - What software components to include or exclude in the SCI score means defining the boundaries of your software; where it starts and where it ends.
 
@@ -118,7 +118,7 @@ SCI = C per R (Carbon per R)
 - Your SCI score might decrease because you tightened your software boundary and excluded more software components.
   - Conversely, your SCI score might increase because you are including software components you previously excluded. Therefore, when you report your SCI score, especially any improvements in the score, it's essential to disclose your software boundary.
 
-### Choose the Functional Unit
+#### Choose the Functional Unit
 
 - As we have seen, the SCI is a rate rather than a total and measures the intensity of emissions according to the chosen functional unit.
   - The specification currently doesn't prescribe the functional unit and you are free to pick whichever best describes how your application scales.
@@ -127,7 +127,7 @@ SCI = C per R (Carbon per R)
 - Future iterations of the SCI might prescribe specific functional units for different types of applications to aid with comparability.
   - For instance, we might ask streaming applications to choose minutes as their functional unit in order to standardize measurement across all streaming applications.
 
-### Decide how to Measure Your Emissions
+#### Decide how to Measure Your Emissions
 
 - Now you have a list of the software components you want to measure and the functional unit you will use to measure them.
 - The next step is to decide how you will quantify the emissions of each software component.
@@ -143,7 +143,7 @@ SCI = C per R (Carbon per R)
 
 - Look at the Software Carbon Intensity Data project. This project is responsible for providing advice on how to quantify different software components' emissions.
 
-### Quantify
+#### Quantify
 
 - Now you are ready to execute. Using the methodology described in the previous steps, start to quantify the SCI score for each software component in your boundary.
 - Your total SCI score of your software application is the combined score of all the different components.
@@ -151,7 +151,7 @@ SCI = C per R (Carbon per R)
 - You may calculate multiple SCI scores for the same application. The SCI score is helpful information to understand how your application behaves with respect to carbon emissions in different scenarios. For example, a streaming application might choose carbon per minute as a metric.
   - It might also calculate the carbon per user per day. The carbon per $ revenue metric might give another helpful dimension.
 
-## Summary
+### Summary
 
 - The GHG protocol is a metric for measuring an organization's total carbon emissions and is used by organizations all over the world.
 - The GHG protocol puts carbon emissions into three scopes. Scope 3, also known as value chain emissions, refers to the emissions from organizations that supply others in a chain. In this way, one organization's scope 1 and 2 will sum up into another organization's scope 3.

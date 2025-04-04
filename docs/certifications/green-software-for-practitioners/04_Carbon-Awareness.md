@@ -1,32 +1,32 @@
-# 4.2 - Carbon Awareness
+# 4.0 - Carbon Awareness
 
-- [4.2 - Carbon Awareness](#42---carbon-awareness)
-  - [Key Concepts](#key-concepts)
-    - [Carbon Intensity](#carbon-intensity)
-    - [Variability of Carbon Intensity](#variability-of-carbon-intensity)
-    - [Dispatchability \& Curtailment](#dispatchability--curtailment)
-    - [Marginal Carbon Intensity](#marginal-carbon-intensity)
-    - [Energy Markets](#energy-markets)
-  - [Carbon Awareness Tips](#carbon-awareness-tips)
-  - [Demand Shifting](#demand-shifting)
-  - [Spatial Shifting](#spatial-shifting)
-  - [Temporal Shifting](#temporal-shifting)
-  - [Demand Shaping](#demand-shaping)
-  - [Summary](#summary)
+## 4.1 - Introduction
 
-## Key Concepts
+- The Carbon Awareness Principle: Do more when the electricity is cleaner, and less when it is dirtier.
 
-### Carbon Intensity
+- Electricity is production comes with a lot of variability per method e.g.:
+  - **Locations** - where is it produced?
+  - **Time** - when is it produced?
+  - **How** - what source is used to produce it?
+
+- Emission rates typically vary depending on the source e.g. clean, renewable sources like solar offer little carbon emissions in comparison to fossil fuels.
+- Carbon awareness is the idea of doing more when more energy comes from low-carbon sources, and doing less when more energy comes from high carbon sources.
+
+## 4.2 - Carbon Awareness
+
+### Key Concepts
+
+#### Carbon Intensity
 
 - How much Carbon (CO2e) is emitted per kWh of electricity consumed. Measured in gCO2eq/kWh (grams of carbon per kilowatt hour).
 - Carbon intensity is a mix of all the current power sources in the power grid, both the low and high-carbon using resources will be considered in the measurement.
 
-### Variability of Carbon Intensity
+#### Variability of Carbon Intensity
 
 - This varies by location, depending on the clean energy sources available.
 - Additional variability follows due to changes in when clean energy could be available / unavailable due to weather conditions e.g. on a windy day carbon intensity will decrease / not be as intense.
 
-### Dispatchability & Curtailment
+#### Dispatchability & Curtailment
 
 - Electricity demand varies throughout the day.
 - If a utility doesn't provide enough electricity to meet demand, a brownout occurs (a dip in the power line's voltage level)
@@ -36,7 +36,7 @@
 - For renewable power, we cannot easily control how much is produced e.g. we cannot control whether it's a sunny day.
 - If a power source produces more electricity needed, that electricity will be thrown away, this is curtailment.
 
-### Marginal Carbon Intensity
+#### Marginal Carbon Intensity
 
 - In the event of suddenly needing to access more power than expected, the energy supplied would come from a marginal power plant.
 - Marginal Power Plants are **dispatchable**; meaning these plants are often powered by fossil fuels.
@@ -46,7 +46,7 @@
   - Because of this, there may be the need to curtail (throw away) renewable energy while still consuming fossil fuel power plant energy.
     - In these scenarios, the marginal carbon intensity will be 0 gCO2eq/kWh - any new demand will match the renewable energy we are curtailing.
 
-### Energy Markets
+#### Energy Markets
 
 - The exact market model varies around the world but broadly follows the same model.
 - When the demand for electricity goes down, utilities need to reduce the supply to balance supply and demand. They can do this in one of two ways:
@@ -74,12 +74,12 @@
   - But what's important to understand is that our goal is to increase investment into lower carbon energy sources, like renewables, and decrease investment into higher carbon sources, like coal.
 - The best way to ensure money flows in the right direction is to make sure you use electricity with the least carbon intensity.
 
-## Carbon Awareness Tips
+### Carbon Awareness Tips
 
 - In general, it's advised to use electricity when the carbon intensity is low, as this ensures investment flows towards low-carbon emitting plants and away from high-carbon emitting plants.
 - Carbon intensity is lower when more energy comes from lower-carbon sources and higher when it comes from higher-carbon sources.
 
-## Demand Shifting
+### Demand Shifting
 
 - Being carbon aware means responding to shifts in carbon intensity by increasing or decreasing your demand.
 - If your work allows you to be flexible with when and where you run workloads, you can shift accordingly - consuming electricity when the carbon intensity is lower and pausing production when it is higher.
@@ -88,13 +88,13 @@
 - Studies show these actions can result in 45% to 99% carbon reductions depending on the number of renewables powering the grid.
 - Demand shifting can be further broken down into spatial and temporal shifting.
 
-## Spatial Shifting
+### Spatial Shifting
 
 - Spatial shifting means moving your computation to another physical location where the current carbon intensity is lower.
   - It might be a region that naturally has lower carbon sources of energy.
   - For example, moving to different hemispheres depending on the season for more sunlight hours.
 
-## Temporal Shifting
+### Temporal Shifting
 
 - If you can't shift your computation spatially to another region, another option you have is to shift to another time. Perhaps later in the day or night when it's sunnier or windier and, therefore, the carbon intensity is lower.
   - This is called temporal demand shifting. We can predict future carbon intensity reasonably well through advances in weather forecasting.
@@ -104,7 +104,7 @@
   - They then shaped large-scale workloads so more would happen when and where the carbon intensity is lowest, but in such a way that they could still handle the expected load.
 - **Microsoft Carbon Aware Windows** - Microsoft announced a project to make Windows 11 more sustainable. Initially, this means running Windows updates when the carbon intensity is lower.
 
-## Demand Shaping
+### Demand Shaping
 
 - Demand shifting is the strategy of moving computation to regions or times when the carbon intensity is lowest. Demand shaping is a similar strategy. - However, instead of moving demand to a different region or time, we shape our computation to match the existing supply.
   - If carbon intensity is low, increase the demand; do more in your applications.
@@ -126,7 +126,7 @@
   - We can achieve a lot by becoming more efficient with resources, but we also need to consume less at some point.
 - As Green Software practitioners, we would consider canceling a process when the carbon intensity is high instead of demand shifting - reducing the demands of our application and the expectations of our end users.
 
-## Summary
+### Summary
 
 - Carbon awareness means understanding that the energy you consume does not always have the same impact in terms of carbon intensity.
 - Carbon intensity varies depending on the time and place it is consumed.

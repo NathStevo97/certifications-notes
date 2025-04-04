@@ -1,29 +1,17 @@
-# 7.2 - Climate Commitments
+# 7.0 - Climate Commitments
 
-- [7.2 - Climate Commitments](#72---climate-commitments)
-  - [Carbon Reduction Methodologies](#carbon-reduction-methodologies)
-    - [Abatement / Carbon Elimination](#abatement--carbon-elimination)
-    - [Offsets](#offsets)
-    - [SCI and Offsets](#sci-and-offsets)
-    - [Compensating / Carbon Avoidance](#compensating--carbon-avoidance)
-    - [Neutralizing / Carbon Removal](#neutralizing--carbon-removal)
-  - [Climate Commitments](#climate-commitments)
-  - [Carbon Neutral](#carbon-neutral)
-  - [Net Zero](#net-zero)
-  - [100% Renewable](#100-renewable)
-    - [Renewable Energy Certificates (REC)](#renewable-energy-certificates-rec)
-    - [PPAs](#ppas)
-  - [24/7 Hourly Matching](#247-hourly-matching)
-    - [Daily vs Hourly Matching](#daily-vs-hourly-matching)
-    - [Carbon-Free Energy](#carbon-free-energy)
-    - [Carbon Awareness as Part of a 24/7 Hourly Matching Strategy](#carbon-awareness-as-part-of-a-247-hourly-matching-strategy)
-  - [Summary](#summary)
+## 7.1 - Introduction
 
-## Carbon Reduction Methodologies
+- Climate Commitments Principle: Understand the Exact Mechanism of Carbon Reduction
+
+
+## 7.2 - Climate Commitments
+
+### Carbon Reduction Methodologies
 
 - There are many ways to reduce emissions but it's important to understand the exact mechanism of the reduction when thinking about reduction targets.
 
-### Abatement / Carbon Elimination
+#### Abatement / Carbon Elimination
 
 - The Science Based Targets Initiative refers to a mechanism called abatement, which means eliminating sources of CO2 emissions associated with a company's operations and value chain so that they do not enter the atmosphere.
   - The value chain describes the full range of activities needed to create a product or service, from conception to distribution. This includes increasing energy efficiency to eliminate some of the emissions associated with energy generation.
@@ -32,7 +20,7 @@
 
 - To balance those residual emissions, we need to look at other mechanisms such as offsets, compensations or neutralizations.
 
-### Offsets
+#### Offsets
 
 - **Offsets** are direct investments in emission-reduction projects through the purchase of carbon credits on the voluntary carbon market (VCM).
 - The **VCM** is a decentralized market where private actors voluntarily buy and sell carbon credits that represent certified removals or reductions of **GHGs** from the atmosphere.
@@ -41,7 +29,7 @@
 - Various positive benefits can stem from these projects, from ecosystem protection to empowering local communities.
   - However, to ensure these programs are implemented correctly and have the desired effect on the environment and the aim to reach world net zero, there are global standards that they must meet such as Verified Carbon Standard (VCS) and Gold Standard (GS).
 
-### SCI and Offsets
+#### SCI and Offsets
 
 - There are some limitations to carbon offsets and that is why they are not considered in an organization's SCI score.
   - For example, imagine two applications, both running on a cloud platform that is 100% carbon offset and matched 100% by renewable energy.
@@ -54,7 +42,7 @@
 - Organizations need to have plans for how to both eliminate as well as neutralize emissions and the SCI helps them to drive the elimination of emissions due to software.
   - This makes the SCI an essential component of any net-zero strategy.
 
-### Compensating / Carbon Avoidance
+#### Compensating / Carbon Avoidance
 
 - Compensations are actions that companies take to help society avoid or reduce emissions outside of their value chain.
   - This is essentially investing in other organizations' abatement projects.
@@ -63,7 +51,7 @@
   - **Community Projects** - These projects help communities worldwide, mainly undeveloped ones, by introducing sustainable living methods.
   - **Waste to energy** - These projects capture methane/landfill gas in smaller villages, human or agriculture waste, and convert it into electricity.
 
-### Neutralizing / Carbon Removal
+#### Neutralizing / Carbon Removal
 
 - **Neutralizations** are actions that companies take to remove carbon from the atmosphere within or beyond their value chain.
   - Neutralizations refer to the removal and permanent storage of atmospheric carbon to counterbalance the effect of releasing CO2 into the atmosphere. This includes actions such as:
@@ -84,12 +72,12 @@
   - A short-term carbon removal project will only remove carbon for 100 years, after which it's back in the atmosphere warming up our planet.
   - This is one of the reasons why abatement is preferred to neutralization. Never releasing carbon is far better than releasing carbon and then trying to keep it out of the atmosphere for 5,000 years.
 
-## Climate Commitments
+### Climate Commitments
 
 - There are many different climate reduction strategies that an organization can commit to, from carbon neutral to net zero.
 - Understanding the different meanings and implications of each one can help you decide on the right strategy for your organization.
 
-## Carbon Neutral
+### Carbon Neutral
 
 - To achieve carbon neutrality, an organization must measure its emissions, then match the total to its emissions offsets through carbon reduction projects.
 - This can include carbon removal projects (neutralizations) and carbon avoidance projects (compensations).
@@ -102,7 +90,7 @@
 - Carbon neutral is a significant first step for any organization since it encourages measurement. However, there are not enough carbon offsets in the world to offset the emissions of all the organizations.
   - Therefore, any strategy that doesn't include abatement will not scale or help the world achieve the 1.5 degree target set by the Paris Climate Agreement. This is where net zero comes into play.
 
-## Net Zero
+### Net Zero
 
 - Net zero means reducing emissions according to the latest climate science and balancing remaining residual emissions through carbon removals (neutralizations).
   - Net zero, by definition, requires emissions reductions in line with a 1.5&deg;C pathway. All businesses must do this to achieve net-zero global emissions by 2050.
@@ -126,7 +114,7 @@
 - Any net-zero strategy needs to have plans for how to both eliminate as well as neutralize emissions.
 - The SCI helps organizations drive the elimination of emissions due to software. This makes the SCI an essential component of any net-zero strategy.
 
-## 100% Renewable
+### 100% Renewable
 
 - When organizations set a target of 100% renewable power, they might distinguish between being matched by vs. powered by renewables.
 
@@ -140,7 +128,7 @@
 - You can't track individual electrons. Once the electrons from a wind farm are on a grid, they all mix with the electrons from a fossil fuel plant.
   - So there is no way for a consumer to insist the electrons that it uses only come from renewable sources.
 
-### Renewable Energy Certificates (REC)
+#### Renewable Energy Certificates (REC)
 
 - To solve this problem, a renewable plant sells two things. The first is its electricity, which it sells into a grid. The second is a REC, a Renewable Energy Certificate. 1 REC equals 1kWh of energy.
 
@@ -149,7 +137,7 @@
 
 - When organizations set 100% renewable targets purchasing RECs on the market is the solution they often employ to meet their commitments.
 
-### PPAs
+#### PPAs
 
 - You might also hear the term PPA used alongside RECs. A PPA is a Power Purchase Agreement, which is another way to purchase RECs.
   - If you estimate you need 500MWh of electricity per year for a particular data center, you might sign a PPA to purchase 500MWh per year from a renewable plant. You would then get all the RECs associated with this power plant.
@@ -159,7 +147,7 @@
 - PPAs encourage something called additionality. Purchasing a PPA drives the creation of new renewable plants.
   - PPAs are a solution that gets us towards a future where everyone has access to 100% renewable energy.
 
-## 24/7 Hourly Matching
+### 24/7 Hourly Matching
 
 - When it comes to 100% renewable claims, the critical question is, what is the granularity of matching? Do you sum up and net off yearly, monthly, weekly, daily, or hourly?
   - That question is essential because to truly transition to renewable energy, we need 100% of the power to come from low-carbon energy sources like renewables 100% of the time.
@@ -167,7 +155,7 @@
 
 - 24/7 hourly matching is one of the many strategies we need to employ to help accelerate the transition to a 100% renewable-powered grid. For example, Google and Microsoft have both committed to 24/7 hourly matching by 2030.
 
-### Daily vs Hourly Matching
+#### Daily vs Hourly Matching
 
 - Imagine an organization has a demand curve like this, each blue square represents 1kWh:
 
@@ -182,7 +170,7 @@
 
 - In the above example, they are 100% matched by renewable energy on an hourly basis for only 6 hrs of the day.
 
-### Carbon-Free Energy
+#### Carbon-Free Energy
 
 - The number we use to describe how successful we are at 24/7 hourly matching is the carbon-free energy percentage.
 
@@ -191,7 +179,7 @@
 - So for the previous example, if measured using daily matching, we are 100% matched with renewable energy.
   - However, we are only 33.1% matched if measured using hourly matching. The CFE percentage is, therefore, 33.1%
 
-### Carbon Awareness as Part of a 24/7 Hourly Matching Strategy
+#### Carbon Awareness as Part of a 24/7 Hourly Matching Strategy
 
 - Carbon aware computing involves responding to electrical carbon intensity signals and changing the behavior of software, so it emits less carbon.
   - Carbon awareness also helps an organization meet their 24/7 hourly matching target and increase its CFE percentage.
@@ -199,7 +187,7 @@
 - One example of a behavior change is shifting compute to a time when more renewable energy is available.
   - For example, delaying the start of a training run of a machine learning model, or even delaying charging of a laptop, to when the carbon intensity of electricity is lower, and the supply of renewable energy is higher.
 
-## Summary
+### Summary
 
 - There are a number of methodologies commonly applied to help in the overall fight against climate change. These fall into the general categories of carbon elimination (also known as 'abatement'), carbon avoidance (a.k.a. 'compensating'), or carbon removal (a.k.a. 'neutralizing').
 

@@ -45,6 +45,15 @@ nav:
       - certifications/CKS/05_Minimize-Microservice-Vulnerabilities.md
       - certifications/CKS/06_Supply-Chain-Security.md
       - certifications/CKS/07_Monitoring-Logging-and-Runtime-Security.md
+    - Green Software for Practitioners:
+      - certifications/green-software-for-practitioners.md
+      - certifications/green-software-for-practitioners/01_Introduction.md
+      - certifications/green-software-for-practitioners/02_Carbon-Efficiency.md
+      - certifications/green-software-for-practitioners/03_Energy-Efficiency.md
+      - certifications/green-software-for-practitioners/04_Carbon-Awareness.md
+      - certifications/green-software-for-practitioners/05_Hardware-Efficiency.md
+      - certifications/green-software-for-practitioners/06_Measurement.md
+      - certifications/green-software-for-practitioners/07_Climate-Commitments.md
     - HashiCorp Certified - Terraform Associate:
       - certifications/terraform-associate.md
       - certifications/terraform-associate/01_Deploying-Infrastructure.md
