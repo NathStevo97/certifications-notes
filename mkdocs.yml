@@ -23,37 +23,13 @@ nav:
     - certifications/certifications.md
     - Certified Kubernetes Administrator (CKA):
       - certifications/CKA.md
-      - certifications/CKA/01_Course-Introduction.md
-      - certifications/CKA/02_Core-Concepts.md
-      - certifications/CKA/03_Scheduling.md
-      - certifications/CKA/04_Logging-and-Monitoring.md
-      - certifications/CKA/05_Application-Lifecycle-Management.md
-      - certifications/CKA/06_Cluster-Maintenance.md
-      - certifications/CKA/07_Security.md
-      - certifications/CKA/08_Storage.md
-      - certifications/CKA/09_Networking.md
-      - certifications/CKA/10_Design-a-Kubernetes-Cluster.md
-      - certifications/CKA/11_Install-Kubernetes-the-kubeadm-way.md
-      - certifications/CKA/13_Troubleshooting.md
-      - certifications/CKA/14_JSONpath-introduction.md
+      - certifications/CKA/*
     - Certified Kubernetes Security Specialist (CKS):
       - certifications/CKS.md
-      - certifications/CKS/01_Introduction.md
-      - certifications/CKS/02_The-Kubernetes-Attack-Surface.md
-      - certifications/CKS/03_Cluster-Setup-and-Hardening.md
-      - certifications/CKS/04_System-Hardening.md
-      - certifications/CKS/05_Minimize-Microservice-Vulnerabilities.md
-      - certifications/CKS/06_Supply-Chain-Security.md
-      - certifications/CKS/07_Monitoring-Logging-and-Runtime-Security.md
+      - certifications/CKS/*
     - Green Software for Practitioners:
       - certifications/green-software-for-practitioners.md
-      - certifications/green-software-for-practitioners/01_Introduction.md
-      - certifications/green-software-for-practitioners/02_Carbon-Efficiency.md
-      - certifications/green-software-for-practitioners/03_Energy-Efficiency.md
-      - certifications/green-software-for-practitioners/04_Carbon-Awareness.md
-      - certifications/green-software-for-practitioners/05_Hardware-Efficiency.md
-      - certifications/green-software-for-practitioners/06_Measurement.md
-      - certifications/green-software-for-practitioners/07_Climate-Commitments.md
+      - certifications/green-software-for-practitioners/*
     - HashiCorp Certified - Terraform Associate:
       - certifications/terraform-associate.md
       - certifications/terraform-associate/01_Deploying-Infrastructure.md
@@ -66,9 +42,4 @@ nav:
       - certifications/terraform-associate/08_Exam-Preparation.md
     - HashiCorp Certified - Vault Associate:
       - certifications/vault-associate.md
-      - certifications/vault-associate/01_Introduction.md
-      - certifications/vault-associate/02_Getting-Started-with-Vault.md
-      - certifications/vault-associate/03_Authentication-and-Authorization.md
-      - certifications/vault-associate/04_Vault-Tokens.md
-      - certifications/vault-associate/05_Vault-Architecture.md
-      - certifications/vault-associate/06_Exam-Preparation.md
+      - certifications/vault-associate/*
