@@ -1,0 +1,2104 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="02_Carbon-Efficiency.html">
+      
+      
+        <link rel="next" href="04_Carbon-Awareness.html">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>3.0 - Energy Efficiency - DevOps Learning and Research</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#30-energy-efficiency" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="DevOps Learning and Research" class="md-header__button md-logo" aria-label="DevOps Learning and Research" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DevOps Learning and Research
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3.0 - Energy Efficiency
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="DevOps Learning and Research" class="md-nav__button md-logo" aria-label="DevOps Learning and Research" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DevOps Learning and Research
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Certifications
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Certifications
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Certified Kubernetes Administrator (CKA)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Certified Kubernetes Administrator (CKA)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKA/01_Course-Introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    01 - Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKA/02_Core-Concepts.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.0 - Core Concepts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKA/03_Scheduling.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.0 - Scheduling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKA/04_Logging-and-Monitoring.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.0 - Logging and Monitoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKA/05_Application-Lifecycle-Management.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.0 - Application Lifecycle Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKA/06_Cluster-Maintenance.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6.0 - Cluster Maintenance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKA/07_Security.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7.0 - Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKA/08_Storage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8.0 - Storage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKA/09_Networking.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    9.0 - Networking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKA/10_Design-a-Kubernetes-Cluster.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10.0 - Design a Kubernetes Cluster
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKA/11_Install-Kubernetes-the-kubeadm-way.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    11.0 - Install Kubernetes the Kubeadm Way
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKA/13_Troubleshooting.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    13.0 - Troubleshooting Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKA/14_JSONpath-introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    14.1 - Introduction to JSONPath
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_14" id="__nav_3_1_14_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mocks
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_14">
+            <span class="md-nav__icon md-icon"></span>
+            Mocks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKA/Mocks/KodeKloud_Mock_3/02_Mock-Exam-Notes-3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    KodeKloud Mock 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKA/Mocks/Kodekloud_Mock_2/01_Mock-Exam-Notes-2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kodekloud Mock 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Certified Kubernetes Security Specialist (CKS)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Certified Kubernetes Security Specialist (CKS)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKS/01_Introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.0 - Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKS/02_The-Kubernetes-Attack-Surface.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.0 - Understanding the Kubernetes Attack Surface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKS/03_Cluster-Setup-and-Hardening.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.0 - Cluster Setup and Hardening
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKS/04_System-Hardening.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.0 - System Hardening
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKS/05_Minimize-Microservice-Vulnerabilities.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.0 - Minimize Microservice Vulnerabilities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKS/06_Supply-Chain-Security.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6.0 - Supply Chain Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKS/07_Monitoring-Logging-and-Runtime-Security.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7.0 - Monitoring, Logging, and Runtime Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_8" id="__nav_3_2_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mocks
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            Mocks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKS/Mocks/02_Mock-Exam-2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8.2 - Mock Exam 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CKS/Mocks/03_Mock-Exam-3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    10.3 - Mock Exam 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Green Software for Practitioners
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Green Software for Practitioners
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="01_Introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.0 - Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02_Carbon-Efficiency.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.0 - Carbon Efficiency
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    3.0 - Energy Efficiency
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="03_Energy-Efficiency.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.0 - Energy Efficiency
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 - Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-energy-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 - Energy Efficiency
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 - Energy Efficiency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fossil-fuels-and-high-carbon-sources-of-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fossil Fuels and High-Carbon Sources of Energy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#low-carbon-sources-of-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Low-Carbon Sources of Energy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#energy-measurement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Energy Measurement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#improving-energy-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Improving Energy Efficiency
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Improving Energy Efficiency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-usage-effectiveness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Usage Effectiveness
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#energy-proportionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Energy Proportionality
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Energy Proportionality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#static-power-draw" class="md-nav__link">
+    <span class="md-ellipsis">
+      Static Power Draw
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="04_Carbon-Awareness.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.0 - Carbon Awareness
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="05_Hardware-Efficiency.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.0 - Hardware Efficiency
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06_Measurement.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6.0 - Measurement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="07_Climate-Commitments.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7.0 - Climate Commitments
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    HashiCorp Certified - Terraform Associate
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            HashiCorp Certified - Terraform Associate
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform-associate/01_Deploying-Infrastructure.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.0 - Deploying Infrastructure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform-associate/02_Working-With-Configurations.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.0 - Working with Configurations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform-associate/03_Provisioners.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.0 - Provisioners
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform-associate/04_Modules-and-Workspaces.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.0 - Modules and Workspaces
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform-associate/05_Remote-State-Management.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.0 - Remote State Management
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform-associate/06_Security.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6.0 - Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform-associate/07_Terraform-Cloud-and-Enterprise.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7.0 - Terraform Cloud and Enterprise
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terraform-associate/08_Exam-Preparation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    8.0 - Exam Preparation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    HashiCorp Certified - Vault Associate
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            HashiCorp Certified - Vault Associate
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vault-associate/01_Introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1.0 - Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vault-associate/02_Getting-Started-with-Vault.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.0 - Getting Started with Vault
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vault-associate/03_Authentication-and-Authorization.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3.0 - Authentication and Authorization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vault-associate/04_Vault-Tokens.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4.0 - Vault Tokens
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vault-associate/05_Vault-Architecture.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5.0 - Vault Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vault-associate/06_Exam-Preparation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6.0 - Exam Preparation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 - Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-energy-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 - Energy Efficiency
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 - Energy Efficiency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fossil-fuels-and-high-carbon-sources-of-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fossil Fuels and High-Carbon Sources of Energy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#low-carbon-sources-of-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Low-Carbon Sources of Energy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#energy-measurement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Energy Measurement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#improving-energy-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Improving Energy Efficiency
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Improving Energy Efficiency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-usage-effectiveness" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Usage Effectiveness
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#energy-proportionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Energy Proportionality
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Energy Proportionality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#static-power-draw" class="md-nav__link">
+    <span class="md-ellipsis">
+      Static Power Draw
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="30-energy-efficiency">3.0 - Energy Efficiency<a class="headerlink" href="#30-energy-efficiency" title="Permanent link">&para;</a></h1>
+<h2 id="31-introduction">3.1 - Introduction<a class="headerlink" href="#31-introduction" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>The energy efficiency principle is simple: <strong>Use the least amount of energy possible</strong></p>
+</li>
+<li>
+<p><strong>Energy</strong> = Ability to do work</p>
+</li>
+<li>Multiple forms of energy exist and can each be converted to another in some form e.g. chemical to electrical conversion happens during coal burning.</li>
+<li>
+<p>In the example above, electricity is the secondary energy converted from another type; this allows measurement of electricity usage.</p>
+</li>
+<li>
+<p>All software consumes electricity, the best way to reduce consumption and subseqeuent carbon emissions is to make applications more efficient.</p>
+</li>
+<li>
+<p>Additionally, green software practitioners take responsibility for the energy consumed by their products, and design them to consume as little as possible by default.</p>
+</li>
+<li>
+<p>At every step of the process, the waste between steps should be minimised and efficiency should be maximised.</p>
+</li>
+<li>
+<p>The final area of consideration is the user, how can, when they're running the application, minimise their unnecessary emissions.</p>
+</li>
+<li>This is managed by how the application is designed, such as batching jobs together.</li>
+</ul>
+<h2 id="32-energy-efficiency">3.2 - Energy Efficiency<a class="headerlink" href="#32-energy-efficiency" title="Permanent link">&para;</a></h2>
+<h3 id="fossil-fuels-and-high-carbon-sources-of-energy">Fossil Fuels and High-Carbon Sources of Energy<a class="headerlink" href="#fossil-fuels-and-high-carbon-sources-of-energy" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Most electricity is produced via fossil fuel burning.</li>
+<li>The fuels are made from decomposing plants and animals, found within the earth's crust, and comprise of carbon and hyrdrogen.</li>
+<li>
+<p>Typical examples: coal, oil, natural gas.</p>
+</li>
+<li>
+<p>As most electricity comes from fossil fuels, the most significant carbon emission cause, one can immediately see how tightly linked electricity usage is to fossil fuel emissions.</p>
+</li>
+<li>To be carbon efficient, one therefore needs to be energy efficient as energy is a proxy for carbon.</li>
+</ul>
+<h3 id="low-carbon-sources-of-energy">Low-Carbon Sources of Energy<a class="headerlink" href="#low-carbon-sources-of-energy" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Clean energy comes from renewable, zero-emission sources that don't pollute the atmosphere when used.</li>
+<li>They also save enrgy through energy efficient practices.</li>
+<li>There are often overlaps between clean, green, and renewable energy sources, key differences include:</li>
+<li>Clean Energy - Doesn't produce carbon emissions e.g. nuclear</li>
+<li>Green energy - relies on sources from nature</li>
+<li>Renewable Energy - sources don't expire e.g. solar, wind</li>
+</ul>
+<h3 id="energy-measurement">Energy Measurement<a class="headerlink" href="#energy-measurement" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Energy is measured in Joules (J); the SI unit of energy.</li>
+<li>Power is measured in watts (W), 1W = 1 Joule per second</li>
+<li>Kilowatt (kW) = 1000 Joules per second</li>
+<li>kilowatt-hour (kWh) = measure of energy corresponding to 1 kilowatt sustained for 1 hour.</li>
+</ul>
+<h3 id="improving-energy-efficiency">Improving Energy Efficiency<a class="headerlink" href="#improving-energy-efficiency" title="Permanent link">&para;</a></h3>
+<h4 id="power-usage-effectiveness">Power Usage Effectiveness<a class="headerlink" href="#power-usage-effectiveness" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Data centers use Power Usage Effectiveness (PUE) to measure data center energy efficiency.</li>
+<li>This defines how much energy the infrastructure uses compared to cooling and other supporting overheads.</li>
+<li>Examples:</li>
+<li>1.0 - Computing is using nearly all the enrgy</li>
+<li>2.0 - An additional watt of IT power is needed to cool and distribute power to the infrastructure for every watt it uses.</li>
+<li>Effectively, PUE = a multiplier to an application's energy consumption.</li>
+<li>Example: if an application uses 10kWh and the data center's PUE is 1.5, the actual consumption is 15kWh; 5kWh goes towards operational overhead of the data center and 10kWh is used to run the application.</li>
+</ul>
+<h3 id="energy-proportionality">Energy Proportionality<a class="headerlink" href="#energy-proportionality" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Measures the relationship between power consumed by a computer and the rate at which useful work is done (its utilization).</li>
+<li>Utilization = how much of a computer's resources are used, usually expressed as a percentage.</li>
+<li>Power usage and utilization isn't proportional or linear in relationship, plateuing at high power usage.</li>
+<li>The more a computer is utilized, the more efficient it becomes at converting electricity to computation operations.</li>
+<li>To improve hardware efficiency, workloads should be run on as few servers as possible; this would maximise utilization rate and therefore energy efficiency.</li>
+</ul>
+<h4 id="static-power-draw">Static Power Draw<a class="headerlink" href="#static-power-draw" title="Permanent link">&para;</a></h4>
+<ul>
+<li>How much electricity is drawn when in an idle state.</li>
+<li>Typically varies by configuration and hardware components, but all parts have it.</li>
+<li>It's the reason that lots of devices have power-saving modes; where the screen and disk are put to sleep, or the CPU's frequency is changed.</li>
+<li>
+<p>These modes save electricity, but typically have adverse effects on performance e.g. slow restarts.</p>
+</li>
+<li>
+<p>Servers aren't typically configured for aggresive or minimal power saving.</p>
+</li>
+<li>Typical use cases for servers demand total capacity as quickly as possible, as the server needs to respond to rapidly changing demands.</li>
+<li>This leads to many servers in idle modes during low demand periods; which incurs carbon costs from both embedded carbon and inefficient utilization.</li>
+</ul>
+<h3 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Electricity is a proxy for carbon, so building an application that is energy efficient is equivalent to building an application that is carbon efficient.</li>
+<li>Green software takes responsibility for its electricity consumption and is designed to consume as little as possible.</li>
+<li>Quantifying the energy consumption of an application is a step in the right direction to start thinking about how an application can operate more efficiently. However, understanding your application's energy consumption is not the only story.</li>
+<li>The hardware your software is running on uses some of the electricity for operational overhead. This is called power usage efficiency (PUE) in the cloud space.</li>
+<li>The concept of energy proportionality adds another layer of complexity since hardware becomes more efficient at turning electricity into useful operations the more it's used.</li>
+<li>Understanding this gives green software practitioners a better insight into how their application behaves with respect to energy consumption in the real world.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
