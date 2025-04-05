@@ -32,14 +32,7 @@ nav:
       - certifications/green-software-for-practitioners/*
     - HashiCorp Certified - Terraform Associate:
       - certifications/terraform-associate.md
-      - certifications/terraform-associate/01_Deploying-Infrastructure.md
-      - certifications/terraform-associate/02_Working-With-Configurations.md
-      - certifications/terraform-associate/03_Provisioners.md
-      - certifications/terraform-associate/04_Modules-and-Workspaces.md
-      - certifications/terraform-associate/05_Remote-State-Management.md
-      - certifications/terraform-associate/06_Security.md
-      - certifications/terraform-associate/07_Terraform-Cloud-and-Enterprise.md
-      - certifications/terraform-associate/08_Exam-Preparation.md
+      - certifications/terraform-associate/*
     - HashiCorp Certified - Vault Associate:
       - certifications/vault-associate.md
       - certifications/vault-associate/*
