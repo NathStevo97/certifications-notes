@@ -26,6 +26,12 @@ jobs:
         config: .markdownlint.json
         files: 'docs/certifications/*.md'
 
+    - uses: articulate/actions-markdownlint@v1
+      name: markdown-lint - Tooling
+      with:
+        config: .markdownlint.json
+        files: 'docs/tooling/*.md'
+
   deploy-mkdocs:
     defaults:
       run:

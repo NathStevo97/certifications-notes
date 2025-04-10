@@ -20,7 +20,7 @@ nav:
   - Home: index.md
   - About: about.md
   - Certifications:
-    - certifications/certifications.md
+    - certifications.md
     - Certified Kubernetes Administrator (CKA):
       - certifications/CKA.md
       - certifications/CKA/*
@@ -36,3 +36,20 @@ nav:
     - HashiCorp Certified - Vault Associate:
       - certifications/vault-associate.md
       - certifications/vault-associate/*
+  - Tooling:
+    - tooling.md
+    - Helm:
+      - tooling/helm.md
+      - tooling/helm/*
+    - Ansible:
+      - tooling/ansible.md
+      - tooling/ansible/*
+    - Packer:
+      - tooling/packer.md
+      - tooling/packer/*
+    - ArgoCD:
+      - tooling/argocd.md
+      - tooling/argocd/*
+    - Flux:
+      - tooling/flux.md
+      - tooling/flux/*
