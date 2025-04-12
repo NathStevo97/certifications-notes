@@ -1,10 +1,5 @@
 # 3.3 - Inventory Format
 
-- [3.3 - Inventory Format](#33---inventory-format)
-  - [Introduction](#introduction)
-  - [Ini Format](#ini-format)
-  - [YAML Format](#yaml-format)
-
 ## Introduction
 
 - Ansible inventory formats offer differ from scenario to scenario.

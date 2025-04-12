@@ -1,10 +1,5 @@
 # 3.4 - Grouping and Parent-Child Relationshops
 
-- [3.4 - Grouping and Parent-Child Relationshops](#34---grouping-and-parent-child-relationshops)
-  - [Introduction](#introduction)
-  - [Ini Format](#ini-format)
-  - [YAML Format](#yaml-format)
-
 ## Introduction
 
 - It's important to utilise grouping in inventory files for ease of life and reduction of human error.

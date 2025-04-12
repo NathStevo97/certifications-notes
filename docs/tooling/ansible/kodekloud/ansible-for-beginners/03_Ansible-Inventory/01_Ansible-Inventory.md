@@ -1,8 +1,5 @@
 # 03.1 - Ansible Inventory
 
-- [03.1 - Ansible Inventory](#031---ansible-inventory)
-  - [Introduction](#introduction)
-
 ## Introduction
 
 - Ansible can work with one or multiple systems in the system at the same time

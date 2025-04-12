@@ -1,9 +1,5 @@
 # 03.2 - Demo: Ansible Inventory
 
-- [03.2 - Demo: Ansible Inventory](#032---demo-ansible-inventory)
-  - [Introduction](#introduction)
-  - [Exercises](#exercises)
-
 ## Introduction
 
 - Verify connection between ansible-controller and targets 1-2 via ssh

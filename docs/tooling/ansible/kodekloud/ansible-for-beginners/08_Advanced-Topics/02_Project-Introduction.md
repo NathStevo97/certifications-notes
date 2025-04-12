@@ -1,13 +1,5 @@
 # 11.2 - Project Introduction
 
-- [11.2 - Project Introduction](#112---project-introduction)
-  - [Project Introduction](#project-introduction)
-  - [Firewall](#firewall)
-  - [MariaDB](#mariadb)
-  - [Apache](#apache)
-  - [Code](#code)
-  - [Setup Variations](#setup-variations)
-
 ## Project Introduction
 
 - Project Aim: Use Ansible to automate the provisioning of the Kodekloud Store

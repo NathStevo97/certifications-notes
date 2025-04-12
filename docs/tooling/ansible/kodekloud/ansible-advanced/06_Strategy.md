@@ -1,9 +1,5 @@
 # 6.0 - Strategy
 
-- [6.0 - Strategy](#60---strategy)
-  - [6.1 - Introduction](#61---introduction)
-    - [Forks](#forks)
-
 ## 6.1 - Introduction
 
 - Strategy defines how a playbook is executed within Ansible

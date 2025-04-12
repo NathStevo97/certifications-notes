@@ -1,11 +1,5 @@
 # 8.0 - Templating - Jinja2
 
-- [8.0 - Templating - Jinja2](#80---templating---jinja2)
-  - [8.1 - Introduction](#81---introduction)
-    - [String Manipulation - Filters](#string-manipulation---filters)
-    - [Filters - List and Set](#filters---list-and-set)
-    - [Filters - File](#filters---file)
-
 ## 8.1 - Introduction
 
 - Templating = Using variable substitution e.g. `{{ name }}` for variable `name`

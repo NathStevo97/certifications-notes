@@ -1,8 +1,5 @@
 # 4.5 - Variable Scoping
 
-- [4.5 - Variable Scoping](#45---variable-scoping)
-  - [Introduction](#introduction)
-
 ## Introduction
 
 - Scope = How accessible a variable's value is.

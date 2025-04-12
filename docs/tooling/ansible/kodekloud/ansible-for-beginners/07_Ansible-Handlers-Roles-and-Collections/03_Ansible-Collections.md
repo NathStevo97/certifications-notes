@@ -1,7 +1,4 @@
-# 7.3 - Ansible Collections
-
-- [7.3 - Ansible Collections](#73---ansible-collections)
-  - [Overview](#overview)
+# 7.3 - Ansible Collectionss
 
 ## Overview
 

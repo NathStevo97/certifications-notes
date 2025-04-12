@@ -1,9 +1,5 @@
 # 4.0 - Roles
 
-- [4.0 - Roles](#40---roles)
-  - [4.1 - Roles Introduction](#41---roles-introduction)
-  - [4.2 - Publishing Roles to Ansible-Galaxy](#42---publishing-roles-to-ansible-galaxy)
-
 ## 4.1 - Roles Introduction
 
 - Recommended way of developing playbooks

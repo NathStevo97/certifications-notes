@@ -1,12 +1,5 @@
 # 4.3 - Variable Types
 
-- [4.3 - Variable Types](#43---variable-types)
-  - [String](#string)
-  - [Number](#number)
-  - [Boolean](#boolean)
-  - [List](#list)
-  - [Dictionary](#dictionary)
-
 ## String
 
 - Sequences of characters that can be defined in a playbook, inventory, or as CLI arguments.

@@ -1,9 +1,5 @@
 # 09.2 - Coding Exercise: Ansible Loops
 
-- [09.2 - Coding Exercise: Ansible Loops](#092---coding-exercise-ansible-loops)
-  - [Q1](#q1)
-  - [Q2](#q2)
-
 ## Q1
 
 The playbook currently runs an echo command to print a fruit name. Apply a loop directive (with_items) to the task to print all fruits defined in the `fruits`

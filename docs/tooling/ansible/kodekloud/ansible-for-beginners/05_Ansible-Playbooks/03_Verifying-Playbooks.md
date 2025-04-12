@@ -1,10 +1,5 @@
 # 5.3 - Verifying Playbooks
 
-- [5.3 - Verifying Playbooks](#53---verifying-playbooks)
-  - [Check Mode](#check-mode)
-  - [Diff Mode](#diff-mode)
-  - [Syntax Check](#syntax-check)
-
 ## Check Mode
 
 - This is ansible's dry-run mechanism, that attempts to run the playbook without making any actual changes on the hosts.

@@ -1,8 +1,5 @@
 # 5.0 - Asynchronous Actions
 
-- [5.0 - Asynchronous Actions](#50---asynchronous-actions)
-  - [5.1 - Asynchronous Actions Introduction](#51---asynchronous-actions-introduction)
-
 ## 5.1 - Asynchronous Actions Introduction
 
 - SSH connections stay alive for the duration of the playbook

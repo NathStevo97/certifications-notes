@@ -1,10 +1,5 @@
 # 13.0 - Plugins
 
-- [13.0 - Plugins](#130---plugins)
-  - [13.1 - Overview](#131---overview)
-  - [13.2 - Custom Filters](#132---custom-filters)
-  - [13.3 - Callback Plugins](#133---callback-plugins)
-
 ## 13.1 - Overview
 
 - Ansible utilises plugins for various functionalities e.g.:

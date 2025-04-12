@@ -1,12 +1,5 @@
 # 11.1 - Advanced Topics
 
-- [11.1 - Advanced Topics](#111---advanced-topics)
-  - [Preparing Windows Server](#preparing-windows-server)
-  - [Ansible-Galaxy](#ansible-galaxy)
-  - [Patterns](#patterns)
-  - [Dynamic Inventory](#dynamic-inventory)
-  - [Developing Custom Modules](#developing-custom-modules)
-
 ## Preparing Windows Server
 
 - Ansible Control Machines can ONLY be Linux Machines

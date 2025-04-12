@@ -1,8 +1,5 @@
 # 6.2 - Introduction to Plugins
 
-- [6.2 - Introduction to Plugins](#62---introduction-to-plugins)
-  - [Overview](#overview)
-
 ## Overview
 
 - Ansible plugins aim to provide additional functionality and customisation options beyond the core features.

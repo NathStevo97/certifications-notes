@@ -1,31 +1,5 @@
 # 2.0 - Installation and Operation of ArgoCD
 
-- [2.0 - Installation and Operation of ArgoCD](#20---installation-and-operation-of-argocd)
-  - [2.1 - Requirements](#21---requirements)
-  - [2.2 - Deploying ArgoCD](#22---deploying-argocd)
-    - [Installation](#installation)
-  - [2.3 - Accessing ArgoCD API Server](#23---accessing-argocd-api-server)
-  - [2.4 - Using the ArgoCD CLI](#24---using-the-argocd-cli)
-    - [ArgoCD Installation](#argocd-installation)
-    - [Common Commands](#common-commands)
-  - [2.5 - Upgrading ArgoCD](#25---upgrading-argocd)
-  - [2.6 - Setting Up RBAC for ArgoCD](#26---setting-up-rbac-for-argocd)
-    - [**Default Roles:**](#default-roles)
-    - [**ArgoCD RBAC - Resources \& Actions:**](#argocd-rbac---resources--actions)
-    - [ArgoCD RBAC - Permissions](#argocd-rbac---permissions)
-  - [2.7 - Configuring User Management](#27---configuring-user-management)
-    - [Local Users](#local-users)
-    - [SSO Integration](#sso-integration)
-  - [2.8 - Setting Up Secrets Management](#28---setting-up-secrets-management)
-  - [2.9 - HA, Backup and Disaster Recovery](#29---ha-backup-and-disaster-recovery)
-    - [High-Availability](#high-availability)
-    - [Backup and Disaster Recovery](#backup-and-disaster-recovery)
-  - [2.10 - Monitoring and Notifications](#210---monitoring-and-notifications)
-  - [2.11 - ArgoCD Monitoring](#211---argocd-monitoring)
-    - [API Server Monitoring](#api-server-monitoring)
-    - [App Monitoring](#app-monitoring)
-    - [ArgoCD Notifications](#argocd-notifications)
-
 ## 2.1 - Requirements
 
 - Kubectl needs to be installed

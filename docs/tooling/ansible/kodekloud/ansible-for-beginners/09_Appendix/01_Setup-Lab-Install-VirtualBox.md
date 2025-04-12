@@ -1,8 +1,5 @@
 # 02.1 - Setup Lab: Install VirtualBox
 
-- [02.1 - Setup Lab: Install VirtualBox](#021---setup-lab-install-virtualbox)
-  - [Notes](#notes)
-
 ## Notes
 
 - The labs for this course and project are advised to be done on Virtualbox, the free Virtualisation tool.

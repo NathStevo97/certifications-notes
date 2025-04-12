@@ -1,10 +1,5 @@
 # 08.2 - Coding Exercise: Conditionals
 
-- [08.2 - Coding Exercise: Conditionals](#082---coding-exercise-conditionals)
-  - [Q1](#q1)
-  - [Q2](#q2)
-  - [Q3](#q3)
-
 ## Q1
 
 The given playbook attempts to start mysql service on `all_servers`. Use the `when` condition to run this task if the host (`ansible_host`) is the database server.

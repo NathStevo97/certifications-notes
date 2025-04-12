@@ -1,9 +1,5 @@
 # 08.1 - Conditionals
 
-- [08.1 - Conditionals](#081---conditionals)
-  - [Introduction](#introduction)
-  - [Conditionals based on Facts, Variables, Re-Use](#conditionals-based-on-facts-variables-re-use)
-
 ## Introduction
 
 - Consider two Playbooks that look to install NGINX, but one on Red Hat, another on Debian. This requires the use of the yum and apt packages respectively.

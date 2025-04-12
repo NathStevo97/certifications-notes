@@ -1,8 +1,5 @@
 # 4.7 - Ansible Facts
 
-- [4.7 - Ansible Facts](#47---ansible-facts)
-  - [Introduction](#introduction)
-
 ## Introduction
 
 - Ansible gathers basic facts about the target machine upon initial connection, such as:

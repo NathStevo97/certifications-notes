@@ -1,8 +1,5 @@
 # 6.3 - Modules and Plugins Index
 
-- [6.3 - Modules and Plugins Index](#63---modules-and-plugins-index)
-  - [Overview](#overview)
-
 ## Overview
 
 - The module and plugin index aims to act as a hub for searching plugins and modules to be added to playbooks.

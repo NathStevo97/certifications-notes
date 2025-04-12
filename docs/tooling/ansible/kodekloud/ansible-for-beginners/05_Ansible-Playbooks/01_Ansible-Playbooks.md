@@ -1,8 +1,5 @@
 # 05.1 - Ansible Playbooks
 
-- [05.1 - Ansible Playbooks](#051---ansible-playbooks)
-  - [Notes](#notes)
-
 ## Notes
 
 - Playbooks are configuration files used to help Ansible understand what it needs to do when running.

@@ -1,8 +1,5 @@
 # 1.0 - About AWS EC2 and Ansible Automation
 
-- [1.0 - About AWS EC2 and Ansible Automation](#10---about-aws-ec2-and-ansible-automation)
-  - [Overview](#overview)
-
 ## Overview
 
 - Cloud deployments have many benefits, including:

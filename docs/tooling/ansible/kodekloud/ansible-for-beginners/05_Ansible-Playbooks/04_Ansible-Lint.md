@@ -1,8 +1,5 @@
 # 5.4 - Ansible-Lint
 
-- [5.4 - Ansible-Lint](#54---ansible-lint)
-  - [Overview](#overview)
-
 ## Overview
 
 - Playbooks can become increasingly complex over time, leading to increased likelihood of deviation from best practice.

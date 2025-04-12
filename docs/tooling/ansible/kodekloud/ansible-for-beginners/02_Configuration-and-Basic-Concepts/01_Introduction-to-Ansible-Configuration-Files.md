@@ -1,8 +1,5 @@
 # 2.1 - Introduction to Ansible Configuration Files
 
-- [2.1 - Introduction to Ansible Configuration Files](#21---introduction-to-ansible-configuration-files)
-  - [Introduction](#introduction)
-
 ## Introduction
 
 ```shell

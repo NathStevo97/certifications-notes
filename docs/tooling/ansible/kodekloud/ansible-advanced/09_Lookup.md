@@ -1,8 +1,5 @@
 # 9.0 - Lookups
 
-- [9.0 - Lookups](#90---lookups)
-  - [9.1 - Introduction](#91---introduction)
-
 ## 9.1 - Introduction
 
 - Suppose instead of the inventory file, the credentials for servers were stored in another file

@@ -1,9 +1,5 @@
 # 01.1 - Introduction
 
-- [01.1 - Introduction](#011---introduction)
-  - [Notes](#notes)
-  - [Introduction to Ansible](#introduction-to-ansible)
-
 ## Notes
 
 - Course content via lectures, hands-on exercises and practice projects to work on.

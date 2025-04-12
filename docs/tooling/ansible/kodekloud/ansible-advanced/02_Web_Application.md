@@ -1,10 +1,5 @@
 # 2.0 - Web Application
 
-- [2.0 - Web Application](#20---web-application)
-  - [2.1 - Web Application](#21---web-application)
-  - [2.2 - Web Application Deployment Walkthrough](#22---web-application-deployment-walkthrough)
-  - [2.3 - WebApp Installation Notes: CentOS](#23---webapp-installation-notes-centos)
-
 ## 2.1 - Web Application
 
 - The web application to be used as a sample can be found at the following Github [repo](https://github.com/mmumshad/simple-webapp):

@@ -1,8 +1,5 @@
 # 6.0 - Cleaning up Resources
 
-- [6.0 - Cleaning up Resources](#60---cleaning-up-resources)
-  - [Overview](#overview)
-
 ## Overview
 
 - It's beyond recommended to cleanup cloud resources to avoid incurring charges for unused resources.

@@ -1,10 +1,5 @@
 # 4.6 - Magic Variables
 
-- [4.6 - Magic Variables](#46---magic-variables)
-  - [Hostvars](#hostvars)
-  - [Groups](#groups)
-  - [Inventory](#inventory)
-
 ## Hostvars
 
 - As discussed in previous sections, variables are scoped depending on where they are defined. If defined at a host level, host 2 traditionally has no access to variables defined for host 1, etc.

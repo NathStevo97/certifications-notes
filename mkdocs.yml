@@ -21,6 +21,12 @@ nav:
   - About: about.md
   - Certifications:
     - certifications.md
+    - AWS Certified Cloud Practitioner:
+      - certifications/aws-cloud-practitioner.md
+      - certifications/aws-cloud-practitioner/course-notes/*
+    - AWS Certified Solutions Architect - Associate:
+      - certifications/aws-solution-architect-associate.md
+      - certifications/aws-solution-architect-associate/*.md
     - Certified Kubernetes Administrator (CKA):
       - certifications/CKA.md
       - certifications/CKA/*
@@ -36,6 +42,10 @@ nav:
     - HashiCorp Certified - Vault Associate:
       - certifications/vault-associate.md
       - certifications/vault-associate/*
+    - VMware Application Modernization Professional:
+      - certifications/vmware-application-modernization.md
+      - VMware Tanzu Kubernetes Grid:
+        - certifications/vmware-application-modernization/vmware-tanzu-kubernetes-grid/*
   - Tooling:
     - tooling.md
     - Helm:
@@ -50,6 +60,3 @@ nav:
     - ArgoCD:
       - tooling/argocd.md
       - tooling/argocd/*
-    - Flux:
-      - tooling/flux.md
-      - tooling/flux/*

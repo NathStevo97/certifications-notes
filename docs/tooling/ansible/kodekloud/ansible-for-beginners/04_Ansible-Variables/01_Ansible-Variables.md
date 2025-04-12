@@ -1,8 +1,4 @@
-# 07.1 - Ansible Variables
-
-- [07.1 - Ansible Variables](#071---ansible-variables)
-  - [Introduction](#introduction)
-    - [Using Variables](#using-variables)
+# 7.1 - Ansible Variables
 
 ## Introduction
 

@@ -1,9 +1,5 @@
 # 10.1 - Ansible Roles
 
-- [10.1 - Ansible Roles](#101---ansible-roles)
-  - [Notes](#notes)
-    - [Getting Started with a Role](#getting-started-with-a-role)
-
 ## Notes
 
 - Roles can be assigned to each server involved in an Ansible playbook to allow them to perform particular tasks.
