@@ -1,1 +1,0 @@
-# AWS Solution Arctiect Associate

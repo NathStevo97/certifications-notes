@@ -24,9 +24,6 @@ nav:
     - AWS Certified Cloud Practitioner:
       - certifications/aws-cloud-practitioner.md
       - certifications/aws-cloud-practitioner/course-notes/*
-    - AWS Certified Solutions Architect - Associate:
-      - certifications/aws-solution-architect-associate.md
-      - certifications/aws-solution-architect-associate/*.md
     - Certified Kubernetes Administrator (CKA):
       - certifications/CKA.md
       - certifications/CKA/*
