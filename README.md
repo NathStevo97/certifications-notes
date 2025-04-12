@@ -4,27 +4,26 @@ Repository to house personal notes developed during various technology certifica
 
 ## Ansible
 
-- [Ansible For Beginners (Kodekloud)](ansible/kodekloud/ansible-for-beginners)
-- [Ansible Advanced (Kodekloud)](ansible/kodekloud/ansible-advanced)
+- [Ansible For Beginners (Kodekloud)](./docs/tooling/ansible/kodekloud/ansible-for-beginners/)
+- [Ansible Advanced (Kodekloud)](./docs/tooling/ansible/kodekloud/ansible-advanced/)
 
 ## AWS
 
-- [AWS Certified Cloud Practictioner](aws/cloud-practitioner)
-- [AWS Certified Solution Architect Associate](aws/solution-architect-associate)
+- [AWS Certified Cloud Practictioner](docs/certifications/aws-cloud-practitioner/)
 
 ## HashiCorp
 
-- [Hashicorp Certified: Terraform Associate](hashicorp/terraform/)
-- [Hashicorp Certified: Vault Associate](hashicorp/vault/)
-- [HashiCorp Packer](hashicorp/packer)
+- [Hashicorp Certified: Terraform Associate](/docs/certifications/terraform-associate/)
+- [Hashicorp Certified: Vault Associate](/docs/certifications/vault-associate/)
+- [HashiCorp Packer](/docs/tooling/packer/)
 
 ## Kubernetes
 
-- [Certified Kubernetes Administrator (CKA)](kubernetes/CKA/)
-- [Certified Kubernetes Application Developer (CKAN)](kubernetes/CKAD/)
-- [Certified Kubernetes Security Specialist (CKS)](kubernetes/CKS/)
-- [Helm](kubernetes/helm-package-administration)
+- [Certified Kubernetes Administrator (CKA)](/docs/certifications/CKA/)
+- [Certified Kubernetes Application Developer (CKAN)](/docs/certifications/CKAD/)
+- [Certified Kubernetes Security Specialist (CKS)](/docs/certifications/CKS/)
+- [Helm](/docs/tooling/helm/)
 
 ## VMware
 
-- [VPC Application Modernization](vmware/vmware-tanzu/)
+- [VPC Application Modernization](/docs/certifications/vmware-application-modernization/)
