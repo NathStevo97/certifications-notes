@@ -57,3 +57,6 @@ nav:
     - ArgoCD:
       - tooling/argocd.md
       - tooling/argocd/*
+    - Grafana Loki:
+      - tooling/grafana-loki.md
+      - tooling/grafana-loki/*
