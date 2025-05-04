@@ -15,6 +15,7 @@ plugins:
   # allow clickable sections that lead to an index page - https://oprypin.github.io/mkdocs-section-index/
   - section-index
   - literate-nav
+  - tags
 
 nav:
   - Home: index.md
@@ -24,6 +25,9 @@ nav:
     - AWS Certified Cloud Practitioner:
       - certifications/aws-cloud-practitioner.md
       - certifications/aws-cloud-practitioner/course-notes/*
+    - Certified Kubernetes Application Developer (CKAD):
+      - certifications/CKAD.md
+      - certifications/CKAD/*
     - Certified Kubernetes Administrator (CKA):
       - certifications/CKA.md
       - certifications/CKA/*

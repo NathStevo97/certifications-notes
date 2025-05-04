@@ -11,6 +11,10 @@ Repository to house personal notes developed during various technology certifica
 
 - [AWS Certified Cloud Practictioner](docs/certifications/aws-cloud-practitioner/)
 
+## GitOps
+
+- [ArgoCD](/docs/tooling/argocd/)
+
 ## HashiCorp
 
 - [Hashicorp Certified: Terraform Associate](/docs/certifications/terraform-associate/)
@@ -23,6 +27,14 @@ Repository to house personal notes developed during various technology certifica
 - [Certified Kubernetes Application Developer (CKAN)](/docs/certifications/CKAD/)
 - [Certified Kubernetes Security Specialist (CKS)](/docs/certifications/CKS/)
 - [Helm](/docs/tooling/helm/)
+
+## Logging & Monitoring
+
+- [Grafana Loki](/docs/tooling/grafana-loki/)
+
+## The Linux Foundation
+
+- [Green Software for Practitioners](/docs/certifications/green-software-for-practitioners/)
 
 ## VMware
 

@@ -1,9 +1,3 @@
----
-tags:
-  - Certifications
-  - Kubermetes
----
-
-# Certified Kubernetes Security Specialist (CKS)
+# Certified Kubernetes Application Developer (CKAD)
 
 Repo to host notes, documentation, exercise solutions associated with the Certified Kubernetes Security Specialist (CKS) certification.

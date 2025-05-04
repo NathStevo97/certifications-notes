@@ -3,7 +3,6 @@
 ## AWS
 
 - [AWS Cloud Practitioner](./certifications/aws-cloud-practitioner.md)
-- [AWS Certified: Solution Architect Associate](./certifications/aws-solution-architect-associate.md)
 
 ## HashiCorp Terraform
 

@@ -1,4 +1,6 @@
-# 4.1 - Multi-Container Pods
+# 4.0 - Multi-Container Pods
+
+## 4.1 - Overview
 
 - Multiple patterns are available, such as:
   - **Ambassador**
@@ -42,7 +44,7 @@ spec:
     image: log-agent
 ```
 
-## Design Patterns
+### Design Patterns
 
 - 3 Design patterns available:
   1. Sidecar
@@ -51,19 +53,19 @@ spec:
 
 ![Multi-Container Pod Designs](./img/multi-container-pod-design.png)
 
-### Sidecar
+#### Sidecar
 
 - The most common design pattern
 - Uses a "helper" container to assist or improve the functionality of a primary container
 - Example: Log agent with a web server
 
-### Adapter
+#### Adapter
 
 - Used to assist in standardizing communications between resources
   - Processes that transmit data e.g. logs will be formatted in the same manner
   - All data stored in centralized location
 
-### Ambassador
+#### Ambassador
 
 - Responsible for handling proxy for other parts of the system or services
 - Used when wanting microservices to interact with one another
@@ -73,7 +75,7 @@ spec:
 
 - Whilst the design patterns differ, their implementation is the same, adding containers to the pod definition file spec where required,
 
-## InitContainers
+### InitContainers
 
 - In multi-container pods, each container is expected to run a process that stays alive for the Pod's lifecycle.
 - Sometimes, you may wish to run a process that runs to completion in a pod's container, such as carry out initial configuration or pull some additional code in a one-time task before the main application starts.

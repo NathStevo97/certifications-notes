@@ -1,4 +1,152 @@
-# 7.4 - Ingress Networking
+# 7.0 - Services and Networking
+
+## 7.1 - Services
+
+- Kubernetes services allows inter-component communication both within and outside Kubernetes.
+- Additionally, services allow connections of applications with users or other applications.
+
+### Example
+
+- Suppose an application has a group of pods running various aspects of the app
+  - One for serving frontend users
+  - Another for backend etc
+  - Another for connecting to an external data source
+
+- All these groups of pods are connected by use of services
+- Additionally, services allow frontend accessibility to users
+  - Allows front-to-back pod communication and external data source communication
+
+- One of the key services used in Kubernetes is the facilitation of external communication:
+  - Suppose a pod has been deployed and is running a web app:
+  - The Kubernetes node's IP address is in the same network as the local machine
+  - The pod's network is separate
+  - To access the container's contents, could either use a `curl` request to the IP or access via local browser
+  - In practice, wouldn't want to have to ssh into the node to access the container's content, you'd want to access it as an "external" user.
+  - Kubernetes service(s) can be introduced to map the request from a local machine -> node -> pod
+  - Kubernetes services are treated as objects in Kubernetes like Pods, ReplicaSets, etc.
+  - To facilitate external communications, one can use NodePort:
+    - Listens to a port on the node
+    - Forwards requests to the required pods
+
+- Primary service types include:
+  - **NodePort:** Makes an internal pod accessible via a port on a node
+  - **ClusterIP:**
+    - Creates a virtual IP inside the cluster
+    - Enables communication between services e.g. frontend <--> backend
+  - **Load Balancer:**
+    - Provisions a load balancer for application support
+    - Typically cloud-provider only.
+
+---
+
+### NodePort
+
+- Maps a port on the cluster node to a port on the pod to allow accessibility
+- On closer inspection, this service type can b e broken down into 3 parts:
+  1. The port of the application on the pod it's running from -> `targetPort`
+  1. The port on the service itself -> `port`
+  1. Port on the node used to access the application externally -> `NodePort`
+
+- **Note:** NodePort range only available for `30000 - 32767`
+
+- To create the service, create a definition file similar to the following:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: myapp-service
+spec:
+  type: NodePort
+  ports:
+  - targetPort: 80
+    port: 80
+    nodePort: 30080
+```
+
+- **Note:** The prior definition file is acceptable for using only one pod on the cluster.
+  - If there are multiple pods with a `targetPort` of say 80 in this case, this will cause issues, the service needs to only focus on certain pods
+  - This can be worked around via the use of selectors
+
+- Under `selector`, add any labels associated with the pod definition file e.g.:
+
+```yaml
+spec:
+  ...
+  selector:
+    app: myapp
+    type: frontend
+  ...
+```
+
+- The service can then be created using `kubectl create -f <filename>.yaml` as per usual.
+
+- To view services: `kubectl get services`
+
+- To access the web service: `curl <node IP>:<node Port>`
+
+- Suppose you're in a production environment:
+  - Multiple pods or instances running in the same application
+  - Allows high availability and load balancing
+
+- If all pods considered share the same labels, the selector will automatically assign the pods as the service endpoints -> no additional configuration is required.
+
+- If the pods are distributed across multiple nodes:
+  - Without any additional configuration Kubernetes automatically creates the service to span the entire set of nodes in the cluster.
+    - Maps the target port to the same node port for each node.
+    - The application can be accessed through the IP of any of the nodes in the cluster, but via the same port.
+
+- Regardless of the number of pods or nodes involved, the service creation method is exactly the same, no additional steps are required.
+
+- **Note:** When pods are removed or added, the service will automatically be updated => offering higher flexibility and adaptability.
+
+## 7.2 - ClusterIP Service
+
+- In general, a fill stack will comprise of groups of pods, hosting different parts of an application, such as:
+  - Frontend
+  - Backend
+  - Key-value store
+
+- Each of these groups of pods need to be able to interact with one another for the application to fully function.
+
+- Each pod will automatically be assigned its own IP address
+  - Not static
+  - Pods could be removed or added at any given point
+  - One cannot therefore rely on these IP addresses for inter-service communication
+
+- Kubernetes ClusterIP services can be used to group the pods together by functionality and provide a single interface to access them.
+  - Any requests to that group is assigned randomly to one of the pods within.
+
+- This provides an easy and effective deployment of a microservice-based application on a Kubernetes cluster.
+
+- Each layer or group gets assigned its own IP address and name within the cluster
+  - To be used by other pods to access the service.
+  - Each layer can scale up or down without impacting service-service communications
+
+- To create, write a definition file:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend
+spec:
+  type: ClusterIP
+  ports:
+  - targetPort: 80
+    port: 80
+  selector:
+    app: myapp
+    type: backend
+```
+
+- To create the service: `kubectl create -f <service file>.yaml` or `kubectl expose <deployment or pod name> --port=<port> --target-port=<port> --type=clusterIP`
+
+- View services via `kubectl get services`
+
+- From here, the services can be accessed via the ClusterIP or service name.
+
+## 7.4 - Ingress Networking
 
 - To understand the importance of Ingress, consider the following example:
   - Suppose you build an application into a Docker image and deploy it as a pod via Kubernetes.
@@ -220,7 +368,7 @@ rules:
 - **Note:** If not specifying the host field, it'll assume it to be a `*` and / or accept all incoming traffic without matching the hostname
   - Acceptable for a single backend
 
-## Updates and Additional Notes
+### Updates and Additional Notes
 
 - As of Kubernetes versions 1.20+, Ingress resources are defined a little differently, in particular the `apiVersion` and `service` parameters. An example follows:
 
@@ -237,19 +385,19 @@ spec:
         backend:
           service:
             name: wear-service
-            port: 
+            port:
               number: 80
       - path: /watch
         backend:
           service:
             name: watch-service
-            port: 
+            port:
               number: 80
 ```
 
 - Ingress resources can be created imperatively via commands similar to: `kubectl create ingress <ingress-name> --rule="<host>/<path>=service:port"`
 
-### Rewrite-Target Option
+#### Rewrite-Target Option
 
 - Different ingress controllers come with particular customization options. For example, NGINX has the `rewrite-target` option.
 - To understand this, consider two services to be linked via the same ingress, accessible at the following urls for standalone services and via ingress respectively:
@@ -277,12 +425,96 @@ spec:
         backend:
           service:
             name: wear-service
-            port: 
+            port:
               number: 80
       - path: /watch
         backend:
           service:
             name: watch-service
-            port: 
+            port:
               number: 80
 ```
+
+## 7.7 - Network Policies
+
+### Traffic Example
+
+- Suppose we have the following setup of servers:
+  - Web
+  - API
+  - Database
+- Network traffic will be flowing through each of these servers across particular ports, for example:
+- Web user requests and receives content from the web server on port 80 for HTTP
+- Web server makes a request to the API over port 5000
+- API requests for information from the database over port 3306 (e.g. if MySQL)
+
+- 2 Types of Network Traffic in this setup:
+  - **Ingress:** Traffic to a resource
+  - **Egress:** Traffic sent out from a resource
+
+- For the setup above, we could control traffic by allowing ONLY the following traffic to and from each resource across particular ports:
+  - **Web Server:**
+    - Ingress: 80 (HTTP)
+    - Egress: 5000 (API port)
+  - **API Server:**
+    - Ingress: 5000
+    - Egress: 3306 (MySQL Database Port)
+  - **Database Server:**
+    - Ingress: 3306
+
+- Considering this from a Kubernetes perspective:
+  - Each node, pod and service within the cluster has its own IP address
+  - When working with networks in Kubernetes, it's expected that the pods should be able to communicate with one another, regardless of the olution to the project
+    - No additional configuration required
+- By default, Kubernetes has an "All-Allow" rule, allowing communication between any pod in the cluster.
+  - This isn't best practice, particularly if working with resources that store very sensitive information e.g. databases.
+  - To restrict the traffic, one can implement a network policy.
+
+---
+
+- A network policy is a Kubernetes object allowing only certain methods of network traffic to and from resources. An example follows:
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: network-policy
+spec:
+  podSelector:
+    matchLabels:
+      role: db
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector: # what pods can communicate with this pod?
+        matchLabels:
+          name: api-pod
+      namespaceSelector: # what namespaced resources can communicate with this pod?
+        matchLabels:
+          name: prod
+    - ipBlock: # what IP range(s) are allowed?
+        cidr: 192.168.5.10/32
+    ports:
+    - protocol: TCP
+      port: 3306
+  egress:
+  - to:
+    - ipBlock: # what IP range(s) are allowed?
+        cidr: 192.168.5.10/32
+
+```
+
+- The policy can then be created via `kubectl create -f ....`
+
+- Network policies are enforced and supported by the network solution implemented on the cluster.
+- Solutions that support network policies include:
+  - `kube-router`
+  - `calico`
+  - `romana`
+  - `weave-net`
+
+- Flannel doesn't support Network Policies, they can still be created, but will not be enforced.
+- Rules are separated by `-` in order of listing, in the example above, the conditions for `podSelector` and `namespaceSelector` must be met. If this isn't met, then the `ipBlock` condition would be checked.
+- Similar syntax for `egress` policies are used with some slight tweaks e.g. replace `from` with `to`.

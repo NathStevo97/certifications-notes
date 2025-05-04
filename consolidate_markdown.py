@@ -21,7 +21,7 @@ def consolidate_markdown(input_dir, output_file):
                 outfile.write("\n")  # Add a newline between files for separation
 
 # Directory containing markdown files and output file
-input_directory = "./hashicorp/vault/Associate_Certification/05_Vault-Architecture"
+input_directory = "./docs/certifications/CKAD/09_2021-Updates"
 output_markdown = f"{input_directory}.md"
 
 consolidate_markdown(input_directory, output_markdown)

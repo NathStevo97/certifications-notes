@@ -1,17 +1,13 @@
-# Welcome to MkDocs
+# DevOps Learning and Research
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome to my personal DevOps learning documentation! This site serves as a knowledge repository for various DevOps certifications, tools, and best practices I've encountered throughout my career journey.
 
-## Commands
+## Getting Started
 
-- `mkdocs new [dir-name]` - Create a new project.
-- `mkdocs serve` - Start the live-reloading docs server.
-- `mkdocs build` - Build the documentation site.
-- `mkdocs -h` - Print help message and exit.
+Use the navigation menu to explore specific topics. Key sections include:
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- [Certifications](/docs/certifications/)
+  - Certification study notes
+  - Practical examples
+  - Useful Resources
+- [Tooling](/docs/tooling/)
