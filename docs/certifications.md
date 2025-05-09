@@ -14,6 +14,7 @@
 
 ## Kubernetes
 
+- [Certified Kubernetes Application Developer](./certifications/CKAD.md)
 - [Certified Kubernetes Administrator](./certifications/CKA.md)
 - [Certified Kubernetes Security Specialist](./certifications/CKS.md)
 

@@ -1,7 +1,7 @@
 ---
 tags:
   - Certifications
-  - Kubermetes
+  - Kubernetes
 ---
 
 # Certified Kubernetes Security Specialist (CKS)

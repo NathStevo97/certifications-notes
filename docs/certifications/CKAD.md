@@ -1,3 +1,9 @@
+---
+tags:
+  - Certifications
+  - Kubernetes
+---
+
 # Certified Kubernetes Application Developer (CKAD)
 
 Repo to host notes, documentation, exercise solutions associated with the Certified Kubernetes Security Specialist (CKS) certification.
@@ -18,4 +24,4 @@ Repo to host notes, documentation, exercise solutions associated with the Certif
 
 - [Mock Exam 1](./CKAD/13_Mock-Exams/01_Mock-Exam-1.md)
 - [Mock Exam 2](./CKAD/13_Mock-Exams/02_Mock-Exam-2.md)
-- [Mock Exam 3](./CKAD/13_Mock-Exams/02_Mock-Exam-3.md)
+- [Mock Exam 3](./CKAD/13_Mock-Exams/03_Mock-Exam-3.md)

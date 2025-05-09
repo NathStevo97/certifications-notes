@@ -1,3 +1,9 @@
+---
+tags:
+  - Certifications
+  - HashiCorp Vault
+---
+
 # Hashicorp Vault Associate
 
 ## Additional Resources

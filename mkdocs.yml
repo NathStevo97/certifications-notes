@@ -64,3 +64,4 @@ nav:
     - Grafana Loki:
       - tooling/grafana-loki.md
       - tooling/grafana-loki/*
+  - Tags: tags.md
