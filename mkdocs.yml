@@ -52,7 +52,15 @@ nav:
     - Helm:
       - tooling/helm/*
     - Ansible:
-      - tooling/ansible/*
+      - Ansible for Beginners:
+        - tooling/ansible/ansible-for-beginners.md
+        - tooling/ansible/ansible-for-beginners/*
+      - Ansible Advanced:
+        - tooling/ansible/ansible-advanced.md
+        - tooling/ansible/ansible-advanced/*
+      - Automating EC2 Deployments:
+        - tooling/ansible/automating-ec2-deployment.md
+        - tooling/ansible/automating-ec2-deployment/*
     - Packer:
       - tooling/packer/*
     - ArgoCD:

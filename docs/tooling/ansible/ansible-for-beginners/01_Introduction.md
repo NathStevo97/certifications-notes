@@ -1,4 +1,4 @@
-# 01.1 - Introduction
+# 1.0 - Introduction
 
 ## Notes
 
