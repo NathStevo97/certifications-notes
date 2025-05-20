@@ -1,3 +1,9 @@
+---
+tags:
+  - Tooling
+  - Helm
+---
+
 # Kubernetes Package Administration with Helm
 
 ## 1.0 - Helm Installation and Configuration

@@ -1,3 +1,9 @@
+---
+tags:
+  - Tooling
+  - Packer
+---
+
 # Getting Started with HashiCorp Packer
 
 ## 1.0 - Creating Basic Images

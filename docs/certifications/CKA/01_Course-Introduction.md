@@ -1,4 +1,4 @@
-# 01 - Introduction
+# 1.0 - Introduction
 
 ## Course Introduction
 

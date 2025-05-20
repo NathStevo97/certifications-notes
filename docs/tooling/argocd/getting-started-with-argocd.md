@@ -1,3 +1,9 @@
+---
+tags:
+  - Tooling
+  - ArgoCD
+---
+
 # Getting Started with Argo CD
 
 ## 1.0 - Introduction
