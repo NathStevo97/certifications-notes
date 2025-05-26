@@ -16,6 +16,9 @@ plugins:
   - section-index
   - literate-nav
   - tags
+  - exclude:
+      glob:
+        - "practices/*"
 
 nav:
   - Home: index.md
