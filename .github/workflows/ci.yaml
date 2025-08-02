@@ -1,4 +1,4 @@
-name: certifications-notes markdownlint
+name: devops-learnings markdownlint
 
 on:
   push:
